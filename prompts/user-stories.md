@@ -16,6 +16,10 @@ Date: March 14, 2024
 
 ## User Story Format/Template
 
+<!--
+The following format combines the Mike Cohn User Story Format augmented by a Gherkin-style acceptance criterion.
+-->
+
 ## User Story [User Story Number ID]:
 
 - **Summary**: [brief, memorable, human-readable story title]
@@ -27,7 +31,7 @@ Date: March 14, 2024
 
 ### Acceptance Criteria:
 <!-- 
-Note: Givens are pre-conditions, so don't feel limited to just 3 Givens.
+Note: Givens are pre-conditions, so DO NOT feel limited to just 2 or 3 Givens. 
 -->
 - **Scenario**: [brief, human-readable user scenario]
 - **Given**: [Initial context or precondition]
