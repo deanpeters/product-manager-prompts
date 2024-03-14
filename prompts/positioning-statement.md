@@ -29,6 +29,8 @@ Date: March 14, 2024
 ```markdown
 ## Positioning Statement Template
 
+<!-- generate a Geoffrey Moore-style positioning statement using the following template -->
+
 ### Value Proposition
 
 **For** [target customer/user (think persona)]
