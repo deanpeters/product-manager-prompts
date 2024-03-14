@@ -1,4 +1,5 @@
-<!-- user-stories.md
+# user-stories.md
+<!-- 
 ## Description:
 This template is designed to help product managers and development teams create clear, concise user stories. It guides the formulation of user stories, ensuring they are structured to promote understanding and actionable outcomes. This template is particularly useful during Generative AI sessions, assuming enough product details, persona insights, positioning, and problem contexts have already been provided.
 
@@ -28,23 +29,23 @@ Licensed under the MIT License. This template can be freely used, modified, and 
 
 Date: March 14, 2024
 -->
-
+---
 ## User Story Format/Template
 
 <!--
 The following format combines the Mike Cohn User Story Format augmented by a Gherkin-style acceptance criterion.
 -->
 
-## User Story [User Story Number ID]:
+### User Story [User Story Number ID]:
 
 - **Summary**: [brief, memorable, human-readable story title]
 
-### Use Case:
+#### Use Case:
 - **As a** [user role/name],
 - **I want to** [action user takes to get to outcome],
 - **so that** [desired outcome by the user].
 
-### Acceptance Criteria:
+#### Acceptance Criteria:
 <!-- 
 Note: Givens are pre-conditions, so don't feel limited to just 3 Givens.
 -->
