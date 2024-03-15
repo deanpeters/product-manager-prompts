@@ -1,13 +1,12 @@
 # problem-framing-statement.md
 <!-- 
 ## Description:
-This template is designed to guide product managers in articulating a problem statement that effectively communicates the core issues to be addressed. 
-Emphasizing the "who" and "why," it frames the problem from the persona's perspective, incorporating their pains, gains, and jobs to be done, 
-and ensuring a deep understanding before seeking solutions.
+This template is designed to guide product managers in socializing & articulating a problem statement that effectively communicates the core issues to be addressed. 
+Emphasizing the "who" and "why" frames the problem from the persona's perspective, incorporating their pains, gains, and jobs to be done and ensuring a deep understanding before seeking solutions.
 
 ## Usage Note:
-This template should be employed in Generative AI sessions after ensuring comprehensive context on the customer's pains, gains, jobs to be done, 
-and the target problem space has been established. If adequate context is not present, the generative AI session agent (ChatGPT, Gemini, Claude, etc.) 
+This template should be employed in Generative AI sessions after ensuring comprehensive context on the customer's pains, gains, jobs to be done, and the target problem space has been established. 
+If adequate context is absent, the generative AI session agent (ChatGPT, Gemini, Claude, etc.) 
 is instructed to prompt the product manager to provide more details to ensure the problem is thoroughly understood.
 
 ## Instructions:
