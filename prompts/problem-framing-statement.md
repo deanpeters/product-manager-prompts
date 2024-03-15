@@ -15,7 +15,7 @@ is instructed to prompt the product manager to provide more details to ensure th
 
 "Based on the session context, our customer's pains, gains, and jobs to be done, and our target problem space, 
 please fill out the Problem Framing Canvas using the template below, rendered as Markdown in a Code Block. 
-If you feel the context provided is insufficient, please prompt the product manager for additional information."
+If you feel the context provided is insufficient, please prompt me (the product manager) for additional information."
 
 ## Attribution:
 Created by Dean Peters, March 14, 2024.
@@ -32,6 +32,9 @@ Date: March 14, 2024
 <!--
 Based on the session context, frame the problem from the persona perspective, enumerate context & constraints from a JTBD perspective,
 and create a single sentence providing a powerful and empathetic summary narrative.
+
+If the user has not provided enough context, the session agent of the generative AI chatbot should ask a series of questions to
+obtain the context needed to fill in the blanks of the template.
 -->
 
 ### Problem Framing
