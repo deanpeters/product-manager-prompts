@@ -1,47 +1,40 @@
 # strategic-scrum-team-session-kickoff.md
 <!-- 
 ## Description:
-This prompt template serves as a kickoff prompt for strategic planning sessions aimed at scrum teams facing new initiatives or addressing underserved needs. Drawing on the insights of notable figures in product development and agile methodologies, it's designed to scaffold a comprehensive strategy that incorporates the six scrum team strategic pillars.
+This template facilitates a structured kickoff for scrum teams embarking on strategic planning sessions, focusing on new initiatives, or addressing underserved needs. It leverages the expertise of thought leaders in product development and agile methodologies, aiming to establish a cohesive strategy grounded in six strategic pillars.
 
 ## Usage Note:
-This template is best utilized in sessions with a clear understanding of the target audience, market conditions, and strategic objectives. It's tailored for a product trio, including a Product Owner, UX Lead, and Engineering Lead, to collaboratively outline a strategy that enhances decision-making and aligns with organizational goals.
+It is effective in sessions where the team has preliminary knowledge of the initiative's context. It is designed for collaborative input from a product trio: the Product Owner, UX Lead, and Engineering Lead, to craft a strategy that improves decision-making and aligns with strategic goals.
 
-## Instructions:
-1. Begin the session by gathering essential context using the directed questions below.
-2. Use the insights gathered to navigate through the strategic pillars, tailoring the scrum team strategy to the initiative's unique challenges and opportunities.
+## Instructions for Users:
+Start by reflecting on and answering the Context Gathering Questions. Then, engage with the AI assistant by inputting your answers, prompting it to guide you through developing a strategy based on the six pillars. This interactive approach ensures your strategy is well-informed and tailored to your needs.
 
 ## Attribution:
-Concept inspired by industry thought leaders and adapted for strategic scrum team sessions by Dean Peters, March 14, 2024.
+Inspired by industry thought leaders, adapted for strategic scrum team planning by Dean Peters, March 14, 2024.
 
 ## Licensing:
-This document is licensed under the MIT License, allowing free use, modification, and distribution, provided that proper credit is given to the original and current creators.
+Under the MIT License, this document is free to use, modify, and distribute with appropriate attribution to the original and adapting authors.
 
 Date: March 14, 2024
 -->
 ---
-```Markdown
 ## Strategic Scrum Team Session Kickoff
 
+### Instructions to Initiate Session:
+"To begin, please provide responses to the following Context Gathering Questions. Your detailed input will help craft a strategy that aligns with our project's unique requirements."
+
 ### Context Gathering Questions
+_Please reflect on these questions and provide your responses to help shape our strategic planning:_
 
-**Before we delve into our strategic planning, let's collect some critical information to guide our session.**
+1. **Initiative Overview**: _What are we aiming to achieve with this new initiative?_
+2. **Target Audience Insights**: _Who are our primary users, and what are their key needs?_
+3. **Anticipated Challenges**: _What obstacles might we encounter?_
+4. **Strategic Objectives**: _How does this initiative align with our broader goals?_
+5. **Competitive Analysis**: _Who are our main competitors, and what is our advantage?_
+6. **Success Criteria**: _How will we measure the success of our initiative?_
 
-1. **Initiative Overview**: _What is the core objective of this new initiative or the specific underserved need we're aiming to address?_
-2. **Target Audience Insights**: _Who is our target audience, and what are their defining characteristics and needs?_
-3. **Anticipated Challenges**: _What challenges do we foresee in tackling this need?_
-4. **Strategic Objectives**: _How do the goals of this initiative align with our broader product vision and strategic objectives?_
-5. **Competitive Analysis**: _Can you describe the competitive landscape surrounding this need or problem area?_
-6. **Success Criteria**: _What metrics or outcomes will define success for this initiative?_
+_After compiling your answers, proceed by asking ChatGPT (or another AI) to assist with the following based on your inputs:_
 
-### Strategy Development Pillars
+"Given the initiative overview, audience insights, challenges, objectives, competitive analysis, and success criteria I've provided, help me develop a strategy that incorporates the following pillars: Product Vision Alignment, Collaborative Mindset, Agility Embrace, Value Delivery Focus, Self-Organization Empowerment, and Continuous Learning & Discovery."
 
-With the context set, we'll explore strategic pillars that guide our scrum team strategy:
-
-- **Product Vision Alignment**: Integrating insights from Marty Cagan to forge a unified vision.
-- **Collaborative Mindset**: Adopting Jardena London's ethos to enhance teamwork.
-- **Agility Embrace**: Implementing Jeff Sutherland’s agility principles.
-- **Value Delivery Focus**: Following Melissa Perri's guidance on prioritizing customer value.
-- **Self-Organization Empowerment**: Empowering team autonomy in the spirit of Alistair Cockburn’s Heart of Agile.
-- **Continuous Learning & Discovery**: Incorporating Teresa Torres's approach for embedded learning and discovery.
-
-**AI Assistant Prompt**: _Based on the answers to the context-gathering questions, assist us in developing a tailored strategy that encompasses these pillars, addresses our initiative's unique aspects, and sets the foundation for a successful scrum team strategy._
+_This directive encourages a collaborative session where your inputs directly inform the strategic planning process, facilitated by AI._
