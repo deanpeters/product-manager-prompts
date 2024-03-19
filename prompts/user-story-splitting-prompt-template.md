@@ -85,4 +85,4 @@ _The following format combines the Mike Cohn User Story Format augmented by a Gh
 
 Please provide the user story you would like to split:
 
-<!-- AI agent should prompt the user if a user story isn't provided -->
+<!-- AI assistant should prompt the user if a user story isn't provided -->
