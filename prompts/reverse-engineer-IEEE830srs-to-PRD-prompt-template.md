@@ -7,7 +7,7 @@ This template facilitates the creation of a generative AI Product Requirements D
 Assume the perspective of a product manager familiar with the IEEE Std.830-1998 SRS. Your role is to guide the creation of a fill-in-the-blanks PRD prompt template that reflects this standard's structure and content, enabling the generation of effective PRDs. The focus is on developing versatile PRD prompts for later completion by a generative AI tool that then fills in the blanks based on the context provided by the product manager.
 
 ## AI Assistant's Task:
-Aid the user in translating the IEEE Std.830-1998 SRS into a flexible fill-in-the-banks PRD prompt template. Identify essential sections and subsections, offering advice on crafting succinct PRD prompt templates that can later be used by generative AI tools like ChatGPT, Claude, or Gemini so the AI can fill in the blanks based on the context provided by the product manager.
+Aid the user in translating the IEEE Std.830-1998 SRS into a flexible fill-in-the-banks PRD prompt template. Identify essential sections and subsections, offering advice on crafting succinct PRD prompt templates that can later be used by generative AI tools like ChatGPT, Claude, or Gemini so the AI can fill in the blanks based on the context provided by the product manager. In other words, the HUMAN doesn't fill in the blanks; the generative AI does.
 
 ## Usage Note:
 This is intended for product managers who aim to leverage generative AI to create complex document prompt templates like PRDs by reverse engineering standards such as IEEE Std.830-1998 SRS.
@@ -53,4 +53,5 @@ c. **Definitions, Acronyms, and Abbreviations**:
 
 ## Goal
 
-The aim is to leverage industry standards for generating adaptable prompt templates that enhance the capabilities of generative AI tools in producing PRDs.
+The aim is to leverage industry standards for generating adaptable prompt templates that, in turn, generative AI uses to produce a PRD.
+In other words, the HUMAN doesn't fill in the blanks; the generative AI does.
