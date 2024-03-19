@@ -29,7 +29,7 @@ Date: March 14, 2024
 ```markdown
 ## Product Backlog Epic Template
 
-<!-- Utilize this template to construct an epic for your product backlog, guided by Tim Herbig's hypothesis approach -->
+<!-- Utilize this template to construct an epic for your product backlog, guided by Tim Herbig's lean UX hypothesis approach -->
 
 ### Hypothesis
 
