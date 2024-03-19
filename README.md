@@ -4,8 +4,8 @@
 
 ## TL;DR
 
-1. **View the prompt as code**! In preview mode, you don't see all the comment blocks that instruct and guide the AI assistant.
-2. **Cut and paste the entire prompt** from the code view into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.).
+1. **View the prompt as code**! In preview mode, you don't see all the comment blocks that instruct and guide the AI assistant with tasks & goals.
+2. **Cut and paste the entire prompt** from the code view into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.); yes, comments and all.
 3. **Reach out and let me know** how your prompting goes. I've tested all these on ChatGPT Plus & 3.5, Claude Opus & Sonnet, and Gemini 1.0.
 
 ## Repo Description
