@@ -21,6 +21,14 @@ As an AI assistant, your role is to think deeply as an outcome-oriented product 
 4. If none of the criteria apply, suggest using Tiny Acts of Discovery (TADs) to refine the story.
 5. Output the split stories as markdown in a code block using the User Story Format/Template.
 
+## Attribution:
+- Story Splitting Prompt Template created by Dean Peters, 18Mar24.
+- The User Story Splitting Case Logic is inspired by '[The Humanizing Work Guide to Splitting User Stories](https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/#flowchart)' by Richard Lawrence and Peter Green.
+- The '[User Story Format/Template](https://github.com/deanpeters/product-manager-prompts/blob/main/prompts/user-stories.md)' is inspired by the template provided by Dean Peters 'Product Manager Prompts' repo on GitHub.
+
+## Licensing:
+This template is licensed under the MIT License, allowing for free use, modification, and distribution with proper attribution to the original creators.
+-->
 
 ## User Story Splitting Case Logic:
 1. Does it contain multiple workflow steps? If yes, split the story along workflow steps.
@@ -32,11 +40,9 @@ As an AI assistant, your role is to think deeply as an outcome-oriented product 
 7. Does it take a significant DevOps effort? If yes, split the story along the key DevOps steps.
 8. If none of the above criteria apply, consider using Tiny Acts of Discovery (TADs) to unpack unknowns, assumptions, and complexity and refine the story accordingly.
 
-
 ## User Story Format Prompt Template:
-<!--
-The following format combines the Mike Cohn User Story Format augmented by a Gherkin-style acceptance criterion.
--->
+
+_The following format combines the Mike Cohn User Story Format augmented by a Gherkin-style acceptance criterion._
 
 ### User Story [User Story Number ID]:
 
@@ -48,10 +54,11 @@ The following format combines the Mike Cohn User Story Format augmented by a Ghe
 - **so that** [desired outcome by the user].
 
 #### Acceptance Criteria:
-<!--
-Note 1: Givens are pre-conditions, so don't feel limited to just 3 Givens.
-Note 2: There should only be one "When" and one "Then" statement that aligns with the use case's "I want to" action and "so that" outcome. Multiple "whens" and "thens" are a good indicator a story must be split.
--->
+
+(_Note 1: Givens are pre-conditions, so don't feel limited to just 3 Givens._
+ _Note 2: There should only be one "When" and one "Then" statement that aligns with the use case's "I want to" action and "so that" outcome._
+ _Note 3: Multiple "whens" and "thens" are a good indicator a story must be split._)
+
 - **Scenario**: [brief, human-readable user scenario]
 - **Given**: [Initial context or precondition]
 - **and Given**: [additional context or preconditions based on the user's context]
@@ -74,13 +81,8 @@ Note 2: There should only be one "When" and one "Then" statement that aligns wit
 3. Split 3 using **[split logic rule used]**:
   - [third user split version of the story, epic, or feature rendered using the User Story Format Prompt Template] 
 
-## Attribution:
-- Story Splitting Prompt Template created by Dean Peters, 18Mar24.
-- The User Story Splitting Case Logic is inspired by '[The Humanizing Work Guide to Splitting User Stories](https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/#flowchart)' by Richard Lawrence and Peter Green.
-- The '[User Story Format/Template](https://github.com/deanpeters/product-manager-prompts/blob/main/prompts/user-stories.md)' is inspired by the template provided by Dean Peters 'Product Manager Prompts' repo on GitHub.
-
-## Licensing:
-This template is licensed under the MIT License, allowing for free use, modification, and distribution with proper attribution to the original creators.
--->
+## End-User Product Manager Instruction:
 
 Please provide the user story you would like to split:
+
+<!-- AI agent should prompt the user if a user story isn't provided -->
