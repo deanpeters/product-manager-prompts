@@ -19,7 +19,7 @@ Intended for product managers aiming to leverage generative AI for the creation 
 4. Employ the finalized PRD prompt template with generative AI to draft detailed PRDs specific to various products, following the embedded usage instructions.
 
 ## Attribution:
-Template for generating PRD prompts from IEEE 830 SRS by Dean Peters, 18Mar24.
+Template for generating PRD prompts from IEEE 830 SRS by Dean Peters, 18Mar24 ... inspired by his dislike for such documents.
 
 ## Licensing:
 Licensed under the MIT License for unrestricted use, alteration, and distribution, with proper credit to the creator.
