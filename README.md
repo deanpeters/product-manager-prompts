@@ -2,6 +2,11 @@
 
 **product-manager-prompts**: A treasure trove of Generative AI prompts tailored for the unique needs of product managers and product owners, compatible with ChatGPT, Claude, & Gemini.
 
+## TL;DR
+
+1. View the prompt as code! In preview mode, you don't see all the comment blocks that instruct and guide the AI assistant.
+2. Cut and paste the entire prompt from the code view into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.)
+
 ## Description
 
 Welcome to a dynamic repository designed to empower product managers by harnessing the power of Generative AI. Here, you'll find prompts that aid in:
