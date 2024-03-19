@@ -1,7 +1,7 @@
 # backlog-epic-hypothesis.md
 <!-- 
 ## Description:
-This template is crafted to facilitate the creation of epics for a product backlog, employing Tim Herbig's hypothesis framework. It provides a structured approach to articulate assumptions about new features, products, or services. By clearly outlining the action or solution for target beneficiaries, the expected outcomes, and the methodology for testing and validation, teams can better navigate the uncertainty inherent in product development.
+This template is crafted to facilitate the creation of epics for a product backlog, inspired partly by Tim Herbig's hypothesis framework. It provides a structured approach to articulate assumptions about new features, products, or services. By clearly outlining the action or solution for target beneficiaries, the expected outcomes, and the methodology for testing and validation, teams can better navigate the uncertainty inherent in product development.
 
 ## Usage Note:
 Before using this template in a Generative AI session, ensure the session has been preloaded with context on:
@@ -18,10 +18,10 @@ Before using this template in a Generative AI session, ensure the session has be
 "Based on the context provided, please create an epic for the product backlog in the style of a Tim Herbig hypothesis using the following Epic Hypothesis Template, rendered as Markdown in a Code Block."
 
 ## Attribution:
-Created by Dean Peters, March 14, 2024.
+Created by Dean Peters, March 14, 2024, inspired in part by Tim HErbig's Lean UX Hypothesis Statement.
 
 ## Licensing:
-This document and the template contained within are licensed under the MIT License. It permits free use, modification, and distribution, with proper attribution to the original creator.
+This document and its template are licensed under the MIT License. It permits free use, modification, and distribution, with proper attribution to the original creator.
 
 Date: March 14, 2024
 -->
@@ -33,9 +33,9 @@ Date: March 14, 2024
 
 ### Hypothesis
 
-**We believe that** [an action or a solution on behalf of target beneficiaries]
-**for** [the target beneficiaries of the action or solution]
-**will achieve** [a desirable outcome or job-to-be-done for the target beneficiaries].
+**If we** [an action or a solution on behalf of the target persona]
+**for** [the target persona of the action or solution]
+**Then we will** [attain or achieve a desirable outcome or job-to-be-done for the target persona].
 
 ### Experiments
 
@@ -47,7 +47,7 @@ Date: March 14, 2024
 ### Validation
 
 **We know our hypothesis is valid if within** [timeframe in days or weeks]
-**we get:**
+**we observe:**
 * [desirable quantitative measurable outcome]
 * [desirable qualitative measurable outcome]
 * [add more outcomes as necessary]
