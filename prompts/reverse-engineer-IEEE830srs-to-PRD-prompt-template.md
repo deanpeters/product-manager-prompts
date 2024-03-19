@@ -1,7 +1,7 @@
 # reverse-engineer-IEEE830srs-to-PRD-prompt-template.md
 <!--
 ## Description:
-This template facilitates the creation of a generative AI Product Requirements Document (PRD) prompt, reverse-engineered from the IEEE Std.830-1998 Software Requirements Specification (SRS). It enables product managers to craft PRD prompts that are structured and detailed, suitable for use with AI tools like ChatGPT, Claude, or Gemini. The goal is to produce customizable PRDs that meet the specific needs of various products.
+This template facilitates the creation of a generative AI Product Requirements Document (PRD) prompt, reverse-engineered from the IEEE Std.830-1998 Software Requirements Specification (SRS). It enables product managers to craft structured and detailed PRD prompts suitable for use with AI tools like ChatGPT, Claude, or Gemini. The goal is to generate and then use customizable PRD prompt templates for generative AI that meet the specific needs of various products.
 
 ## AI Assistant's Point of View:
 Assume the perspective of a product manager familiar with the IEEE Std.830-1998 SRS. Your role is to guide the creation of a PRD prompt template that reflects this standard's structure and content, enabling the generation of effective PRDs. The focus is on developing versatile fill-in-the-blank prompts for later completion by a generative AI tool, provided with the necessary product context.
