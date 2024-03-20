@@ -75,11 +75,14 @@ _The following format combines the Mike Cohn User Story Format augmented by a Gh
 
 ### Suggested Splits:
 1. Split 1 using **[split logic rule used]**:
-  - [first user split version of the story, epic, or feature rendered using the User Story Format Prompt Template] 
+  - [left side of the first user split version of the story, epic, or feature rendered using the User Story Format Prompt Template]
+  - [right side of the first user split version of the story, epic, or feature rendered using the User Story Format Prompt Template]
 2. Split 2 using **[split logic rule used]**:
-  - [second user split version of the story, epic, or feature rendered using the User Story Format Prompt Template] 
+  - [left side of the second user split version of the story, epic, or feature rendered using the User Story Format Prompt Template] 
+  - [right side of the second user split version of the story, epic, or feature rendered using the User Story Format Prompt Template] 
 3. Split 3 using **[split logic rule used]**:
-  - [third user split version of the story, epic, or feature rendered using the User Story Format Prompt Template] 
+  - [left side of the third user split version of the story, epic, or feature rendered using the User Story Format Prompt Template] 
+  - [right side of the third user split version of the story, epic, or feature rendered using the User Story Format Prompt Template] 
 
 ## End-User Product Manager Instruction:
 
