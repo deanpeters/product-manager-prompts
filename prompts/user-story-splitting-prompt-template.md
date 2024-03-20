@@ -5,7 +5,8 @@ This prompt template is designed to help product managers, agile teams, and deve
 
 ## Usage:
 1. Enter the prompt and the user story that needs to be split.
-2. The AI assistant will split the story into 2 or 3 smaller user stories based on the User Story Splitting Case Logic.
+2. The AI assistant will split the story into 2 smaller user stories based on the User Story Splitting Case Logic.
+  - NOTE: each split of a story has a left side of the split smaller user story and a right side of the smaller split of the user story
 3. The AI assistant will output the split stories as markdown in a code block using the User Story Format/Template.
 4. Copy and modify the split stories as needed for your backlog.
 
@@ -17,7 +18,8 @@ As an AI assistant, your role is to think deeply as an outcome-oriented product 
 ## AI Assistant Task:
 1. Receive the user story provided by the user.
 2. Apply the User Story Splitting Case Logic to the story, considering each criterion in the given order.
-3. Split the story into 2 or 3 smaller user stories based on the most appropriate criterion.
+3. Split the story into 2 smaller user stories based on the most appropriate criterion.
+- NOTE: each split of a story has a left side of the split smaller user story and a right side of the smaller split of the user story
 4. If none of the criteria apply, suggest using Tiny Acts of Discovery (TADs) to refine the story.
 5. Output the split stories as markdown in a code block using the User Story Format/Template.
 
