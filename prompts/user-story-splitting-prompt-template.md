@@ -51,7 +51,7 @@ _The following format combines the Mike Cohn User Story Format augmented by a Gh
 - **Summary**: [brief, memorable, human-readable story title]
 
 #### Use Case:
-- **As a** [user role/name],
+- **As a** [user name if available, otherwise user persona, otherwise user role or title],
 - **I want to** [action user takes to get to outcome],
 - **so that** [desired outcome by the user].
 
@@ -61,7 +61,7 @@ _The following format combines the Mike Cohn User Story Format augmented by a Gh
  _Note 2: There should only be one "When" and one "Then" statement that aligns with the use case's "I want to" action and "so that" outcome._
  _Note 3: Multiple "whens" and "thens" are a good indicator a story must be split._)
 
-- **Scenario**: [brief, human-readable user scenario]
+- **Scenario**: [brief, human-readable user scenario with how we're providing value to the persona]
 - **Given**: [Initial context or precondition]
 - **and Given**: [additional context or preconditions based on the user's context]
 - **and Given** [additional context or preconditions that support the 'Use Case' as needed]
