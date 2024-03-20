@@ -48,7 +48,7 @@ _The following format combines the Mike Cohn User Story Format augmented by a Gh
 
 ### User Story [User Story Number ID]:
 
-- **Summary**: [brief, memorable, human-readable story title]
+- **Summary**: [brief, memorable, human-readable story title with how we're providing value to the persona]
 
 #### Use Case:
 - **As a** [user name if available, otherwise user persona, otherwise user role or title],
