@@ -40,10 +40,10 @@ The following format combines the Mike Cohn User Story Format augmented by a Ghe
 
 ### User Story [User Story Number ID]:
 
-- **Summary**: [brief, memorable, human-readable story title]
+- **Summary**: [brief, memorable, human-readable story title with how we're providing value to the persona]
 
 #### Use Case:
-- **As a** [user role/name],
+- **As a** [user name if available, otherwise user persona, otherwise user role or title],
 - **I want to** [action user takes to get to outcome],
 - **so that** [desired outcome by the user].
 
@@ -53,7 +53,7 @@ Note 1: Givens are pre-conditions, so don't feel limited to just 3 Givens.
 Note 2: There should only be one "When" and one "Then" statement that aligns with the use case's "I want to" action and "so that" outcome. 
 Note 3: Multiple "when" and "then" are good indicators that a story must be split; see `user-story-splitting-prompt-template.md`
 -->
-- **Scenario**: [brief, human-readable user scenario]
+- **Scenario**: [brief, human-readable user scenario with how we're providing value to the persona]
 - **Given**: [Initial context or precondition]
 - **and Given**: [additional context or preconditions based on the user's context]
 - **and Given** [additional context or preconditions that support the 'Use Case' as needed]
