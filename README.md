@@ -1,16 +1,16 @@
 # Product Manager Prompts for Generative AI
 
-**product-manager-prompts**: A treasure trove of Generative AI prompts tailored for the unique needs of product managers and product owners, compatible with ChatGPT, Claude, & Gemini.
+**product-manager-prompts**: A treasure trove of Generative AI [prompts tailored](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) for the unique needs of product managers and product owners, compatible with ChatGPT, Claude, & Gemini.
 
 ## TL;DR
 
-1. **View the prompt as code**! In preview mode, you don't see all the comment blocks that instruct and guide the AI assistant with tasks & goals.
+1. **View the [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) as code**! In preview mode, you don't see all the comment blocks that instruct and guide the AI assistant with tasks & goals.
 2. **Cut and paste the entire prompt** from the code view into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.); yes, comments and all.
 3. **Reach out and let me know** how your prompting goes. I've tested all these on ChatGPT Plus & 3.5, Claude Opus & Sonnet, and Gemini 1.0.
 
 ## Repo Description
 
-Welcome to a dynamic repository designed to empower product managers by harnessing the power of Generative AI. Here, you'll find prompts that aid in:
+Welcome to a dynamic repository designed to empower product managers by harnessing the power of Generative AI. Here, you'll find [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) that aid in:
 
 - **Completing tasks:** Writing user stories, crafting product roadmaps, conducting competitive analysis.
 - **Exploring ideas:** Brainstorming features, validating hypotheses, generating solutions.
@@ -18,7 +18,7 @@ Welcome to a dynamic repository designed to empower product managers by harnessi
 - **Facilitating communication:** Structuring product discussions, framing interview questions, outlining presentations.
 - **Jumpstarting templates:** Creating user story templates, roadmap frameworks, and business model canvases.
 
-Join us in enriching this collection with your insights, prompts, synthetic data, and examples, making it an indispensable resource for the product management community.
+Join us in enriching this collection with your insights, [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts), synthetic data, and examples, making it an indispensable resource for the product management community.
 
 ## Contributing
 
