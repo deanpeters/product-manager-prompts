@@ -38,8 +38,8 @@ If a Business Outcome that explains "What's in it for our Business?" has not bee
 
 Here's an example output: 
 
-- Reduce by 25% amount of churn of existing customers using our existing product.
-- [direction:reduce][metric:25% amount][outcome:churn][context:existing customers][acceptance criteria:iexisting product]
+- Reduce by 25% the amount of churn of existing customers using our existing product.
+- [direction:reduce][metric:25% the amount][outcome:churn][context:existing customers][acceptance criteria:iexisting product]
 
 Otherwise, provide the Business Outcome previously provided.
 
@@ -47,29 +47,24 @@ Otherwise, provide the Business Outcome previously provided.
 
 - [Direction][Metric][Outcome][Context from persona's point-of-view][Acceptance criteria]
 
-
 ## Product Outcome
-
 <!-- 
 
-If a Problem Outcome that explains "What's in it for the Cutomer?" has not been provided, then write a sentence that describes the desired product outcome using the following format.
+If a Problem Outcome that explains "What's in it for the Customer?" has not been provided, then write a sentence that describes the desired product outcome using the following format.
 
 Here's an example output: 
 
-- Increase the speed to find patients, when I know the inclusion and exclusion criteria.
-- [direction:increase][metric:the speed][outcome:to find patients][context:, when I know][acceptance criteria:inclusion and exclusion criteria]
+- Increase the speed of finding patients when I know the inclusion and exclusion criteria.
+- [direction:increase][metric:the speed][outcome:of finding patients][context:, when I know][acceptance criteria:inclusion and exclusion criteria]
 
 Otherwise, provide the Problem Outcome previously provided.
-
 !-->
-
 - [Direction][Metric][Outcome][Context from persona's point-of-view][Acceptance criteria]
-
-
 
 ## The Problem Statement
 <!-- Frame the problem from the persona's point-of-view using the following template
-    but do not render this on screen, instead use the Problem Statement  Components Worksheet 
+    but DO NOT RENDER THE PROBLEM PROBLEM STATEMENT COMPONENTS in the response.
+    Instead, use the Problem Statement  Components Worksheet 
     to fill out and render the Problem Statement  Narrative.
 
 ### Problem Statement Components Worksheet
@@ -93,10 +88,8 @@ Otherwise, provide the Problem Outcome previously provided.
 **Which makes me feel**: 
 - [Describe the emotions felt from the key persona's perspective].
 --> 
-
 ### Problem Statement Narrative
 - [Persona description]
-
 - [Based on the Problem Statement  Components Worksheet (see comment section immediately above), write 2 or 3 sentences that tell the persona's story from their point-of-view]
 
 
@@ -104,21 +97,22 @@ Otherwise, provide the Problem Outcome previously provided.
 
 ### Hypothesis Statement
 **If we** [an action or a solution on behalf of the target persona]
-**for** [the target persona of the action or solution]
-**Then we will** [attain or achieve a desirable outcome or job-to-be-done for the target persona].
+- **for** [the target persona of the action or solution]
+- **Then we will** [attain or achieve a desirable outcome or job-to-be-done for the target persona].
 
 ### Tiny Acts of Discovery
 **We will test our assumption by:**
-* [Experiment 1]
-* [Experiment 2]
-* [Add more experiments as necessary]
+- [Small, measurable experiment of discovery focused on product viability]
+- [Small, measurable experiment or discovery focused on customer value]
+- [Add more experiments as necessary]
 
 ### Proof-of-Life
+
 **We know our hypothesis is valid if within** [timeframe in days or weeks]
 **we observe:**
-* [Desirable quantitative measurable outcome]
-* [Desirable qualitative measurable outcome]
-* [Add more outcomes as necessary]
+- [Desirable quantitative measurable outcome]
+- [Desirable qualitative measurable outcome]
+- [Add more outcomes as necessary]
 
 ## Positioning Statement
 
