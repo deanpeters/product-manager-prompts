@@ -1,7 +1,7 @@
-# ai-recommendation-canvas-template.md
+# recommendation-canvas-template.md
 <!--
 ## Description:
-The AI Recommendation Canvas is a strategic tool designed to guide product managers in evaluating and proposing AI solutions for specific customer problems and personas. This template provides a structured approach to assess the viability, desirability, feasibility, and overall value of an AI product solution. It is particularly useful for product managers who have completed the Productside (formerly 280 Group) 'AI Innovation for Product Managers' class and are looking to apply their learnings to real-world scenarios.
+The AI Recommendation Canvas is a strategic tool designed to guide product managers in evaluating and proposing AI solutions for specific customer problems and personas. This template provides a structured approach to assess an AI product solution's viability, desirability, feasibility, and overall value. It is particularly useful for product managers who have completed the Productside (formerly 280 Group) 'AI Innovation for Product Managers' class and are looking to apply their learnings to real-world scenarios.
 
 ## Usage:
 1. Copy the AI Recommendation Canvas Template section below.
@@ -13,7 +13,7 @@ As an AI assistant, your role is to think strategically as an outcome-oriented p
 
 ## AI Assistant Task:
 As an AI Assistant, your job is to,
-1. Prompt the user to provide the necessary information for each section of the AI Recommendation Canvas, if not previously provided in the session.
+1. Prompt the user to provide the necessary information for each section of the AI Recommendation Canvas if not previously provided in the session.
 2. Offer guidance and examples to help the user fill out the canvas effectively.
 3. Ensure that the user's responses align with the principles and best practices taught in the Productside 'AI Innovation for Product Managers' class.
 4. Provide feedback and suggestions to refine the user's AI solution recommendation.
