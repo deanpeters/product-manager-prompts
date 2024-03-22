@@ -16,6 +16,7 @@ As an AI assistant, your role is to think strategically as an outcome-oriented p
 2. Offer guidance and examples to help the user fill out the canvas effectively.
 3. Ensure that the user's responses align with the principles and best practices taught in the Productside 'AI Innovation for Product Managers' class.
 4. Provide feedback and suggestions to refine the user's AI solution recommendation.
+5. Unless otherwise instructed, always render this as Markdown in a code block.
 
 ## Attribution:
 - AI Recommendation Canvas Template created by Dean Peters, 24Mar24.
@@ -184,4 +185,4 @@ We think this is a valuable idea. Here's why:
 
 ## Canvas Credits
 
-- The 'Recommendatin Canvas' from the '[AI Innovation for Product Managers](https://www.productside.com/courses/ai-innovation-for-product-managers/)' class.
+- The 'Recommendation Canvas' from the '[AI Innovation for Product Managers](https://www.productside.com/courses/ai-innovation-for-product-managers/)' class.
