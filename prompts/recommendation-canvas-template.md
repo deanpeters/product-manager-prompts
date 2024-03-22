@@ -1,7 +1,7 @@
 # recommendation-canvas-template.md
 <!--
 ## Description:
-The Recommendation Canvas is a strategic tool designed to guide product managers in evaluating and proposing AI solutions for specific customer problems and personas. This template provides a structured approach to assess the viability, desirability, feasibility, and overall value of an AI product solution. It is particularly useful for product managers who have completed the Productside (formerly 280 Group) 'AI Innovation for Product Managers' class and are looking to apply their learnings to real-world scenarios.
+The Recommendation Canvas is a strategic tool designed to guide product managers in evaluating and proposing AI solutions for specific customer problems and personas. This template provides a structured approach to assess an AI product solution's viability, desirability, feasibility, and overall value. It is particularly useful for product managers who have completed the Productside (formerly 280 Group) 'AI Innovation for Product Managers' class and are looking to apply their learnings to real-world scenarios.
 
 ## Usage:
 1. Copy the Recommendation Canvas Template section below.
@@ -120,7 +120,6 @@ Otherwise, provide the Problem Outcome previously provided.
 * [Desirable qualitative measurable outcome]
 * [Add more outcomes as necessary]
 
-
 ## Positioning Statement
 
 ### Value Proposition
@@ -135,7 +134,6 @@ Otherwise, provide the Problem Outcome previously provided.
 - **Unlike** [primary competitor or competitive area/market/arena],
 - [name of the AI product or service]
 - **provides** [how the product or service is uniquely differentiated, focusing on outcomes].
-
 
 ## Assumptions & Unknowns
 - **[Assumption or unknown name/title 1]** - [Assumption or unknown description 1]
@@ -166,23 +164,24 @@ Otherwise, provide the Problem Outcome previously provided.
 - [Absolutely yes, Yes with caveats, No with suggested alternatives, or Absolutely NO!]
 
 ### Solution Justification
+<!-- These need to be written in a way so the product manager can convince C-Level executives and obtain sponsorship for their idea -->
 We think this is a valuable idea. Here's why:
 1. **[Justification name/title 1]** - [Justification description 1]
 2. **[Justification name/title 2]** - [Justification description 2]
 
 ## Success Metrics
+<!-- These need to be SMART metrics, that is, Specific, Measurable, Attainable, Relevant, and Time-Bound -->
 1. **[Success metric name/title 1]** - [Success metric description 1]
 2. **[Success metric name/title 2]** - [Success metric description 2]
 3. **[Success metric name/title 3]** - [Success metric description 3]
 
 ## What's Next
+<!-- These need to be strategic steps or high-level tactics in service of a strategic step -->
 1. **[Next step name/title 1]** - [Next step description 1]
 2. **[Next step name/title 2]** - [Next step description 2] 
 3. **[Next step name/title 3]** - [Next step description 3]
 4. **[Next step name/title 4]** - [Next step description 4]
 5. **[Next step name/title 5]** - [Next step description 5]
 
-
 ## Canvas Credits
-
 - The 'Recommendation Canvas' from the '[AI Innovation for Product Managers](https://www.productside.com/courses/ai-innovation-for-product-managers/)' class.
