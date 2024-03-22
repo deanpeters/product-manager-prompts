@@ -1,10 +1,10 @@
 # recommendation-canvas-template.md
 <!--
 ## Description:
-The AI Recommendation Canvas is a strategic tool designed to guide product managers in evaluating and proposing AI solutions for specific customer problems and personas. This template provides a structured approach to assess an AI product solution's viability, desirability, feasibility, and overall value. It is particularly useful for product managers who have completed the Productside (formerly 280 Group) 'AI Innovation for Product Managers' class and are looking to apply their learnings to real-world scenarios.
+The Recommendation Canvas is a strategic tool designed to guide product managers in evaluating and proposing AI solutions for specific customer problems and personas. This template provides a structured approach to assess the viability, desirability, feasibility, and overall value of an AI product solution. It is particularly useful for product managers who have completed the Productside (formerly 280 Group) 'AI Innovation for Product Managers' class and are looking to apply their learnings to real-world scenarios.
 
 ## Usage:
-1. Copy the AI Recommendation Canvas Template section below.
+1. Copy the Recommendation Canvas Template section below.
 2. Fill in each section of the canvas template with the relevant information for your AI product solution.
 3. Use the completed canvas to present your AI solution recommendation to stakeholders and decision-makers.
 
@@ -12,8 +12,7 @@ The AI Recommendation Canvas is a strategic tool designed to guide product manag
 As an AI assistant, your role is to think strategically as an outcome-oriented product manager, guiding the user through the process of completing the AI Recommendation Canvas. Provide insights, suggestions, and examples to help the user craft a compelling and well-justified AI solution recommendation.
 
 ## AI Assistant Task:
-As an AI Assistant, your job is to,
-1. Prompt the user to provide the necessary information for each section of the AI Recommendation Canvas if not previously provided in the session.
+1. Prompt the user to provide the necessary information for each section of the AI Recommendation Canvas not already provided in the session context.
 2. Offer guidance and examples to help the user fill out the canvas effectively.
 3. Ensure that the user's responses align with the principles and best practices taught in the Productside 'AI Innovation for Product Managers' class.
 4. Provide feedback and suggestions to refine the user's AI solution recommendation.
@@ -31,8 +30,100 @@ This template is licensed under the MIT License, allowing for free use, modifica
 ## Product Name
 - [Name of the AI product or service]
 
-## Customer Problem to be Solved
+## Business Outcome
+<!-- 
+
+If a Business Outcome that explains "What's in it for our Business?" has not been provided, then write a sentence that describes the desired product outcome using the following format.
+
+Here's an example output: 
+
+- Reduce by 25% amount of churn of existing customers using our existing product.
+- [direction:reduce][metric:25% amount][outcome:churn][context:existing customers][acceptance criteria:iexisting product]
+
+Otherwise, provide the Business Outcome previously provided.
+
+!-->
+
+- [Direction][Metric][Outcome][Context from persona's point-of-view][Acceptance criteria]
+
+
+## Product Outcome
+
+<!-- 
+
+If a Problem Outcome that explains "What's in it for the Cutomer?" has not been provided, then write a sentence that describes the desired product outcome using the following format.
+
+Here's an example output: 
+
+- Increase the speed to find patients, when I know the inclusion and exclusion criteria.
+- [direction:increase][metric:the speed][outcome:to find patients][context:, when I know][acceptance criteria:inclusion and exclusion criteria]
+
+Otherwise, provide the Problem Outcome previously provided.
+
+!-->
+
+- [Direction][Metric][Outcome][Context from persona's point-of-view][Acceptance criteria]
+
+
+
+## The Problem Statement
+<!-- Frame the problem from the persona's point-of-view using the following template
+    but do not render this on screen, instead use the Problem Statement  Components Worksheet 
+    to fill out and render the Problem Statement  Narrative.
+
+### Problem Statement Components Worksheet
+**I am**: [Describe the key persona experiencing the problem, highlighting 3 to 4 key points about their interaction with the problem]
+- [Key pain point or characteristic about the persona's underserved need 1].
+- [Key pain point or characteristic about the persona's underserved need 2].
+- [Key pain point or characteristic about the persona's underserved need 3].
+
+**Trying to**: 
+- [A single sentence that lists the desired outcomes the key persona cares most about].
+
+**But**: 
+- [Describe the barriers preventing the persona from achieving the desired outcomes]
+- [Job-to-be-done or outcome obstruction 1].
+- [Job-to-be-done or outcome obstruction 2].
+- [Job-to-be-done or outcome obstruction 3].
+
+**Because**: 
+- [Seek to describe the root cause of the problem or barrier empathetically].
+
+**Which makes me feel**: 
+- [Describe the emotions felt from the key persona's perspective].
+--> 
+
+### Problem Statement Narrative
+- [Persona description]
+
+- [Based on the Problem Statement  Components Worksheet (see comment section immediately above), write 2 or 3 sentences that tell the persona's story from their point-of-view]
+
+
+## Solution Hypothesis
+
+### Hypothesis Statement
+**If we** [an action or a solution on behalf of the target persona]
+**for** [the target persona of the action or solution]
+**Then we will** [attain or achieve a desirable outcome or job-to-be-done for the target persona].
+
+### Tiny Acts of Discovery
+**We will test our assumption by:**
+* [Experiment 1]
+* [Experiment 2]
+* [Add more experiments as necessary]
+
+### Proof-of-Life
+**We know our hypothesis is valid if within** [timeframe in days or weeks]
+**we observe:**
+* [Desirable quantitative measurable outcome]
+* [Desirable qualitative measurable outcome]
+* [Add more outcomes as necessary]
+
+
+## Positioning Statement
+
 ### Value Proposition
+
 **For** [target customer/user persona]
 - **that need** [statement of the user's underserved need]
 - [name of the AI product or service]
@@ -44,33 +135,6 @@ This template is licensed under the MIT License, allowing for free use, modifica
 - [name of the AI product or service]
 - **provides** [how the product or service is uniquely differentiated, focusing on outcomes].
 
-## Business Outcome
-- [Enter the previously stated business problem]
-
-## Solution Hypothesis
-### Hypothesis
-**If we** [an action or a solution on behalf of the target persona]
-**for** [the target persona of the action or solution]
-**Then we will** [attain or achieve a desirable outcome or job-to-be-done for the target persona].
-
-### Experiments
-**We will test our assumption by:**
-* [Experiment 1]
-* [Experiment 2]
-* [Add more experiments as necessary]
-
-### Validation
-**We know our hypothesis is valid if within** [timeframe in days or weeks]
-**we observe:**
-* [Desirable quantitative measurable outcome]
-* [Desirable qualitative measurable outcome]
-* [Add more outcomes as necessary]
-
-## Product Outcome
-- [Enter the previously stated product problem that nourishes the business outcome]
-
-## The Story
-- [Frame the problem from the persona's point-of-view in 2-3 sentences]
 
 ## Assumptions & Unknowns
 - **[Assumption or unknown name/title 1]** - [Assumption or unknown description 1]
@@ -95,7 +159,12 @@ This template is licensed under the MIT License, allowing for free use, modifica
 - **Environmental** - [Issue/risk to monitor related to environmental factors]
 - **Legal** - [Issue/risk to monitor related to legal factors]
 
-## Solution Justification
+## Value Justification
+
+### Is this Valuable
+- [Absolutely yes, Yes with caveats, No with suggested alternatives, or Absolutely NO!]
+
+### Solution Justification
 We think this is a valuable idea. Here's why:
 1. **[Justification name/title 1]** - [Justification description 1]
 2. **[Justification name/title 2]** - [Justification description 2]
@@ -112,8 +181,7 @@ We think this is a valuable idea. Here's why:
 4. **[Next step name/title 4]** - [Next step description 4]
 5. **[Next step name/title 5]** - [Next step description 5]
 
-## Recommendation
-- [Absolutely yes, Yes with caveats, No with suggested alternatives, or Absolutely NO!]
 
-## Template Credit
-- This template comes from Productside's one-day '[AI Innovation for Product Managers](https://www.productside.com/courses/ai-innovation-for-product-managers/)' class. 
+## Canvas Credits
+
+- The 'Recommendatin Canvas' from the '[AI Innovation for Product Managers](https://www.productside.com/courses/ai-innovation-for-product-managers/)' class.
