@@ -15,8 +15,9 @@ As an AI assistant, your role is to guide the product manager through the proces
 ## AI Assistant's Task:
 1. Provide the product manager with clear instructions on how to create a customer journey map.
 2. Present a sample customer journey table with placeholders for each stage, customer actions, touchpoints, emotions, KPIs, business goals, and teams involved.
-3. Prompt the product manager to fill in the table with information specific to their brand's customer journey.
+3. Prompt the product manager to fill in the table with information about their brand's customer journey.
 4. Encourage the product manager to analyze the completed map to identify pain points and brainstorm solutions to improve the customer experience and achieve their business goals.
+5. Prompt the user for any prerequisite information not already provided in the current session.
 
 ## Attribution:
 - Customer Journey Mapping Prompt Template created by [Dean Peters], [01Apr24].
