@@ -5,10 +5,10 @@ This template aids in the creation of a generative AI Product Requirements Docum
 The template focuses on Stakeholder Requirements Specification (StRS) and Business Requirements Specification (BRS) to ensure comprehensive coverage of both stakeholder and business needs in product development.
 
 ## AI Assistant's Point of View:
-Assume the role of a product manager with expertise in the ISO 29148 standard, guiding the creation of a versatile PRD prompt template that reflects the standard's emphasis on stakeholder and business/mission requirements. Focus on enabling the generation of effective PRDs by identifying key sections relevant to both StRS and BRS aspects, and adapt these sections to fit a fill-in-the-blanks format where the AI fills in based on provided context.
+Assume the role of a product manager with expertise in the ISO 29148 standard, guiding the creation of a versatile PRD prompt template that reflects the standard's emphasis on stakeholder and business/mission requirements. Focus on enabling the generation of effective PRDs by identifying key sections relevant to both StRS and BRS aspects and adapting these sections to fit a fill-in-the-blanks format where the AI fills in based on the provided context.
 
 ## AI Assistant's Task:
-Help the user translate ISO 29148's focus on Stakeholder Requirements Specification and Business Requirements Specification into a flexible fill-in-the-blanks PRD prompt template. Offer advice on drafting succinct PRD prompt templates that can later be utilized by generative AI tools to fill in the blanks with specific product context. Ensure the template encompasses all critical aspects of stakeholder and business requirements as outlined by ISO 29148.
+Help the user translate ISO 29148's focus on Stakeholder Requirements Specification and Business Requirements Specification into a flexible fill-in-the-blanks PRD prompt template. Offer advice on drafting succinct PRD prompt templates that generative AI tools can later utilize to fill in the blanks with specific product context. Ensure the template encompasses all critical aspects of stakeholder and business requirements as outlined by ISO 29148.
 
 ## Usage Note:
 Intended for product managers seeking to use generative AI for creating detailed PRD prompt templates by reverse engineering standards like ISO 29148.
@@ -20,7 +20,7 @@ Intended for product managers seeking to use generative AI for creating detailed
 4. Use the finalized PRD prompt template with your generative AI tool to generate detailed PRDs specific to various products, following the embedded instructions.
 
 ## Attribution:
-This is a template for generating fill-in-the-blanks PRD prompts from ISO 29148 by Dean Peters, 24Mar24, inspired by the structured approach to capturing stakeholder and business requirements. 
+This is a template for generating fill-in-the-blanks PRD prompts from ISO 29148 by Dean Peters, 24 Mar 24. It is inspired by product management past webinars for Productside.com in which Dean Peters has demonstrated how to reverse engineer structured documents and canvases to capture and communicate stakeholder and business requirements. 
 
 ## Licensing:
 Licensed under the MIT License for unrestricted use, alteration, and distribution, with proper credit to the creator.
@@ -60,5 +60,5 @@ Partial Example of an ISO 29148-Based fill-in-the-blanks PRD Prompt Template:
 
 ## Goal
 
-The aim is to employ the structured approach of ISO 29148 to generate adaptable prompt templates for AI-driven creation of a PRD, focusing on capturing comprehensive stakeholder and business requirements.
-In other words, the HUMAN doesn't fill in the blanks; the generative AI does.
+The aim is to employ the structured approach of ISO 29148 to generate adaptable prompt templates for the AI-driven creation of a PRD, focusing on capturing comprehensive Stakeholder Requirements Specification (StRS) and Business Requirements Specification (BRS)
+In other words, once the reusable prompt is created, the HUMAN doesn't later fill in the blanks; the generative AI does.
