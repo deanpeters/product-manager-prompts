@@ -31,23 +31,23 @@ Date: March 14, 2024
 
 <!-- Utilize this template to construct an epic for your product backlog, guided by Tim Herbig's lean UX hypothesis approach -->
 
-### Hypothesis
+### If/Then Hypothesis
 
 **If we** [an action or a solution on behalf of the target persona]
 **for** [the target persona of the action or solution]
 **Then we will** [attain or achieve a desirable outcome or job-to-be-done for the target persona].
 
-### Experiments
+### Tiny Acts of Discovery Experiments
 
 **We will test our assumption by:**
 * [experiment 1]
 * [experiment 2]
 * [add more experiments as necessary]
 
-### Validation
+### Validation Measures
 
 **We know our hypothesis is valid if within** [timeframe in days or weeks]
 **we observe:**
-* [desirable quantitative measurable outcome]
+* [desirable quantitative, measurable outcome]
 * [desirable qualitative measurable outcome]
 * [add more outcomes as necessary]
