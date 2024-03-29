@@ -1,6 +1,6 @@
 # Product Manager Prompts for Generative AI
 
-**product-manager-prompts**: A treasure trove of Generative AI [prompts tailored](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) for the unique needs of product managers and product owners, compatible with ChatGPT, Claude, & Gemini.
+**product-manager-prompts**: A treasure trove of Generative AI [prompt engineering tailored](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) for the unique needs of product managers and product owners, compatible with ChatGPT, Claude, & Gemini.
 
 ## TL;DR
 
