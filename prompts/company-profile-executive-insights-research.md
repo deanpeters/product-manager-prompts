@@ -1,39 +1,11 @@
-# company-profile-executive-insights-research.md
-<!--
-## Description:
-This template is crafted to create a detailed company profile by extracting insights from various executive perspectives, emphasizing product management. It aims to capture strategic visions, product innovations, market challenges, and the integration of technology in product development.
-
-## Usage Note:
-Before using this template in a Generative AI session, ensure the session has been preloaded with context on:
-    - The company’s current market positioning and strategic objectives.
-    - The organizational roles related to product management and their impact on company strategy.
-    - The latest technological advancements and product releases.
-
-## Instructions:
-1. Confirm the session includes the necessary context as outlined above.
-2. Use the following prompts to facilitate the collection of executive insights for the company profile:
-
-"Using the provided context, please create a company profile with insights from various executive perspectives, formatted as Markdown in a Code Block."
-
-## Attribution:
-Created by Dean Peters, tailored specifically for product management insights.
-
-## Licensing:
-This document and its template are licensed under the MIT License. It permits free use, modification, and distribution, with proper attribution to the original creator.
-
-Date: May 7, 2024
--->
----
-```markdown
 ## Executive Insights Company Profile Template
 
-<!-- Utilize this template to extract insights from various executive perspectives within a company, with a focus on product management and strategy -->
+<!-- This template extracts insights from various executive perspectives within a company, focusing on product management and strategy -->
 
 ### Company Overview
 
 **Basic Information:**
 * **Name:** [Insert the official name of the company]
-* **Founded:** [Insert the founding year and founder(s) information]
 * **Headquarters:** [Insert the location of the headquarters]
 * **Industry:** [List the primary industries the company operates within]
 
@@ -61,6 +33,17 @@ Date: May 7, 2024
 
 **Recent Product Launches and Innovations:**
 * [List and describe recent product launches and innovations, noting their impact on the company’s market position]
+
+### Transformation Strategies and Initiatives
+
+**Digital Transformation:**
+* [Describe the company's overall approach to digital transformation, emphasizing the integration of cutting-edge technology with existing business processes and goals]
+
+**AI Transformation:**
+* [Explain how the company is incorporating AI into its core processes, product offerings, and market positioning]
+
+**Agile Transformation:**
+* [Detail the company's adoption of Agile methodologies, highlighting specific improvements in cross-functional collaboration, project management, and product delivery]
 
 ### Organizational Impact of Product Management
 
