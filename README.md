@@ -5,7 +5,7 @@
 ## TL;DR
 
 1. **View the [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) as code**! In preview mode, you don't see all the comment blocks instructing and guiding the AI assistant with tasks & goals. So pardon me as I repeat myself ... <span style="color:red">**_view the [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) as code__**</span>!
-2. <span style="color:red">**Cut and paste the entire prompt**</style> from the code view into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.); yes, comments and all.
+2. <span style="color:red">**Cut and paste the entire prompt**</span> from the code view into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.); yes, comments and all.
 3. **Reach out and let me know** how your prompting goes. I've tested all these on ChatGPT Plus, GPT-4o, GPT-3.5, Claude Opus & Sonnet, and Gemini 1.0.
 
 ## Repo Description
