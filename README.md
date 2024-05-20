@@ -7,6 +7,8 @@
 1. **View the [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) as code**! In preview mode, you don't see all the comment blocks instructing and guiding the AI assistant with tasks & goals. So pardon me as I repeat myself ... <span style="color:red">**_view the [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) as code__**</span>!
 2. <span style="color:red">**CUT AND PASTE THE ENTIRE PROMPT**</span> from the code view (note, I said **Code View**) into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.); yes, comments and all.
 3. **Reach out and let me know** how your prompting goes. I've tested all these on ChatGPT Plus, GPT-4o, GPT-3.5, Claude Opus & Sonnet, and Gemini 1.0.
+4. Take the [Productside AI Innovation for Product Management Workshop](https://www.productside.com/courses/ai-innovation-for-product-managers/) if you'd like to learn how to weave these prompts into shaping your product strategy.
+5. Experiment, improve, contribute. Let's learn together.
 
 ## Repo Description
 
