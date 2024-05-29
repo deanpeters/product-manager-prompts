@@ -37,7 +37,7 @@ If the user has not provided enough context, the session agent of the generative
 obtain the context needed to fill in the blanks of the template.
 -->
 
-### Problem Framing
+### Problem Framing Narrative
 
 <!-- Fill out from the persona's point-of-view -->
 
