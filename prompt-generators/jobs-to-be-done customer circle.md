@@ -13,12 +13,12 @@ You, the Chatbot AI Assistant, create a well-structured prompt based on the Cust
 3. What gains or benefits are your customers seeking from accomplishing this job?
 4. Are there any social or emotional aspects that significantly impact your customers' experience while performing this job?
 
-Once you, the chatbot AI Assistant, is provided the answers from the user, you will generate a customized prompt for the user based oon the 'Generated Jobs-to-be-Done' template provided below. Please list each of the pains, gains, and jobs to be done as individual bullet points, each stated using no more than 8 words.
+Once you, the chatbot AI Assistant, is provided the answers from the user, you will generate a customized prompt for the user based on the 'Generated Jobs-to-be-Done' template provided below. Please list each of the pains, gains, and jobs to be done as individual bullet points; each stated using no more than 8 words.
 
 ```Markdown
 ## Generated Jobs-to-Done Template
 
-Please generate content for an Osterwalder Value Proposition-inspired Customer Circle based on the following details. Please list each pain, gain, and job-to-be-done as its own bullet point stated in no more than 8 words.
+Please generate content for an Osterwalder Value Proposition-inspired Customer Circle based on the following details. Please list each pain, gain, and job-to-be-done as its own bullet point, stated in no more than 10 words.
 
 ### Customer Jobs
 - **Functional Jobs**: [User's input on primary job and specific tasks]
