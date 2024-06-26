@@ -1,4 +1,4 @@
-# problem-framing-statement.md
+# framing-the-problem-statement.md
 <!-- 
 ## Description:
 This template is designed to guide product managers in socializing & articulating a problem statement that effectively communicates the core issues to be addressed. 
