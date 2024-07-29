@@ -19,6 +19,7 @@ Template adapted from Jeff Patton's user story mapping technique for AI integrat
 This document is made available under the MIT License, permitting free use, alteration, and sharing, provided the original work is aptly credited.
 -->
 
+```Markdown
 ## User Story Map Template
 
 ### Who
@@ -56,5 +57,7 @@ For [Activity 1, Step 1]:
 - Task 1: [Detail Task 1 for Step 1 of Activity 1]
 - Task 2: [Detail Task 2 for Step 1 of Activity 1]
 ... [Continue for 5 to 7 tasks per step]
+
+```
 
 <!-- AI Assistant's Conclusion: Summarize the completed user story map and recommend prioritizing features and improvements based on the outlined user needs and strategic goals. Prompt the user for segment, persona, and narrative if the session context is devoid of a target persona and a job-to-be-done -->
