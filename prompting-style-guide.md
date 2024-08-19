@@ -1,4 +1,4 @@
-# Prompt Generation for Product Managers Style Guide (prompting-style-guide.md)
+# Prompt Generation for Product Managers Style Guide 
 
 ### **Purpose:**
 This guide assists in creating effective prompts for generating structured and insightful outputs using Generative AI (e.g., ChatGPT). It helps maintain focus and consistency, reducing the risk of session "drift."
