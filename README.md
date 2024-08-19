@@ -8,7 +8,7 @@
 2. <span style="color:red">**CUT AND PASTE THE ENTIRE PROMPT**</span> from the code view (note, I said **Code View**) into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.); yes, comments and all.
 3. **Reach out and let me know** how your prompting goes. I've tested all these on ChatGPT Plus, GPT-4o, GPT-3.5, Claude Opus & Sonnet, and Gemini 1.0.
 4. Take the [Productside AI Innovation for Product Management Workshop](https://www.productside.com/courses/ai-innovation-for-product-managers/) if you'd like to learn how to weave these prompts into shaping your product strategy.
-5. Experiment, improve, contribute. Let's learn together.
+5. Read the [Prompting Style Guide](https://github.com/deanpeters/product-manager-prompts/blob/main/prompting-style-guide.md) to assist you as you experiment, improve, and contribute to this repo. Let's learn together.
 
 ## Repo Description
 
@@ -60,7 +60,7 @@ Your expertise can significantly enrich this repository. Here's how to get start
 6. **Open a Pull Request**
    - Head to your repository on GitHub to click "Compare & pull request" and submit it.
 
-A project maintainer will review your pull request and merge it upon approval, or get back to you for adjustments.
+A project maintainer will review your pull request and merge it upon approval or get back to you for adjustments.
 
 ## License
 
