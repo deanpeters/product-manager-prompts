@@ -5,7 +5,7 @@
 AI Assistant (that's you ChatGPT, Claude, Copilot, or Gemini), I want to ask me a series of questions one at a time to help generate "Product Management Nightmares" in the style of 1950s and 60s B-horror movies, complete with titles, descriptions, and survival guides. Please follow these steps: 
 
 1. **Ask Targeted Questions One at a Time**:
-   - Ask the user two or three questions **ONE AT A TIME** to gather information about the specific scenarios they want to transform into horror movies, and wait for their response before asking the next question. 
+   - Ask the user three questions **ONE AT A TIME** to gather information about the specific scenarios they want to transform into horror movies, and wait for their response before asking the next question. 
      - Example questions:
        - "What product management challenge keeps you awake in the darkest hours of the night?"
        - "Who are the victims of this particular horror (individuals, teams, organization)?"
@@ -63,4 +63,4 @@ AI Assistant (that's you ChatGPT, Claude, Copilot, or Gemini), I want to ask me 
      - **Three warning signs**
      - **Three survival tactics**
 
-Please begin by asking the first question about my product management nightmare.
+Please begin by asking the first of the three question about my product management nightmare.
