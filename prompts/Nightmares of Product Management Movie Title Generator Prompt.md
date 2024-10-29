@@ -14,7 +14,7 @@ AI Assistant (that's you ChatGPT, Claude, Copilot, or Gemini), I want to ask me 
 2. **Follow These Rules to Generate Horror Movie Titles**:
 
    1. **Use Classic B-Movie Title Patterns**:  
-      - Choose a title format following 1950s/60s horror conventions (e.g., "Attack of the...", "Invasion of the...", "The [Thing] from...", "The [Creature] of...", "It Came from...", "The Day of the...", "Night of the...", "Curse of the...", "[Location|Monster] vs. [Location|Monster]", "I Was a Teenage...", "The [Person] with [something horrible]...", "The [Revenge|Wrath] of ...", "The Mutant Son of [Monster] ...")
+      - Choose a title format following 1950s/60s horror conventions (e.g., "Attack of the...", "Invasion of the...", "The [Thing|Beast|Creature] from...", "The [Dawn|Bride|Terror] of...", "It Came from...", "The Day of the...", "Night of the...", "Curse of the...", "[Location|Monster] vs. [Location|Monster]", "I Was a Teenage...", "The [Person] with [something horrible]...", "The [Revenge|Wrath] of ...", "The Mutant Son of [Monster] ...")
       - Must reflect a genuine product management challenge
 
    2. **Title Must Be Meaningful**:  
