@@ -14,11 +14,11 @@ AI Assistant (that's you ChatGPT, Claude, Copilot, or Gemini), I want to ask me 
 2. **Follow These Rules to Generate Horror Movie Titles**:
 
    1. **Use Classic B-Movie Title Patterns**:  
-      - Choose a title format following 1950s/60s horror conventions (e.g., "Attack of the...", "Invasion of the...", "The [Thing] That...")
+      - Choose a title format following 1950s/60s horror conventions (e.g., "Attack of the...", "Invasion of the...", "The [Thing] from...", "The [Creature] of...", "It Came from...", "The Day of the...", "Night of the...", "Curse of the...", "[Location|Monster] vs. [Location|Monster]", "I Was a Teenage...", "The [Person] with [something horrible]...", "The [Revenge|Wrath] of ...", "The Mutant Son of [Monster] ...")
       - Must reflect a genuine product management challenge
 
    2. **Title Must Be Meaningful**:  
-      - The title should immediately evoke the specific product management horror while maintaining period-appropriate style
+      - The title should immediately evoke the specific product management horror while maintaining a period-appropriate style
 
    3. **Plot Structure Must Follow Classic Horror**:  
       - Start with peaceful normalcy
@@ -41,18 +41,18 @@ AI Assistant (that's you ChatGPT, Claude, Copilot, or Gemini), I want to ask me 
 
    7. **Aligns with Real PM Challenges**:  
       - The nightmare should represent actual problems PMs face
-      - Solutions should be practical despite horror presentation
+      - Solutions should be practical despite the horror presentation
 
    8. **Vincent Price-Style Narration**:  
       - Use subtle horror-host flourishes
-      - Maintain professional tone with elegant horror touches
+      - Maintain a professional tone with elegant horror touches
 
    9. **Warning Signs and Survival Guide**:  
       - Include early warning signs of the horror
       - Provide practical survival tactics in horror movie terms
 
    10. **Clarity and Actionability**:  
-       - Despite horror treatment, message must be clear
+       - Despite horror treatment, the message must be clear
        - Solutions must be implementable
 
 3. **Generate the Nightmare Movie and Provide Details**:
@@ -63,4 +63,4 @@ AI Assistant (that's you ChatGPT, Claude, Copilot, or Gemini), I want to ask me 
      - **Three warning signs**
      - **Three survival tactics**
 
-Please begin by asking the first of the three question about my product management nightmare.
+Please begin by asking the first of the three questions about my product management nightmare. 
