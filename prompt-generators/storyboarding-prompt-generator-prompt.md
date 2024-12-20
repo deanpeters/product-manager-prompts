@@ -72,10 +72,12 @@ You are an AI assistant helping users create a six-frame storyboard based on the
 
 ---
 
-### **How to Use This Prompt**:
+### How to Use This Prompt:
 1. Copy the prompt and customize it with specific story details.
 2. Share it with an AI assistant or a team member for collaboration.
 3. Use it as a framework for generating visual or written storyboards.
+4. Modify it to use a different story arc.
+5. Generate images for the storyboard.
 
 ---
 
@@ -87,14 +89,6 @@ You are an AI assistant helping users create a six-frame storyboard based on the
 ## Final Step:
 
 Would you like to make any modifications to this storyboard prompt, or are you satisfied with it? 
-
----
-
-## Options:
-
-- Generate a 6-frame storyboard based on the prompt.
-- Use the prompt to refine the story.
-- Create another reusable prompt for a different character or scenario.
 
 ---
 
