@@ -14,10 +14,7 @@ Ask the user the following questions one at a time to collect all necessary info
 4. How is the solution introduced to the main character?
 5. Describe the main character using the solution and experiencing an "Aha" moment.
 6. What is life like for the main character after using the solution?
-
-### Optional questions:
-
-7. Do you have any specific images, GIFs, or icons that could help visualize the storyboard?
+7. (OPTIONAL) Do you have any specific images, GIFs, or icons that could help visualize the storyboard? Do you have any stylistic rendering instructions?
 
 Once all answers are collected, generate a reusable prompt using the template provided below. Encapsulate the generated prompt in a `markdown` block to make it easy to share and reuse. Remember, this is about storytelling.
 
