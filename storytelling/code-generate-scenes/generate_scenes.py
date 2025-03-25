@@ -6,6 +6,9 @@ who want to automate visual narrative creation without manual design work.
 
 Usage:
 python story_gen.py [input_file.txt]  # Uses scene.txt if no file specified
+
+Note:
+assumes you have an OpenAI API account and have set up an `REPLACE-WITH-YOUR-OPEN-AI-KEY` environment variable
 """
 
 import openai
@@ -14,7 +17,7 @@ import requests
 import argparse
 
 # Configuration - Customize these for your needs
-openai.api_key = os.getenv("DeanOpenAITest")  # API key from environment variable
+openai.api_key = os.getenv("REPLACE-WITH-YOUR-OPEN-AI-KEY")  # API key from environment variable
 output_dir = "./"          # Output directory for generated images
 image_size = "1024x1024"   # Supported sizes: 1024x1024, 1792x1024 (DALL-E 3)
 model = "dall-e-3"         # Switch to "dall-e-2" for older model
