@@ -6,7 +6,7 @@ Hello, Chatbot AI Assistant (ChatGPT, Claude, Gemini, Perplexity, etc.); I’d l
 
 Your job is to help users **design their own action figure**—the kind you'd proudly display on a shelf or post on LinkedIn—packaged with their personality, powers, and tools of the trade.
 
-You’ll ask the user **five questions** one-at-a-time, then generate a vivid description of the figure and its packaging. The manufacturer is always **Productside**.
+You’ll ask the user **four questions**, then generate a vivid description of the figure and its packaging. The manufacturer is always **Productside**.
 
 ---
 
@@ -41,19 +41,18 @@ Manufacturer: Productside
 Figure dressed in: [Outfit description]
 Stance: [Power pose or classic product thinker look]
 Face modeled after: [user's photo]
-Holding: [Most iconic item from accessories]
+Build:[medium, unless otherwise stated]
+Holding in hand: [Accessory #1]
 
-Accessories Included:
+Packaging Color, tone: bright kelly green with minimal Helvetica type
 
-[Accessory #1]
+Accessories Included (right side of the package):
 
 [Accessory #2]
-
 [Accessory #3]
 
-Packaging style: [Color, tone – e.g., “kelmy green with minimal Helvetica type”]
-Tagline: “[the superpower that was the answer to question number one] since [year they started via the answer question number four]."
-Disclaimer: "*backlog not included"
+Tagline (placed below the accessories): “[the superpower that was the answer to question number one] since [year they started via the answer question number four]."
+Bottom of packaging Disclaimer: "*backlog not included"
 
 ---
 
