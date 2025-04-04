@@ -1,12 +1,16 @@
 # HOWTO.md: How to Create Effective Prompts for AI Assistants
 
-This README provides guidance on crafting structured, impactful prompts for **Generative AI Assistants** (e.g., ChatGPT, Claude, Gemini). These prompts act as directives, ensuring the AI understands the context, performs specific actions, and generates high-quality, actionable outputs tailored to the needs of end users like product managers.
+This README provides guidance on crafting structured, impactful prompts for **Generative AI Assistants** (e.g., ChatGPT, Claude, Gemini, CoPilot, DeepSeek, Grok). These prompts act as **directives to the AI**, ensuring it understands the context, performs specific actions, and generates high-quality, actionable outputs tailored to the needs of end users like product managers.
 
 ---
 
 ## **Overview**
 
-These prompts are designed primarily for the **AI Assistant**, guiding it to produce outputs that align with user goals. By leveraging clear instructions, structured frameworks, and context-rich input, the AI can act as a powerful collaborator in solving complex problems.
+These prompts are written **for the AI Assistant to follow directly**, guiding it to produce outputs that align with user goals. By leveraging clear instructions, structured frameworks, and context-rich input, the AI can act as a powerful collaborator in solving complex problems.
+
+Two critical characteristics of a well-formed prompt:
+1. Prompts must be **explicitly directed at the AI Assistant**, not the human user.
+2. Prompts must include **baked-in fallback questions** that the AI will ask if essential data (e.g., persona name, product, context) is not available in the current session.
 
 A critical feature of these prompts is the use of:
 1. **Fill-in-the-blank placeholders** for both user-provided inputs and AI-generated content.
@@ -24,8 +28,10 @@ The generic template includes the following sections:
 - **Contents**: Metadata typically includes:
   - **Description**: Explains the purpose and task of the prompt.
   - **Usage Note**: Details prerequisites or instructions for users to prepare context for the AI.
-  - **Instructions**: Guides how to engage with the AI.
+  - **Instructions**: Guides how the AI should behave and respond.
   - **Attribution & Licensing**: Documents authorship and ethical guidelines for usage.
+
+> ✅ **New Requirement**: Metadata must specify which **fallback questions** the AI should ask if critical data is not available in the current session.
 
 ### **2. Fill-in-the-Blank Placeholders**
 Fill-in-the-blank elements manifest in two ways:
@@ -38,57 +44,71 @@ Fill-in-the-blank elements manifest in two ways:
   * **[list item label or title that ChatGPT fills out]** - [short description of the list item in 9 words or less that ChatGPT fills out].
 
 ### **3. Markdown Template**
-- **AI Instructions**: The template communicates directly with the AI, using placeholders for inputs the AI should consider.
+- **AI Instructions**: The prompt should always speak **directly to the AI**, using action verbs and clear directives.
 - **Output Structure**: Includes formatting (e.g., Markdown, code blocks, or bullet points) to standardize AI-generated outputs.
-- **Iterative Refinement Prompts**: Guides the AI to ask for missing details or refine its responses to improve collaboration.
+- **Fallback Questions Logic**: If key context is missing, the prompt should tell the AI:
+  1. Pause before generating output.
+  2. Ask up to 3 specific, well-phrased questions to get the missing inputs.
+  3. Resume generating the output once the answers are provided.
 
 ---
 
 ## **How to Use the Template**
 
 ### **Step 1: Define the AI’s Role**
-- Identify the task you want the AI Assistant to perform (e.g., creating a positioning statement, framing a problem).
-- Clearly articulate the **end user’s goals** and how the AI’s output will address those goals.
+- Identify the task the AI Assistant is expected to perform (e.g., generating a positioning statement, framing a problem).
+- Write the prompt **as if giving instructions to the AI Assistant**—not to the human user.
+- Clearly articulate the **end user’s goals** and how the AI’s output will serve them.
 
 ### **Step 2: Add Metadata Comments**
-- Use `<!-- comments -->` to include metadata such as the purpose, instructions, and licensing.
-- Add a note within the comments explicitly telling the AI to ignore all content in `<!-- comments -->`.
+- Use `<!-- comments -->` to include metadata such as the purpose, usage notes, fallback question logic, and licensing.
+- Add a note within the comments explicitly telling the AI to ignore all content inside `<!-- -->`.
 
 ### **Step 3: Write Fill-in-the-Blank Prompts**
 - Use placeholders for:
-  1. **User-Provided Inputs**: Clearly mark fields the user must provide for AI processing.
-  2. **AI-Generated Content**: Include fields where the AI generates both titles/categories and descriptions.
+  1. **User-Provided Inputs**: Mark required inputs clearly.
+  2. **AI-Generated Content**: Indicate areas where the AI fills in sections dynamically.
 
-### **Step 4: Test and Refine**
-- Run the prompt with your chosen AI Assistant to ensure clarity and effectiveness.
-- Ensure the AI properly ignores the metadata comments and generates relevant outputs.
+### **Step 4: Include Fallback Questions**
+- Instruct the AI what to ask if required context is not present.
+- Limit to 2–4 targeted, easy-to-answer questions.
+- Place these instructions in both the metadata and body of the prompt.
+
+### **Step 5: Test and Refine**
+- Run the prompt in a live AI Assistant to ensure:
+  - Metadata is ignored properly.
+  - The AI follows the output format.
+  - It pauses and asks fallback questions when needed.
+  - Output is accurate and user-centered.
 
 ---
 
 ## **Generic Prompt Template**
 
-Here’s the updated template, incorporating metadata comments, explicit AI instructions, and fill-in-the-blank elements:
-
----
-
-```markdown
+~~~markdown
 # [File Name].md
 <!-- 
 ## Description:
-[Provide a brief explanation of the task the AI Assistant will perform. Highlight its relevance to the end user and any methodologies or frameworks it follows.]
+[State the AI’s task and why it matters to the user.]
 
 ## Usage Note:
-[Detail what the AI needs to know before running the prompt. Include context, user goals, or data prerequisites that will enrich the AI’s response.]
+If any of the following are missing from session context — [Required Data A], [Required Data B], [Required Data C] — the AI must pause and ask the user:
+1. [Clarifying Question 1; if needed]
+2. [Clarifying Question 2; if needed]
+3. [Clarifying Question 3; if needed]
+4. [Clarifying Quesiton 4; if needed]
 
 ## Instructions:
-1. [Step-by-step guidance for the AI Assistant to process inputs. Include instructions for iterative refinement (e.g., "If context is insufficient, ask for clarification").]
-2. [Explicitly instruct the AI to ignore all content within `<!-- comments -->`.]
+1. You are an AI Assistant. Follow the instructions below to generate a high-quality output.
+2. If any required data is missing, ask the user for it before generating output.
+3. Use Markdown for structure and keep content clear, concise, and actionable.
+4. Ignore all content within `<!-- comments -->`.
 
 ## Attribution:
-[Include the creator's name, date, and any sources of inspiration. Provide proper credit to original methodologies or frameworks.]
+[Creator, inspiration sources, methodology used.]
 
 ## Licensing:
-[Specify licensing terms, such as MIT License, to encourage ethical use and modification.]
+MIT License
 
 Date: [Insert Date]
 -->
@@ -96,40 +116,31 @@ Date: [Insert Date]
 ```markdown
 ## [Template Title]
 
-<!--
-[Explain the AI’s role in this section, such as how it should interpret inputs and generate outputs.]
--->
-
 ### [Section 1 Title]
 
-<!-- [Describe the purpose of this section and include placeholders for inputs the AI will process.] -->
-* **[list item label or title the user provides]** - [short description of the list item in 9 words or less that ChatGPT fills out].
+* **[User input label]** - [AI generates this description or response].
 
 ### [Section 2 Title]
 
-<!-- [Guide the AI to process specific subcategories or dimensions in this section.] -->
-#### [Subsection Title]
-* **[list item label or title that ChatGPT fills out]** - [short description of the list item in 9 words or less that ChatGPT fills out].
+* **[Another item AI generates]** - [Short, helpful response].
 
-### [Final Section Title]
+### [Optional Summary]
 
-<!-- [Summarize the AI’s output in a format suitable for end users, such as concise bullet points or narratives.] -->
-* **[summary label generated by ChatGPT]** - [short description or insight in 9 words or less].
+* **[Summary point]** - [Brief insight generated by AI].
 ```
+~~~
 
 ---
 
 ## **Best Practices for Writing Prompts**
 
-1. **Direct AI Instructions**: Write prompts as if speaking directly to the AI, specifying what it should do and how to format the output.
-2. **Use Metadata Comments (`<!-- -->`)**: Include necessary context, instructions, and attribution in comments and explicitly tell the AI to ignore these during execution.
-3. **Context-Rich Inputs**: Ensure the AI has all the necessary background information to generate relevant responses.
-4. **Iterative Refinement**: Encourage the AI to ask clarifying questions or adjust its output based on new input.
-5. **Outcome-Focused**: Design prompts to deliver actionable, user-centered results, such as frameworks, analyses, or recommendations.
-6. **Leverage Fill-in-the-Blank Fields**: Use placeholders strategically for both:
-   - User-provided inputs.
-   - AI-generated titles, categories, and descriptions.
-7. **Modular Organization**: Break content into clear sections to make it easier for the AI to follow instructions and produce structured outputs.
+1. **Direct AI Instructions**: Always speak to the AI Assistant. Be clear about its role and output requirements.
+2. **Use Metadata Comments**: Provide instructions, fallback logic, and attribution outside the visible execution path.
+3. **Fallback Question Design**: Anticipate missing info and design 2–4 strategic questions the AI can ask to close gaps.
+4. **Test in Multiple Assistants**: Ensure prompts run cleanly in ChatGPT, Claude, Gemini, CoPilot, etc.
+5. **Structure with Markdown**: Use tables, bullets, and headers to shape well-structured, scannable outputs.
+6. **Outcome-Focused**: Keep the end user’s goal front and center.
+7. **Iterate Often**: Prompt quality improves with usage, so test and refine regularly.
 
 ---
 
@@ -137,23 +148,21 @@ Date: [Insert Date]
 
 - [Jobs-to-be-Done Template](jobs-to-be-done.md)
 - [Problem Framing Statement Template](framing-the-problem-statement.md)
-- [Positioning Statement Template](positioning-statement.md)
+- [Customer Jobs Map Template](customer-jobs-map.md)
 - [Backlog Epic Hypothesis Template](backlog-epic-hypothesis.md)
 
 ---
 
 ## **Contributing**
 
-If you create prompts using this template, feel free to submit them as pull requests to this repository. Ensure your prompts:
-- Include clear metadata for the AI.
-- Use fill-in-the-blank placeholders effectively.
-- Follow the modular structure of the generic template.
-- Provide actionable, structured outputs for end users.
+Want to add your own prompt? Please ensure:
+- All prompts are AI-directed.
+- Fallback questions are built in.
+- Structure is modular and markdown-formatted.
+- Prompts solve a real problem for product managers, teams, or educators.
 
 ---
 
 ## **License**
 
 This repository and its contents are licensed under the MIT License, allowing free use, modification, and distribution with proper attribution.
-```
-
