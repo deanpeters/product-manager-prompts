@@ -118,4 +118,4 @@ The images are playful, ironic, and visually cohesive across the full 6-panel la
 ## Final Step
 
 Ask:  
-Would you like me to render these 16:9 images separately or compile them into a 16:9 six-panel 3x2 layout (3 columns, 2 rows)?
+Would you like me to render these 16:9 images separately or compile them into a 16:9 six-panel 3x2 landscape layout (3 columns, 2 rows)?
