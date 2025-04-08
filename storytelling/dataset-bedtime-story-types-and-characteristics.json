@@ -1,0 +1,700 @@
+{
+  "title": "Children's Bedtime Story Types and Characteristics",
+  "description": "A structured compendium of classic and contemporary children's bedtime story styles, arcs, illustrations, and character types\u2014designed for educators, parents, and storytellers.",
+  "story_types": [
+    {
+      "id": "type-001",
+      "type": "Lullaby Stories",
+      "description": "Stories with soothing rhythm and repetition, designed to help children wind down for sleep.",
+      "reading_level": "babies and toddlers",
+      "tags": [
+        "bedtime",
+        "soothing",
+        "ritual"
+      ],
+      "keywords": [
+        "bedtime routine",
+        "sleep",
+        "wind-down",
+        "gentle language"
+      ],
+      "examples": [
+        {
+          "title": "Goodnight Moon",
+          "author": "Margaret Wise Brown",
+          "illustration_style": "Representational art",
+          "description": "A bunny says goodnight to objects in its room; calming visuals reinforce bedtime routines.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Time for Bed",
+          "author": "Mem Fox",
+          "illustration_style": "Soft watercolor",
+          "description": "Gentle rhymes and muted animal illustrations ease children into sleep.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-002",
+      "type": "Moral Tales",
+      "description": "Stories that aim to teach life lessons or values, often through metaphor or allegory.",
+      "reading_level": "early readers",
+      "tags": [
+        "values",
+        "lessons",
+        "allegory"
+      ],
+      "keywords": [
+        "virtue",
+        "ethics",
+        "generosity",
+        "sacrifice"
+      ],
+      "examples": [
+        {
+          "title": "Grimm's Fairy Tales",
+          "illustration_style": "Vintage/subdued tones",
+          "description": "Classic fables teaching values through enchanting yet dark imagery.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "The Giving Tree",
+          "author": "Shel Silverstein",
+          "illustration_style": "Minimalist line drawings",
+          "description": "The simplicity of the artwork emphasizes the emotional depth of the narrative.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-003",
+      "type": "Adventure Stories",
+      "description": "Imaginative journeys with explorative or fantastical elements that stimulate curiosity.",
+      "reading_level": "toddlers and early readers",
+      "tags": [
+        "exploration",
+        "imagination",
+        "journey"
+      ],
+      "keywords": [
+        "adventure",
+        "discovery",
+        "imagination",
+        "fantasy"
+      ],
+      "examples": [
+        {
+          "title": "Where the Wild Things Are",
+          "author": "Maurice Sendak",
+          "illustration_style": "Whimsical art",
+          "description": "Max\u2019s imaginative journey to a land of wild creatures; fantastical visuals captivate young minds.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Harold and the Purple Crayon",
+          "author": "Crockett Johnson",
+          "illustration_style": "Minimalist line drawing",
+          "description": "Harold creates his world using a purple crayon; simple illustrations mimic creativity.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-004",
+      "type": "Circular or Predictable Stories",
+      "description": "Stories with repeating or looping structures that help young readers anticipate outcomes.",
+      "reading_level": "toddlers",
+      "tags": [
+        "pattern",
+        "predictable",
+        "repetition"
+      ],
+      "keywords": [
+        "circular narrative",
+        "repetitive text",
+        "loop",
+        "sequence"
+      ],
+      "examples": [
+        {
+          "title": "If You Give a Mouse a Cookie",
+          "author": "Laura Numeroff",
+          "illustration_style": "Cartoon style",
+          "description": "A humorous chain of events loops back to its starting point; energetic visuals enhance humor.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Brown Bear, Brown Bear, What Do You See?",
+          "author": "Bill Martin Jr.",
+          "illustration_style": "Collage-style illustrations",
+          "description": "The vibrant textures engage young readers visually while complementing the repetitive text.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-005",
+      "type": "Interactive or Participatory Books",
+      "description": "Books that encourage physical or verbal interaction \u2014 pressing, shaking, answering questions, or making sounds.",
+      "reading_level": "babies and toddlers",
+      "tags": [
+        "interactive",
+        "tactile",
+        "responsive"
+      ],
+      "keywords": [
+        "fourth wall",
+        "participation",
+        "sensory play",
+        "read-aloud fun"
+      ],
+      "examples": [
+        {
+          "title": "Press Here",
+          "author": "Herv\u00e9 Tullet",
+          "illustration_style": "Minimalist dot art",
+          "description": "Minimalist dot illustrations invite kids to tap, shake, and tilt pages.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "The Monster at the End of This Book",
+          "author": "Jon Stone",
+          "illustration_style": "Cartoon with expressive typography",
+          "description": "Grover pleads with readers not to turn the pages, breaking the fourth wall with humor.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-006",
+      "type": "Concept Books",
+      "description": "Designed to teach foundational concepts like colors, numbers, shapes, opposites, and the alphabet.",
+      "reading_level": "babies and toddlers",
+      "tags": [
+        "educational",
+        "foundational",
+        "visual learning"
+      ],
+      "keywords": [
+        "ABCs",
+        "counting",
+        "first words",
+        "colors",
+        "shapes"
+      ],
+      "examples": [
+        {
+          "title": "Chicka Chicka Boom Boom",
+          "author": "Bill Martin Jr.",
+          "illustration_style": "Bright geometric shapes",
+          "description": "Letters of the alphabet climb a coconut tree in rhythmic verse.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "My First Book of Colors",
+          "author": "Eric Carle",
+          "illustration_style": "Collage-style illustrations",
+          "description": "Color-focused concept book using Carle\u2019s signature painted tissue-paper style.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-007",
+      "type": "Books About Emotions or Social Development",
+      "description": "Stories helping young children name and understand feelings or social situations.",
+      "reading_level": "toddlers and early readers",
+      "tags": [
+        "feelings",
+        "SEL",
+        "empathy"
+      ],
+      "keywords": [
+        "emotions",
+        "behavior",
+        "self-regulation",
+        "friendship"
+      ],
+      "examples": [
+        {
+          "title": "The Color Monster",
+          "author": "Anna Llenas",
+          "illustration_style": "Textured collage",
+          "description": "Uses color-coded monsters to help kids identify and sort emotions.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Llama Llama Mad at Mama",
+          "author": "Anna Dewdney",
+          "illustration_style": "Whimsical cartoon",
+          "description": "Explores toddler frustration in a relatable, emotionally honest way.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-008",
+      "type": "Wordless Picture Books",
+      "description": "Stories told entirely or mostly through illustrations, fostering visual literacy and imagination.",
+      "reading_level": "toddlers and early readers",
+      "tags": [
+        "visual storytelling",
+        "interpretation",
+        "non-verbal"
+      ],
+      "keywords": [
+        "observation",
+        "inference",
+        "silent reading",
+        "imagination"
+      ],
+      "examples": [
+        {
+          "title": "A Ball for Daisy",
+          "author": "Chris Raschka",
+          "illustration_style": "Expressive brushwork",
+          "description": "Tells the story of loss and comfort through images alone.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Flotsam",
+          "author": "David Wiesner",
+          "illustration_style": "Surreal watercolor",
+          "description": "A boy discovers an underwater camera revealing fantastical images.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-009",
+      "type": "Daily Routine Stories",
+      "description": "Stories that mirror real-life routines: waking up, going to school, bath time, potty training, etc.",
+      "reading_level": "babies and toddlers",
+      "tags": [
+        "daily life",
+        "habit-building",
+        "familiarity"
+      ],
+      "keywords": [
+        "routine",
+        "structure",
+        "daily events",
+        "comfort"
+      ],
+      "examples": [
+        {
+          "title": "Potty",
+          "author": "Leslie Patricelli",
+          "illustration_style": "Bold cartoon style",
+          "description": "A humorous introduction to potty training for the very young.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Whose Toes are Those?",
+          "author": "Jabari Asim",
+          "illustration_style": "Bright and playful",
+          "description": "Engages toddlers in identifying body parts during a getting-dressed routine.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-010",
+      "type": "Cultural or Folktales",
+      "description": "Stories rooted in cultural traditions or folklore, often with distinctive visual styles and moral lessons.",
+      "reading_level": "early readers",
+      "tags": [
+        "folklore",
+        "heritage",
+        "myth"
+      ],
+      "keywords": [
+        "folktale",
+        "legend",
+        "mythology",
+        "oral tradition"
+      ],
+      "examples": [
+        {
+          "title": "Anansi the Spider",
+          "author": "Gerald McDermott",
+          "illustration_style": "Whimsical art with bold patterns",
+          "description": "African folklore retold with striking visuals and a clever hero.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Why Mosquitoes Buzz in People\u2019s Ears",
+          "author": "Verna Aardema",
+          "illustration_style": "West African textile-inspired illustration",
+          "description": "A cumulative tale explaining a natural phenomenon through folklore.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-011",
+      "type": "Humorous Stories",
+      "description": "Books with playful or absurd humor that delights young children and encourages laughter.",
+      "reading_level": "toddlers and early readers",
+      "tags": [
+        "funny",
+        "silly",
+        "expressive"
+      ],
+      "keywords": [
+        "comedy",
+        "absurd",
+        "playful",
+        "exaggeration"
+      ],
+      "examples": [
+        {
+          "title": "Go, Dog. Go!",
+          "author": "P.D. Eastman",
+          "illustration_style": "Cartoon style",
+          "description": "Dogs engage in playful activities while teaching basic concepts; bright colors engage early readers.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Don\u2019t Let the Pigeon Drive the Bus!",
+          "author": "Mo Willems",
+          "illustration_style": "Whimsical cartoon style",
+          "description": "Exaggerated expressions and direct address enhance the humor.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-012",
+      "type": "Seasonal Stories",
+      "description": "Books centered around the changing seasons, holidays, or weather-related experiences that help children understand time and nature.",
+      "reading_level": "toddlers and early readers",
+      "tags": [
+        "nature",
+        "weather",
+        "holidays",
+        "celebration"
+      ],
+      "keywords": [
+        "seasons",
+        "autumn",
+        "winter",
+        "spring",
+        "summer",
+        "holiday traditions",
+        "weather"
+      ],
+      "examples": [
+        {
+          "title": "The Snowy Day",
+          "author": "Ezra Jack Keats",
+          "illustration_style": "Collage and watercolor",
+          "description": "A young boy explores his neighborhood after a snowfall; gentle art captures the magic of winter.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Fletcher and the Falling Leaves",
+          "author": "Julia Rawlinson",
+          "illustration_style": "Warm, painterly illustrations",
+          "description": "A curious fox worries as the leaves fall, introducing children to the concept of autumn transitions.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Mouse's First Spring",
+          "author": "Lauren Thompson",
+          "illustration_style": "Bright and simple pastels",
+          "description": "Mouse discovers blooming flowers, butterflies, and more as spring arrives.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        },
+        {
+          "title": "Bear Stays Up for Christmas",
+          "author": "Karma Wilson",
+          "illustration_style": "Soft, textured illustration",
+          "description": "Bear tries to stay awake to celebrate Christmas with his woodland friends.",
+          "themes": [],
+          "illustration_medium": null,
+          "length": null,
+          "series": false
+        }
+      ],
+      "origin_country": null,
+      "story_arc": null,
+      "read_aloud_energy": null
+    },
+    {
+      "id": "type-008",
+      "type": "Rhyming Romps",
+      "description": "Stories with rhythmic, rhyming text that encourage language play and engagement.",
+      "reading_level": "toddlers and early readers",
+      "tags": [
+        "rhyming",
+        "playful",
+        "read-aloud"
+      ],
+      "keywords": [
+        "rhyme",
+        "phonics",
+        "playful language"
+      ],
+      "origin_country": "UK",
+      "story_arc": "problem-solution",
+      "read_aloud_energy": "high-energy",
+      "examples": [
+        {
+          "title": "Room on the Broom",
+          "author": "Julia Donaldson",
+          "illustration_style": "Cartoon-style",
+          "description": "A witch and her animal friends go on a wild rhyming adventure.",
+          "themes": [
+            "friendship",
+            "inclusion"
+          ],
+          "illustration_medium": "digital",
+          "length": "medium",
+          "series": true
+        }
+      ]
+    },
+    {
+      "id": "type-009",
+      "type": "Sibling Stories",
+      "description": "Stories that explore the ups and downs of sibling relationships.",
+      "reading_level": "early readers",
+      "tags": [
+        "family",
+        "relationships"
+      ],
+      "keywords": [
+        "siblings",
+        "family",
+        "emotions"
+      ],
+      "origin_country": "USA",
+      "story_arc": "emotional arc",
+      "read_aloud_energy": "gentle",
+      "examples": [
+        {
+          "title": "Julius, the Baby of the World",
+          "author": "Kevin Henkes",
+          "illustration_style": "Expressive pen and ink",
+          "description": "A big sister is not happy about the new baby\u2014until someone else is mean to him.",
+          "themes": [
+            "jealousy",
+            "love"
+          ],
+          "illustration_medium": "pen and ink",
+          "length": "medium",
+          "series": false
+        }
+      ]
+    },
+    {
+      "id": "type-010",
+      "type": "Mini-Quest Stories",
+      "description": "Small, purposeful adventures that often revolve around a specific task or object.",
+      "reading_level": "toddlers and early readers",
+      "tags": [
+        "adventure",
+        "object-quest"
+      ],
+      "keywords": [
+        "search",
+        "task",
+        "discovery"
+      ],
+      "origin_country": "USA",
+      "story_arc": "linear",
+      "read_aloud_energy": "medium",
+      "examples": [
+        {
+          "title": "Caps for Sale",
+          "author": "Esphyr Slobodkina",
+          "illustration_style": "Flat-color illustration",
+          "description": "A hat seller deals with mischievous monkeys in this quirky quest for his caps.",
+          "themes": [
+            "frustration",
+            "persistence"
+          ],
+          "illustration_medium": "ink and watercolor",
+          "length": "short",
+          "series": false
+        }
+      ]
+    },
+    {
+      "id": "type-011",
+      "type": "Animal-as-People Stories",
+      "description": "Animals talk and act like people to explore universal themes through whimsy.",
+      "reading_level": "early readers",
+      "tags": [
+        "animal",
+        "whimsy"
+      ],
+      "keywords": [
+        "talking animals",
+        "fantasy",
+        "moral lessons"
+      ],
+      "origin_country": "UK",
+      "story_arc": "episodic",
+      "read_aloud_energy": "medium",
+      "examples": [
+        {
+          "title": "The Tale of Peter Rabbit",
+          "author": "Beatrix Potter",
+          "illustration_style": "Classic watercolor",
+          "description": "A mischievous rabbit sneaks into a garden despite warnings.",
+          "themes": [
+            "disobedience",
+            "consequences"
+          ],
+          "illustration_medium": "watercolor",
+          "length": "medium",
+          "series": true
+        }
+      ]
+    },
+    {
+      "id": "type-012",
+      "type": "Reverse Psychology Stories",
+      "description": "Interactive books that pretend to resist reader participation, inviting play and mischief.",
+      "reading_level": "toddlers and early readers",
+      "tags": [
+        "interactive",
+        "humor"
+      ],
+      "keywords": [
+        "reverse psychology",
+        "engagement",
+        "curiosity"
+      ],
+      "origin_country": "USA",
+      "story_arc": "breaking the fourth wall",
+      "read_aloud_energy": "high-energy",
+      "examples": [
+        {
+          "title": "Don't Push the Button",
+          "author": "Bill Cotter",
+          "illustration_style": "Bold and graphic",
+          "description": "A button you're not supposed to push... unless you really want to!",
+          "themes": [
+            "temptation",
+            "play"
+          ],
+          "illustration_medium": "digital",
+          "length": "short",
+          "series": true
+        }
+      ]
+    }
+  ]
+}
