@@ -1,5 +1,5 @@
 # user-story-prompt-template.md
-<!-- 
+
 ## Description:
 Inspired by Mike Cohn's user story use case and the Gherkin Acceptance Criteria formats, this template is designed to help product managers and development teams create clear, concise user stories. It guides the formulation of user stories, ensuring they are structured to promote understanding and actionable outcomes. This template is particularly useful during Generative AI sessions, assuming enough product details, persona insights, positioning, and problem contexts have already been provided.
 
@@ -30,14 +30,15 @@ and the [Gherkin Acceptance Criteria](https://mvwi.co/posts/gherkin-cucumber)
 This template is licensed under the MIT License. It can be freely used, modified, and distributed with attribution to the original creator.
 
 Date: March 14, 2024
--->
+
 ---
+
 ## User Story Format Prompt Template
 
 <!--
 The following format combines the Mike Cohn User Story Format augmented by a Gherkin-style acceptance criterion.
 -->
-
+~~~
 ### User Story [User Story Number ID]:
 
 - **Summary**: [brief, memorable, human-readable story title with how we're providing value to the persona]
@@ -48,9 +49,9 @@ The following format combines the Mike Cohn User Story Format augmented by a Ghe
 - **so that** [desired outcome by the user].
 
 #### Acceptance Criteria:
-<!-- 
+<!--
 Note 1: Givens are pre-conditions, so don't feel limited to just 3 Givens.
-Note 2: There should only be one "When" and one "Then" statement that aligns with the use case's "I want to" action and "so that" outcome. 
+Note 2: There should only be one "When" and one "Then" statement that aligns with the use case's "I want to" action and "so that" outcome.
 Note 3: Multiple "when" and "then" are good indicators that a story must be split; see `user-story-splitting-prompt-template.md`
 -->
 - **Scenario**: [brief, human-readable user scenario with how we're providing value to the persona]
@@ -61,3 +62,4 @@ Note 3: Multiple "when" and "then" are good indicators that a story must be spli
 - **and Given** [additional outcomes-focused context or preconditions that ensure the 'Then' outcome is delivered]
 - **When**: [Event occurs that is connected to the use case action]
 - **Then**: [Expected outcome that is connected to the user case outcome]
+~~~
