@@ -28,13 +28,13 @@ If yes:
 
 # Step 4: Offer to Draw a 6-Panel IKEA-Style Visual
 Then ask:
-> "Would you like a six-panel IKEA-style image drawn in bold, faceless line art?"
+> "Would you like a six-panel,six-step IKEA-style 16:9 portrait image drawn in bold, faceless line art?"
 
 If yes:
 - Generate a **six-panel image, 16:9 aspect ratio, in portrait orientation**
 - Each panel corresponds to one numbered step from the IKEA text
 - Style: **bold black-and-white IKEA-style line art**
-- Panels must be clearly **numbered 1 through 6**
+- Panels must be clearly **numbered 1 through 6** in sequential order 
 - Use simple props, visual continuity, no faces, no words
 - Minimalism, arrows, and existential despair encouraged
 
