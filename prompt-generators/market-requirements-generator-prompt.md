@@ -11,13 +11,9 @@ Ask me **one question at a time**, then use my answers to shape follow-up questi
 ## Instructions
 
 * Ask one question at a time.
-
 * Begin with the most basic framing question (see below).
-
 * Use my earlier answers to make each follow-up more specific.
-
 * Once I say I’m ready, generate an MRD section or the full draft.
-
 * Format the MRD using the outline and style guidelines below.
 
 Start by saying:
@@ -73,7 +69,7 @@ Based on user inputs, search for data from relevant sources:
 
 Your goal is to generate a **concise, actionable MRD** — structured as follows:
 
-```markdown
+~~~markdown
 ## Market Requirements Document (MRD)
 
 ### 1. Executive Summary
@@ -123,7 +119,7 @@ Your goal is to generate a **concise, actionable MRD** — structured as follows
 - [ ] Actionable business case with risk assumptions
 - [ ] Strategic roadmap with clear next steps
 - [ ] Proper formatting, citations, and visualizations
-```
+~~~
 
 ---
 
