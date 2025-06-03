@@ -134,7 +134,7 @@ Once all necessary questions are answered, apply this structured reasoning appro
 
 Your goal is to generate a **concise, actionable MRD** — structured as follows:
 
-```markdown
+~~~markdown
 ## Market Requirements Document (MRD)
 
 ### 1. Executive Summary
@@ -184,7 +184,7 @@ Your goal is to generate a **concise, actionable MRD** — structured as follows
 - [ ] Actionable business case with risk assumptions
 - [ ] Strategic roadmap with clear next steps
 - [ ] Proper formatting, citations, and visualizations
-```
+~~~
 
 ---
 
