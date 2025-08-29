@@ -2,9 +2,23 @@
 
 **How to contribute prompts that help the PM community**
 
-This guide helps you create prompts that solve real PM problems while teaching strategic AI collaboration. We're excited to work with you to build tools that help product managers think better, not just work faster.
+---
 
-**Important:** If your pull request needs changes, that's not a rejection - it's an invitation to collaborate and learn together. We'll work with you to make your contribution shine.
+## Why This Matters: The Future of Product Management
+
+### Vision
+A world where every product manager has access to strategic thinking and practical tactical tools that amplify human insight rather than replacing human judgment.
+
+### Mission  
+Build a comprehensive and highly practical product management prompting repository that also has the dual purpose of learning system that helps PMs develop sophisticated AI collaboration skills while strengthening their strategic and tactical work using AI to amplify it.
+
+### Strategy
+Comment-driven pedagogy that teaches frameworks through usage, creating both immediate practical value and long-term skill development - an anthropological evolution from user → builder → teacher.
+
+### Our Approach
+We build prompts that solve real PM problems RIGHT NOW while teaching transferable AI collaboration principles. Every tool should deliver immediate tactical value AND build strategic thinking capabilities.
+
+**Important:** If your pull request needs changes, that's not a rejection - it's an invitation to collaborate and learn together. We're excited to work with you to build tools that help product managers work better AND think better.
 
 ---
 
@@ -72,11 +86,11 @@ Base your prompt on proven product management methodologies:
 
 ## Quality Standards
 
-### Strategic Focus
-**Good:** Helps users understand market dynamics, customer motivations, competitive positioning
-**Not good:** Just optimizes task completion or workflow efficiency
+### Strategic AND Tactical Value
+**Good:** Helps users understand market dynamics, customer motivations, competitive positioning AND execute daily PM work more effectively
+**Not good:** Generic templates without context or learning value
 
-We want prompts that elevate the strategic thinking of product managers, not just make them more productive at tactical work.
+We want prompts that elevate both strategic thinking AND practical execution - helping PMs work smarter while building expertise they can apply across different situations.
 
 ### Professional Output Quality
 The results should be suitable for:
@@ -86,10 +100,10 @@ The results should be suitable for:
 - Cross-functional alignment meetings
 
 ### Teaching Integration
-**Good:** Users understand AI collaboration principles better after using your prompt
+**Good:** Users understand AI collaboration principles better AND get practical work done after using your prompt
 **Not good:** Users just get a deliverable without learning anything transferable
 
-Your prompt should build expertise that users can apply to other AI interactions and PM challenges.
+Your prompt should deliver immediate practical value while building expertise that users can apply to other AI interactions and PM challenges.
 
 ---
 

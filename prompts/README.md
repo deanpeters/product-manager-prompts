@@ -1,6 +1,6 @@
 # Strategic Product Management Frameworks
 
-**AI-assisted tools for the strategic work of product management**
+**AI-assisted tools for both strategic thinking and practical execution in product management**
 
 This collection helps you with both the strategic work (market positioning, customer discovery, competitive analysis) and the execution work (user stories, requirements, stakeholder communication). Each prompt creates a guided conversation with AI to help you think through problems systematically.
 

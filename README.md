@@ -1,10 +1,10 @@
 # Product Manager Prompts for Generative AI
 
-**Practical AI tools that actually help with the daily grind of product management**
+**Practical AI tools that actually help with both the strategic thinking and daily execution of product management**
 
 If you're drowning in stakeholder requests, seeking to scaffold strategies, struggling to write decent user stories, or just trying to make sense of your roadmap before it becomes roadkill, these prompts can help. They work in ChatGPT, Claude, Gemini, and pretty much any AI assistant you can copy-paste into.
 
-Think of this as your AI-assisted toolkit for getting real PM work done faster and better.
+Think of this as your AI-assisted toolkit for getting real PM work done faster and better while building your strategic thinking capabilities.
 
 ## Quick Start: Try This Right Now
 
