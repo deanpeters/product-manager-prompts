@@ -148,6 +148,8 @@ I believe the best way to improve at product management in the AI era is by shar
 
 ### How to Contribute
 
+**First, check out our [SUBMISSIONS-GUIDE.md](SUBMISSIONS-GUIDE.md)** for complete details on our vision, standards, and process.
+
 1. **Focus on helping others learn**
    
    - Include comments that explain your thinking
