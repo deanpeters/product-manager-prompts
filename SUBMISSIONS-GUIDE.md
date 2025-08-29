@@ -25,14 +25,14 @@ We build prompts that solve real PM problems RIGHT NOW while teaching transferab
 ## What We're Looking For
 
 ### Solves Real PM Problems
-**Good:** "I built this because I was struggling to align stakeholders around our product positioning"
-**Not good:** "Here's a generic template for writing requirements"
+- **Good:** "I built this because I was struggling to align stakeholders around our product positioning"
+- **Not good:** "Here's a generic template for writing requirements"
 
 Your prompt should address authentic challenges you've faced as a product manager. If you haven't personally used it to solve a real problem, it's not ready to submit.
 
 ### Teaches While Doing
-**Good:** Comments that explain why specific questions unlock better strategic thinking
-**Not good:** Just instructions on how to fill out a template
+- **Good:** Comments that explain why specific questions unlock better strategic thinking
+- **Not good:** Just instructions on how to fill out a template
 
 Every prompt should be a learning experience. Users should understand more about strategic product management after using your tool than they did before.
 
@@ -87,8 +87,8 @@ Base your prompt on proven product management methodologies:
 ## Quality Standards
 
 ### Strategic AND Tactical Value
-**Good:** Helps users understand market dynamics, customer motivations, competitive positioning AND execute daily PM work more effectively
-**Not good:** Generic templates without context or learning value
+- **Good:** Helps users understand market dynamics, customer motivations, competitive positioning AND execute daily PM work more effectively
+- **Not good:** Generic templates without context or learning value
 
 We want prompts that elevate both strategic thinking AND practical execution - helping PMs work smarter while building expertise they can apply across different situations.
 
@@ -100,8 +100,8 @@ The results should be suitable for:
 - Cross-functional alignment meetings
 
 ### Teaching Integration
-**Good:** Users understand AI collaboration principles better AND get practical work done after using your prompt
-**Not good:** Users just get a deliverable without learning anything transferable
+- **Good:** Users understand AI collaboration principles better AND get practical work done after using your prompt
+- **Not good:** Users just get a deliverable without learning anything transferable
 
 Your prompt should deliver immediate practical value while building expertise that users can apply to other AI interactions and PM challenges.
 
@@ -149,8 +149,8 @@ Demonstrate understanding of how PM work intersects with:
 **Exception:** Sometimes we break these rules to get important items to sort to the top of directories, but that's rare and usually for organizational reasons.
 
 ### Where to Put Your Prompt
-- **Strategic frameworks:** `/prompts/` directory
-- **Tools that build other prompts:** `/prompt-generators/` directory  
+- **Getting Real PM Sh!t Done:** `/prompts/` directory
+- **Prompts that build other prompts:** `/prompt-generators/` directory  
 - **Visual/narrative tools:** `/storytelling/` directory
 - **Workplace humor/therapy:** `/resumes-resignations-reactions/` directory
 - **Experimental approaches:** `/vibes/` directory
