@@ -1,84 +1,228 @@
 # Product Manager Prompts for Generative AI
 
-**product-manager-prompts**: A treasure trove of Generative AI [prompt engineering tailored](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) for the unique needs of product managers and product owners, compatible with ChatGPT, Claude, & Gemini.
+**Practical AI tools that actually help with the daily grind of product management**
 
-## TL;DR
+If you're drowning in stakeholder requests, seeking to scaffold strategies, struggling to write decent user stories, or just trying to make sense of your roadmap before it becomes roadkill, these prompts can help. They work in ChatGPT, Claude, Gemini, and pretty much any AI assistant you can copy-paste into.
 
-1. **View the [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) as code**! In preview mode, you don't see all the comment blocks instructing and guiding the AI assistant with tasks & goals. So pardon me as I repeat myself ... <span style="color:red">**_view the [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) as code__**</span>!
-2. <span style="color:red">**CUT AND PASTE THE ENTIRE PROMPT**</span> from the code view (note, I said **Code View**) into your favorite AI assistant (ChatGPT, Claude, Gemini, etc.); yes, comments and all.
-3. **Reach out and let me know** how your prompting goes. I've tested all these on ChatGPT Plus, GPT-4o, GPT-3.5, Claude Opus & Sonnet, and Gemini 1.0.
-4. Take the [Productside AI Innovation for Product Management Workshop](https://www.productside.com/courses/ai-innovation-for-product-managers/) if you'd like to learn how to weave these prompts into shaping your product strategy.
-5. Read the [Prompting Style Guide](https://github.com/deanpeters/product-manager-prompts/blob/main/prompting-style-guide.md) to assist you as you experiment, improve, and contribute to this repo. Let's learn together.
+Think of this as your AI-assisted toolkit for getting real PM work done faster and better.
 
-## Repo Description
+## Quick Start: Try This Right Now
 
-Welcome to a dynamic repository designed to empower product managers by harnessing the power of Generative AI. Here, you'll find [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts) that aid in:
+### Step 1: Find a prompt that matches your problem
 
-- **Completing tasks:** Writing user stories, crafting product roadmaps, conducting competitive analysis.
-- **Exploring ideas:** Brainstorming features, validating hypotheses, generating solutions.
-- **Conducting research:** Developing user personas, analyzing markets, researching competitors.
-- **Facilitating communication:** Structuring product discussions, framing interview questions, outlining presentations.
-- **Jumpstarting templates:** Creating user story templates, roadmap frameworks, and business model canvases.
+1. Go to any .md file in the [/prompts/](prompts/) folder
+2. Click "Raw" or "Code View" (not the pretty preview)
+3. Copy the entire thing - yes, including all those comment blocks that start with <!--
 
-Join us in enriching this collection with your insights, [prompts](https://github.com/deanpeters/product-manager-prompts/tree/main/prompts), synthetic data, and examples, making it an indispensable resource for the product management community.
+### Step 2: Paste it into your AI assistant
 
-## Contributing
+1. Open ChatGPT, Claude, Gemini, whatever you use
+2. Paste the whole prompt in there, as-is
+3. The AI will ask you questions to understand your specific situation
 
-Your expertise can significantly enrich this repository. Here's how to get started with Git:
+### Step 3: Answer the questions and iterate
 
-### Quick Git Contribution Guide
+- Some of the prompts will engage the AI to guideyou through a conversation, not just dump a template on you
+- The comments teach the AI how to be helpful specifically for product managers
+- You can refine and adjust as you go
 
-1. **Fork the Repository**
-   - Visit [the repository page](https://github.com/deanpeters/product-manager-prompts) on GitHub and click the "Fork" button.
+**Try this first:** Start with [Jobs-to-be-Done](prompts/jobs-to-be-done.md) if you're trying to understand your customers better, or [User Story Template](prompts/user-story-prompt-template.md) if you need to write better user stories.
 
-2. **Clone Your Fork**
-   - Click "Clone or download" on your fork, copy the URL, and clone it locally:
-     ```bash
-     git clone [URL you copied]
-     ```
+---
 
-3. **Create a New Branch**
-   - Switch to your repository's directory and start a new branch:
-     ```bash
-     cd product-manager-prompts-for-generative-ai
-     git checkout -b my-new-prompt
-     ```
+## Why This Approach Works Better
 
-4. **Commit Your Changes**
-   - Add your contributions and commit:
-     ```bash
-     git add .
-     git commit -m "Describe your contribution"
-     ```
+Here's the thing about working with AI: most people either treat it like Google on steroids (ask a question, get an answer) or like a magic template machine (fill in blanks, get output). Neither approach gets you very far with complex product management work.
 
-5. **Push to GitHub**
-   - Upload your branch:
-     ```bash
-     git push origin my-new-prompt
-     ```
+These prompts work differently. They create conversations with AI where:
 
-6. **Open a Pull Request**
-   - Head to your repository on GitHub to click "Compare & pull request" and submit it.
+- **You stay in control** - AI asks questions, you make the strategic decisions
+- **Context builds gradually** - Instead of overwhelming you with forms, AI learns about your situation step by step
+- **Framework thinking** - The prompts use proven PM methodologies like Jobs-to-be-Done, Value Proposition Canvas, etc.
+- **Quality control built in** - The AI knows when to ask for missing information
 
-A project maintainer will review your pull request and merge it upon approval or get back to you for adjustments.
+### From User to Builder to Teacher
+
+1. **Start by using** existing prompts for your daily work
+2. **Learn to customize** them for your specific company or industry
+3. **Eventually build your own** using the patterns you've learned
+4. **Help others** by sharing what works
+
+This isn't about replacing your PM judgment with AI. It's about having AI help you think through complex problems more systematically.
+
+---
+
+## What's in Here
+
+**[/prompts/](prompts/)** - The main collection. User stories, positioning statements, customer research, competitive analysis - the bread and butter PM work.
+
+**[/prompt-generators/](prompt-generators/)** - Tools that help you build your own prompts. Think of these as templates for making templates.
+
+**[/storytelling/](storytelling/)** - Help with explaining complex product concepts through stories, visuals, and metaphors. Great for stakeholder presentations.
+
+**[/resumes-resignations-reactions/](resumes-resignations-reactions/)** - A little therapeutic humor for dealing with workplace dysfunction. Sometimes you need to laugh to keep from crying.
+
+**[/vibes/](vibes/)** - Experimental stuff to provide some guardrails and guidance to vibe coding. Advanced AI workflows that might be useful if you're comfortable with more cutting-edge approaches.
+
+**[/skeletons/](skeletons/)** - For people who want to understand how prompts actually work under the hood. Reverse engineering and analysis tools.
+
+---
+
+## Want to Work Locally?
+
+If you want to customize these prompts or contribute your own, you can clone this repository:
+
+```bash
+git clone https://github.com/deanpeters/product-manager-prompts.git
+cd product-manager-prompts
+```
+
+This gives you local copies to modify without worrying about breaking anything, plus it's easier to search through everything.
+
+---
+
+## The Secret to Making These Work: Comments and Code View
+
+Here's what most people miss when they first find this repository: GitHub shows you a "pretty" preview of files by default, but that preview hides the most important parts.
+
+Every prompt has two layers:
+
+1. **The visible part** - What the AI executes
+2. **The comment blocks** - The teaching layer that shows you WHY it works
+
+### You MUST View the Raw Code
+
+When you click on any .md file:
+
+- Don't use the preview (it looks nice but hides the good stuff)
+- Click "Raw" or "Code View" to see everything
+- Copy ALL of it, including the parts that start with <!--
+
+### What Those Comments Do
+
+```markdown
+<!-- 
+## Description: Why this prompt works for PMs
+## Usage Note: What context you need before starting
+## Instructions: How the AI should guide the conversation
+## Attribution: Where this methodology comes from
+-->
+```
+
+These comments are invisible to the AI when you paste the prompt, but they teach YOU how to work better with AI. Think of them as the instructor's notes that come with the lesson plan.
+
+### Why This Matters
+
+- **You learn while doing** - Each prompt teaches you something about AI collaboration
+- **You can customize intelligently** - Understanding why something works helps you adapt it
+- **You avoid common mistakes** - The comments warn you about pitfalls
+- **You build expertise** - Over time, you'll understand how to create your own prompts
+
+---
+
+## Contributing and Learning Together
+
+Teaching others is how we all get better at this.
+
+I believe the best way to improve at product management in the AI era is by sharing what works (and what doesn't) and learning from each other. Your experience matters, whether you're just starting with AI or you've been experimenting for years.
+
+### Ways to Help
+
+**If you're new to AI:**
+
+- Try the prompts and share what worked or didn't work for your situation
+- Ask questions when instructions aren't clear
+- Suggest better examples based on your industry
+
+**If you're getting comfortable:**
+
+- Customize prompts for your specific context and share the variations
+- Create versions that work better for your team structure or company size
+- Improve the teaching comments based on what you learned
+
+**If you're advanced:**
+
+- Build new prompt generators using these patterns
+- Help analyze what makes some prompts more effective than others
+- Share novel approaches you've developed
+
+### How to Contribute
+
+1. **Focus on helping others learn**
+   
+   - Include comments that explain your thinking
+   - Show why you made specific choices
+   - Help people understand your approach
+
+2. **Test your stuff**
+   
+   - Try your prompts in ChatGPT, Claude, and Gemini
+   - Make sure they solve real problems, not hypothetical ones
+   - Remember that humans make the final decisions, not AI
+
+3. **Simple process**
+   
+   ```bash
+   git clone https://github.com/deanpeters/product-manager-prompts.git
+   git checkout -b your-improvement-name
+   # Make your changes
+   git commit -m "Brief description of what you're adding"
+   git push origin your-improvement-name
+   # Open a pull request
+   ```
+
+### What Makes a Good Contribution
+
+- Solves a real PM problem you've actually faced
+- Includes clear explanations of how and why it works
+- Provides examples others can adapt to their situation
+- Respects the fact that humans, not AI, should make strategic decisions
+
+---
+
+## Next Steps and Resources
+
+### Getting Started
+
+1. **Pick a problem** - Look through [/prompts/](prompts/) for something that matches what you're struggling with right now
+2. **Try it** - Copy the raw code, paste it into your AI assistant, follow the conversation
+3. **Study the comments** - See how the structure teaches you to work better with AI
+4. **Customize** - Adapt it for your specific situation
+
+### Going Deeper
+
+- **[Prompting Style Guide](prompting-style-guide.md)** - How all of this actually works under the hood
+- **[Productside Workshop](https://www.productside.com/courses/ai-innovation-for-product-managers/)** - Live training if you want to go deeper
+- **[My LinkedIn](https://www.linkedin.com/in/deanpeters/)** - Where I share ongoing thoughts about AI and product management
+
+---
+
+## Common Problems These Help With
+
+**Stakeholder alignment issues?** Try the [positioning statement](prompts/positioning-statement.md) framework to get everyone on the same page.
+
+**Drowning in feature requests?** Use the [jobs-to-be-done](prompts/jobs-to-be-done.md) analysis to focus on what customers actually need.
+
+**Writing terrible user stories?** The [user story templates](prompts/user-story-prompt-template.md) will help you write ones that actually make sense.
+
+**Want to create your own tools?** Start with the [universal prompt builder](prompt-generators/a-generative-AI-prompt-builder-for-product-professionals.md) to learn the patterns.
+
+---
+
+## Get in Touch
+
+I'm here to help, learn together, and make this stuff more useful for product managers.
+
+- **Have questions?** Open an [issue](https://github.com/deanpeters/product-manager-prompts/issues) 
+- **Want to connect?** Find me on [LinkedIn](https://www.linkedin.com/in/deanpeters/)
+- **Ready for training?** Check out [Productside workshops](https://www.productside.com/)
+
+The best product managers will be the ones who help others get better at this stuff, not the ones who hoard knowledge.
+
+---
 
 ## License
 
-Licensed under the [MIT License](https://choosealicense.com/licenses/mit/). You're free to use, modify, and distribute the content, crediting the original creators. For commercial uses, please contact the contributors.
+Licensed under the [MIT License](https://choosealicense.com/licenses/mit/). Use freely, modify openly, and share knowledge generously. 
 
-## Community Engagement
-
-Discussions, collaborations, and contributions are warmly welcomed. Use the issues section for any comments, suggestions, or inquiries.
-
-## Acknowledgments
-
-A heartfelt thanks to all who have contributed. Your knowledge and efforts have been pivotal in nurturing `Product Manager Prompts for Generative AI` into a growing, invaluable tool.
-
-## Contact
-
-For questions, suggestions, or collaborations:
-
-- **Creator**: [Dean Peters](https://github.com/deanpeters)
-- **LinkedIn**: [Connect with Dean](https://www.linkedin.com/in/deanpeters/)
-
-Here's to revolutionizing product management with Generative AI!
+*Created by [Dean Peters](https://github.com/deanpeters) • Built for the product management community • Designed to teach through doing*
