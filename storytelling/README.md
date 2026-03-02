@@ -166,6 +166,39 @@ Make stories memorable through sensory details:
 - **Stakeholder presentations** - Lead with story, support with data
 - **User research synthesis** - Turn insights into compelling character-driven narratives
 
+### **Facilitated Story Workflows (Use Selectively)**
+Not every storytelling task needs facilitation, but many high-stakes communication tasks benefit from it. For workshops, alignment sessions, and decision-heavy narrative work, use an expert-guidance facilitation style instead of open-ended chat or rigid forms.
+
+**Use facilitation style when:**
+- Audience, narrative frame, or communication objective is unclear
+- Stakeholders must choose between distinct storytelling approaches
+- You need traceable decisions and next actions, not just creative output
+
+**Keep single-shot generation when:**
+- The user asks for fast ideation or free-form creative exploration
+- The deliverable is intentionally playful, unconstrained, or experimental
+- There is no real decision gate requiring trade-off guidance
+
+**Facilitation contract for storytelling workshops:**
+1. Set expectations first: goal, time, and what will happen.
+2. Ask one targeted question and listen.
+3. At decision points, provide exactly 3 context-aware recommendations, with one recommended first.
+4. Accept `1`, `2`, `3`, `1 and 3`, or a custom direction.
+5. Adapt immediately, show progress, and ask the next best question.
+6. Close with a concise summary: what was decided, why, next actions, and assumptions to validate.
+
+**Workload inversion for storytelling:**
+- Ask for minimal context (actor + pain + stakes) first.
+- Do not ask users to define full journey/story structure if the assistant can propose candidate structures.
+- Use decision forks where the assistant suggests three likely narrative paths.
+
+**Persona-first storytelling options:**
+- Frame options in the protagonist's lived experience first.
+- Translate to business/stakeholder impact second.
+
+**Reusable facilitator language:**
+> "Based on what you shared, here are the three best paths. I recommend option 1 because it gets you evidence fastest with your current constraints. Reply with `1`, `2`, `3`, `1 and 3`, or tell me your own path, and I'll adapt."
+
 ---
 
 ## 🎪 The Playful Approach
@@ -230,6 +263,7 @@ The most persuasive product stories blend **emotional resonance** with **quantit
 - **Novel narrative techniques** that work in PM contexts
 - **Cross-industry applications** - How stories work differently across domains
 - **AI storytelling innovations** - New ways to collaborate with AI on narrative
+- **Strong facilitation for decision-heavy stories** - One-question turns and 3-option context-aware guidance
 
 ### **Sharing Your Story Tools**
 1. **Document your process** - How did you develop this storytelling approach?

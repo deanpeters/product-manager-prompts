@@ -10,6 +10,11 @@ This collection helps you with both the strategic work (market positioning, cust
 
 These aren't fill-in-the-blank templates. They're structured conversations with AI that help you think through complex problems step by step.
 
+**Scope note for this directory:**
+- Prompts in `/prompts/` generally assume relevant context is already loaded in session.
+- If you need the assistant to gather context and guide tradeoff decisions, start in [`/prompt-generators/`](../prompt-generators/).
+- For that facilitation method, see: [persona-first-decision-facilitation-loop.md](../prompt-generators/persona-first-decision-facilitation-loop.md).
+
 **The approach:**
 - AI asks you questions to understand your specific situation
 - Context builds gradually instead of overwhelming you upfront

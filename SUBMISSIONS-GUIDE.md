@@ -76,6 +76,18 @@ Use the "one question at a time" approach:
 - Include fallback questions when essential information is missing
 - Guide users through strategic thinking, don't just extract information
 
+### Decision Facilitation Contract
+For prompts with decision points, require this pattern:
+- Ask one targeted question
+- Offer exactly 3 context-aware options (recommended option first)
+- Accept `1`, `2`, `3`, `1 and 3`, or custom direction
+- Summarize chosen direction and assumptions before moving on
+
+### Workload Inversion + Persona-First Framing
+- Do not ask users to pre-design the full artifact if the AI can infer likely structures.
+- Gather minimum context first, then propose candidate scopes/options.
+- Present recommendations in persona language first; business translation can follow.
+
 ### Framework Grounding
 Base your prompt on proven product management methodologies:
 - Jobs-to-be-Done, Value Proposition Canvas, PESTEL analysis, etc.
@@ -207,6 +219,14 @@ We'll look at:
 ### Missing Teaching Elements
 **Problem:** Just executes a task without building user expertise
 **Better:** Users understand strategic principles they can apply elsewhere
+
+### Burden-Shifting Questions
+**Problem:** Prompt asks users to define structure the assistant should propose  
+**Better:** Prompt asks for minimal context, then proposes 3 candidate directions
+
+### Jargon-First Recommendations
+**Problem:** Options are framed only as internal business outcomes  
+**Better:** Options are framed in persona/user language first, then translated to business impact
 
 ---
 

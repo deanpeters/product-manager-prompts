@@ -37,9 +37,13 @@ Every effective PM prompt follows similar structural patterns:
 
 | Generator | Creates | Focus Area |
 |-----------|---------|------------|
+| **[persona-first-decision-facilitation-loop.md](persona-first-decision-facilitation-loop.md)** | Canonical facilitation pattern | Multi-turn, persona-first decision architecture |
 | **[a-generative-AI-prompt-builder-for-product-professionals.md](a-generative-AI-prompt-builder-for-product-professionals.md)** | Universal PM prompts | Core prompt architecture principles |
 | **[user-story-prompt-generator-prompt.md](user-story-prompt-generator-prompt.md)** | Custom user story workflows | Requirements gathering methodology |
 | **[market-requirements-generator-prompt.md](market-requirements-generator-prompt.md)** | Market analysis prompts | Strategic research frameworks |
+| **[positioning-statement-prompt-generator.md](positioning-statement-prompt-generator.md)** | Positioning statement prompts | Geoffrey Moore-style messaging decisions |
+| **[proto-persona-prompt-generator.md](proto-persona-prompt-generator.md)** | Proto-persona prompts | Persona hypothesis development + validation |
+| **[customer-journey-mapping-prompt-generator.md](customer-journey-mapping-prompt-generator.md)** | Journey map prompts | Scope and decision-ready journey synthesis |
 | **[storyboarding-prompt-generator-prompt.md](storyboarding-prompt-generator-prompt.md)** | Visual narrative tools | Communication and storytelling |
 | **[tam-sam-som-prompt-generator.md](tam-sam-som-prompt-generator.md)** | Market sizing prompts | Quantitative analysis frameworks |
 
@@ -123,6 +127,34 @@ Design interactions that **teach while they execute**:
 - **Option presentation** - "Here are three approaches..."
 - **Refinement loops** - "Would you like to adjust anything?"
 
+### **Facilitation DNA: Expert Guidance, Not a Chatbot Quiz**
+This facilitation style is designed to feel like expert guidance, not a form or interrogation. Instead of dumping advice or forcing rigid templates, run a focused adaptive conversation: one clear question per turn, then context-aware recommendations when a real decision is required. This creates better PM outcomes because users get clarity without overload, structure without bureaucracy, and momentum without losing nuance.
+
+**How to position the differentiation:**
+- Most tools are either unstructured ("tell me more...") or over-structured (long forms and generic checklists).
+- Our approach sits in the middle: conversational enough to stay human, programmatic enough to stay reliable.
+- Every turn has a job, every recommendation is tied to context, and every session closes with concrete decisions and next actions.
+
+**Interaction contract for generator prompts:**
+1. Set expectations first: goal, time, and what will happen.
+2. Ask one targeted question and listen.
+3. At decision points, offer exactly 3 context-aware recommendations with one recommended first.
+4. Accept `1`, `2`, `3`, `1 and 3`, or a custom direction.
+5. Adapt immediately, show progress, and ask the next best question.
+6. Close with a concise summary: what was decided, why, next actions, and assumptions to validate.
+
+**Workload inversion rule:**
+- Ask for minimum viable context first.
+- Do not ask users to define the full structure when the assistant can propose it.
+- At early forks, propose 3 candidate scopes and let users choose.
+
+**Persona-first recommendation rule:**
+- Phrase each option in user/persona language first.
+- Add business translation second when useful for PM decision quality.
+
+**Reusable language:**
+> "Based on what you shared, here are the three best paths. I recommend option 1 because it gets you evidence fastest with your current constraints. Reply with `1`, `2`, `3`, `1 and 3`, or tell me your own path, and I'll adapt."
+
 ---
 
 ## 🧪 Experimentation & Testing
@@ -146,6 +178,9 @@ Rate your generated prompts on:
 - **Completeness** - Does it gather sufficient context?
 - **Usability** - Can non-experts use it effectively?
 - **Learning** - Does it teach PM concepts while executing?
+- **Decision quality** - At forks, does it present 3 context-aware options with a clear recommendation?
+- **Workload inversion quality** - Does the assistant propose structure instead of pushing setup labor onto users?
+- **Persona fit** - Are recommendations understandable and meaningful from the user/persona point of view?
 
 ---
 
@@ -188,6 +223,7 @@ After generating initial output:
 - **Teaches methodology** through structural comments
 - **Adapts to context** across industries and team structures  
 - **Creates learning** not just task completion
+- **Facilitates decisions well** using one-question turns plus 3-option guidance
 
 ### **Contribution Guidelines**
 1. **Follow our architectural patterns** - Study existing generators first

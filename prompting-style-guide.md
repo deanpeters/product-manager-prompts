@@ -104,6 +104,39 @@ Ask the user the following questions **one at a time**:
 
 This prevents cognitive overload while ensuring comprehensive context gathering.
 
+### **Workload Inversion Rule**
+Do not make users define the full artifact up front when the assistant can infer and propose.
+
+**Preferred pattern:**
+1. Ask for minimum viable context (persona + pain + constraint)
+2. Propose 3 likely scopes or structures
+3. Recommend one option first with rationale
+4. Let user choose (`1`, `2`, `3`, `1 and 3`, or custom)
+
+### **Persona-First Recommendation Rule**
+At decision points, options should be phrased in the user's world first:
+- Persona-language recommendation: what this does for the user
+- Optional business translation: why this matters to the organization
+
+Avoid leading with internal business jargon when the user-facing framing is the real decision surface.
+
+### **Decision Turn Contract**
+When a prompt reaches a meaningful fork, use this exact interaction shape:
+
+```markdown
+Based on what you shared, here are the three best paths:
+1. [Persona-first option] (Recommended) - [why now]
+2. [Persona-first option] - [tradeoff]
+3. [Persona-first option] - [tradeoff]
+
+Reply with `1`, `2`, `3`, `1 and 3`, or your own path.
+```
+
+After response:
+- Confirm choice in one sentence
+- Show progress
+- Ask only the next best question
+
 ---
 
 ## Framework Integration Methodology

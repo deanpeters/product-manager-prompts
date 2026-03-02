@@ -1,4 +1,22 @@
+<a id="pmprompts"></a>
 # Product Manager Prompts for Generative AI
+
+```text
+╔════════════════════════════════════════════════════════════════════╗
+║                                                                    ║
+║   ██████╗ ███╗   ███╗    ██████╗ ██████╗  ██████╗ ███╗   ███╗██████╗ ████████╗███████╗
+║   ██╔══██╗████╗ ████║    ██╔══██╗██╔══██╗██╔═══██╗████╗ ████║██╔══██╗╚══██╔══╝██╔════╝
+║   ██████╔╝██╔████╔██║    ██████╔╝██████╔╝██║   ██║██╔████╔██║██████╔╝   ██║   ███████╗
+║   ██╔═══╝ ██║╚██╔╝██║    ██╔═══╝ ██╔══██╗██║   ██║██║╚██╔╝██║██╔═══╝    ██║   ╚════██║
+║   ██║     ██║ ╚═╝ ██║    ██║     ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║        ██║   ███████║
+║   ╚═╝     ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝   ╚══════╝
+║                                                                    ║
+║   50+ practical prompt assets for AI-assisted product management   ║
+║   ChatGPT • Claude • Copilot • Gemini • and others                 ║
+║                                                                    ║
+║   Community Build • March 2, 2026 • MIT License                    ║
+╚════════════════════════════════════════════════════════════════════╝
+```
 
 **Practical AI tools that actually help with both the strategic thinking and daily execution of product management**
 
@@ -59,6 +77,11 @@ This isn't about replacing your PM judgment with AI. It's about having AI help y
 **[/prompts/](prompts/)** - The main collection. User stories, positioning statements, customer research, competitive analysis - the bread and butter PM work.
 
 **[/prompt-generators/](prompt-generators/)** - Tools that help you build your own prompts. Think of these as templates for making templates.
+
+**Important directory distinction:**
+- Use **`/prompts/`** when session context is already present and you want execution-quality output.
+- Use **`/prompt-generators/`** when context is partial and you need guided discovery + decision facilitation.
+- Use the **Persona-First Decision Facilitation Loop** guide here: [prompt-generators/persona-first-decision-facilitation-loop.md](prompt-generators/persona-first-decision-facilitation-loop.md).
 
 **[/storytelling/](storytelling/)** - Help with explaining complex product concepts through stories, visuals, and metaphors. Great for stakeholder presentations.
 
