@@ -24,6 +24,8 @@ Then proceed with labeled assumptions.
 2. Produce multiple viable split options when possible.
 3. Keep outputs in the canonical user story format.
 4. Keep each split independently valuable and testable.
+5. Keep list items sticky-note sized: 4 to 8 words where possible.
+6. Use ASCII characters only.
 
 ## Pedagogic Notes:
 - Split logic order teaches how to reduce risk before delivery.
@@ -58,7 +60,12 @@ questions (one at a time), then continue with labeled assumptions.
 
 ## Output Format
 
-Render Markdown in a code block using this exact structure:
+Unless instructed otherwise, render Markdown in a code block using this exact structure:
+
+### Sticky-Note Rule (Required)
+- Keep list-style items 4 to 8 words.
+- For canonical user story lines, stay concise.
+- Use ASCII characters only.
 
 ```markdown
 ## Original User Story/Epic/Feature

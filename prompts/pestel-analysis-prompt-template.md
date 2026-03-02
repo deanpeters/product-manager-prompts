@@ -24,7 +24,9 @@ Then proceed with clearly labeled assumptions.
 1. Preserve the canonical PESTEL section order exactly.
 2. Analyze each factor with practical PM implications.
 3. Distinguish opportunities vs. threats within each factor.
-4. Unless instructed otherwise, render Markdown in a code block.
+4. Keep bullet items sticky-note sized: 4 to 8 words.
+5. Use ASCII characters only.
+6. Unless instructed otherwise, render Markdown in a code block.
 
 ## Pedagogic Notes:
 - PESTEL is not a checklist; it is a decision lens for strategy.
@@ -49,7 +51,11 @@ questions (one at a time), then continue with labeled assumptions.
 
 ## Output Format
 
-Render Markdown in a code block using this exact structure:
+Unless instructed otherwise, render Markdown in a code block using this exact structure:
+
+### Sticky-Note Rule (Required)
+- Keep each bullet item 4 to 8 words.
+- Use ASCII characters only.
 
 # PESTEL Analysis Prompt Template
 

@@ -24,7 +24,9 @@ Then proceed with clearly labeled assumptions.
 1. Preserve the canonical map section order exactly.
 2. Keep activities, steps, and tasks actionable and user-centered.
 3. Prefer clear verbs and observable behaviors.
-4. Unless instructed otherwise, render output in Markdown in a code block.
+4. Keep list items sticky-note sized: 4 to 8 words.
+5. Use ASCII characters only.
+6. Unless instructed otherwise, render output in Markdown in a code block.
 
 ## Pedagogic Notes:
 - Story mapping teaches flow-first thinking instead of feature-first thinking.
@@ -49,7 +51,11 @@ targeted questions (one at a time), then continue with labeled assumptions.
 
 ## Output Format
 
-Render Markdown in a code block using this exact structure:
+Unless instructed otherwise, render Markdown in a code block using this exact structure:
+
+### Sticky-Note Rule (Required)
+- Keep each list item 4 to 8 words.
+- Use ASCII characters only.
 
 ## User Story Map Template
 

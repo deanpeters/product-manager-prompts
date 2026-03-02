@@ -24,7 +24,9 @@ Then proceed with clearly labeled assumptions.
 1. Preserve the canonical JTBD section order exactly.
 2. Keep language from the persona's point-of-view.
 3. Separate observed evidence from assumptions.
-4. Unless instructed otherwise, render output in Markdown in a code block.
+4. Keep every bullet "sticky-note sized": 4 to 8 words per item.
+5. Use ASCII characters only.
+6. Unless instructed otherwise, render output in Markdown in a code block.
 
 ## Pedagogic Notes:
 - JTBD improves product decisions by focusing on progress, not features.
@@ -50,6 +52,11 @@ questions (one at a time), then continue with assumptions clearly labeled.
 ## Output Format
 
 Render Markdown in a code block using this exact structure:
+
+### Sticky-Note Rule (Required)
+- Every bullet item must be 4 to 8 words.
+- Keep phrasing short and scannable.
+- Use ASCII characters only.
 
 ## Jobs-to-be-Done Template
 
