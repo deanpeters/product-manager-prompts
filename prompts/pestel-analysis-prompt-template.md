@@ -1,36 +1,55 @@
 # pestel-analysis-prompt-template.md
 <!--
 ## Description:
-This template facilitates conducting a PESTEL (Political, Economic, Social, Technological, Environmental, and Legal) analysis for projects or products. It's designed for use with generative AI tools to systematically evaluate the macro-environmental factors that could impact strategic planning and decision-making.
+Conducts a structured PESTEL analysis using a stable template so PMs can
+consistently evaluate external forces and make better strategy decisions.
 
-## Usage:
-1. Provide the project or product name, analysis purpose, analyst's name, and the date of analysis.
-2. Use the template to guide the AI in analyzing each PESTEL factor, detailing its potential impact on the project or product.
-3. Review the AI-generated analysis for accuracy and insights, then apply these findings to strategic planning and risk management.
+## Usage Note:
+Assumes context is already present in session.
 
-## Instructions for AI-Assisted PESTEL Analysis:
-1. **Preparation**: Collect all pertinent data about the project/product's external environment.
-2. **Analysis Execution**: Instruct the AI to elaborate on each PESTEL factor using the data provided, identifying impacts on the project/product.
-3. **Review and Interpretation**: Evaluate the AI's analysis for depth and accuracy. Use the insights to identify strategic opportunities and threats.
-4. **Strategic Planning**: Incorporate the PESTEL analysis findings into strategic planning, adjusting to align with the identified external factors.
+## Required Context Keys:
+1. Product/company and market context
+2. Decision this analysis should inform
+3. Time horizon and geography/regulatory scope
+4. Known constraints, dependencies, or signals
 
-## AI Assistant's Point of View:
-As the AI Assistant, your role is to serve as a strategic analyst who comprehensively understands the multifaceted impacts of macro-environmental factors on projects or products. 
-- Leveraging insights across political, economic, social, technological, environmental, and legal domains, you aim to guide users through a detailed PESTEL analysis. 
-- Your goal is to unearth deep insights that inform strategic planning, emphasizing a collaborative and adaptive approach to navigate the complexities of the external environment effectively.
+## Missing Context Rule:
+If required keys are missing, ask at most 3 targeted questions, one at a time:
+1. "What product or company are we analyzing, and in which market/region?"
+2. "What decision should this PESTEL analysis inform?"
+3. "What time horizon and key constraints should we use?"
+Then proceed with clearly labeled assumptions.
 
-## AI Assistant Task:
-1. Analyze the provided information to identify and assess the impacts of PESTEL factors on the specified project or product.
-2. Generate detailed insights for each category, focusing on opportunities and threats within the external environment.
-3. Offer strategic recommendations based on the analysis to assist in planning and decision-making.
-4. Prompt the user with questions for any context not already provided in the current session.
-5. Unless otherwise instructed, render the output using Markdown in a code block.
+## Instructions:
+1. Preserve the canonical PESTEL section order exactly.
+2. Analyze each factor with practical PM implications.
+3. Distinguish opportunities vs. threats within each factor.
+4. Unless instructed otherwise, render Markdown in a code block.
+
+## Pedagogic Notes:
+- PESTEL is not a checklist; it is a decision lens for strategy.
+- Explicit opportunities/threats teach balanced strategic thinking.
+- Stable section structure improves reuse in PRDs, roadmap reviews, and risk logs.
 
 ## Attribution:
-PESTEL Canvas Prompt Template inspired by traditional strategic analysis frameworks, specifically inspired by Francis Joseph Aguilar's 1967 PEST analysis, and adapted for AI-assisted analysis by Dean Peters, 28Mar24
+PESTEL Canvas Prompt Template inspired by Francis Joseph Aguilar's 1967 PEST
+analysis and adapted for AI-assisted analysis by Dean Peters, 28Mar24.
 
-Licensed under the MIT License for unrestricted modification, use, and distribution, ensuring credit is attributed to the original creation.
+## Licensing:
+MIT License
+
+Date: March 2, 2026
 -->
+
+## Context
+
+You are a strategic analyst helping PMs evaluate macro-environment forces.
+Assume context is present. If required context is missing, ask up to 3 targeted
+questions (one at a time), then continue with labeled assumptions.
+
+## Output Format
+
+Render Markdown in a code block using this exact structure:
 
 # PESTEL Analysis Prompt Template
 
@@ -43,43 +62,73 @@ Licensed under the MIT License for unrestricted modification, use, and distribut
 
 ## 1. Political Factors
 
-- **Government Policies**: [Identify and analyze how government policies could impact the project/product.]
-- **Political Stability**: [Assess the impact of the political stability in the regions relevant to the project/product.]
-- **Trade Regulations**: [Examine trade regulations and their potential effect on the project/product.]
-- **Taxation Policy**: [Analyze the taxation policies and their implications for the project/product.]
+- **Government Policies**: [Impact, opportunity/threat, and implication]
+- **Political Stability**: [Impact, opportunity/threat, and implication]
+- **Trade Regulations**: [Impact, opportunity/threat, and implication]
+- **Taxation Policy**: [Impact, opportunity/threat, and implication]
 
 ## 2. Economic Factors
 
-- **Economic Growth**: [Evaluate the economic growth rates and their potential impact on the project/product.]
-- **Inflation Rate**: [Consider the inflation rates and their effect on pricing and costs.]
-- **Exchange Rates**: [Analyze how exchange rate fluctuations could affect the project/product.]
-- **Consumer Spending**: [Assess the level of consumer spending and its influence on the project/product.]
+- **Economic Growth**: [Impact, opportunity/threat, and implication]
+- **Inflation Rate**: [Impact, opportunity/threat, and implication]
+- **Exchange Rates**: [Impact, opportunity/threat, and implication]
+- **Consumer Spending**: [Impact, opportunity/threat, and implication]
 
 ## 3. Social Factors
 
-- **Demographics**: [Examine the demographics and how they may influence the project/product's market.]
-- **Cultural Trends**: [Analyze current cultural trends and their potential impact on demand.]
-- **Lifestyle Changes**: [Consider lifestyle changes and their implications for the project/product.]
-- **Consumer Attitudes**: [Assess consumer attitudes and behaviors and how they might affect the project/product.]
+- **Demographics**: [Impact, opportunity/threat, and implication]
+- **Cultural Trends**: [Impact, opportunity/threat, and implication]
+- **Lifestyle Changes**: [Impact, opportunity/threat, and implication]
+- **Consumer Attitudes**: [Impact, opportunity/threat, and implication]
 
 ## 4. Technological Factors
 
-- **Technological Advancements**: [Identify technological advancements and their potential to impact the project/product.]
-- **R&D Activity**: [Evaluate the sector's level of research and development and its influence.]
-- **Automation**: [Assess the role of automation and its implications for efficiency and costs.]
-- **Digital Transformation**: [Consider how digital transformation trends could affect the project/product.]
+- **Technological Advancements**: [Impact, opportunity/threat, and implication]
+- **R&D Activity**: [Impact, opportunity/threat, and implication]
+- **Automation**: [Impact, opportunity/threat, and implication]
+- **Digital Transformation**: [Impact, opportunity/threat, and implication]
 
 ## 5. Environmental Factors
 
-- **Climate Change**: [Analyze the implications of climate change for the project/product.]
-- **Sustainability Practices**: [Evaluate the impact of sustainability practices on operations and market positioning.]
-- **Resource Scarcity**: [Assess the risk and impact of resource scarcity.]
-- **Environmental Regulations**: [Examine environmental regulations and their potential effects on the project/product.]
+- **Climate Change**: [Impact, opportunity/threat, and implication]
+- **Sustainability Practices**: [Impact, opportunity/threat, and implication]
+- **Resource Scarcity**: [Impact, opportunity/threat, and implication]
+- **Environmental Regulations**: [Impact, opportunity/threat, and implication]
 
 ## 6. Legal Factors
 
-- **Compliance Requirements**: [Identify legal and compliance requirements relevant to the project/product.]
-- **Intellectual Property Rights**: [Evaluate the importance of intellectual property rights and their protection.]
-- **Employment Laws**: [Consider employment laws and their implications for labor practices.]
-- **Health and Safety Regulations**: [Assess health and safety regulations and their impact on operations.]
+- **Compliance Requirements**: [Impact, opportunity/threat, and implication]
+- **Intellectual Property Rights**: [Impact, opportunity/threat, and implication]
+- **Employment Laws**: [Impact, opportunity/threat, and implication]
+- **Health and Safety Regulations**: [Impact, opportunity/threat, and implication]
 
+## 7. Strategic Synthesis
+
+- **Top 3 Opportunities**:
+  1. [Opportunity]
+  2. [Opportunity]
+  3. [Opportunity]
+- **Top 3 Threats**:
+  1. [Threat]
+  2. [Threat]
+  3. [Threat]
+- **Strategic Implications for Product**:
+  1. [Implication]
+  2. [Implication]
+  3. [Implication]
+
+## Assumptions to Validate
+
+- [Assumption 1]
+- [Assumption 2]
+- [Assumption 3]
+
+## Final Step
+
+Offer exactly 4 next options:
+1. Generate a mitigation and monitoring plan (Recommended)
+2. Convert this into a one-page executive risk brief
+3. Generate scenario planning for best/base/worst case
+4. Map the top threats into roadmap guardrails
+
+Ask the user to reply with `1`, `2`, `3`, `4`, `1 and 4`, or a custom path.

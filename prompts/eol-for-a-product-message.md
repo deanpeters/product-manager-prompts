@@ -1,81 +1,104 @@
 # eol-for-a-product-message.md
-<!-- 
+<!--
 ## Description:
-This template provides a structured approach for crafting an End of Life (EOL) message for a product or service, ensuring clear communication about the transition. The EOL message is crucial for informing customers about the discontinuation, the reasons behind it, the impact on them, and the support measures in place.
+Creates a clear, empathetic End-of-Life (EOL) communication using a stable
+template that balances transparency, customer impact, and transition support.
 
 ## Usage Note:
-Before utilizing this template in a Generative AI session, ensure the session is preloaded with context on:
-    - The specific product or service being phased out and its relationship to the company.
-    - The reasons for the EOL decision and the benefits to the customer.
-    - The replacement product or service and its key benefits and differentiators.
-    - The support measures and timeline for the transition.
-    - Optional but important: understanding customer impact and concerns (tip: you can use Bing/Copilot to capture this context and paste it into your session).
+Assumes context is already present in session.
+
+## Required Context Keys:
+1. Product being sunset and replacement (if any)
+2. Rationale for EOL decision from customer and business perspectives
+3. Customer impact and transition support plan
+4. Timeline and communication constraints
+
+## Missing Context Rule:
+If required keys are missing, ask at most 3 targeted questions, one at a time:
+1. "What product is being discontinued, and what is the replacement path?"
+2. "Why is this EOL happening, and what customer outcomes improve?"
+3. "What timeline and support commitments should we communicate?"
+Then proceed with clearly labeled assumptions.
 
 ## Instructions:
-1. Make sure the above context has been clearly established in your session.
-2. Use the following prompt to guide the creation of the EOL message:
+1. Preserve the canonical EOL message structure exactly.
+2. Keep language empathetic, specific, and action-oriented.
+3. Avoid defensiveness; focus on customer continuity and support.
+4. Unless instructed otherwise, render output in Markdown in a code block.
 
-"Based on the context provided, please create an EOL message using the following EOL Messaging Template, rendered as Markdown in a Code Block."
+## Pedagogic Notes:
+- EOL messaging teaches trust-preserving change communication.
+- Stable structure improves consistency across Legal, Support, and PM teams.
+- Explicit impact and timeline sections reduce ambiguity and escalation risk.
 
 ## Attribution:
 Created by Dean Peters, July 11, 2024.
 
 ## Licensing:
-This document and the template contained within are licensed under the MIT License, permitting free use, modification, and distribution with proper attribution to the original creator.
+MIT License
 
-Date: July 11, 2024
+Date: March 2, 2026
 -->
----
-```markdown
+
+## Context
+
+You are a product communications assistant drafting a customer-facing EOL
+message. Assume context is present. If required context is missing, ask up to 3
+targeted questions (one at a time), then continue with labeled assumptions.
+
+## Output Format
+
+Render Markdown in a code block using this exact structure:
+
 ## EOL Messaging Template
 
 ### Product Transition Narrative
 
 **We are**: [Describe the company and its relationship to the product being phased out]
-- [Key point about the company's commitment to customers]
-- [Key point about the company's product evolution]
-- [Key point about the company's future vision]
+- [Key point about commitment to customers]
+- [Key point about product evolution]
+- [Key point about future vision]
 
-**Announcing**: 
-- [A single sentence that clearly states the EOL of the product and introduces its replacement]
+**Announcing**:
+- [A single sentence that clearly states EOL and introduces replacement]
 
-**Because**: 
-- [Describe the reasons for the EOL decision, focusing on benefits to the customer]
-- [Reason 1: e.g., technological advancements]
-- [Reason 2: e.g., improved performance]
-- [Reason 3: e.g., better alignment with customer needs]
+**Because**:
+- [Reason for EOL focused on customer benefit]
+- [Reason 1]
+- [Reason 2]
+- [Reason 3]
 
-**Which means for you**: 
-- [Describe the impact and benefits from the customer's perspective]
+**Which means for you**:
+- [Customer-centered impact and benefit summary]
 
 ### Current Product Context
 
-**Our product** [name of the product being discontinued]
-- **is a** [brief description of the product and its primary function]
-- **that has served** [target customer/user] for [duration or timeframe]
-- **by providing** [key benefits or solutions the product offered]
+**Our product** [name of product being discontinued]
+- **is a** [brief description and primary function]
+- **that has served** [target customer] for [timeframe]
+- **by providing** [key benefits]
 
 ### Customer Impact
 
 **We understand that this may affect you by**:
-- [Potential impact 1 on customer operations or processes]
-- [Potential impact 2 on customer operations or processes]
-- [Potential impact 3 on customer operations or processes (if applicable)]
+- [Potential impact 1]
+- [Potential impact 2]
+- [Potential impact 3]
 
 ### Transition Solution
 
-**For** [target customer/user affected by the EOL]
-- **that currently use** [name of the product being phased out]
-- [name of the replacement product]
-- **is a** [definition of the replacement product category]
-- **that** [statement of benefit to the user, focusing on continuity and improvements].
+**For** [target customer affected by EOL]
+- **that currently use** [discontinued product]
+- [replacement product]
+- **is a** [replacement product category]
+- **that** [benefit statement focused on continuity and improvements]
 
 ### Differentiation and Continuity
 
-- **Like** [product being phased out],
-- [name of the replacement product]
-- **provides** [how the replacement maintains key benefits of the old product]
-- **while also offering** [new benefits or improvements].
+- **Like** [discontinued product]
+- [replacement product]
+- **provides** [continuity of key benefits]
+- **while also offering** [new benefits]
 
 ### Support and Next Steps
 
@@ -86,11 +109,26 @@ Date: July 11, 2024
 
 ### Timeline
 
-- [Key date 1 and associated milestone]
-- [Key date 2 and associated milestone]
-- [Key date 3 and associated milestone]
+- [Key date 1 and milestone]
+- [Key date 2 and milestone]
+- [Key date 3 and milestone]
 
 ### Call to Action
 
 - [Clear next steps for customers]
 - [Contact information for questions or assistance]
+
+### Assumptions to Validate
+- [Assumption 1]
+- [Assumption 2]
+- [Assumption 3]
+
+## Final Step
+
+Offer exactly 4 next options:
+1. Generate a segmented message version for enterprise vs. SMB customers (Recommended)
+2. Generate an internal support-team FAQ for likely customer objections
+3. Generate a transition readiness checklist with owners and dates
+4. Generate an executive escalation brief for high-risk accounts
+
+Ask the user to reply with `1`, `2`, `3`, `4`, `1 and 2`, or a custom path.

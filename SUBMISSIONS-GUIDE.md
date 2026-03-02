@@ -88,6 +88,12 @@ For prompts with decision points, require this pattern:
 - Gather minimum context first, then propose candidate scopes/options.
 - Present recommendations in persona language first; business translation can follow.
 
+### Template Stability Requirement
+- Preserve established PM template structures when updating prompts.
+- Treat template sections and labels as stable output contracts unless a versioned change is intentional.
+- If you propose structural changes, label them as a new version and explain migration impact.
+- Keep compatibility in mind for teams exporting outputs into systems like Jira and Azure DevOps.
+
 ### Framework Grounding
 Base your prompt on proven product management methodologies:
 - Jobs-to-be-Done, Value Proposition Canvas, PESTEL analysis, etc.
@@ -219,6 +225,10 @@ We'll look at:
 ### Missing Teaching Elements
 **Problem:** Just executes a task without building user expertise
 **Better:** Users understand strategic principles they can apply elsewhere
+
+### Silent Template Drift
+**Problem:** Existing framework sections are renamed, reordered, or removed without notice  
+**Better:** Keep canonical structure stable or publish a clearly versioned update
 
 ### Burden-Shifting Questions
 **Problem:** Prompt asks users to define structure the assistant should propose  

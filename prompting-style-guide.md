@@ -12,6 +12,15 @@ Every prompt in this collection serves dual purposes:
 
 This comment-driven pedagogy approach ensures that **using the tools teaches you how to build better tools**.
 
+### **Template Stability Principle**
+For this repository, output templates are not merely formatting devices; they are
+teaching artifacts and operational contracts.
+
+- Preserve canonical PM frameworks in output structure for consistency over time.
+- Improve context intake and facilitation while keeping output schema stable.
+- This is especially important for workflows that feed delivery systems such as Jira and ADO.
+- If a structural change is required, create and label a new version rather than silently changing the old one.
+
 ---
 
 ## The Anthropological Evolution Framework
@@ -136,6 +145,14 @@ After response:
 - Confirm choice in one sentence
 - Show progress
 - Ask only the next best question
+
+### **AFCI + Fixed Output Contract**
+Use Artifact-First Context Intake (AFCI) to reduce user burden:
+1. Extract context from artifacts/session first
+2. Ask up to 3 targeted questions only for missing keys
+3. Proceed with labeled assumptions if still incomplete
+
+Then render the canonical output template exactly (unless user explicitly requests changes).
 
 ---
 

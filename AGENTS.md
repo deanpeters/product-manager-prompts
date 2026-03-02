@@ -36,6 +36,13 @@ When creating or revising prompts:
 - Ground prompts in recognizable PM frameworks when possible.
 - Keep humans as decision owners; AI assists, it does not replace judgment.
 
+## Template Stability Policy
+- Canonical PM templates are pedagogic assets and must be preserved.
+- Do not remove or replace established framework structure (for example JTBD, Gherkin user stories, proto-persona canvas, Moore positioning) unless explicitly requested.
+- Improve intake and facilitation around templates, not instead of templates.
+- For `/prompts/`, prefer adaptive context intake plus fixed template output.
+- If structure must change, version explicitly (`v1`, `v2`) rather than silently mutating existing templates.
+
 ## Required Metadata for Prompt Assets
 For prompt files, include a clear comment metadata block (or preserve/improve the existing one) with:
 - `Description`
@@ -70,6 +77,7 @@ Before considering a prompt "done", verify:
 - Preserve pedagogic comments unless improving them.
 - Do not remove learning-oriented structure just to shorten prompts.
 - Favor compatibility across ChatGPT, Claude, and Gemini where practical.
+- Keep output contracts stable for downstream tooling (for example Jira/ADO import conventions).
 
 ## Review Checklist (Pre-PR)
 Run this quick check before finalizing:

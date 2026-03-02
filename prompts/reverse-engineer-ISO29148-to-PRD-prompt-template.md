@@ -1,64 +1,104 @@
 # reverse-engineer-ISO29148-to-PRD-prompt-template.md
 <!--
 ## Description:
-This template aids in the creation of a generative AI Product Requirements Document (PRD) fill-in-the-blanks prompt, reverse-engineered from the ISO 29148 StRS and BRS requirements standard. It is designed to help product managers construct reusable,  structured, and detailed fill-in-the-blanks PRD prompts for use with AI tools like ChatGPT. 
-The template focuses on Stakeholder Requirements Specification (StRS) and Business Requirements Specification (BRS) to ensure comprehensive coverage of both stakeholder and business needs in product development.
-
-## AI Assistant's Point of View:
-Assume the role of a product manager with expertise in the ISO 29148 standard, guiding the creation of a versatile PRD prompt template that reflects all 11 sections and with a product manager's emphasis on stakeholder and business/mission requirements. Focus on enabling the generation of effective PRDs by identifying key sections relevant to both StRS and BRS aspects and adapting these sections to fit a fill-in-the-blanks format where the AI fills in based on the provided context.
-
-## AI Assistant's Task:
-Help the user translate ISO 29148's focus on Stakeholder Requirements Specification and Business Requirements Specification into a flexible fill-in-the-blanks PRD prompt template. Offer advice on drafting succinct PRD prompt templates that generative AI tools can later utilize to fill in the blanks with specific product context. Ensure the template encompasses all critical aspects of stakeholder and business requirements as outlined by all 11 sections of the ISO 29148 standard.
+Creates a reusable PRD-generation prompt based on ISO 29148 principles,
+focusing on stakeholder and business requirements in a structured format.
 
 ## Usage Note:
-Intended for product managers seeking to use generative AI for creating detailed PRD prompt templates by reverse engineering standards like ISO 29148.
+Assumes context is already present in session.
+
+## Required Context Keys:
+1. Product/business context and target stakeholder groups
+2. Desired business outcomes and constraints
+3. Scope boundaries and requirement priorities
+4. Intended consumers of the resulting PRD
+
+## Missing Context Rule:
+If required keys are missing, ask at most 3 targeted questions, one at a time:
+1. "What product and stakeholder groups should this ISO-29148 PRD template serve?"
+2. "What business outcomes and constraints must be reflected?"
+3. "Who is the primary audience for the generated PRD?"
+Then proceed with clearly labeled assumptions.
 
 ## Instructions:
-1. Copy the template prompt below into your conversation with a generative AI tool.
-2. Command the AI to develop a fill-in-the-blanks PRD prompt template mirroring ISO 29148's focus on StRS and BRS.
-3. Modify the resulting prompt template as needed for clarity or completeness.
-4. Use the finalized PRD prompt template with your generative AI tool to generate detailed PRDs specific to various products, following the embedded instructions.
+1. Preserve ISO-29148-inspired stakeholder and business requirement framing.
+2. Keep sections AI-fillable and practical for PM workflows.
+3. Emphasize clear requirement intent and validation readiness.
+4. Render output as formatted Markdown in a code block.
+
+## Pedagogic Notes:
+- This trains PMs to separate stakeholder needs from solution details.
+- Structured requirement framing improves traceability and alignment.
+- AI-fillable templates accelerate drafting without losing rigor.
 
 ## Attribution:
-This is a template for generating fill-in-the-blanks PRD prompts from ISO 29148 by Dean Peters, 24 Mar 24. It is inspired by product management past webinars for Productside.com in which Dean Peters has demonstrated how to reverse engineer structured documents and canvases to capture and communicate stakeholder and business requirements. 
+Template for generating AI-fillable PRD prompts from ISO 29148 by Dean Peters,
+24Mar24.
 
 ## Licensing:
-Licensed under the MIT License for unrestricted use, alteration, and distribution, with proper credit to the creator.
+MIT License
+
+Date: March 2, 2026
 -->
 
-## Roles
+## Context
 
-We'll work together as a product management team focusing on both stakeholder and business requirements.
+You are a product requirements assistant deriving a reusable PRD prompt from
+ISO 29148 (stakeholder + business requirements orientation). Assume context is
+present. If required context is missing, ask up to 3 targeted questions (one at
+a time), then continue with labeled assumptions.
 
-## Task
+## Output Format
 
-1. Create a reusable fill-in-the-blanks PRD prompt template for generative AI assistants derived from the 11 sections of the ISO 29148 standard.
-2. Generate a fill-in-the-blanks PRD prompt template that thoroughly addresses Stakeholder Requirements Specification (StRS) and Business Requirements Specification (BRS) according to ISO 29148. Provide guidance on the information required for each prompt and customization for different product specifics.
-3. Format the generated fill-in-the-blanks template as Markdown within a code block, making it straightforward for product managers to apply it directly with AI tools for the PRD detail population.
-4. Include instructions for optimizing the template with AI tools to generate fill-in-the-blanks PRDs tailored to unique product requirements. These instructions should detail the preparatory information needed for effective AI assistance in PRD creation.
-5. Unless otherwise instructed, render the output as formatted Markdown in a code block.
+Render Markdown in a code block using this exact structure:
 
-## Example
+## ISO 29148-Derived PRD Prompt Template
 
-Partial Example of an ISO 29148-Based fill-in-the-blanks PRD Prompt Template:
+### Instructions for Use
+1. Paste this template into your AI assistant.
+2. Provide product, stakeholder, and business context.
+3. Ask AI to complete sections with explicit assumptions where needed.
+4. Validate the output with product, engineering, and business partners.
 
-### Product Requirements Document (PRD) Prompt Template
+### 1. Stakeholder Requirements Specification (StRS)
+- **Purpose and Objectives**: [What stakeholders need to achieve]
+- **Stakeholder Identification and Needs**: [Who the stakeholders are and what they need]
+- **Operational Context**: [Environment and conditions of use]
+- **Priority of Needs**: [Relative importance and urgency]
 
-#### 1. Stakeholder Requirements Specification (StRS)
+### 2. Business Requirements Specification (BRS)
+- **Business Objectives**: [Strategic outcomes and constraints]
+- **Market/Customer Requirements**: [External expectations driving requirements]
+- **Value and Success Criteria**: [How business success will be measured]
+- **Assumptions and Dependencies**: [Critical dependencies and risks]
 
-##### a. Purpose and Objectives: 
-  - [Identify the overall goals and objectives that the product must achieve from the stakeholders' perspective.]
-##### b. Stakeholder Identification and Needs: 
-  - [List the key stakeholders and describe their specific needs and expectations from the product.]
+### 3. Product Requirement Structure
+- **Functional Requirements**: [Core capabilities and expected behavior]
+- **Non-Functional Requirements**: [Quality attributes and operational needs]
+- **Interface and Data Requirements**: [Inputs/outputs, integrations, data expectations]
+- **Compliance and Policy Requirements**: [Regulatory and policy constraints]
 
-#### 2. Business Requirements Specification (BRS)
+### 4. Traceability and Validation
+- **Requirement-to-Outcome Traceability**: [How each requirement links to outcomes]
+- **Acceptance Criteria Guidance**: [How each requirement is validated]
+- **Open Issues / Unknowns**: [What still needs evidence]
 
-##### a. Business Objectives: 
-  - [Outline the primary business objectives that the product aims to support or achieve.]
-##### b. Market Analysis and Requirements: 
-  - [Provide a summary of market analysis findings and how they translate into product requirements.]
+### 5. AI Fill Guidance
+- **Required Inputs**: [Context required before generation]
+- **Formatting Rules**: [Preferred structure and length]
+- **Review Focus Areas**: [Sections requiring highest scrutiny]
 
-## Goal
+### Assumptions to Validate
+- [Assumption 1]
+- [Assumption 2]
+- [Assumption 3]
 
-The aim is to employ the structured approach of ISO 29148 to generate adaptable prompt templates for the AI-driven creation of a PRD, focusing on capturing comprehensive Stakeholder Requirements Specification (StRS) and Business Requirements Specification (BRS)
-In other words, once the reusable prompt is created, the HUMAN doesn't later fill in the blanks; the generative AI does.
+## Final Step
+
+Offer exactly 4 next options:
+1. Generate a full PRD draft using this ISO-29148 template (Recommended)
+2. Generate a stakeholder-only condensed requirements brief
+3. Generate a business-case appendix tied to BRS sections
+4. Generate a validation plan with tests per requirement cluster
+
+Ask the user to reply with `1`, `2`, `3`, `4`, `1 and 4`, or a custom path.

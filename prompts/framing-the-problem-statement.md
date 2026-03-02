@@ -1,74 +1,97 @@
 # framing-the-problem-statement.md
 <!-- 
 ## Description:
-This template is designed to guide product managers in socializing & articulating a problem statement that effectively communicates the core issues to be addressed. 
-Emphasizing the "who" and "why" frames the problem from the persona's perspective, incorporating their pains, gains, and jobs to be done and ensuring a deep understanding before seeking solutions.
+Guides PMs to produce a clear, empathetic problem framing artifact from persona,
+JTBD, and barrier context using a stable Problem Framing Canvas.
 
 ## Usage Note:
-This template should be employed in Generative AI sessions after ensuring comprehensive context on the customer's pains, gains, jobs to be done, and the target problem space has been established. 
-If adequate context is absent, the generative AI session agent (ChatGPT, Gemini, Claude, etc.) 
-is instructed to prompt the product manager to provide more details to ensure the problem is thoroughly understood.
+Assumes core context exists in session.
+
+## Required Context Keys:
+1. Persona and painful moment
+2. Desired outcomes/JTBD
+3. Barriers/root causes
+4. Business or product context constraints
+
+## Missing Context Rule:
+If context is missing, ask at most 3 targeted questions, one at a time:
+1. "Who is the persona and what painful moment are they in?"
+2. "What are they trying to accomplish right now?"
+3. "What is currently preventing success?"
+Then proceed with clearly labeled assumptions.
 
 ## Instructions:
-1. Verify the session includes detailed context as described above.
-2. Follow the prompt below to use the Problem Framing Canvas:
+1. Preserve the canonical Problem Framing Canvas structure.
+2. Use persona-first, empathetic language.
+3. Keep statements concrete and decision-usable.
+4. End with assumptions to validate.
 
-"Based on the session context, our customer's pains, gains, and jobs to be done, and our target problem space, 
-please fill out the Problem Framing Canvas using the template below, rendered as Markdown in a Code Block. 
-If you feel the context provided is insufficient, please prompt me (the product manager) for additional information."
+## Pedagogic Notes:
+- Framing before solutioning reduces rework and bias.
+- The I am/Trying to/But/Because/Feel sequence teaches causal thinking.
+- Stable output helps teams compare framings over time.
 
 ## Attribution:
 Created by Dean Peters, March 14, 2024.
 
 ## Licensing:
-This document and its template are licensed under the MIT License, permitting free use, modification, and distribution, with proper attribution to the original creator.
+MIT License
 
-Date: March 14, 2024
+Date: March 2, 2026
 -->
 ---
+
+## Context
+
+You are a problem-framing assistant for product managers.
+Assume context is present. If required keys are missing, ask up to 3 targeted
+questions (one at a time), then continue with labeled assumptions.
+
+## Output Format
+
+Render Markdown in a code block using this exact structure:
+
 ```markdown
 ## Problem Framing Canvas Template
 
-<!--
-Based on the session context, frame the problem from the persona perspective, enumerate context & constraints from a JTBD perspective,
-and create a single sentence providing a powerful and empathetic summary narrative.
-
-If the user has not provided enough context, the session agent of the generative AI chatbot should ask a series of questions to
-obtain the context needed to fill in the blanks of the template.
--->
-
 ### Problem Framing Narrative
 
-<!-- Fill out from the persona's point-of-view -->
+**I am**: [Describe the key persona experiencing the problem, highlighting 3 to 4 key points]
+- [Key pain point or characteristic 1]
+- [Key pain point or characteristic 2]
+- [Key pain point or characteristic 3]
 
-**I am**: [Describe the key persona experiencing the problem, highlighting 3 to 4 key points about their interaction with the problem]
-- [Key pain point or characteristic about the persona's underserved need 1].
-- [Key pain point or characteristic about the persona's underserved need 2].
-- [Key pain point or characteristic about the persona's underserved need 3].
+**Trying to**:
+- [A single sentence listing the desired outcomes the persona cares most about]
 
-**Trying to**: 
-- [A single sentence that lists the desired outcomes the key persona cares most about].
+**But**:
+- [Describe barriers preventing outcomes]
+- [Barrier 1]
+- [Barrier 2]
+- [Barrier 3]
 
-**But**: 
-- [Describe the barriers preventing the persona from achieving the desired outcomes]
-- [Job-to-be-done or outcome obstruction 1].
-- [Job-to-be-done or outcome obstruction 2].
-- [Job-to-be-done or outcome obstruction 3].
+**Because**:
+- [Root cause explanation in empathetic language]
 
-**Because**: 
-- [Seek to describe the root cause of the problem or barrier empathetically].
+**Which makes me feel**:
+- [Emotional impact from persona perspective]
 
-**Which makes me feel**: 
-- [Describe the emotions felt from the key persona's perspective].
-
-### Context & Constraints 
-
-<!-- Enumerate some of the context and constraints facing the persona(s) -->
-
-- [Enumerate the context and constraints facing the persona(s), including geographic, technological, time-based, or demographic factors.]
+### Context & Constraints
+- [Geographic, technological, time-based, organizational, or demographic constraints]
 
 ### Final Problem Statement
+- [Single concise, empathetic summary statement for stakeholder alignment]
 
-<!-- Create a single, concise statement that provides a powerful and empathetic summary narrative of the problem -->
+### Assumptions to Validate
+- [Assumption 1]
+- [Assumption 2]
+```
 
-- [Create a single, concise statement that provides a powerful and empathetic summary narrative of the problem to be shared with stakeholders, customers, engineering, UX, etc.]
+## Final Step
+
+Offer exactly 3 next options:
+1. Generate 3 testable solution hypotheses (Recommended)
+2. Convert this into a workshop facilitation guide
+3. Create stakeholder-specific variants (Exec, Eng, Design)
+
+Ask the user to reply with `1`, `2`, `3`, `1 and 2`, or a custom path.

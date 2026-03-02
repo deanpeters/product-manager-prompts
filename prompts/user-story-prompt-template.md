@@ -1,65 +1,90 @@
 # user-story-prompt-template.md
-
+<!--
 ## Description:
-Inspired by Mike Cohn's user story use case and the Gherkin Acceptance Criteria formats, this template is designed to help product managers and development teams create clear, concise user stories. It guides the formulation of user stories, ensuring they are structured to promote understanding and actionable outcomes. This template is particularly useful during Generative AI sessions, assuming enough product details, persona insights, positioning, and problem contexts have already been provided.
+Creates consistent user stories using Mike Cohn format plus Gherkin acceptance
+criteria, optimized for backlog portability and teaching quality.
 
 ## Usage Note:
-It is ideal for use in Generative AI sessions where comprehensive background information (product details, personas, positioning, and problems) has already been established. This ensures that the user stories generated are grounded in the project's context and objectives.
+Assumes core context is already present in session.
 
-Before using this template in a Generative AI session, ensure your session has the following context already in place:
+## Required Context Keys:
+1. Product/feature context
+2. Target user/persona
+3. Intended user outcome
+4. Key constraints or assumptions
 
-1. **Product Overview**: A detailed description of the product or feature for which the user story is being created.
-2. **Target User Persona**: Insights into who the user is, including their goals, needs, and pain points.
-3. **Product Goals**: The objectives that the product or feature aims to achieve.
-4. **Competitive Landscape**: An understanding of similar offerings in the market and how the product stands out.
+## Missing Context Rule:
+If context is missing, ask at most 3 targeted questions, one at a time:
+1. "Who is the user and what outcome do they need?"
+2. "What action triggers the system behavior?"
+3. "What key constraint or edge case must this story respect?"
+Then proceed with labeled assumptions.
 
-After ensuring the above context is provided, proceed with the following steps:
+## Instructions:
+1. Preserve the canonical user story template structure exactly.
+2. Keep one clear use case and one coherent Gherkin scenario.
+3. Use persona-first, outcome-focused language.
+4. Flag assumptions if details are inferred.
+5. Enforce Acceptance Criteria rules:
+   - Scenario must align with the `As a [user]` portion of the use case.
+   - `Given` steps are preconditions; use as many as needed.
+   - Use exactly one `When` aligned to `I want to` in the use case.
+   - Use exactly one `Then` aligned to `so that` in the use case.
+   - If multiple `When` or `Then` are needed, flag as a split signal and
+     reference `user-story-splitting-prompt-template.md`.
 
-1. Copy the User Story Format/Template section below.
-2. Enter the prompt: "Based on the context provided, please create a user story titled 'Feature XYZ' using the following User Story Template, rendered as Markdown in a Code Block."
-3. Paste the User Story Format/Template into the session, replacing placeholder text with specific details related to 'Feature XYZ'.
-
-This approach ensures that the user story generated is contextually rich, focused, and aligned with the product's objectives and user needs.
+## Pedagogic Notes:
+- Stable story structure improves consistency across Jira/ADO workflows.
+- One When/Then keeps scope testable and easier to split.
+- Acceptance criteria should express behavior, not implementation details.
+- Scenario-user alignment prevents actor drift in acceptance criteria.
 
 ## Attribution:
 Created by Dean Peters, March 14, 2024.
-Inspired by [Mike Cohn's User Story Use Case Format](https://www.mountaingoatsoftware.com/agile/user-stories)
-and the [Gherkin Acceptance Criteria](https://mvwi.co/posts/gherkin-cucumber)
+Inspired by Mike Cohn and Gherkin acceptance criteria practices.
 
 ## Licensing:
-This template is licensed under the MIT License. It can be freely used, modified, and distributed with attribution to the original creator.
+MIT License
 
-Date: March 14, 2024
-
----
-
-## User Story Format Prompt Template
-
-<!--
-The following format combines the Mike Cohn User Story Format augmented by a Gherkin-style acceptance criterion.
+Date: March 2, 2026
 -->
-~~~
+
+## Context
+
+You are a product delivery assistant helping PMs write consistent user stories.
+Assume context is present. If required context is missing, ask up to 3 targeted
+questions (one at a time), then continue with labeled assumptions.
+
+## Output Format
+
+Render Markdown in a code block using this exact structure:
+
+~~~markdown
 ### User Story [User Story Number ID]:
 
-- **Summary**: [brief, memorable, human-readable story title with how we're providing value to the persona]
+- **Summary**: [brief, memorable, human-readable story title with how value is provided to the persona]
 
 #### Use Case:
-- **As a** [user name if available, otherwise user persona, otherwise user role or title],
+- **As a** [user name if available, otherwise user persona, otherwise role/title],
 - **I want to** [action user takes to get to outcome],
 - **so that** [desired outcome by the user].
 
 #### Acceptance Criteria:
-<!--
-Note 1: Givens are pre-conditions, so don't feel limited to just 3 Givens.
-Note 2: There should only be one "When" and one "Then" statement that aligns with the use case's "I want to" action and "so that" outcome.
-Note 3: Multiple "when" and "then" are good indicators that a story must be split; see `user-story-splitting-prompt-template.md`
--->
-- **Scenario**: [brief, human-readable user scenario with how we're providing value to the persona]
-- **Given**: [Initial context or precondition]
-- **and Given**: [additional context or preconditions based on the user's context]
-- **and Given** [additional context or preconditions that support the 'Use Case' as needed]
-- **and Given** [additional user interface-focused context or preconditions that ensure the 'When' event can happen]
-- **and Given** [additional outcomes-focused context or preconditions that ensure the 'Then' outcome is delivered]
-- **When**: [Event occurs that is connected to the use case action]
-- **Then**: [Expected outcome that is connected to the user case outcome]
+- **Scenario**: [brief, human-readable scenario aligned to the `As a [user]` actor]
+- **Given**: [initial precondition]
+- **and Given**: [additional precondition]
+- **and Given**: [additional precondition]
+- **and Given**: [add as many preconditions as required]
+- **When**: [one triggering action aligned to the `I want to` in the use case]
+- **Then**: [one expected outcome aligned to the `so that` in the use case]
+- **Split Signal Rule**: [If more than one `When` or `Then` is needed, split the story using `user-story-splitting-prompt-template.md`]
 ~~~
+
+## Final Step
+
+Offer exactly 3 next options:
+1. Generate 2 alternative story cuts (scope up/scope down) (Recommended)
+2. Check this story for split signals and suggest split approach
+3. Generate test case checklist from acceptance criteria
+
+Ask the user to reply with `1`, `2`, `3`, `1 and 2`, or a custom path.

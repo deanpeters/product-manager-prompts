@@ -37,6 +37,7 @@ Every effective PM prompt follows similar structural patterns:
 
 | Generator | Creates | Focus Area |
 |-----------|---------|------------|
+| **[artifact-first-context-intake.md](artifact-first-context-intake.md)** | Canonical context-ingestion method | Artifact-first context collection and gap handling |
 | **[persona-first-decision-facilitation-loop.md](persona-first-decision-facilitation-loop.md)** | Canonical facilitation pattern | Multi-turn, persona-first decision architecture |
 | **[a-generative-AI-prompt-builder-for-product-professionals.md](a-generative-AI-prompt-builder-for-product-professionals.md)** | Universal PM prompts | Core prompt architecture principles |
 | **[user-story-prompt-generator-prompt.md](user-story-prompt-generator-prompt.md)** | Custom user story workflows | Requirements gathering methodology |
@@ -44,6 +45,7 @@ Every effective PM prompt follows similar structural patterns:
 | **[positioning-statement-prompt-generator.md](positioning-statement-prompt-generator.md)** | Positioning statement prompts | Geoffrey Moore-style messaging decisions |
 | **[proto-persona-prompt-generator.md](proto-persona-prompt-generator.md)** | Proto-persona prompts | Persona hypothesis development + validation |
 | **[customer-journey-mapping-prompt-generator.md](customer-journey-mapping-prompt-generator.md)** | Journey map prompts | Scope and decision-ready journey synthesis |
+| **[daci-chart-prompt-generator.md](daci-chart-prompt-generator.md)** | DACI chart prompts | Decision ownership and governance clarity |
 | **[storyboarding-prompt-generator-prompt.md](storyboarding-prompt-generator-prompt.md)** | Visual narrative tools | Communication and storytelling |
 | **[tam-sam-som-prompt-generator.md](tam-sam-som-prompt-generator.md)** | Market sizing prompts | Quantitative analysis frameworks |
 

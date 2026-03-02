@@ -2,20 +2,20 @@
 # Product Manager Prompts for Generative AI
 
 ```text
-╔════════════════════════════════════════════════════════════════════╗
-║                                                                    ║
+╔═════════════════════════════════════════════════════════════════════════╗
+║                                                                         ║
 ║   ██████╗ ███╗   ███╗    ██████╗ ██████╗  ██████╗ ███╗   ███╗██████╗ ████████╗███████╗
 ║   ██╔══██╗████╗ ████║    ██╔══██╗██╔══██╗██╔═══██╗████╗ ████║██╔══██╗╚══██╔══╝██╔════╝
 ║   ██████╔╝██╔████╔██║    ██████╔╝██████╔╝██║   ██║██╔████╔██║██████╔╝   ██║   ███████╗
 ║   ██╔═══╝ ██║╚██╔╝██║    ██╔═══╝ ██╔══██╗██║   ██║██║╚██╔╝██║██╔═══╝    ██║   ╚════██║
 ║   ██║     ██║ ╚═╝ ██║    ██║     ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║        ██║   ███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝   ╚══════╝
-║                                                                    ║
-║   50+ practical prompt assets for AI-assisted product management   ║
-║   ChatGPT • Claude • Copilot • Gemini • and others                 ║
-║                                                                    ║
-║   Community Build • March 2, 2026 • MIT License                    ║
-╚════════════════════════════════════════════════════════════════════╝
+║                                                                         ║
+║   50+ practical prompt assets for AI-assisted product management        ║
+║   ChatGPT • Claude • Copilot • Gemini • and others                      ║
+║                                                                         ║
+║   Community Build • March 2, 2026 • MIT License                         ║
+╚═════════════════════════════════════════════════════════════════════════╝
 ```
 
 **Practical AI tools that actually help with both the strategic thinking and daily execution of product management**

@@ -1,57 +1,109 @@
 # reverse-engineer-IEEE830srs-to-PRD-prompt-template.md
 <!--
 ## Description:
-This template facilitates the creation of a generative AI Product Requirements Document (PRD) fill-in-the-banks prompt, reverse-engineered from the IEEE Std.830-1998 Software Requirements Specification (SRS). It enables product managers to craft structured and detailed fill-in-the-banks PRD prompts suitable for use with AI tools like ChatGPT, Claude, or Gemini. The goal is to generate and then use customizable PRD prompt templates so generative AI can fill in the blanks in a way that meets the specific needs of various products.
-
-## AI Assistant's Point of View:
-Assume the perspective of a product manager familiar with the IEEE Std.830-1998 SRS. Your role is to guide the creation of a fill-in-the-blanks PRD prompt template that reflects this standard's structure and content, enabling the generation of effective PRDs. Refactor 'output' sections that speak 'how' to speak to the 'who' and 'what' instead. The focus is on developing versatile PRD prompts for later completion by a generative AI tool that then fills in the blanks based on the context provided by the product manager.
-
-## AI Assistant's Task:
-Aid the user in translating the IEEE Std.830-1998 SRS into a flexible fill-in-the-banks PRD prompt template. Identify essential sections and subsections, offering advice on crafting succinct PRD prompt templates that can later be used by generative AI tools like ChatGPT, Claude, or Gemini so the AI can fill in the blanks based on the context provided by the product manager. Refactor 'output' sections that speak 'how' to speak to the 'who' and 'what' instead; an example is 'External Interfaces' could be populated by external factors outlined by the 6 sections of the PESTel model or 'Design Constraints' could speak more to non-technical constraints that elevate or reduce risk. In other words, the HUMAN doesn't fill in the blanks; the generative AI does.
+Creates a reusable PRD-generation prompt by reverse-engineering IEEE 830 SRS
+structure into PM-friendly, AI-fillable sections.
 
 ## Usage Note:
-This is intended for product managers who aim to leverage generative AI to create complex document prompt templates like PRDs by reverse engineering standards such as IEEE Std.830-1998 SRS.
+Assumes context is already present in session.
+
+## Required Context Keys:
+1. Product domain and intended PRD use case
+2. Scope boundaries and key requirement areas
+3. Audience for the generated PRD (product, engineering, compliance, etc.)
+4. Constraints on depth, format, or terminology
+
+## Missing Context Rule:
+If required keys are missing, ask at most 3 targeted questions, one at a time:
+1. "What product domain should this IEEE-830-derived PRD prompt target?"
+2. "Who is the primary audience for the generated PRD?"
+3. "Which requirement areas need the most detail in this template?"
+Then proceed with clearly labeled assumptions.
 
 ## Instructions:
-1. Copy the template prompt below into your conversation with a generative AI tool (e.g., ChatGPT, Claude, Gemini).
-2. Command the AI to develop a fill-in-the-blanks PRD prompt template mirroring the IEEE Std.830-1998 SRS format.
-3. Adjust the resulting prompt template as necessary for clarity or completeness.
-4. Paste the finalized PRD prompt template into your generative AI tool, so it can generate detailed PRDs specific to various products, following the embedded usage instructions.
+1. Preserve the IEEE-830-inspired section hierarchy.
+2. Phrase template fields in PM language that AI can populate from context.
+3. Emphasize who/what/why over implementation minutiae.
+4. Render output as Markdown in a code block.
+
+## Pedagogic Notes:
+- This teaches PMs to translate technical standards into practical artifacts.
+- Stable section hierarchy supports repeatable PRD quality.
+- AI-fillable prompts reduce blank-page risk while preserving rigor.
 
 ## Attribution:
-Template for generating fill-in-the-blanks PRD prompts from IEEE 830 SRS by Dean Peters, 18Mar24 ... inspired by his dislike for such documents.
+Template for generating AI-fillable PRD prompts from IEEE 830 SRS by Dean
+Peters, 18Mar24.
 
 ## Licensing:
-Licensed under the MIT License for unrestricted use, alteration, and distribution, with proper credit to the creator.
+MIT License
+
+Date: March 2, 2026
 -->
 
-## Roles
+## Context
 
-Let's collaborate as a product management team.
+You are a product requirements assistant deriving a reusable PRD prompt from
+IEEE 830 SRS principles. Assume context is present. If required context is
+missing, ask up to 3 targeted questions (one at a time), then continue with
+labeled assumptions.
 
-## Task
+## Output Format
 
-1. Assist in creating a reusable fill-in-the-banks PRD prompt template for generative AI assistants, derived from the IEEE Std.830-1998 SRS.
-2. Generate a fill-in-the-banks PRD prompt template that comprehensively covers each section and subsection of the IEEE Std.830-1998 SRS. Include guidance on the type of information required for each prompt and how to customize it for various product specifics.
-3. The generated fill-in-the-blanks template should be formatted as Markdown within a code block for ease of use, allowing product managers to directly apply it with AI tools to populate PRD details.
-4. Incorporate instructions on optimizing the template with AI tools (e.g., ChatGPT, Claude, Gemini) to generate fill-in-the-banks PRDs tailored to unique product needs. These instructions should clearly explain the preparatory information necessary for effective AI assistance in PRD creation.
+Render Markdown in a code block using this exact structure:
 
-## Example
+## IEEE 830 SRS-Derived PRD Prompt Template
 
-Partial Example of an IEEE 830-1998 SRS-Based fill-in-the-banks PRD Prompt Template:
+### Instructions for Use
+1. Paste this template into your AI assistant.
+2. Provide product context, target persona, and constraints.
+3. Ask the AI to fill each section with evidence-based details.
+4. Review assumptions and refine high-risk sections.
 
-### Software Requirements Specification (SRS) Prompt Template
+### 1. Introduction
+- **Purpose**: [What this product is intended to achieve]
+- **Scope**: [What is in scope and out of scope]
+- **Definitions/Acronyms**: [Key terms required for alignment]
+- **References**: [Source documents or standards]
+- **Overview**: [How to read and use this PRD]
 
-#### 1. Introduction
+### 2. Overall Description
+- **Product Perspective**: [How this fits into existing systems/workflows]
+- **Product Functions**: [Core capabilities and value delivery]
+- **User Classes and Characteristics**: [Primary and secondary user groups]
+- **Operating Environment**: [Business/technical environment assumptions]
+- **Constraints**: [Business, compliance, operational constraints]
+- **Assumptions and Dependencies**: [Critical external dependencies]
 
-a. **Purpose**: 
-  - [Clearly define the software product's objective.]
-b. **Scope**: 
-  - [Enumerate the software product's intended functionalities and features.]
-c. **Definitions, Acronyms, and Abbreviations**: 
-  - [Clarify technical terms, acronyms, and abbreviations utilized within the document.]
+### 3. Specific Requirements
+- **External Interfaces**: [User/system/data interface expectations]
+- **Functional Requirements**: [Prioritized must-have behaviors]
+- **Performance Requirements**: [Speed, scale, latency, throughput targets]
+- **Design Constraints**: [Constraints that shape solution options]
+- **Quality Attributes**: [Reliability, security, usability, maintainability]
+- **Compliance Requirements**: [Legal/regulatory requirements]
 
-## Goal
+### 4. Validation Guidance
+- **Acceptance Criteria Pattern**: [How requirements will be verified]
+- **Testability Notes**: [How each requirement can be evaluated]
+- **Evidence Expectations**: [What data validates success]
 
-The aim is to leverage industry standards for generating adaptable prompt templates that, in turn, generative AI uses to produce a PRD.
-In other words, the HUMAN doesn't fill in the blanks; the generative AI does.
+### 5. AI Fill Guidance
+- **Required Inputs**: [Context required before generation]
+- **Preferred Output Style**: [Format and detail-level expectations]
+- **Known Gaps**: [Where assumptions are likely]
+
+### Assumptions to Validate
+- [Assumption 1]
+- [Assumption 2]
+- [Assumption 3]
+
+## Final Step
+
+Offer exactly 4 next options:
+1. Generate a working PRD draft using this template (Recommended)
+2. Generate a lightweight version for early discovery
+3. Generate a compliance-focused variant for regulated environments
+4. Generate a review checklist for product and engineering sign-off
+
+Ask the user to reply with `1`, `2`, `3`, `4`, `1 and 3`, or a custom path.
