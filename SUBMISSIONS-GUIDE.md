@@ -50,15 +50,32 @@ Your prompt should create consistent, helpful experiences regardless of which AI
 Every prompt must include this metadata in comment blocks:
 
 ```markdown
-<!-- 
+<!--
 ## Description:
 Clear explanation of what this prompt does and why it matters for PMs
 
 ## Usage Note:
 What context or preparation someone needs before starting
 
+## Required Context Keys:
+1. First thing the AI needs to proceed
+2. Second thing the AI needs to proceed
+3. etc.
+
+## Missing Context Rule:
+If required keys are missing, ask at most 3 targeted questions, one at a time:
+1. "First clarifying question?"
+2. "Second clarifying question?"
+3. "Third clarifying question?"
+Then proceed with clearly labeled assumptions.
+
 ## Instructions:
 How the AI should guide the conversation and what it should focus on
+
+## Pedagogic Notes:
+- What strategic thinking skill does this prompt build?
+- What PM habit or mental model does it reinforce?
+- Why does the structure help users think better, not just work faster?
 
 ## Attribution:
 Where your methodology comes from, what frameworks you're using
@@ -77,11 +94,36 @@ Use the "one question at a time" approach:
 - Guide users through strategic thinking, don't just extract information
 
 ### Decision Facilitation Contract
-For prompts with decision points, require this pattern:
-- Ask one targeted question
-- Offer exactly 3 context-aware options (recommended option first)
-- Accept `1`, `2`, `3`, `1 and 3`, or custom direction
-- Summarize chosen direction and assumptions before moving on
+Every prompt must close with a "Final Step" block offering exactly 4 numbered next options, recommended option first:
+
+```markdown
+## Final Step
+
+Offer exactly 4 next options:
+1. [Most useful next action] (Recommended)
+2. [Second option]
+3. [Third option]
+4. [Fourth option]
+
+Ask the user to reply with `1`, `2`, `3`, `4`, or a custom path.
+```
+
+### Assumptions to Validate
+Every prompt output must close the artifact with an explicit assumptions section:
+
+```markdown
+### Assumptions to Validate
+- [Assumption 1]
+- [Assumption 2]
+- [Assumption 3]
+```
+
+This keeps outputs honest and teaches PMs to separate evidence from inference.
+
+### Sticky-Note Rule
+All bullet items in prompt output must follow the sticky-note rule:
+- Keep each bullet 4 to 8 words
+- Use ASCII characters only — no emojis
 
 ### Workload Inversion + Persona-First Framing
 - Do not ask users to pre-design the full artifact if the AI can infer likely structures.
@@ -225,6 +267,10 @@ We'll look at:
 ### Missing Teaching Elements
 **Problem:** Just executes a task without building user expertise
 **Better:** Users understand strategic principles they can apply elsewhere
+
+### Emojis in Prompts
+**Problem:** Using emojis in headers, bullets, or titles (e.g., `📊 Feature Prioritization`)
+**Better:** Plain ASCII text only. Emojis break consistency across platforms and violate our output rendering rules.
 
 ### Silent Template Drift
 **Problem:** Existing framework sections are renamed, reordered, or removed without notice  
