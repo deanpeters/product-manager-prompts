@@ -6,6 +6,8 @@ Work story-splitting logic while preserving a stable user-story output template.
 
 ## Usage Note:
 Assumes the original story/epic is already present in the session.
+Companion: vibes/user-story-splitting-jinja2-loop.md is the
+loop-controlled sibling for /loop, /goal, and agent use.
 
 ## Required Context Keys:
 1. Original story/epic/feature statement

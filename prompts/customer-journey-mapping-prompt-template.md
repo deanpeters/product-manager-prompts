@@ -8,6 +8,9 @@ session. Produces a practical map, friction analysis, and intervention plan.
 ## Usage Note:
 This prompt assumes core context is already loaded in the session.
 If context is missing, ask for it in a lightweight way and continue.
+Companion: prompt-generators/customer-journey-mapping-prompt-generator.md
+offers the facilitated version when you want to be guided through
+scoping decisions first.
 
 ## Required Context Keys:
 1. Persona and painful moment

@@ -8,6 +8,8 @@ decision-ready journey map prompt.
 ## Usage Note:
 Use when users have partial context and need guided scope selection, objective
 framing, and output structure for journey mapping.
+Companion: prompts/customer-journey-mapping-prompt-template.md is the
+direct template version for sessions where context is already loaded.
 
 ## Instructions:
 Run one-question facilitation with 3-option decision forks and progress markers.

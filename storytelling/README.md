@@ -43,6 +43,7 @@ Framework-based storytelling approaches:
 | Tool | Best For | Framework |
 |------|----------|-----------|
 | **[Generator – Starts with Why 4-Slide Builder Narrative.md](Generator%20–%20Starts%20with%20Why%204-Slide%20Builder%20Narrative.md)** | Strategic presentations | Simon Sinek's Golden Circle |
+| **[Generator - Research-to-Narrative Bridge.md](Generator%20-%20Research-to-Narrative%20Bridge.md)** | Turning `/market-intelligence/` research into stakeholder stories | Evidence-labeled narrative frames |
 | **[Generator - IKEA-like instruction steps.md](Generator%20-%20IKEA-like%20instruction%20steps.md)** | Process documentation | Step-by-step visual guides |
 | **[Dataset - 25 Common Story Arcs.md](Dataset%20-%2025%20Common%20Story%20Arcs.md)** | Narrative structure reference | Classic storytelling patterns |
 

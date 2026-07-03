@@ -1,4 +1,27 @@
 # Generator – Product Manager Action Figure Builder.md
+<!--
+## Description:
+Designs a personalized PM action figure — personality, powers, and
+tools of the trade in display packaging — through five guided
+questions, then generates the figure image.
+
+## Usage Note:
+A LinkedIn-friendly identity exercise for PMs and teams; works best
+in an AI with image generation. The manufacturer is always
+Productside.
+
+## Instructions:
+Ask five questions one at a time, then render a vivid figure and
+packaging description before generating the image.
+
+## Attribution:
+Created by Dean Peters (Productside.com).
+
+## Licensing:
+MIT License
+
+Date: July 3, 2026 (metadata added; prompt predates this date)
+-->
 
 ## Context:
 

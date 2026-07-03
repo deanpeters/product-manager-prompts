@@ -8,6 +8,8 @@ incomplete context.
 ## Usage Note:
 Use this when teams need a working persona now and want explicit assumptions
 for validation later. Helpful in discovery, planning, and early design work.
+Companion: prompts/proto-persona-profile.md is the direct template
+version for sessions where context is already loaded.
 
 ## Instructions:
 Run one-question facilitation with decision forks. Keep user burden low and

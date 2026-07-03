@@ -32,6 +32,14 @@ This collection represents bleeding-edge explorations in:
 |------------|------------|--------|
 | **[vibe.prd-generated-via-search-and-agentic-simulation.md](vibe.prd-generated-via-search-and-agentic-simulation.md)** | Full PRD generation through autonomous research & synthesis | Active exploration |
 
+### **Jinja2-Structured Prompts**
+Prompts with explicit control flow — loops, switches, guards — safe to run under `/loop`, `/goal`, or inside agents. Read [`jinja2-prompt-structures.md`](../jinja2-prompt-structures.md) first.
+
+| Experiment | Innovation | Status |
+|------------|------------|--------|
+| **[user-story-splitting-jinja2-loop.md](user-story-splitting-jinja2-loop.md)** | Plan-then-iterate epic splitting: Lawrence rubric derives the story list, a gate freezes it, a bounded loop exhausts it | Exemplar |
+| **[epic-to-stories-formatter-jinja2.md](epic-to-stories-formatter-jinja2.md)** | Output-contract rendering: structured epic/story JSON through a fixed Gherkin template, with empty-case guards | Exemplar |
+
 ### **Key Features of the Autonomous PRD Generator:**
 - **Guided discovery** through 4 strategic questions
 - **Autonomous research sweep** with credible source citation

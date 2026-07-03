@@ -48,6 +48,11 @@ Every effective PM prompt follows similar structural patterns:
 | **[daci-chart-prompt-generator.md](daci-chart-prompt-generator.md)** | DACI chart prompts | Decision ownership and governance clarity |
 | **[storyboarding-prompt-generator-prompt.md](storyboarding-prompt-generator-prompt.md)** | Visual narrative tools | Communication and storytelling |
 | **[tam-sam-som-prompt-generator.md](tam-sam-som-prompt-generator.md)** | Market sizing prompts | Quantitative analysis frameworks |
+| **[stakeholder-map-prompt-generator.md](stakeholder-map-prompt-generator.md)** | Stakeholder map prompts | Power x Interest grids and engagement planning |
+| **[prioritization-framework-prompt-generator.md](prioritization-framework-prompt-generator.md)** | Framework choice + scoring prompts | RICE, ICE, Kano, cost of delay matching |
+| **[premortem-prompt-generator.md](premortem-prompt-generator.md)** | Premortem prompts | Gary Klein prospective hindsight |
+| **[discovery-interview-prompt-generator.md](discovery-interview-prompt-generator.md)** | Interview guide prompts | Mom Test question design |
+| **[research-agent-prompt-generator.md](research-agent-prompt-generator.md)** | Custom autonomous investigation prompts | Investigation mode contract: budgets, gates, evidence labels, delta rules |
 
 ---
 

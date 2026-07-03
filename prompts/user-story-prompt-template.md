@@ -6,6 +6,9 @@ criteria, optimized for backlog portability and teaching quality.
 
 ## Usage Note:
 Assumes core context is already present in session.
+Companion: prompt-generators/user-story-prompt-generator-prompt.md
+offers the facilitated version when you want to be guided through
+story decisions first.
 
 ## Required Context Keys:
 1. Product/feature context

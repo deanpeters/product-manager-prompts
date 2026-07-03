@@ -1,0 +1,56 @@
+# Market Intelligence
+
+**Autonomous research prompts: the AI does the fieldwork, you review
+the evidence**
+
+Prompts in this directory follow the **autonomous investigation**
+interaction mode (see [`interaction-modes.md`](../interaction-modes.md)).
+Where `/prompts/` assumes you hold the context and `/prompt-generators/`
+facilitates it out of you, investigations point the AI at the world:
+web search, published data, credible sources — with citations, labeled
+inference, and defaults that let the prompt run without you.
+
+That last property matters: because these prompts proceed on
+best-available evidence when nobody answers questions, they are
+suitable for agents, loops, and scheduled runs — a competitive scan
+that refreshes quarterly, a market snapshot that diffs against last
+month's.
+
+## The contract every investigation honors
+
+- **Question budget** — a hard cap (usually 3), then proceed with
+  labeled assumptions
+- **Search plan gate** — a 3-bullet plan shown before researching;
+  it continues unless you revise it
+- **Evidence labels** — every key point marked **Fact** (source-
+  supported), **Inference** (evidence-based interpretation), or
+  **Assumption** (working guess)
+- **Real, checkable URLs** — and a do-not-invent list naming the
+  domain's specific fabrication risks
+- **Just Enough Mode by default** — strongest findings, short
+  bullets; Verbose only on request
+- **Stable output schema** — so run N and run N+1 are diffable, which
+  is what makes scheduled re-runs and delta reports possible
+- **Final Step block** — exactly 4 numbered next options
+
+## What's Available
+
+| Prompt | Best For |
+|--------|----------|
+| **[competitive-research-snapshot-prompt.md](competitive-research-snapshot-prompt.md)** | Just-enough competitive landscape research with cited snapshots, a comparison matrix, and "so what" implications |
+| **[competitive-intel-watch-prompt.md](competitive-intel-watch-prompt.md)** | Scheduled delta monitoring against a prior snapshot: material shifts only, with battle-card update flags |
+| **[market-landscape-scan-prompt.md](market-landscape-scan-prompt.md)** | Mapping a market's segments, players, substitutes, and whitespace before sizing or positioning |
+| **[voice-of-customer-miner-prompt.md](voice-of-customer-miner-prompt.md)** | Mining reviews, app stores, and forums for unmet needs and competitor weaknesses, with quoted evidence |
+| **[earnings-executive-signal-refresh-prompt.md](earnings-executive-signal-refresh-prompt.md)** | Quarterly diff of one company's executive and strategy signals against a prior profile |
+| **[pricing-packaging-tracker-prompt.md](pricing-packaging-tracker-prompt.md)** | Tracking competitor pricing and packaging as a diffable time series |
+| **[pestel-delta-monitor-prompt.md](pestel-delta-monitor-prompt.md)** | Quarterly re-scan of macro factors: what moved, what broke, what entered the frame |
+
+**Typical flow:** landscape scan → snapshot the players that matter →
+watch on a cadence, with the pricing tracker, executive refresh, and
+PESTEL delta as deeper lenses. To build a custom investigation, use
+[prompt-generators/research-agent-prompt-generator.md](../prompt-generators/research-agent-prompt-generator.md).
+To turn any output here into a stakeholder story, use
+[storytelling/Generator - Research-to-Narrative Bridge.md](../storytelling/Generator%20-%20Research-to-Narrative%20Bridge.md).
+
+See also `prompts/tam-sam-som-autonomous-analysis.md`, which follows
+the same mode from the `/prompts/` directory.

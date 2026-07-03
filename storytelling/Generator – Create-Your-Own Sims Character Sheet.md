@@ -1,4 +1,28 @@
 # Generator – Create-Your-Own Sims Character Sheet.md
+<!--
+## Description:
+Builds a personalized Sims 4-style "Create-a-Sim" character sheet
+and image from the user's inputs and interaction history, rendered
+in the classic Create-a-Sim UI layout.
+
+## Usage Note:
+A playful identity-and-visual exercise; works best in an AI with
+image generation and session memory. Not a persona tool — for
+product personas use prompts/proto-persona-profile.md.
+
+## Instructions:
+Gather personal style inputs conversationally, then render the
+character sheet description and generate the image in Sims 4
+Create-a-Sim styling.
+
+## Attribution:
+Created by Dean Peters (Productside.com).
+
+## Licensing:
+MIT License
+
+Date: July 3, 2026 (metadata added; prompt predates this date)
+-->
 
 ## Context:
 

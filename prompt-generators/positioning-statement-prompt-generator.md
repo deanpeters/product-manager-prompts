@@ -9,6 +9,8 @@ decision tradeoffs and context-aware recommendations.
 Use when context is incomplete and you want the assistant to guide discovery and
 generate a reusable positioning prompt. Good for early-stage positioning and
 messaging alignment.
+Companion: prompts/positioning-statement.md is the direct template
+version for sessions where context is already loaded.
 
 ## Instructions:
 Run a multi-turn facilitation flow:

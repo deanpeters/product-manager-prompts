@@ -1,4 +1,27 @@
 # Generator – PM Bedtime Story Builder.md
+<!--
+## Description:
+Transforms a product management insight into a whimsical bedtime
+story told in simple language and imaginative metaphor — a
+one-question-at-a-time facilitation with playful examples.
+
+## Usage Note:
+Use when a PM lesson needs to land gently: retros, team offsites,
+teaching moments. Pairs with Dataset - Bedtime Story Types and
+Characteristics.json in this directory.
+
+## Instructions:
+Ask one question at a time, each with fun examples; build the story
+only after the facilitation completes.
+
+## Attribution:
+Created by Dean Peters (Productside.com).
+
+## Licensing:
+MIT License
+
+Date: July 3, 2026 (metadata added; prompt predates this date)
+-->
 
 ## Context:
 

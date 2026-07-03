@@ -6,6 +6,9 @@ in the session, with concise differentiation and assumption checks.
 
 ## Usage Note:
 This prompt assumes context is already loaded in session.
+Companion: prompt-generators/positioning-statement-prompt-generator.md
+offers the facilitated version when you want to be guided through
+positioning decisions first.
 
 ## Required Context Keys:
 1. Target user/persona

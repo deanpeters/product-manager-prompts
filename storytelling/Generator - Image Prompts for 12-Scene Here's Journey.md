@@ -1,4 +1,28 @@
 # Generator - Image Prompts for 12-Scene Here's Journey.md
+<!--
+## Description:
+Generates a 12-scene Hero's Journey storyboard where every scene is
+a standalone image-generation prompt — no information carries over
+between scenes, so each renders independently.
+
+## Usage Note:
+Use to visualize a product or customer narrative through the Hero's
+Journey arc; feed scenes to any image tool. Pairs with Dataset - 25
+Common Story Arcs.md in this directory.
+
+## Instructions:
+Each scene must be a complete standalone description; enforce the
+no-carry-over rule strictly.
+
+## Attribution:
+Created by Dean Peters (Productside.com). Structure based on the
+Hero's Journey (Campbell/Vogler).
+
+## Licensing:
+MIT License
+
+Date: July 3, 2026 (metadata added; prompt predates this date)
+-->
 
 ## Context:
 

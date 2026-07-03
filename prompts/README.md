@@ -53,12 +53,14 @@ Tools for understanding markets and customers:
 | **[proto-persona-profile.md](proto-persona-profile.md)** | Creating initial customer profiles | Proto-persona canvas |
 | **[customer-journey-mapping-prompt-template.md](customer-journey-mapping-prompt-template.md)** | Mapping the full customer experience | Customer journey methodology |
 | **[company-profile-executive-insights-research.md](company-profile-executive-insights-research.md)** | Competitive intelligence and market analysis | Market analysis framework |
+| **[discovery-interview-guide-prompt-template.md](discovery-interview-guide-prompt-template.md)** | Planning interviews that surface real behavior | Mom Test + continuous discovery |
 
 ### Requirements & Execution
 Structured approaches to defining what to build:
 
 | Prompt | Best For | Framework Used |
 |--------|----------|----------------|
+| **[prd-prompt-template.md](prd-prompt-template.md)** | Generating a full PRD from session context | Canonical 9-section PRD structure |
 | **[user-story-prompt-template.md](user-story-prompt-template.md)** | Writing clear, testable user stories | Mike Cohn + Gherkin format |
 | **[user-story-splitting-prompt-template.md](user-story-splitting-prompt-template.md)** | Breaking down large stories effectively | Story splitting techniques |
 | **[backlog-epic-hypothesis.md](backlog-epic-hypothesis.md)** | Defining epics with testable hypotheses | Hypothesis-driven development |
@@ -70,6 +72,9 @@ Research and analytical frameworks for strategic decisions:
 |--------|----------|----------------|
 | **[pestel-analysis-prompt-template.md](pestel-analysis-prompt-template.md)** | Understanding macro-market forces | PESTEL framework |
 | **[recommendation-canvas-template.md](recommendation-canvas-template.md)** | Building business cases for decisions | Business case methodology |
+| **[tam-sam-som-autonomous-analysis.md](tam-sam-som-autonomous-analysis.md)** | Citation-backed market sizing, built for you | TAM/SAM/SOM, autonomous investigation mode |
+| **[premortem-prompt-template.md](premortem-prompt-template.md)** | Naming failure risks before you commit | Gary Klein premortem |
+| **[lean-ux-canvas-prompt-template.md](lean-ux-canvas-prompt-template.md)** | Framing initiatives as hypotheses and experiments | Gothelf Lean UX Canvas v2 |
 | **[reverse-engineer-IEEE830srs-to-PRD-prompt-template.md](reverse-engineer-IEEE830srs-to-PRD-prompt-template.md)** | Translating technical requirements | IEEE 830 standards |
 
 ### Communication & Vision
@@ -77,7 +82,10 @@ Tools for stakeholder alignment and storytelling:
 
 | Prompt | Best For | Framework Used |
 |--------|----------|----------------|
+| **[stakeholder-map-prompt-template.md](stakeholder-map-prompt-template.md)** | Mapping who matters and how to engage them | Power x Interest grid |
 | **[visionary-press-release.md](visionary-press-release.md)** | Working backwards from customer value | Amazon Working Backwards |
+| **[agent-strategy-canvas-prompt-template.md](agent-strategy-canvas-prompt-template.md)** | Designing agentic AI systems with authorization boundaries | Agent Strategy Canvas (9-box) |
+| **[session-saver-prompt.md](session-saver-prompt.md)** | Capturing a session as portable context for a fresh start | Prompt anatomy capture schema |
 | **[storyboard-storytelling-prompt.md](storyboard-storytelling-prompt.md)** | Creating compelling product narratives | Storyboarding methodology |
 | **[futuristic-product-faq.md](futuristic-product-faq.md)** | Anticipating stakeholder questions | FAQ development process |
 

@@ -6,6 +6,9 @@ reuse outputs consistently across planning, design, and delivery workflows.
 
 ## Usage Note:
 Assumes core context is already present in the session.
+Companion: prompt-generators/proto-persona-prompt-generator.md offers
+the facilitated version when you want to be guided through persona
+decisions first.
 
 ## Required Context Keys:
 1. Target persona seed (role/person type)
