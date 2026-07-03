@@ -11,245 +11,142 @@
 ║   ██║     ██║ ╚═╝ ██║    ██║     ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║        ██║   ███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝   ╚══════╝
 ║                                                                         ║
-║   50+ practical prompt assets for AI-assisted product management        ║
+║   85 practical prompt assets for AI-assisted product management         ║
 ║   ChatGPT • Claude • Copilot • Gemini • and others                      ║
 ║                                                                         ║
-║   Community Build • March 2, 2026 • MIT License                         ║
+║   Community Build v2.0 • July 3, 2026 • MIT License                     ║
 ╚═════════════════════════════════════════════════════════════════════════╝
 ```
 
-**Practical AI tools that actually help with both the strategic thinking and daily execution of product management**
+**Practical AI tools for both the strategic thinking and the daily execution of product management — that also teach you to prompt better while you use them.**
 
-If you're drowning in stakeholder requests, seeking to scaffold strategies, struggling to write decent user stories, or just trying to make sense of your roadmap before it becomes roadkill, these prompts can help. They work in ChatGPT, Claude, Gemini, and pretty much any AI assistant you can copy-paste into.
+Every asset here works by copy-paste into ChatGPT, Claude, Gemini, Copilot, or any AI assistant. No installs, no accounts, no framework. Pick the problem you're solving, grab the prompt, go.
 
-Think of this as your AI-assisted toolkit for getting real PM work done faster and better while building your strategic thinking capabilities.
-
-_(09Feb26 - and if you're looking to update your Agent's skills, head on over to my recently pubilshd, [Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills#pmskills) repo.)_
-
-## Quick Start: Try This Right Now
-
-### Step 1: Find a prompt that matches your problem
-
-1. Go to any .md file in the [/prompts/](prompts/) folder
-2. Click "Raw" or "Code View" (not the pretty preview)
-3. Copy the entire thing - yes, including all those comment blocks that start with <!--
-
-### Step 2: Paste it into your AI assistant
-
-1. Open ChatGPT, Claude, Gemini, whatever you use
-2. Paste the whole prompt in there, as-is
-3. The AI will ask you questions to understand your specific situation
-
-### Step 3: Answer the questions and iterate
-
-- Some of the prompts will engage the AI to guideyou through a conversation, not just dump a template on you
-- The comments teach the AI how to be helpful specifically for product managers
-- You can refine and adjust as you go
-
-**Try this first:** Start with [Jobs-to-be-Done](prompts/jobs-to-be-done.md) if you're trying to understand your customers better, or [User Story Template](prompts/user-story-prompt-template.md) if you need to write better user stories.
+_(Looking to equip an AI agent rather than a chat session? See the companion [Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills#pmskills) repo.)_
 
 ---
 
-## Why This Approach Works Better
+## Start With Your Problem
 
-Here's the thing about working with AI: most people either treat it like Google on steroids (ask a question, get an answer) or like a magic template machine (fill in blanks, get output). Neither approach gets you very far with complex product management work.
+### "I need this artifact, and I have my context ready"
 
-These prompts work differently. They create conversations with AI where:
+You know the situation; you want execution-quality output in one pass. Go to **[/prompts/](prompts/)**:
 
-- **You stay in control** - AI asks questions, you make the strategic decisions
-- **Context builds gradually** - Instead of overwhelming you with forms, AI learns about your situation step by step
-- **Framework thinking** - The prompts use proven PM methodologies like Jobs-to-be-Done, Value Proposition Canvas, etc.
-- **Quality control built in** - The AI knows when to ask for missing information
+- Write a PRD from your discovery notes → [prd-prompt-template](prompts/prd-prompt-template.md)
+- Understand what customers actually need → [jobs-to-be-done](prompts/jobs-to-be-done.md)
+- Map who matters and how to engage them → [stakeholder-map](prompts/stakeholder-map-prompt-template.md)
+- Kill the launch on paper before reality does → [premortem](prompts/premortem-prompt-template.md)
+- Write user stories engineers don't hate → [user-story](prompts/user-story-prompt-template.md)
+- Size a market with citations, autonomously → [tam-sam-som-autonomous-analysis](prompts/tam-sam-som-autonomous-analysis.md)
+- Frame an initiative as testable hypotheses → [lean-ux-canvas](prompts/lean-ux-canvas-prompt-template.md)
+- Design an agentic AI system responsibly → [agent-strategy-canvas](prompts/agent-strategy-canvas-prompt-template.md)
+- Save this session's context for the next one → [session-saver](prompts/session-saver-prompt.md)
 
-### From User to Builder to Teacher
+### "I need to think it through — facilitate me"
 
-1. **Start by using** existing prompts for your daily work
-2. **Learn to customize** them for your specific company or industry
-3. **Eventually build your own** using the patterns you've learned
-4. **Help others** by sharing what works
+You have a fuzzy situation and want a guided working session that ends in the finished deliverable. Go to **[/workshops/](workshops/)**:
 
-This isn't about replacing your PM judgment with AI. It's about having AI help you think through complex problems more systematically.
+- Competitive battle card → [battle-card-workshop](workshops/battle-card-workshop.md)
+- PRD, section by section with checkpoints → [prd-workshop](workshops/prd-workshop.md)
+- Opportunity solution tree + first experiment → [opportunity-solution-tree-workshop](workshops/opportunity-solution-tree-workshop.md)
+- Build / don't-build business case with the math shown → [feature-investment-workshop](workshops/feature-investment-workshop.md)
+- Problem statement + "How might we" → [problem-framing-canvas-workshop](workshops/problem-framing-canvas-workshop.md)
+- Structured user-pain research table → [painstorming-workshop](workshops/painstorming-workshop.md)
+
+### "I need evidence about the market, not another meeting"
+
+The answers live on the public web, and the AI should do the fieldwork — with citations, labeled inference, and no invented facts. Go to **[/market-intelligence/](market-intelligence/)**:
+
+- Map a market's players and whitespace → [market-landscape-scan](market-intelligence/market-landscape-scan-prompt.md)
+- Research a competitor set, just-enough style → [competitive-research-snapshot](market-intelligence/competitive-research-snapshot-prompt.md)
+- Watch competitors on a schedule; report only material shifts → [competitive-intel-watch](market-intelligence/competitive-intel-watch-prompt.md)
+- Mine reviews and forums for unmet needs → [voice-of-customer-miner](market-intelligence/voice-of-customer-miner-prompt.md)
+
+These are built to run unattended — in agent workflows, loops, and scheduled runs — with question budgets, materiality bars, and stop conditions.
+
+### "I need people to *get it*"
+
+Evidence doesn't persuade; stories do. Go to **[/storytelling/](storytelling/)**:
+
+- Turn research into a stakeholder narrative → [Research-to-Narrative Bridge](storytelling/Generator%20-%20Research-to-Narrative%20Bridge.md)
+- Visual storyboards, hero's journeys, Starts-with-Why arcs → [browse the directory](storytelling/)
+
+### "I want to build my own prompts — or my own agents"
+
+- Learn the patterns by using the meta-prompts in **[/prompt-generators/](prompt-generators/)** — each one interviews you, then emits a reusable prompt
+- Design a custom research agent → [research-agent-prompt-generator](prompt-generators/research-agent-prompt-generator.md)
+- Study the pattern documents (below), then the exemplars in **[/vibes/](vibes/)** for loop-safe, agent-ready prompt structures
+- Reverse-engineer how any prompt works → **[/skeletons/](skeletons/)**
+
+### "I need to laugh so I don't cry"
+
+**[/resumes-resignations-reactions/](resumes-resignations-reactions/)** — therapeutic workplace satire. You've earned it.
+
+**Can't find it?** The generated **[catalog](catalog/INDEX.md)** lists every asset with a one-line description.
 
 ---
 
-## What's in Here
+## How These Prompts Work (and Teach)
 
-**[/prompts/](prompts/)** - The main collection. User stories, positioning statements, customer research, competitive analysis - the bread and butter PM work.
+Three interaction modes power everything here — documented in **[interaction-modes.md](interaction-modes.md)**:
 
-**[/prompt-generators/](prompt-generators/)** - Tools that help you build your own prompts. Think of these as templates for making templates.
+1. **Facilitation** (*you* hold the context): the AI asks a budgeted 3–5 questions, one at a time, offering 3 context-aware recommendations plus "Other" — with standing escape routes ("take your best guess", or paste your notes to skip ahead). Spec: **[generative-guidance-pattern.md](generative-guidance-pattern.md)**.
+2. **Checkpointed co-construction** (*an artifact* holds the structure): the AI builds section by section against your template, stopping at a gate after each; gaps are labeled **Assumption** or **Open Question**, never invented.
+3. **Autonomous investigation** (*the world* holds the context): the AI researches under an evidence contract — search plan shown first, real URLs, Fact / Inference / Assumption labels, and defaults that let it proceed when nobody's answering.
 
-**Important directory distinction:**
-- Use **`/prompts/`** when session context is already present and you want execution-quality output.
-- Use **`/prompt-generators/`** when context is partial and you need guided discovery + decision facilitation.
-- Use the **Persona-First Decision Facilitation Loop** guide here: [prompt-generators/persona-first-decision-facilitation-loop.md](prompt-generators/persona-first-decision-facilitation-loop.md).
+Prompts meant to run repeatedly — under loop or goal commands, or inside agents — use Jinja2 notation for explicit, bounded control flow: **[jinja2-prompt-structures.md](jinja2-prompt-structures.md)**.
 
-**[/storytelling/](storytelling/)** - Help with explaining complex product concepts through stories, visuals, and metaphors. Great for stakeholder presentations.
+### The teaching layer: view the raw code
 
-**[/resumes-resignations-reactions/](resumes-resignations-reactions/)** - A little therapeutic humor for dealing with workplace dysfunction. Sometimes you need to laugh to keep from crying.
+Every prompt carries an HTML comment block (`<!-- ... -->`) with its Description, Usage Note, When NOT to Use, and Pedagogic Notes — the instructor's notes explaining *why* the prompt works. GitHub's pretty preview hides them, so click **Raw** and copy everything, comments included. The AI ignores them; you shouldn't.
 
-**[/vibes/](vibes/)** - Experimental stuff to provide some guardrails and guidance to vibe coding. Advanced AI workflows that might be useful if you're comfortable with more cutting-edge approaches.
+### From user to builder to teacher
 
-**[/skeletons/](skeletons/)** - For people who want to understand how prompts actually work under the hood. Reverse engineering and analysis tools.
+1. **Use** the prompts on real work
+2. **Read the comments** to see why they're shaped that way
+3. **Customize** for your industry and team
+4. **Build your own** with the generators and pattern docs
+5. **Contribute back** — see [SUBMISSIONS-GUIDE.md](SUBMISSIONS-GUIDE.md)
 
 ---
 
-## Want to Work Locally?
+## For Engineers and Agents Improving This Repo
 
-If you want to customize these prompts or contribute your own, you can clone this repository:
+- **[CLAUDE.md](CLAUDE.md)** / **[AGENTS.md](AGENTS.md)** — the authoring contract, directory intent, and quality bar for AI-assisted sessions
+- **[prompting-style-guide.md](prompting-style-guide.md)** — the full methodology
+- **`scripts/validate-prompts.py`** — structural checks (required metadata, v2 fixtures, companion-link resolution); errors block, warnings are the migrate-on-touch worklist
+- **`scripts/generate-catalog.py`** — regenerates `catalog/` from the metadata comment blocks (the blocks are the source of truth; the catalog is derived output)
+- **[CHANGELOG.md](CHANGELOG.md)** — what changed in each version and what's deliberately left open
+
+Run both scripts after any prompt edit. Existing v1-pattern prompts are grandfathered: migrate them to v2 when you touch them, and never mass-rewrite.
+
+---
+
+## Contributing
+
+Real problems, tested prompts, teaching comments. Start with **[SUBMISSIONS-GUIDE.md](SUBMISSIONS-GUIDE.md)**, then:
 
 ```bash
 git clone https://github.com/deanpeters/product-manager-prompts.git
-cd product-manager-prompts
+git checkout -b your-improvement-name
+# make your changes, then:
+python3 scripts/validate-prompts.py
+python3 scripts/generate-catalog.py
+# commit, push, open a pull request
 ```
 
-This gives you local copies to modify without worrying about breaking anything, plus it's easier to search through everything.
+Test across ChatGPT, Claude, and Gemini. Humans make the strategic decisions; AI assists.
 
 ---
 
-## The Secret to Making These Work: Comments and Code View
+## Resources and Contact
 
-Here's what most people miss when they first find this repository: GitHub shows you a "pretty" preview of files by default, but that preview hides the most important parts.
-
-Every prompt has two layers:
-
-1. **The visible part** - What the AI executes
-2. **The comment blocks** - The teaching layer that shows you WHY it works
-
-### You MUST View the Raw Code
-
-When you click on any .md file:
-
-- Don't use the preview (it looks nice but hides the good stuff)
-- Click "Raw" or "Code View" to see everything
-- Copy ALL of it, including the parts that start with <!--
-
-### What Those Comments Do
-
-```markdown
-<!-- 
-## Description: Why this prompt works for PMs
-## Usage Note: What context you need before starting
-## Instructions: How the AI should guide the conversation
-## Attribution: Where this methodology comes from
--->
-```
-
-These comments are invisible to the AI when you paste the prompt, but they teach YOU how to work better with AI. Think of them as the instructor's notes that come with the lesson plan.
-
-### Why This Matters
-
-- **You learn while doing** - Each prompt teaches you something about AI collaboration
-- **You can customize intelligently** - Understanding why something works helps you adapt it
-- **You avoid common mistakes** - The comments warn you about pitfalls
-- **You build expertise** - Over time, you'll understand how to create your own prompts
-
----
-
-## Contributing and Learning Together
-
-Teaching others is how we all get better at this.
-
-I believe the best way to improve at product management in the AI era is by sharing what works (and what doesn't) and learning from each other. Your experience matters, whether you're just starting with AI or you've been experimenting for years.
-
-### Ways to Help
-
-**If you're new to AI:**
-
-- Try the prompts and share what worked or didn't work for your situation
-- Ask questions when instructions aren't clear
-- Suggest better examples based on your industry
-
-**If you're getting comfortable:**
-
-- Customize prompts for your specific context and share the variations
-- Create versions that work better for your team structure or company size
-- Improve the teaching comments based on what you learned
-
-**If you're advanced:**
-
-- Build new prompt generators using these patterns
-- Help analyze what makes some prompts more effective than others
-- Share novel approaches you've developed
-
-### How to Contribute
-
-**First, check out our [SUBMISSIONS-GUIDE.md](SUBMISSIONS-GUIDE.md)** for complete details on our vision, standards, and process.
-
-1. **Focus on helping others learn**
-   
-   - Include comments that explain your thinking
-   - Show why you made specific choices
-   - Help people understand your approach
-
-2. **Test your stuff**
-   
-   - Try your prompts in ChatGPT, Claude, and Gemini
-   - Make sure they solve real problems, not hypothetical ones
-   - Remember that humans make the final decisions, not AI
-
-3. **Simple process**
-   
-   ```bash
-   git clone https://github.com/deanpeters/product-manager-prompts.git
-   git checkout -b your-improvement-name
-   # Make your changes
-   git commit -m "Brief description of what you're adding"
-   git push origin your-improvement-name
-   # Open a pull request
-   ```
-
-### What Makes a Good Contribution
-
-- Solves a real PM problem you've actually faced
-- Includes clear explanations of how and why it works
-- Provides examples others can adapt to their situation
-- Respects the fact that humans, not AI, should make strategic decisions
-
----
-
-## Next Steps and Resources
-
-### Getting Started
-
-1. **Pick a problem** - Look through [/prompts/](prompts/) for something that matches what you're struggling with right now
-2. **Try it** - Copy the raw code, paste it into your AI assistant, follow the conversation
-3. **Study the comments** - See how the structure teaches you to work better with AI
-4. **Customize** - Adapt it for your specific situation
-
-### Going Deeper
-
-- **[Prompting Style Guide](prompting-style-guide.md)** - How all of this actually works under the hood
-- **[Productside Workshop](https://www.productside.com/courses/ai-innovation-for-product-managers/)** - Live training if you want to go deeper
-- **[My LinkedIn](https://www.linkedin.com/in/deanpeters/)** - Where I share ongoing thoughts about AI and product management
-
----
-
-## Common Problems These Help With
-
-**Stakeholder alignment issues?** Try the [positioning statement](prompts/positioning-statement.md) framework to get everyone on the same page.
-
-**Drowning in feature requests?** Use the [jobs-to-be-done](prompts/jobs-to-be-done.md) analysis to focus on what customers actually need.
-
-**Writing terrible user stories?** The [user story templates](prompts/user-story-prompt-template.md) will help you write ones that actually make sense.
-
-**Want to create your own tools?** Start with the [universal prompt builder](prompt-generators/a-generative-AI-prompt-builder-for-product-professionals.md) to learn the patterns.
-
----
-
-## Get in Touch
-
-I'm here to help, learn together, and make this stuff more useful for product managers.
-
-- **Have questions?** Open an [issue](https://github.com/deanpeters/product-manager-prompts/issues) 
-- **Want to connect?** Find me on [LinkedIn](https://www.linkedin.com/in/deanpeters/)
-- **Ready for training?** Check out [Productside workshops](https://www.productside.com/)
-
-The best product managers will be the ones who help others get better at this stuff, not the ones who hoard knowledge.
-
----
+- **[Productside Workshops](https://www.productside.com/courses/ai-innovation-for-product-managers/)** — live training to go deeper
+- **Questions?** Open an [issue](https://github.com/deanpeters/product-manager-prompts/issues)
+- **Connect:** [Dean Peters on LinkedIn](https://www.linkedin.com/in/deanpeters/)
 
 ## License
 
-Licensed under the [MIT License](https://choosealicense.com/licenses/mit/). Use freely, modify openly, and share knowledge generously. 
+Licensed under the [MIT License](https://choosealicense.com/licenses/mit/). Use freely, modify openly, and share knowledge generously.
 
 *Created by [Dean Peters](https://github.com/deanpeters) • Built for the product management community • Designed to teach through doing*
