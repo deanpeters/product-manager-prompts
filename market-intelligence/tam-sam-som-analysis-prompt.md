@@ -1,4 +1,4 @@
-# tam-sam-som-autonomous-analysis.md
+# tam-sam-som-analysis-prompt.md
 <!--
 ## Description:
 Runs a fully autonomous, citation-backed TAM/SAM/SOM analysis. The AI

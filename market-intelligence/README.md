@@ -44,13 +44,23 @@ month's.
 | **[earnings-executive-signal-refresh-prompt.md](earnings-executive-signal-refresh-prompt.md)** | Quarterly diff of one company's executive and strategy signals against a prior profile |
 | **[pricing-packaging-tracker-prompt.md](pricing-packaging-tracker-prompt.md)** | Tracking competitor pricing and packaging as a diffable time series |
 | **[pestel-delta-monitor-prompt.md](pestel-delta-monitor-prompt.md)** | Quarterly re-scan of macro factors: what moved, what broke, what entered the frame |
+| **[tam-sam-som-analysis-prompt.md](tam-sam-som-analysis-prompt.md)** | Citation-backed market sizing, bottom-up, with best/base/worst sensitivity |
+| **[battle-card-builder-prompt.md](battle-card-builder-prompt.md)** | Evidence-cited battle card from public sources: per-claim labels, field-action format |
+| **[swot-analysis-prompt.md](swot-analysis-prompt.md)** | SWOT with sources, quadrant discipline, and the S-O / W-T crossings |
+| **[porters-five-forces-prompt.md](porters-five-forces-prompt.md)** | Industry structure read: five rated forces with documented signals, profit-pool implication |
+| **[ansoff-matrix-prompt.md](ansoff-matrix-prompt.md)** | Growth options with evidence per quadrant, risk gradient respected, recommended sequence |
 
 **Typical flow:** landscape scan → snapshot the players that matter →
 watch on a cadence, with the pricing tracker, executive refresh, and
-PESTEL delta as deeper lenses. To build a custom investigation, use
+PESTEL delta as deeper lenses. The strategy frameworks then build on
+that evidence: **five forces** reads the industry's structure, **SWOT**
+reads one player's position, **Ansoff** maps the growth options,
+**TAM/SAM/SOM** sizes them, and the **battle-card builder** arms the
+field. To build a custom investigation, use
 [prompt-generators/research-agent-prompt-generator.md](../prompt-generators/research-agent-prompt-generator.md).
 To turn any output here into a stakeholder story, use
 [storytelling/Generator - Research-to-Narrative Bridge.md](../storytelling/Generator%20-%20Research-to-Narrative%20Bridge.md).
-
-See also `prompts/tam-sam-som-autonomous-analysis.md`, which follows
-the same mode from the `/prompts/` directory.
+For loop, batch, and routine recipes over these prompts, see
+[loops/](../loops/) — swot-batch, market-sizing-loop, and
+competitive-watch-routine run this directory's frameworks under
+governed repetition.

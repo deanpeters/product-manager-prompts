@@ -1,5 +1,5 @@
 <!--
-Companion: prompts/tam-sam-som-autonomous-analysis.md is the autonomous
+Companion: market-intelligence/tam-sam-som-analysis-prompt.md is the autonomous
 sibling: same artifact, but the AI does the research itself with
 citations and evidence-based defaults, suitable for agent or scheduled
 runs. Use this generator when you want to be facilitated through

@@ -11,7 +11,7 @@ feeds market sizing, positioning, and competitor selection.
 Use when entering or re-evaluating a market, scoping a new product
 line, or preparing strategy work that needs a defensible view of who
 plays where. Downstream: feeds
-prompts/tam-sam-som-autonomous-analysis.md (sizing),
+market-intelligence/tam-sam-som-analysis-prompt.md (sizing),
 competitive-research-snapshot-prompt.md (deep-dive on selected
 players), and prompts/positioning-statement.md.
 

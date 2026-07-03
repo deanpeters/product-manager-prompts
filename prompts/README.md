@@ -72,7 +72,6 @@ Research and analytical frameworks for strategic decisions:
 |--------|----------|----------------|
 | **[pestel-analysis-prompt-template.md](pestel-analysis-prompt-template.md)** | Understanding macro-market forces | PESTEL framework |
 | **[recommendation-canvas-template.md](recommendation-canvas-template.md)** | Building business cases for decisions | Business case methodology |
-| **[tam-sam-som-autonomous-analysis.md](tam-sam-som-autonomous-analysis.md)** | Citation-backed market sizing, built for you | TAM/SAM/SOM, autonomous investigation mode |
 | **[premortem-prompt-template.md](premortem-prompt-template.md)** | Naming failure risks before you commit | Gary Klein premortem |
 | **[lean-ux-canvas-prompt-template.md](lean-ux-canvas-prompt-template.md)** | Framing initiatives as hypotheses and experiments | Gothelf Lean UX Canvas v2 |
 | **[reverse-engineer-IEEE830srs-to-PRD-prompt-template.md](reverse-engineer-IEEE830srs-to-PRD-prompt-template.md)** | Translating technical requirements | IEEE 830 standards |

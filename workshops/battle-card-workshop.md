@@ -9,6 +9,9 @@ user through 3–5 questions to shape the card before generating it.
 Use when you need to create or update a battle card for any competitive sales
 situation. Works best when you have some context about your company and the
 competitor already in the session.
+Companion: market-intelligence/battle-card-builder-prompt.md builds
+the card autonomously from public evidence when the session lacks
+competitive context.
 
 ## Instructions:
 Apply the Generative Guidance pattern: 5 choices per question, choices 1–3

@@ -18,7 +18,7 @@ this snapshot when the next step is sales enablement.
 
 ## When NOT to Use:
 - You need market sizing, not landscape: use
-  prompts/tam-sam-som-autonomous-analysis.md.
+  market-intelligence/tam-sam-som-analysis-prompt.md.
 - You need deep intel on one company (executive signals, strategy):
   use prompts/company-profile-executive-insights-research.md.
 - The competitor set and facts are already gathered: go straight to
