@@ -228,6 +228,7 @@ Demonstrate understanding of how PM work intersects with:
 - **Guided sessions that produce the artifact itself:** `/workshops/` directory
 - **Visual/narrative tools:** `/storytelling/` directory
 - **Autonomous research prompts:** `/market-intelligence/` directory
+- **Seasoned /goal, /loop, /batch, /routine recipes:** `/loops/` directory
 - **Workplace humor/therapy:** `/resumes-resignations-reactions/` directory
 - **Experimental approaches:** `/vibes/` directory
 - **Analysis tools:** `/skeletons/` directory

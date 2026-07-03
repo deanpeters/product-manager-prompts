@@ -163,8 +163,14 @@ The best answer to runaway loops is not "stop at N" (arbitrary) but
 
 ## Where This Is Used
 
-Exemplars live in `/vibes/` (the repo's experimental and agentic
-directory):
+**`/loops/`** holds the applied recipes: key prompts recast as
+seasoned `/goal`, `/loop`, `/batch`, and `/routine` commands at three
+levels (plain, plain-English loop lingo, Just Enough Jinja2), built
+on four rules — calculate once, order checks by cost, index before
+search, know the critical path.
+
+Structural exemplars live in `/vibes/` (the repo's experimental and
+agentic directory):
 
 - `vibes/user-story-splitting-jinja2-loop.md` — the flagship:
   Lawrence-rubric plan-then-iterate splitting of an epic (all three

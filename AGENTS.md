@@ -21,6 +21,7 @@ If there is a tradeoff, prefer pedagogy and clarity over cleverness.
 - `workshops/`: Guided multi-turn sessions that produce the finished artifact itself (battle card, PRD, canvas, business case).
 - `storytelling/`: Narrative, visual, and communication-oriented prompt assets.
 - `market-intelligence/`: Autonomous research prompts (evidence contracts, search plan gates, stable diffable schemas; suitable for agents, loops, and scheduled runs).
+- `loops/`: Seasoned /goal, /loop, /batch, /routine recipes recasting key prompts at three levels — plain commands, plain-English loop lingo (pass ceilings, no-change exits, modify-or-continue gates, fail-stop, receipts), and Just Enough Jinja2. Grounded in the four rules: calculate once, order checks by cost, index before search, know the critical path.
 - `skeletons/`: Prompt architecture analysis and reverse-engineering tools.
 - `vibes/`: Experimental and agentic workflow prompts.
 - `resumes-resignations-reactions/`: Satirical/therapeutic creative prompts.
