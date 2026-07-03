@@ -11,10 +11,10 @@
 ║   ██║     ██║ ╚═╝ ██║    ██║     ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║        ██║   ███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝   ╚══════╝
 ║                                                                         ║
-║   85 practical prompt assets for AI-assisted product management         ║
+║   96 practical prompt assets for AI-assisted product management         ║
 ║   ChatGPT • Claude • Copilot • Gemini • and others                      ║
 ║                                                                         ║
-║   Community Build v2.0 • July 3, 2026 • MIT License                     ║
+║   Community Build v2.1 • July 3, 2026 • MIT License                     ║
 ╚═════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -37,7 +37,6 @@ You know the situation; you want execution-quality output in one pass. Go to **[
 - Map who matters and how to engage them → [stakeholder-map](prompts/stakeholder-map-prompt-template.md)
 - Kill the launch on paper before reality does → [premortem](prompts/premortem-prompt-template.md)
 - Write user stories engineers don't hate → [user-story](prompts/user-story-prompt-template.md)
-- Size a market with citations, autonomously → [tam-sam-som-autonomous-analysis](prompts/tam-sam-som-autonomous-analysis.md)
 - Frame an initiative as testable hypotheses → [lean-ux-canvas](prompts/lean-ux-canvas-prompt-template.md)
 - Design an agentic AI system responsibly → [agent-strategy-canvas](prompts/agent-strategy-canvas-prompt-template.md)
 - Save this session's context for the next one → [session-saver](prompts/session-saver-prompt.md)
@@ -61,6 +60,11 @@ The answers live on the public web, and the AI should do the fieldwork — with 
 - Research a competitor set, just-enough style → [competitive-research-snapshot](market-intelligence/competitive-research-snapshot-prompt.md)
 - Watch competitors on a schedule; report only material shifts → [competitive-intel-watch](market-intelligence/competitive-intel-watch-prompt.md)
 - Mine reviews and forums for unmet needs → [voice-of-customer-miner](market-intelligence/voice-of-customer-miner-prompt.md)
+- Size a market with citations, bottom-up → [tam-sam-som-analysis](market-intelligence/tam-sam-som-analysis-prompt.md)
+- Build an evidence-cited battle card → [battle-card-builder](market-intelligence/battle-card-builder-prompt.md)
+- SWOT a company with sources, not vibes → [swot-analysis](market-intelligence/swot-analysis-prompt.md)
+- Read an industry's structure and power → [porters-five-forces](market-intelligence/porters-five-forces-prompt.md)
+- Map growth options with evidence per quadrant → [ansoff-matrix](market-intelligence/ansoff-matrix-prompt.md)
 
 These are built to run unattended — in agent workflows, loops, and scheduled runs — with question budgets, materiality bars, and stop conditions.
 
@@ -70,6 +74,18 @@ Evidence doesn't persuade; stories do. Go to **[/storytelling/](storytelling/)**
 
 - Turn research into a stakeholder narrative → [Research-to-Narrative Bridge](storytelling/Generator%20-%20Research-to-Narrative%20Bridge.md)
 - Visual storyboards, hero's journeys, Starts-with-Why arcs → [browse the directory](storytelling/)
+
+### "I run prompts as loops, goals, batches, or routines"
+
+You still have to prompt the loop — nobody skipped that step, they just put a slash in front of it. Go to **[/loops/](loops/)** for seasoned recipes at three levels (plain commands → plain-English controls → Just Enough Jinja2):
+
+- Split epics until nothing splits, with a pass ceiling → [story-splitting-loop](loops/story-splitting-loop.md)
+- Draft a PRD section by section, in dependency order → [prd-section-loop](loops/prd-section-loop.md)
+- Batch a backlog of epics without contaminating it → [epic-story-batch](loops/epic-story-batch.md)
+- Synthesize research one category at a time → [research-synthesis-loop](loops/research-synthesis-loop.md)
+- Run a versioned competitive watch that won't drift → [competitive-watch-routine](loops/competitive-watch-routine.md)
+- SWOT a competitor set with receipts, not vibes → [swot-batch](loops/swot-batch.md)
+- Size a market one segment at a time → [market-sizing-loop](loops/market-sizing-loop.md)
 
 ### "I want to build my own prompts — or my own agents"
 

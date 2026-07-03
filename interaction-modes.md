@@ -8,7 +8,7 @@ mode by asking whose knowledge the deliverable depends on.
 |---|---|---|---|
 | **Facilitation** (Generative Guidance) | The human | Answers narrowing questions | `workshops/battle-card-workshop.md` |
 | **Checkpointed co-construction** | An artifact (template, case study, session material) | Gates each section | `workshops/prd-workshop.md` |
-| **Autonomous investigation** | The world (search, data, published sources) | Optional; sets defaults, then reviews | `prompts/tam-sam-som-autonomous-analysis.md` |
+| **Autonomous investigation** | The world (search, data, published sources) | Optional; sets defaults, then reviews | `market-intelligence/tam-sam-som-analysis-prompt.md` |
 
 A single prompt may blend modes — a facilitation that searches when its
 options would be generic is borrowing from investigation; an
@@ -122,7 +122,7 @@ direction and defaults, then reviews evidence. The defining moves:
     rule**: given the previous snapshot, report only what materially
     changed.
 
-Exemplars: `prompts/tam-sam-som-autonomous-analysis.md` (sizing) and
+Exemplars: `market-intelligence/tam-sam-som-analysis-prompt.md` (sizing) and
 `market-intelligence/competitive-research-snapshot-prompt.md` (landscape,
 with the search plan gate and three-level labels in full form).
 

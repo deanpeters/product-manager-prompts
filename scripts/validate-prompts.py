@@ -28,6 +28,7 @@ DIRECTORIES = [
     "prompt-generators",
     "market-intelligence",
     "workshops",
+    "loops",
     "storytelling",
     "skeletons",
     "vibes",
