@@ -93,6 +93,20 @@ Use the "one question at a time" approach:
 - Include fallback questions when essential information is missing
 - Guide users through strategic thinking, don't just extract information
 
+If your prompt runs a guided question loop, follow the **Generative
+Guidance pattern v2** (see `generative-guidance-pattern.md`): 3
+context-aware recommendations plus "Other" per question, standing
+bypasses ("take your best guess" and "drop in your notes"), loop
+control (skip / go back / stop early), a question budget, and a
+confirm-before-build summary at loop close. If your prompt builds
+against a template section by section, or does autonomous research
+with citations, see `interaction-modes.md` for those contracts.
+
+### When NOT to Use
+Include a short note (in the metadata comment or Usage Note) naming the
+situations where your prompt is the wrong tool and what to reach for
+instead. Teaching the misuse boundary is part of the pedagogy.
+
 ### Decision Facilitation Contract
 Every prompt must close with a "Final Step" block offering exactly 4 numbered next options, recommended option first:
 
@@ -211,7 +225,9 @@ Demonstrate understanding of how PM work intersects with:
 ### Where to Put Your Prompt
 - **Getting Real PM Sh!t Done:** `/prompts/` directory
 - **Prompts that build other prompts:** `/prompt-generators/` directory  
+- **Guided sessions that produce the artifact itself:** `/workshops/` directory
 - **Visual/narrative tools:** `/storytelling/` directory
+- **Autonomous research prompts:** `/market-intelligence/` directory
 - **Workplace humor/therapy:** `/resumes-resignations-reactions/` directory
 - **Experimental approaches:** `/vibes/` directory
 - **Analysis tools:** `/skeletons/` directory
