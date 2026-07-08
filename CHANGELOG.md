@@ -1,5 +1,20 @@
 # Changelog
 
+## Unreleased
+
+### `prompts/` — inbound triage (new job-to-be-done)
+
+- `incoming-request-breakdown.md` — a chief-of-staff-grade analyst
+  that decodes an incoming message (Slack ping, email, mandate,
+  escalation, FYI) into a structured breakdown: classify, sender
+  read, literal ask vs underlying job-to-be-done, sentiment and
+  subtext, success criteria vs must-haves, gaps, risks, and next
+  steps. Extends the library beyond "produce a named artifact" into
+  interpreting the asks that land in a PM's inbox — reading from a
+  product leader's chair, not an engineer's. Multimodal input
+  (screenshot, image, file, PDF, or text); depth scales to the
+  message.
+
 ## v2.1 — July 3, 2026
 
 Loops and strategy frameworks: the library's answer to "prompts are

@@ -82,6 +82,7 @@ Tools for stakeholder alignment and storytelling:
 | Prompt | Best For | Framework Used |
 |--------|----------|----------------|
 | **[stakeholder-map-prompt-template.md](stakeholder-map-prompt-template.md)** | Mapping who matters and how to engage them | Power x Interest grid |
+| **[incoming-request-breakdown.md](incoming-request-breakdown.md)** | Decoding what an inbound ask really wants | Chief-of-staff triage read |
 | **[visionary-press-release.md](visionary-press-release.md)** | Working backwards from customer value | Amazon Working Backwards |
 | **[agent-strategy-canvas-prompt-template.md](agent-strategy-canvas-prompt-template.md)** | Designing agentic AI systems with authorization boundaries | Agent Strategy Canvas (9-box) |
 | **[session-saver-prompt.md](session-saver-prompt.md)** | Capturing a session as portable context for a fresh start | Prompt anatomy capture schema |
