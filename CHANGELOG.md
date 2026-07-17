@@ -2,6 +2,30 @@
 
 ## Unreleased
 
+### `market-intelligence/reference/` — the tradecraft shelf (new)
+
+Doctrine documents behind the runnable investigation prompts. These
+are reference material, not prompts: no comment block, excluded from
+the catalog and validator.
+
+- `competitive-research-compendium.md` — *Competitive Research on
+  Steroids*: the eight intelligence-community collection disciplines
+  (OSINT, FININT, GEOINT/DEMOINT, TECHINT, HUMINT, SIGINT, MASINT,
+  All-Source Fusion) mapped to PM artifacts. Per discipline: free and
+  paid sources, signal → inference chains, and which artifact it
+  feeds. Plus the confidence-stacking rule, a fusion template and
+  cadence, an instantiation block ([TARGET], [MARKET], [GEOGRAPHY],
+  [BUYER], [CAPABILITY], [DECISION]), and collection guardrails.
+- `regional-source-overlays-eu-mena.md` — companion overlay system:
+  EU (TED, BRIS, CORDIS, Eurostat, EUR-Lex, NANDO) and MENA (GCC-Stat,
+  country procurement platforms, development-bank procurement,
+  sovereign/localization signals) sources mapped onto the core
+  disciplines, with regional research guardrails.
+- `market-intelligence/README.md` — new "tradecraft shelf" section
+  plus a discipline coverage table mapping existing prompts to the
+  eight disciplines and naming the gaps (TECHINT, HUMINT, MASINT,
+  All-Source Fusion).
+
 ### `prompts/` — inbound triage (new job-to-be-done)
 
 - `incoming-request-breakdown.md` — a chief-of-staff-grade analyst

@@ -50,6 +50,41 @@ month's.
 | **[porters-five-forces-prompt.md](porters-five-forces-prompt.md)** | Industry structure read: five rated forces with documented signals, profit-pool implication |
 | **[ansoff-matrix-prompt.md](ansoff-matrix-prompt.md)** | Growth options with evidence per quadrant, risk gradient respected, recommended sequence |
 
+## The tradecraft shelf
+
+The prompts above are the runnable layer. The doctrine behind them —
+what to collect, where, and which signal → inference chains to run —
+lives in [`reference/`](reference/):
+
+- **[competitive-research-compendium.md](reference/competitive-research-compendium.md)**
+  — the eight intelligence-community collection disciplines (OSINT,
+  FININT, GEOINT/DEMOINT, TECHINT, HUMINT, SIGINT, MASINT, All-Source
+  Fusion) mapped to PM artifacts, with sources, signal chains,
+  confidence stacking, and a fusion cadence
+- **[regional-source-overlays-eu-mena.md](reference/regional-source-overlays-eu-mena.md)**
+  — EU and MENA source overlays: procurement platforms, registries,
+  statistics bureaus, and the regional guardrails (the disciplines
+  don't change across markets; the sources and evidentiary burden do)
+
+Files in `reference/` are doctrine, not prompts — they carry no
+comment block and are excluded from the catalog and validator.
+
+### Discipline coverage
+
+How this directory's prompts map onto the compendium's disciplines —
+and where the gaps are:
+
+| Discipline | Covered by |
+|---|---|
+| OSINT | market-landscape-scan, competitive-research-snapshot, voice-of-customer-miner |
+| FININT | earnings-executive-signal-refresh *(procurement/government-spend angle uncovered)* |
+| GEOINT/DEMOINT | tam-sam-som-analysis, pestel-delta-monitor (macro terrain deltas) |
+| TECHINT | *gap — patents, trademarks, technographics, changelog diffs* |
+| HUMINT | *gap — hiring signals, talent moves, employee sentiment* |
+| SIGINT | competitive-intel-watch, pricing-packaging-tracker |
+| MASINT | *gap — supply chain and ops exhaust; strongest for hardware/industrial* |
+| All-Source Fusion | *gap — confidence stacking across the others; swot-analysis, porters-five-forces, ansoff-matrix, and battle-card-builder consume fused evidence but nothing runs the fusion* |
+
 **Typical flow:** landscape scan → snapshot the players that matter →
 watch on a cadence, with the pricing tracker, executive refresh, and
 PESTEL delta as deeper lenses. The strategy frameworks then build on
