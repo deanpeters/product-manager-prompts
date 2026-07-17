@@ -49,6 +49,42 @@ month's.
 | **[swot-analysis-prompt.md](swot-analysis-prompt.md)** | SWOT with sources, quadrant discipline, and the S-O / W-T crossings |
 | **[porters-five-forces-prompt.md](porters-five-forces-prompt.md)** | Industry structure read: five rated forces with documented signals, profit-pool implication |
 | **[ansoff-matrix-prompt.md](ansoff-matrix-prompt.md)** | Growth options with evidence per quadrant, risk gradient respected, recommended sequence |
+| **[all-source-fusion-prompt.md](all-source-fusion-prompt.md)** | The situation room: fuses signals from the other investigations into confidence-rated stories with artifact-mapped responses |
+
+## The tradecraft shelf
+
+The prompts above are the runnable layer. The doctrine behind them —
+what to collect, where, and which signal → inference chains to run —
+lives in [`reference/`](reference/):
+
+- **[competitive-research-compendium.md](reference/competitive-research-compendium.md)**
+  — the eight intelligence-community collection disciplines (OSINT,
+  FININT, GEOINT/DEMOINT, TECHINT, HUMINT, SIGINT, MASINT, All-Source
+  Fusion) mapped to PM artifacts, with sources, signal chains,
+  confidence stacking, and a fusion cadence
+- **[regional-source-overlays-eu-mena.md](reference/regional-source-overlays-eu-mena.md)**
+  — EU and MENA source overlays: procurement platforms, registries,
+  statistics bureaus, and the regional guardrails (the disciplines
+  don't change across markets; the sources and evidentiary burden do)
+
+Files in `reference/` are doctrine, not prompts — they carry no
+comment block and are excluded from the catalog and validator.
+
+### Discipline coverage
+
+How this directory's prompts map onto the compendium's disciplines —
+and where the gaps are:
+
+| Discipline | Covered by |
+|---|---|
+| OSINT | market-landscape-scan, competitive-research-snapshot, voice-of-customer-miner |
+| FININT | earnings-executive-signal-refresh *(procurement/government-spend angle uncovered)* |
+| GEOINT/DEMOINT | tam-sam-som-analysis, pestel-delta-monitor (macro terrain deltas) |
+| TECHINT | *gap — patents, trademarks, technographics, changelog diffs* |
+| HUMINT | *gap — hiring signals, talent moves, employee sentiment* |
+| SIGINT | competitive-intel-watch, pricing-packaging-tracker |
+| MASINT | *gap — supply chain and ops exhaust; strongest for hardware/industrial* |
+| All-Source Fusion | all-source-fusion (confidence stacking, conflict digs, artifact-mapped responses); swot-analysis, porters-five-forces, ansoff-matrix, and battle-card-builder consume the fused evidence |
 
 **Typical flow:** landscape scan → snapshot the players that matter →
 watch on a cadence, with the pricing tracker, executive refresh, and
@@ -56,7 +92,9 @@ PESTEL delta as deeper lenses. The strategy frameworks then build on
 that evidence: **five forces** reads the industry's structure, **SWOT**
 reads one player's position, **Ansoff** maps the growth options,
 **TAM/SAM/SOM** sizes them, and the **battle-card builder** arms the
-field. To build a custom investigation, use
+field. When several investigations have run, **all-source fusion**
+stacks their signals into confidence-rated stories — the situation
+room over the collection floor. To build a custom investigation, use
 [prompt-generators/research-agent-prompt-generator.md](../prompt-generators/research-agent-prompt-generator.md).
 To turn any output here into a stakeholder story, use
 [storytelling/Generator - Research-to-Narrative Bridge.md](../storytelling/Generator%20-%20Research-to-Narrative%20Bridge.md).

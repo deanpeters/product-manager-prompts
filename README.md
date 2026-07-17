@@ -66,8 +66,11 @@ The answers live on the public web, and the AI should do the fieldwork — with 
 - SWOT a company with sources, not vibes → [swot-analysis](market-intelligence/swot-analysis-prompt.md)
 - Read an industry's structure and power → [porters-five-forces](market-intelligence/porters-five-forces-prompt.md)
 - Map growth options with evidence per quadrant → [ansoff-matrix](market-intelligence/ansoff-matrix-prompt.md)
+- Fuse it all into confidence-rated intelligence → [all-source-fusion](market-intelligence/all-source-fusion-prompt.md)
 
 These are built to run unattended — in agent workflows, loops, and scheduled runs — with question budgets, materiality bars, and stop conditions.
+
+The tradecraft behind them — the eight intelligence-community collection disciplines, signal → inference chains, confidence stacking, and regional source overlays — lives on the [reference shelf](market-intelligence/reference/): start with the [Competitive Research Compendium](market-intelligence/reference/competitive-research-compendium.md).
 
 ### "I need people to *get it*"
 

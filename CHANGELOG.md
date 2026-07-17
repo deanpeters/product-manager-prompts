@@ -2,6 +2,46 @@
 
 ## Unreleased
 
+### `market-intelligence/` — all-source fusion (new prompt)
+
+- `all-source-fusion-prompt.md` — the situation room over the
+  collection floor: fuses signals from the directory's other
+  investigations (or a bulk drop) into confidence-rated stories.
+  Runs the confidence-stacking rule (1 discipline = watch item,
+  2 = working hypothesis, 3+ = actionable intelligence, conflict =
+  dig), an independence test (same-source signals collapse to one
+  discipline), and the ambition-vs-commitment corollary
+  (announcements are intent until funding, procurement, hiring, or
+  permits corroborate). Every actionable story ends with the PM
+  artifact it changes and the move to make before the competitor's
+  launch, not after. Stable schema; a prior brief becomes the
+  baseline the next run diffs against. Doctrine source: the
+  compendium below.
+
+### `market-intelligence/reference/` — the tradecraft shelf (new)
+
+Doctrine documents behind the runnable investigation prompts. These
+are reference material, not prompts: no comment block, excluded from
+the catalog and validator.
+
+- `competitive-research-compendium.md` — *Competitive Research on
+  Steroids*: the eight intelligence-community collection disciplines
+  (OSINT, FININT, GEOINT/DEMOINT, TECHINT, HUMINT, SIGINT, MASINT,
+  All-Source Fusion) mapped to PM artifacts. Per discipline: free and
+  paid sources, signal → inference chains, and which artifact it
+  feeds. Plus the confidence-stacking rule, a fusion template and
+  cadence, an instantiation block ([TARGET], [MARKET], [GEOGRAPHY],
+  [BUYER], [CAPABILITY], [DECISION]), and collection guardrails.
+- `regional-source-overlays-eu-mena.md` — companion overlay system:
+  EU (TED, BRIS, CORDIS, Eurostat, EUR-Lex, NANDO) and MENA (GCC-Stat,
+  country procurement platforms, development-bank procurement,
+  sovereign/localization signals) sources mapped onto the core
+  disciplines, with regional research guardrails.
+- `market-intelligence/README.md` — new "tradecraft shelf" section
+  plus a discipline coverage table mapping existing prompts to the
+  eight disciplines and naming the gaps (TECHINT, HUMINT, MASINT,
+  All-Source Fusion).
+
 ### `prompts/` — inbound triage (new job-to-be-done)
 
 - `incoming-request-breakdown.md` — a chief-of-staff-grade analyst
