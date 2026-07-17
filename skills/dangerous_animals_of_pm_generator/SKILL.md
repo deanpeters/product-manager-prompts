@@ -276,7 +276,7 @@ conversation you weren't in.
 
 ### Provenance
 - Adapted from `prompts/Dangerous Animals of Product Management Beast Generator.md` in `https://github.com/deanpeters/product-manager-prompts`
-- Created by Dean Peters, September 2024. MIT License.
+- Created by Dean Peters, September 2024. CC BY-NC-SA 4.0 (see repo LICENSE and LICENSING.md); commercial use requires expressed written permission from Dean Peters.
 
 ---
 

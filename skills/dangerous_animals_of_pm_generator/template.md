@@ -3,7 +3,7 @@
 Use this format for each creature generated after the 5-question facilitation.
 
 ## Provenance
-Adapted from `prompts/Dangerous Animals of Product Management Beast Generator.md` in `https://github.com/deanpeters/product-manager-prompts`. Created by Dean Peters, September 2024. MIT License.
+Adapted from `prompts/Dangerous Animals of Product Management Beast Generator.md` in `https://github.com/deanpeters/product-manager-prompts`. Created by Dean Peters, September 2024. CC BY-NC-SA 4.0 (see repo LICENSE and LICENSING.md); commercial use requires expressed written permission from Dean Peters.
 
 ---
 
