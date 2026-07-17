@@ -2,6 +2,22 @@
 
 ## Unreleased
 
+### `market-intelligence/` — all-source fusion (new prompt)
+
+- `all-source-fusion-prompt.md` — the situation room over the
+  collection floor: fuses signals from the directory's other
+  investigations (or a bulk drop) into confidence-rated stories.
+  Runs the confidence-stacking rule (1 discipline = watch item,
+  2 = working hypothesis, 3+ = actionable intelligence, conflict =
+  dig), an independence test (same-source signals collapse to one
+  discipline), and the ambition-vs-commitment corollary
+  (announcements are intent until funding, procurement, hiring, or
+  permits corroborate). Every actionable story ends with the PM
+  artifact it changes and the move to make before the competitor's
+  launch, not after. Stable schema; a prior brief becomes the
+  baseline the next run diffs against. Doctrine source: the
+  compendium below.
+
 ### `market-intelligence/reference/` — the tradecraft shelf (new)
 
 Doctrine documents behind the runnable investigation prompts. These

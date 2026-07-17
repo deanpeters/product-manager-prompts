@@ -66,6 +66,7 @@ The answers live on the public web, and the AI should do the fieldwork — with 
 - SWOT a company with sources, not vibes → [swot-analysis](market-intelligence/swot-analysis-prompt.md)
 - Read an industry's structure and power → [porters-five-forces](market-intelligence/porters-five-forces-prompt.md)
 - Map growth options with evidence per quadrant → [ansoff-matrix](market-intelligence/ansoff-matrix-prompt.md)
+- Fuse it all into confidence-rated intelligence → [all-source-fusion](market-intelligence/all-source-fusion-prompt.md)
 
 These are built to run unattended — in agent workflows, loops, and scheduled runs — with question budgets, materiality bars, and stop conditions.
 
