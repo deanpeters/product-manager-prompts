@@ -55,8 +55,9 @@ license requires.
 
 The agent-skills companion,
 [Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills),
-is licensed under the same terms: CC BY-NC-SA 4.0, commercial use
-by expressed written permission from Dean Peters.
+carries the same license (CC BY-NC-SA 4.0) but grants its own,
+slightly broader plain-language permissions — see its README's
+License section. Each repository's own guide governs it.
 
 ## History
 
