@@ -51,6 +51,13 @@ expression by Dean Peters. Keep those attribution fields intact
 when you adapt a prompt — they are part of the attribution this
 license requires.
 
+## Companion repository
+
+The agent-skills companion,
+[Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills),
+is licensed under the same terms: CC BY-NC-SA 4.0, commercial use
+by expressed written permission from Dean Peters.
+
 ## History
 
 Prior to v2.3.0 (July 2026) this repository was distributed under

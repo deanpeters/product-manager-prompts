@@ -93,13 +93,45 @@ def check_file(path):
     if EMOJI.search(body):
         warnings.append("emoji found in prompt body (output rules say ASCII)")
 
-    # Licensing: repo is CC BY-NC-SA 4.0 as of v2.3.0; MIT must not creep back
-    if re.search(r"\bMIT\b(?!RE)", text):
-        errors.append("references the MIT license (repo is CC BY-NC-SA 4.0)")
-    if re.search(r"Licensing", text) and "CC BY-NC-SA 4.0" not in text:
-        errors.append("Licensing present but not CC BY-NC-SA 4.0")
-
     return errors, warnings
+
+
+# Licensing is repo-wide or it is nothing: sweep EVERY .md in the repo,
+# not just the asset directories, so new directories (skills/, future
+# additions) cannot slip an old license through.
+LICENSE_EXEMPT = {
+    "CHANGELOG.md",       # historical record of the MIT era
+    "LICENSING.md",       # explains the MIT history intentionally
+    "README.md",          # carries the pre-v2.3.0 MIT history note
+    "AGENTS.md",          # states the "never reintroduce MIT" rule
+}
+LICENSE_EXEMPT_PREFIXES = ("SESSION-SUMMARY-",)  # historical records
+SKIP_DIRS = {".git", ".claude", "node_modules"}
+MIT_PATTERN = re.compile(r"\bMIT\b(?!RE)")  # matches MIT, not MITRE
+CANONICAL_LICENSE = "CC BY-NC-SA 4.0"
+
+
+def licensing_sweep():
+    errors = []
+    scanned = 0
+    for f in sorted(REPO.rglob("*.md")):
+        if any(part in SKIP_DIRS for part in f.parts):
+            continue
+        rel = f.relative_to(REPO)
+        if f.name in LICENSE_EXEMPT and len(rel.parts) == 1:
+            continue
+        if f.name.startswith(LICENSE_EXEMPT_PREFIXES):
+            continue
+        scanned += 1
+        text = f.read_text(encoding="utf-8", errors="replace")
+        if MIT_PATTERN.search(text):
+            errors.append(f"{rel}: references the MIT license "
+                          f"(repo is {CANONICAL_LICENSE})")
+        if re.search(r"##\s*Licensing|\*\*Licens", text) \
+                and CANONICAL_LICENSE not in text:
+            errors.append(f"{rel}: Licensing field present but not "
+                          f"{CANONICAL_LICENSE}")
+    return scanned, errors
 
 
 def main():
@@ -120,9 +152,17 @@ def main():
                 print(f"warning {rel}: {w}")
             total_errors += len(errors)
             total_warnings += len(warnings)
+    lic_scanned, lic_errors = licensing_sweep()
+    for e in lic_errors:
+        print(f"ERROR   {e}")
+    total_errors += len(lic_errors)
     print(
         f"\nChecked {checked} files: "
         f"{total_errors} errors, {total_warnings} warnings"
+    )
+    print(
+        f"Licensing sweep: {lic_scanned} files scanned repo-wide, "
+        f"{len(lic_errors)} violations"
     )
     return 1 if total_errors else 0
 
