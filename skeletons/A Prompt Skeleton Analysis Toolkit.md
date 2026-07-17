@@ -153,3 +153,5 @@ Then ask me: "Should I go ahead and generate the Universal Pattern Annotation or
 
 <!-- - - - - - - - - - END STEP 3 - request Universal Pattern Annotation - - - - - - - - - -->
 
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

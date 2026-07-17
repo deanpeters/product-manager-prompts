@@ -55,11 +55,12 @@ Then proceed with clearly labeled assumptions.
 
 ## Attribution:
 Grounded in Power x Interest stakeholder analysis (Mendelow) and
-stakeholder identification practice from the MITRE Innovation Toolkit,
+stakeholder identification practice created by Dean Peters and
+adopted into the MITRE Innovation Toolkit,
 adapted for AI-assisted use by Dean Peters.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: July 3, 2026
 -->

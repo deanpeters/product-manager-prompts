@@ -16,7 +16,7 @@ Treat this document as a reusable operating standard and teaching artifact.
 Created in collaboration with Dean Peters and Codex, March 2, 2026.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: March 2, 2026
 -->

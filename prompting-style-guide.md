@@ -79,7 +79,7 @@ Comments serve as **embedded learning materials**:
 ## Usage Note: [Context needed before starting]
 ## Instructions: [How AI should guide the conversation]
 ## Attribution: [Learning sources and methodology]
-## Licensing: MIT License for open knowledge sharing
+## Licensing: CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md)
 -->
 ```
 

@@ -11,10 +11,10 @@
 ║   ██║     ██║ ╚═╝ ██║    ██║     ██║  ██║╚██████╔╝██║ ╚═╝ ██║██║        ██║   ███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝        ╚═╝   ╚══════╝
 ║                                                                         ║
-║   97 practical prompt assets for AI-assisted product management         ║
+║   108 practical prompt assets for AI-assisted product management        ║
 ║   ChatGPT • Claude • Copilot • Gemini • and others                      ║
 ║                                                                         ║
-║   Community Build v2.2 • July 17, 2026 • MIT License                    ║
+║   Community Build v2.3 • July 17, 2026 • CC BY-NC-SA 4.0                ║
 ╚═════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -171,6 +171,6 @@ Test across ChatGPT, Claude, and Gemini. Humans make the strategic decisions; AI
 
 ## License
 
-Licensed under the [MIT License](https://choosealicense.com/licenses/mit/). Use freely, modify openly, and share knowledge generously.
+Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — use, adapt, and share freely for non-commercial purposes with attribution and share-alike. **Commercial use requires expressed written permission from Dean Peters.** Plain-English guide: [LICENSING.md](LICENSING.md). (Versions prior to v2.3.0 were MIT; copies obtained under MIT remain MIT.)
 
 *Created by [Dean Peters](https://github.com/deanpeters) • Built for the product management community • Designed to teach through doing*

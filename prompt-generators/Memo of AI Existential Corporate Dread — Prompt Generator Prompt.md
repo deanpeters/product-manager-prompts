@@ -114,5 +114,8 @@ Do not generate visuals unless explicitly authorized.
 - **Prompt Description**: The definitive meta prompt to generate and optionally run a satirical AI panic memo, IKEAify it, and generate visuals on command — not before.
 - **Attribution**: Created by Dean Peters. Inspired by the fearlessly hilarious **John Cutler**.
 - **Voice Inspired By**: Vonnegut, Stewart Lee, Lewis Black, Sarah Cooper, and your last VP offsite
-- **License**: MIT. Share it. Fork it. Run your org with it. Just credit the chaos.
+- **License**: CC BY-NC-SA 4.0. Share it. Fork it. Credit the chaos. Selling it requires written permission from Dean Peters.
 -->
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

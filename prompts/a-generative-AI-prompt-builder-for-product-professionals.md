@@ -37,7 +37,7 @@ Then proceed with clearly labeled assumptions.
 Created by Dean Peters, May 22, 2024. Updated for multi-agent team workflows.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: March 2, 2026
 -->

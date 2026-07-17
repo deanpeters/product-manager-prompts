@@ -39,12 +39,13 @@ questions.
   the needs block trains solution-free need statements.
 
 ## Attribution:
-Created by Dean Peters (Productside.com). PAINstorming framework
-from the MITRE Innovation Toolkit
-(https://itk.mitre.org/toolkit-tools/painstorming/).
+Created by Dean Peters (Productside.com). PAINstorming tool
+created by Dean Peters and adopted into the MITRE Innovation
+Toolkit (https://itk.mitre.org/toolkit-tools/painstorming/),
+where it is published under MITRE's own license terms.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: July 3, 2026
 -->

@@ -101,6 +101,6 @@ So within the context of the user's environment, find the best way to ask the us
 - **Prompt Name**: `vibe-prd-synthesis-via-agentic-search-and-simulations.md`
 - **Prompt Description**: This prompt transforms an AI into an autonomous product manager that simulates a full product development cycle. It begins with four guided discovery questions, then autonomously researches, synthesizes findings, simulates alternative solutions and stakeholder feedback, and generates a comprehensive, decision-logged Product Requirements Document (PRD).
 - **Attribution**: Created by Dean Peters, August 9, 2025
-- **Licensing**: This prompt, which simulates a guided product development cycle, is licensed under the MIT License. It permits free use, modification, and distribution, with proper attribution to the original creator.
+- **Licensing**: CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 -->

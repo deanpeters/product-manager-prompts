@@ -16,7 +16,7 @@ that flow absurdly into each other.
 Created by Dean Peters (Productside.com).
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: July 3, 2026 (metadata added; prompt predates this date)
 -->

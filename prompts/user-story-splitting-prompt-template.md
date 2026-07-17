@@ -39,7 +39,7 @@ Story Splitting Prompt Template created by Dean Peters, 18Mar24.
 Inspired by The Humanizing Work Guide to Splitting User Stories.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: March 2, 2026
 -->

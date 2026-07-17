@@ -63,7 +63,10 @@ it is a contract, not a convention.
 
 ## Open items (in priority order)
 
-1. **Licensing** — next session's agenda (Dean, July 17).
+1. **Licensing** — DONE same day as v2.3.0: MIT -> CC BY-NC-SA
+   4.0, LICENSING.md plain-English guide, commercial use requires
+   Dean's written permission, MITRE/dataset provenance corrected,
+   validator now blocks MIT regressions.
 2. **Article URL**: when "Prompts Aren't Dead" publishes, link it
    in loops/README.md and the root README.
 3. **Agent Strategy Canvas Prompt 1 of 2** — Dean to provide

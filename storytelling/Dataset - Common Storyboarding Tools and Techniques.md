@@ -111,3 +111,8 @@ Each storyboard panel should show a **cause** (problem), **effect** (consequence
 3. **Limit Text:**
    - Focus on visuals—if you need words, use <10 per panel (per [Nancy Duarte’s guidelines](https://www.duarte.com/presentation-skills-resources/)).
 
+## Attribution:
+Created by Dean Peters (Productside.com).
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

@@ -139,7 +139,7 @@ collections frozen at a human gate. Exemplars live in `/vibes/`.
   which is derived output — never hand-edit it).
 - Do not commit credentials, keys, or secrets.
 - Keep docs and scripts aligned (especially environment variable names and usage instructions).
-- Preserve MIT licensing references and creator attribution.
+- Preserve CC BY-NC-SA 4.0 licensing references and creator attribution (see LICENSE and LICENSING.md); never reintroduce MIT license text.
 
 ## Editing Guidance for Agents
 - Make focused edits; avoid rewriting voice/style unnecessarily.

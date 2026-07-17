@@ -98,7 +98,7 @@ Ignore HTML-style comments; this is just for attribution.
 - **Prompt Name**: a-generative-AI-prompt-builder-for-storytelling.md
 - **Prompt Description**: The Storytelling-Prompt-Creator helps create shareable and reusable prompts for storyboard creation. By asking targeted questions, it gathers the necessary details to generate a complete and portable storyboard prompt.
 - **Attribution**: Created by Dean Peters, December 20, 2024
-- **Licensing**: This prompt to generate a reusable storyboard prompt is licensed under the MIT License. It permits free use, modification, and distribution, with proper attribution to the original creator.
+- **Licensing**: CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 -->
 

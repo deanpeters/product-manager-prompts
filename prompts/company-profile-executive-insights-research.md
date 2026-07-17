@@ -37,7 +37,7 @@ Then proceed with clearly labeled assumptions.
 Executive Insights Company Profile Template created by Dean Peters.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: March 2, 2026
 -->

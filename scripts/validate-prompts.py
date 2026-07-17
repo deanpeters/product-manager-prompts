@@ -93,6 +93,12 @@ def check_file(path):
     if EMOJI.search(body):
         warnings.append("emoji found in prompt body (output rules say ASCII)")
 
+    # Licensing: repo is CC BY-NC-SA 4.0 as of v2.3.0; MIT must not creep back
+    if re.search(r"\bMIT\b(?!RE)", text):
+        errors.append("references the MIT license (repo is CC BY-NC-SA 4.0)")
+    if re.search(r"Licensing", text) and "CC BY-NC-SA 4.0" not in text:
+        errors.append("Licensing present but not CC BY-NC-SA 4.0")
+
     return errors, warnings
 
 

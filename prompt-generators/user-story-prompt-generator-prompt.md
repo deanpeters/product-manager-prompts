@@ -85,6 +85,6 @@ Ignore HTML-style comments; this is just for attribution.
 - **Prompt Name**: user-story-prompt-generator-prompt.md
 - **Prompt Description**: This prompt helps product managers and marketers create effective user stories using AI assistants. By asking targeted questions, it gathers essential information to generate customized user stories with clear acceptance criteria, saving time and ensuring AI-generated content aligns with their needs.
 - **Attribution**: Created by Dean Peters, 26 June, 2024
-- **Licensing**: This user story prompt generator is licensed under the MIT License. It permits free use, modification, and distribution, with proper attribution to the original creator.
+- **Licensing**: CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 -->

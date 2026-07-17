@@ -64,3 +64,6 @@ AI Assistant (that's you ChatGPT, Claude, Copilot, or Gemini), I want to ask me 
      - **Three survival tactics**
 
 Please begin by asking the first of the three questions about my product management nightmare. 
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

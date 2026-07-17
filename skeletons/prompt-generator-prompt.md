@@ -21,3 +21,6 @@ To create a well-structured prompt, please ask the user these questions one at a
 
 ## Final Step:
 Would you like to make any modifications to this prompt?
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

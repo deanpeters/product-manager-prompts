@@ -39,7 +39,7 @@ Then proceed. If details are still partial, make explicit assumptions.
 Created by Dean Peters, March 14, 2024.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: March 2, 2026
 -->

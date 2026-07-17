@@ -24,7 +24,7 @@ Created by Dean Peters and Codex. Framework inspired by Geoffrey Moore's
 positioning approach and the Persona-First Decision Facilitation Loop.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: March 2, 2026
 -->

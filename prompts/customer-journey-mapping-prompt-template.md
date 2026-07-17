@@ -41,7 +41,7 @@ Then proceed. If answers are still partial, make reasonable assumptions and labe
 - Adapted from NN/g-inspired journey mapping practice.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: March 2, 2026
 -->

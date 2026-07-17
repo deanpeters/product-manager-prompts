@@ -68,6 +68,6 @@ Ignore HTML-style comments; this is just for attribution.
 - **Prompt Name**: a-generative-AI-prompt-builder-for-product-professionals.md
 - **Prompt Description**: The Product-Management-Prompt-Creator is a tool that helps product managers and marketers create effective prompts for AI assistants. By asking targeted questions, it gathers essential information to generate customized prompts tailored to the user's needs, saving time and ensuring AI-generated content aligns with their goals.
 - **Attribution**: Created by Dean Peters, May 22, 2024
-- **Licensing**: This prompt to generate a prompt for product managers is licensed under the MIT License. It permits free use, modification, and distribution, with proper attribution to the original creator.
+- **Licensing**: CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 -->

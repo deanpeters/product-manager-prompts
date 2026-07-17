@@ -81,7 +81,7 @@ How the AI should guide the conversation and what it should focus on
 Where your methodology comes from, what frameworks you're using
 
 ## Licensing:
-MIT License (keeps everything open and shareable)
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: [When you created this]
 -->

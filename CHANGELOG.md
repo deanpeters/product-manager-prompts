@@ -1,5 +1,38 @@
 # Changelog
 
+## v2.3 — July 17, 2026
+
+The licensing release: the library moves from MIT to **Creative
+Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0)**.
+
+- **LICENSE** replaced with the CC BY-NC-SA 4.0 legal code
+  (matching the companion Product-Manager-Skills repo).
+- **LICENSING.md** (new): the plain-English guide — use, adapt,
+  and share freely for non-commercial purposes with attribution
+  and share-alike; **any commercial use requires expressed written
+  permission from Dean Peters**.
+- All 108 assets: `Licensing` field migrated to the canonical CC
+  BY-NC-SA 4.0 line; the field was added to 15 assets that never
+  had one, and 9 verbose or inline variants were normalized.
+- Provenance corrections: the six MITRE-Innovation-Toolkit-related
+  attributions (painstorming, problem framing, premortem,
+  stakeholder mapping) now state the actual chain — these tools
+  were **created by Dean Peters and adopted into the MITRE ITK**,
+  not derived from it. The two storytelling datasets (25 Common
+  Story Arcs, Storyboarding Tools) gained attribution blocks as
+  original Dean Peters IP.
+- Tooling: `validate-prompts.py` now errors on any MIT reference
+  or non-CC licensing field, so the old license cannot creep back
+  in via copy-paste.
+- Docs: root README license section and banner, SUBMISSIONS-GUIDE
+  (inbound contributions are CC BY-NC-SA 4.0), prompting style
+  guide, AGENTS.md.
+- For the record: copies obtained under MIT (pre-v2.3.0) remain
+  governed by MIT — that grant is irrevocable for what was already
+  distributed. This repository and all versions from v2.3.0
+  forward are CC BY-NC-SA 4.0.
+
 ## v2.2 — July 17, 2026
 
 The intelligence release: the library's market-intelligence

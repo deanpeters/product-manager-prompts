@@ -208,3 +208,6 @@ After generating an initial section, offer iterative help:
 * “Should we dive deeper into the competitive dynamics?”
 * “Want me to compare this with industry benchmarks?”
 * “Would you like to keep going to the next section?”
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

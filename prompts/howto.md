@@ -108,7 +108,7 @@ If any of the following are missing from session context — [Required Data A], 
 [Creator, inspiration sources, methodology used.]
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: [Insert Date]
 -->
@@ -165,4 +165,4 @@ Want to add your own prompt? Please ensure:
 
 ## **License**
 
-This repository and its contents are licensed under the MIT License, allowing free use, modification, and distribution with proper attribution.
+This repository and its contents are licensed under CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md): free to use, adapt, and share non-commercially with attribution and share-alike. Commercial use requires expressed written permission from Dean Peters.

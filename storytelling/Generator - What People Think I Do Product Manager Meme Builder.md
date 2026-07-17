@@ -26,7 +26,7 @@ Ask these questions one at a time. Do not proceed to the next question until the
 Created by Dean Peters @ Productside. Inspired by Product Manager Action Figure Builder.
 
 ## Licensing:
-MIT License
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
 
 Date: 2025-04-04
 -->

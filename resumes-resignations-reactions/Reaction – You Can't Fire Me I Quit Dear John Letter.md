@@ -47,6 +47,4 @@ Then, generate a single, continuous letter (max ~400 words), no section headers,
 
 ## Licensing:
 
-MIT License  
-Created by Dean Peters @ Productside  
-For use in `/resumes-resignations-reactions/` — Product Manager Prompts Library
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.

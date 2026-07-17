@@ -61,7 +61,4 @@ Then follow the **absurdist parody arc** with section headers:
 
 ## Licensing:
 
-MIT License  
-Created by Dean Peters @ Productside  
-Props to John Cutler for the original inspiration  
-For use in `/resumes-resignations-reactions/` — Product Manager Prompts Library
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
