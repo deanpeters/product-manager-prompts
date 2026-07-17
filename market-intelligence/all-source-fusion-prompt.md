@@ -112,10 +112,12 @@ stories -> stack confidence -> verdicts, responses, gaps.**
 items as one-line log entries. **Verbose Mode** only if asked.
 
 This prompt fuses; it does not collect. If the session holds outputs
-from the snapshot, intel watch, pricing tracker, earnings refresh,
-VoC miner, or PESTEL delta, those are the evidence base. Otherwise
-ask for a paste — or recommend which collection prompts to run
-first.
+from the seven discipline collection sweeps (osint-, finint-,
+geoint-demoint-, techint-, humint-, sigint-, masint-collection) or
+the deep-dive investigations (snapshot, intel watch, pricing
+tracker, earnings refresh, VoC miner, PESTEL delta), those are the
+evidence base. Otherwise ask for a paste — or recommend which
+collection sweeps to run first.
 
 ## Before You Start
 
@@ -184,10 +186,11 @@ or "first run"]
 
 ## 5. Collection Gaps
 
-- [Discipline with zero signals] — [which prompt fills it:
-  snapshot, intel watch, pricing tracker, earnings refresh, VoC
-  miner, PESTEL delta — or a manual sweep for TECHINT / HUMINT /
-  MASINT until those prompts exist]
+- [Discipline with zero signals] — [which collection sweep fills
+  it: osint-, finint-, geoint-demoint-, techint-, humint-, sigint-,
+  or masint-collection — with the deep dives (snapshot, intel
+  watch, pricing tracker, earnings refresh, VoC miner, PESTEL
+  delta) where depth beats breadth]
 
 ### Assumptions to Validate
 - [Assumption 1]

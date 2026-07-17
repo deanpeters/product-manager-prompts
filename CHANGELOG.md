@@ -2,6 +2,58 @@
 
 ## Unreleased
 
+### `market-intelligence/` — the collection floor (seven new prompts)
+
+One collection sweep per intelligence discipline in the compendium,
+completing full discipline coverage. Each embeds its discipline's
+sources and signal -> inference chains from
+`reference/competitive-research-compendium.md`, and all seven emit
+the same fusion-ready Signal Inventory schema (signal, source URL +
+date, Fact / Inference / Assumption label, inference chain, artifact
+fed), so any combination stacks in `all-source-fusion-prompt.md` and
+scheduled runs diff against prior baselines. Existing prompts become
+the deep-dive layer each sweep hands off to.
+
+- `osint-collection-prompt.md` — press, analysts, exec social,
+  review clusters, conferences, prediction markets; say vs
+  said-about gap
+- `finint-collection-prompt.md` — filings (Risk Factors diffs,
+  segment restructures, deferred revenue), earnings Q&A dodges,
+  procurement, entity registrations, sovereign capital;
+  capture-rate reality check and corroboration ledger
+- `geoint-demoint-collection-prompt.md` — establishment counts,
+  occupation/wage statistics, firmographics, trade flows; terrain
+  read with TAM denominators, ICP boundaries, persona localization
+- `techint-collection-prompt.md` — patent clusters, trademarks,
+  technographics, changelog/API diffs, standards bodies, funded
+  research, preprints; lead times per signal and the people trail
+- `humint-collection-prompt.md` — posting surges (normalized
+  against baseline), leadership moves, sentiment, alumni flows;
+  win/loss framing as ground truth your team collects
+- `sigint-collection-prompt.md` — web/pricing diffs with both-dates
+  rule, SEO/SEM posture, SSL certs/subdomains, app-store metadata;
+  launch-staging flags
+- `masint-collection-prompt.md` — import/export, facilities and
+  permits, ops capacity, certification pipelines; every anomaly
+  names its disambiguating discipline (software-equivalent mode for
+  non-hardware targets)
+- `all-source-fusion-prompt.md` updated: evidence base and
+  collection-gap handoffs now name the seven sweeps
+- README: new collection-floor table; coverage table shows all
+  eight disciplines covered
+
+### `loops/` — fusion cadence routine (new)
+
+- `fusion-cadence-routine.md` — the collection floor as a governed
+  `/routine` on the compendium's cadence: weekly SIGINT, monthly
+  OSINT + HUMINT, quarterly FININT + TECHINT + fusion brief, annual
+  GEOINT/DEMOINT terrain refresh, event-driven MASINT within 48
+  hours. Tiered by source velocity (poll at the speed the source
+  changes), shared signal inventory across tiers, receipts per run,
+  version-bump drift control, demote-to-event-driven exit after two
+  quiet quarters. Three levels: unseasoned, loop lingo, Just Enough
+  Jinja2 (tier map as data structure, baseline STOP guards).
+
 ### `workshops/` — product sunset (new workshop)
 
 - `product-sunset-workshop.md` — checkpointed co-construction of a

@@ -51,6 +51,27 @@ month's.
 | **[ansoff-matrix-prompt.md](ansoff-matrix-prompt.md)** | Growth options with evidence per quadrant, risk gradient respected, recommended sequence |
 | **[all-source-fusion-prompt.md](all-source-fusion-prompt.md)** | The situation room: fuses signals from the other investigations into confidence-rated stories with artifact-mapped responses |
 
+### The collection floor (one sweep per discipline)
+
+Seven discipline sweeps, one per collection discipline in the
+compendium, each embedding that discipline's sources and signal →
+inference chains. All seven emit the **same fusion-ready Signal
+Inventory schema**, so any combination stacks in
+[all-source-fusion-prompt.md](all-source-fusion-prompt.md) and run N
+diffs against run N-1 on a schedule (see
+[loops/fusion-cadence-routine.md](../loops/fusion-cadence-routine.md)
+for the governed rhythm).
+
+| Prompt | Discipline | Primary feeds |
+|--------|------------|---------------|
+| **[osint-collection-prompt.md](osint-collection-prompt.md)** | Open Source: press, analysts, social, reviews, conferences, prediction markets | Battle cards, positioning |
+| **[finint-collection-prompt.md](finint-collection-prompt.md)** | Financial: filings, earnings dodges, procurement, registrations, sovereign capital | Battle cards, SOM capture rates |
+| **[geoint-demoint-collection-prompt.md](geoint-demoint-collection-prompt.md)** | Geospatial and demographic: establishment counts, occupations, wages, trade flows | TAM/SAM/SOM, ICPs, personas, messaging |
+| **[techint-collection-prompt.md](techint-collection-prompt.md)** | Technical: patents, trademarks, technographics, changelogs, standards, preprints | Roadmap bets |
+| **[humint-collection-prompt.md](humint-collection-prompt.md)** | Human: hiring surges, talent moves, sentiment, win/loss framing | Roadmap bets, battle cards |
+| **[sigint-collection-prompt.md](sigint-collection-prompt.md)** | Signals: web/pricing diffs, SEO/SEM, SSL certs, app-store metadata | Battle cards, pricing strategy |
+| **[masint-collection-prompt.md](masint-collection-prompt.md)** | Measurement and signature: supply chain, facilities, ops exhaust, certifications | Threat assessment, launch prediction |
+
 ## The tradecraft shelf
 
 The prompts above are the runnable layer. The doctrine behind them —
@@ -72,19 +93,20 @@ comment block and are excluded from the catalog and validator.
 
 ### Discipline coverage
 
-How this directory's prompts map onto the compendium's disciplines —
-and where the gaps are:
+How this directory's prompts map onto the compendium's disciplines.
+Every discipline now has a dedicated collection sweep; the second
+column names the deep-dive prompts each sweep hands off to:
 
-| Discipline | Covered by |
-|---|---|
-| OSINT | market-landscape-scan, competitive-research-snapshot, voice-of-customer-miner |
-| FININT | earnings-executive-signal-refresh *(procurement/government-spend angle uncovered)* |
-| GEOINT/DEMOINT | tam-sam-som-analysis, pestel-delta-monitor (macro terrain deltas) |
-| TECHINT | *gap — patents, trademarks, technographics, changelog diffs* |
-| HUMINT | *gap — hiring signals, talent moves, employee sentiment* |
-| SIGINT | competitive-intel-watch, pricing-packaging-tracker |
-| MASINT | *gap — supply chain and ops exhaust; strongest for hardware/industrial* |
-| All-Source Fusion | all-source-fusion (confidence stacking, conflict digs, artifact-mapped responses); swot-analysis, porters-five-forces, ansoff-matrix, and battle-card-builder consume the fused evidence |
+| Discipline | Collection sweep | Deep dives |
+|---|---|---|
+| OSINT | osint-collection | market-landscape-scan, competitive-research-snapshot, voice-of-customer-miner |
+| FININT | finint-collection | earnings-executive-signal-refresh |
+| GEOINT/DEMOINT | geoint-demoint-collection | tam-sam-som-analysis, pestel-delta-monitor |
+| TECHINT | techint-collection | — |
+| HUMINT | humint-collection | — (win/loss stays your team's fieldwork; the sweep frames the questions) |
+| SIGINT | sigint-collection | competitive-intel-watch, pricing-packaging-tracker |
+| MASINT | masint-collection | — (anomalies disambiguate via FININT and HUMINT) |
+| All-Source Fusion | all-source-fusion | swot-analysis, porters-five-forces, ansoff-matrix, and battle-card-builder consume the fused evidence |
 
 **Typical flow:** landscape scan → snapshot the players that matter →
 watch on a cadence, with the pricing tracker, executive refresh, and
@@ -101,4 +123,6 @@ To turn any output here into a stakeholder story, use
 For loop, batch, and routine recipes over these prompts, see
 [loops/](../loops/) — swot-batch, market-sizing-loop, and
 competitive-watch-routine run this directory's frameworks under
-governed repetition.
+governed repetition, and **fusion-cadence-routine** runs the whole
+collection floor on the compendium's weekly / monthly / quarterly /
+annual rhythm.

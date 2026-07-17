@@ -71,6 +71,7 @@ that predates every one of these platforms.)
 | **[competitive-watch-routine.md](competitive-watch-routine.md)** | [competitive-intel-watch](../market-intelligence/competitive-intel-watch-prompt.md) | `/routine` |
 | **[swot-batch.md](swot-batch.md)** | [swot-analysis](../market-intelligence/swot-analysis-prompt.md) across a competitor set | `/batch` |
 | **[market-sizing-loop.md](market-sizing-loop.md)** | [tam-sam-som-analysis](../market-intelligence/tam-sam-som-analysis-prompt.md) segment by segment | `/goal` + `/loop` |
+| **[fusion-cadence-routine.md](fusion-cadence-routine.md)** | The seven [market-intelligence collection sweeps](../market-intelligence/README.md) + [all-source-fusion](../market-intelligence/all-source-fusion-prompt.md) on the compendium's tiered cadence | `/routine` |
 
 ## When NOT to Use This Directory
 
