@@ -54,6 +54,7 @@ Tools for understanding markets and customers:
 | **[customer-journey-mapping-prompt-template.md](customer-journey-mapping-prompt-template.md)** | Mapping the full customer experience | Customer journey methodology |
 | **[company-profile-executive-insights-research.md](company-profile-executive-insights-research.md)** | Competitive intelligence and market analysis | Market analysis framework |
 | **[discovery-interview-guide-prompt-template.md](discovery-interview-guide-prompt-template.md)** | Planning interviews that surface real behavior | Mom Test + continuous discovery |
+| **[win-loss-analysis-prompt.md](win-loss-analysis-prompt.md)** | Turning win/loss and churn debriefs into ground truth (or the interview guide to collect it) | Win/loss doctrine, HUMINT discipline |
 
 ### Requirements & Execution
 Structured approaches to defining what to build:

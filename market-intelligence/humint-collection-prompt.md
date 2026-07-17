@@ -24,8 +24,9 @@ instability plays).
 
 ## When NOT to Use:
 - You want interview answers, not interview questions: win/loss
-  calls are your team's fieldwork; see also the discovery
-  interview assets in prompt-generators/.
+  calls are your team's fieldwork; synthesize completed debriefs
+  with prompts/win-loss-analysis-prompt.md, and see the discovery
+  interview assets in prompt-generators/ for problem discovery.
 - You need this week's site or pricing changes: that is SIGINT.
 - Anything requiring pretexting, soliciting NDA-protected
   information, or targeting individuals' private lives: out of
@@ -173,6 +174,10 @@ or "first run"]
   tied to a signal above]
 - **Gap flag for fusion:** win/loss unverified as of this run —
   weight org-instability and build-signal stories accordingly
+- **When the interviews land:** synthesize them with
+  [prompts/win-loss-analysis-prompt.md](../prompts/win-loss-analysis-prompt.md)
+  — its confirm/refute ledger closes the loop on this sweep's
+  inferences
 
 ## 5. Watch Items (single signals, logged only)
 

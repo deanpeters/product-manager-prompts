@@ -1,6 +1,25 @@
 # Changelog
 
-## Unreleased
+## v2.2 — July 17, 2026
+
+The intelligence release: the library's market-intelligence
+directory becomes a complete intelligence system — doctrine
+(tradecraft shelf), collection (seven discipline sweeps), fusion
+(confidence stacking), ground truth (win/loss), and rhythm (fusion
+cadence) — plus the product-sunset workshop and inbound-triage
+prompt.
+
+### `prompts/` — win/loss analysis (new)
+
+- `win-loss-analysis-prompt.md` — turns win/loss and churn debrief
+  material into structured ground truth: per-deal decision-driver
+  table, win/loss patterns ranked by evidence count (never story
+  vividness), stated-vs-evidenced reasons (the "price costume"
+  flag), competitor intelligence extracted for battle cards, and a
+  confirm/refute ledger against public-signal inferences — the
+  handoff that keeps all-source fusion honest. Guide mode when no
+  debriefs exist: question sets for won/lost/churned plus
+  interviewing craft notes. Quotes only from provided material.
 
 ### `market-intelligence/` — the collection floor (seven new prompts)
 

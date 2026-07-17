@@ -14,7 +14,7 @@
 ║   97 practical prompt assets for AI-assisted product management         ║
 ║   ChatGPT • Claude • Copilot • Gemini • and others                      ║
 ║                                                                         ║
-║   Community Build v2.1 • July 3, 2026 • MIT License                     ║
+║   Community Build v2.2 • July 17, 2026 • MIT License                    ║
 ╚═════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -34,6 +34,7 @@ You know the situation; you want execution-quality output in one pass. Go to **[
 
 - Write a PRD from your discovery notes → [prd-prompt-template](prompts/prd-prompt-template.md)
 - Understand what customers actually need → [jobs-to-be-done](prompts/jobs-to-be-done.md)
+- Turn win/loss debriefs into ground truth → [win-loss-analysis](prompts/win-loss-analysis-prompt.md)
 - Map who matters and how to engage them → [stakeholder-map](prompts/stakeholder-map-prompt-template.md)
 - Decode what an inbound ask really wants → [incoming-request-breakdown](prompts/incoming-request-breakdown.md)
 - Kill the launch on paper before reality does → [premortem](prompts/premortem-prompt-template.md)

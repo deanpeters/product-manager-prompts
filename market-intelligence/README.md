@@ -103,20 +103,47 @@ column names the deep-dive prompts each sweep hands off to:
 | FININT | finint-collection | earnings-executive-signal-refresh |
 | GEOINT/DEMOINT | geoint-demoint-collection | tam-sam-som-analysis, pestel-delta-monitor |
 | TECHINT | techint-collection | — |
-| HUMINT | humint-collection | — (win/loss stays your team's fieldwork; the sweep frames the questions) |
+| HUMINT | humint-collection | [prompts/win-loss-analysis](../prompts/win-loss-analysis-prompt.md) (synthesizes your team's interviews into ground truth) |
 | SIGINT | sigint-collection | competitive-intel-watch, pricing-packaging-tracker |
 | MASINT | masint-collection | — (anomalies disambiguate via FININT and HUMINT) |
 | All-Source Fusion | all-source-fusion | swot-analysis, porters-five-forces, ansoff-matrix, and battle-card-builder consume the fused evidence |
 
-**Typical flow:** landscape scan → snapshot the players that matter →
-watch on a cadence, with the pricing tracker, executive refresh, and
-PESTEL delta as deeper lenses. The strategy frameworks then build on
-that evidence: **five forces** reads the industry's structure, **SWOT**
-reads one player's position, **Ansoff** maps the growth options,
-**TAM/SAM/SOM** sizes them, and the **battle-card builder** arms the
-field. When several investigations have run, **all-source fusion**
-stacks their signals into confidence-rated stories — the situation
-room over the collection floor. To build a custom investigation, use
+## How the system fits together
+
+Three layers, one motion:
+
+1. **Collect** — instantiate the engagement (the compendium's six
+   variables: TARGET, MARKET, GEOGRAPHY, BUYER, CAPABILITY,
+   DECISION), then run the collection sweeps for the disciplines
+   that matter. New to a market? Start wider: landscape scan →
+   snapshot the players → then sweep.
+2. **Fuse** — when 2+ disciplines hold signals, run **all-source
+   fusion**: independence test, confidence stacking, conflict digs.
+   Your team's win/loss interviews
+   ([prompts/win-loss-analysis-prompt.md](../prompts/win-loss-analysis-prompt.md))
+   are the ground truth that confirms or refutes what the public
+   signals inferred.
+3. **Act** — actionable stories update artifacts: **five forces**
+   reads the industry's structure, **SWOT** one player's position,
+   **Ansoff** the growth options, **TAM/SAM/SOM** the size, and the
+   **battle-card builder** arms the field. Then schedule the rhythm
+   with [loops/fusion-cadence-routine.md](../loops/fusion-cadence-routine.md).
+
+**Worked example — a launch caught before the press release:** your
+weekly SIGINT sweep finds a new SSL certificate for
+`analytics.competitor.com` (launch staging, weeks ahead). That flags
+TECHINT, which finds an 8-filing patent cluster in analytics
+classifications plus two arXiv papers by their staff. TECHINT flags
+its fusion pair, HUMINT, which finds 25 data-engineering postings
+this quarter against a baseline of 4. Fusion stacks it: three
+independent disciplines, one story — actionable. FININT's earnings
+pass adds the CFO dodging an analytics capex question (intent
+corroborated by money). Response before their launch: battle-card
+maturity play, roadmap accelerate/concede call. Your next win/loss
+round confirms whether analytics actually decides deals — and the
+ledger feeds the next fusion run.
+
+To build a custom investigation, use
 [prompt-generators/research-agent-prompt-generator.md](../prompt-generators/research-agent-prompt-generator.md).
 To turn any output here into a stakeholder story, use
 [storytelling/Generator - Research-to-Narrative Bridge.md](../storytelling/Generator%20-%20Research-to-Narrative%20Bridge.md).
