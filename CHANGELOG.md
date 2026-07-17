@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+### `workshops/` — product sunset (new workshop)
+
+- `product-sunset-workshop.md` — checkpointed co-construction of a
+  product or feature End-of-Life plan against the team's own
+  template (canonical 6-section fallback: rationale, customer
+  impact, technical transition, support enablement,
+  legal/compliance, timeline), one gated section per turn, with
+  Assumption / Open Question labels and a closing self-critique.
+  Pairs with `prompts/eol-for-a-product-message.md` for the
+  customer-facing announcement.
+
 ### `market-intelligence/` — all-source fusion (new prompt)
 
 - `all-source-fusion-prompt.md` — the situation room over the

@@ -52,6 +52,7 @@ You have a fuzzy situation and want a guided working session that ends in the fi
 - Build / don't-build business case with the math shown → [feature-investment-workshop](workshops/feature-investment-workshop.md)
 - Problem statement + "How might we" → [problem-framing-canvas-workshop](workshops/problem-framing-canvas-workshop.md)
 - Structured user-pain research table → [painstorming-workshop](workshops/painstorming-workshop.md)
+- Product/feature sunset plan, gated section by section → [product-sunset-workshop](workshops/product-sunset-workshop.md)
 
 ### "I need evidence about the market, not another meeting"
 

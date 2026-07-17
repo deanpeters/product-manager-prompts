@@ -32,6 +32,7 @@ or checkpointed co-construction (see
 | **[problem-framing-canvas-workshop.md](problem-framing-canvas-workshop.md)** | Problem statement + "How might we" | MITRE ITK Problem Framing Canvas |
 | **[painstorming-workshop.md](painstorming-workshop.md)** | PAINstorming table | MITRE ITK: Persona, Activities, Insights, Needs |
 | **[lean-ux-canvas-workshop.md](lean-ux-canvas-workshop.md)** | Filled Lean UX Canvas + least-work experiment | Gothelf Lean UX Canvas v2 |
+| **[product-sunset-workshop.md](product-sunset-workshop.md)** | Full product/feature EOL plan, section by section | Your team's template (or canonical 6-section fallback); pairs with the EOL announcement prompt |
 
 Many workshops have a direct-template sibling in `/prompts/` for
 sessions where context is already loaded — check each file's
