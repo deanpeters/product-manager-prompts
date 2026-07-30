@@ -4,8 +4,13 @@
 Creates a clear, empathetic End-of-Life (EOL) communication using a stable
 template that balances transparency, customer impact, and transition support.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when a sunset decision is made and someone has to tell
+the customers -- the part that gets postponed until it becomes a
+support incident. Fast path: paste the internal decision memo, the
+migration plan, or the deprecation ticket. It also runs cold.
 
 ## Required Context Keys:
 1. Product being sunset and replacement (if any)

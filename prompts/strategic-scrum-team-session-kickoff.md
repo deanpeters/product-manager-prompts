@@ -4,8 +4,14 @@
 Facilitates a strategic scrum kickoff with a structured, outcome-first intake
 that aligns team context before planning and execution.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this before a team starts an initiative and the first
+sprint is about to be planned on vibes -- when everyone knows the
+tickets and nobody can state the outcome. Fast path: paste the
+initiative brief, the roadmap item, or the epic list. It also runs
+cold.
 
 ## Required Context Keys:
 1. Initiative/problem focus

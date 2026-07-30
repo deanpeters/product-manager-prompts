@@ -7,6 +7,8 @@ Separates the literal ask from the job-to-be-done underneath it, reads sender
 power and stake, and opens the conversation toward a reply or next artifact.
 Reads from a product leader's chair: outcome, for whom, why now — not how to build.
 
+## Standalone: yes
+
 ## Usage Note:
 Self-contained. Paste, attach, or drop the message (screenshot, image, file,
 PDF, or text) at the end of the prompt. Anything you write around the message

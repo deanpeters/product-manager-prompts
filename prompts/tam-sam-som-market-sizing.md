@@ -9,6 +9,8 @@ sensitivity analysis and a sourced assumption ledger. No companion
 file, no prerequisite prompt, no handoff. Paste it, answer what it
 asks (or tell it to guess), and it produces a defensible number.
 
+## Standalone: yes
+
 ## Usage Note:
 Works from a cold start ("size the market for X") or from a warm one
 (paste a positioning doc, pricing page, or strategy deck and it will

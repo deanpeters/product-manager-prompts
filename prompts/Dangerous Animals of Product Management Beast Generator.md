@@ -1,4 +1,40 @@
 # Dangerous Animals of Product Management Beast Generator.md
+<!--
+## Description:
+Turns the recurring hazards of product work into an imaginary bestiary:
+asks about your pains, gains, and jobs-to-be-done, then emits a session
+starter prompt that names the creatures stalking your particular
+practice -- the meeting that eats a day, the stakeholder who circles,
+the requirement that molts overnight.
+
+## Standalone: yes
+
+## Usage Note:
+Reach for this in a retro that has gone flat, a team offsite, or any
+moment when people will describe a dysfunction as a monster long
+before they will name it in a status report. Humor is the anesthetic;
+the diagnosis is the point.
+
+## Instructions:
+1. Ask the questions one at a time; do not batch them.
+2. Let the user pick the creature family and category before naming
+   anything.
+3. Emit a reusable session starter prompt, not a one-off list.
+
+## Pedagogic Notes:
+- Metaphor lowers the cost of naming an uncomfortable truth, which is
+  why satire belongs in a serious prompt library.
+- Building a shared vocabulary for recurring hazards makes them
+  discussable later without the metaphor.
+
+## Attribution:
+Created by Dean Peters (Productside.com).
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
+
+Date: July 30, 2026
+-->
 
 ## Context:
 

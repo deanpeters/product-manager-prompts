@@ -4,8 +4,13 @@
 Creates backlog epics in hypothesis format so teams can connect solution intent,
 expected outcomes, and validation criteria with consistent structure.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when an epic is sitting on the roadmap as a solution
+with no stated bet behind it -- "build the dashboard" with nobody able
+to say what would count as it having worked. Fast path: paste the epic
+title, the ticket, or the slide it came from. It also runs cold.
 
 ## Required Context Keys:
 1. Proposed action/solution

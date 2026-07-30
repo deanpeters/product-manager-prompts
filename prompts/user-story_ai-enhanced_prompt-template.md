@@ -4,8 +4,14 @@
 Generates obstacle-aware, JTBD-grounded user stories with strict Gherkin
 acceptance criteria and proactive split recommendations for delivery readiness.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when the story involves an AI-powered behavior and the
+usual story format quietly skips the hard parts -- what happens when
+the model is wrong, what the user sees while it thinks, what "correct"
+even means. Fast path: paste the feature request or the model's
+intended job. It also runs cold.
 
 ## Required Context Keys:
 1. Product/feature area and target persona

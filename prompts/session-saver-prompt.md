@@ -8,6 +8,8 @@ to restart the work in a fresh session or a different AI assistant.
 The export half of the "bulk drop": this prompt produces the context
 block that a future session's intake consumes.
 
+## Standalone: yes
+
 ## Usage Note:
 Run near the end of a productive session, before hitting context
 limits, or before handing work to a colleague or another AI platform.

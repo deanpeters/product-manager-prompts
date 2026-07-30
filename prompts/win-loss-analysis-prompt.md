@@ -12,6 +12,8 @@ interviewing craft notes that keep answers honest. Win/loss is the
 only source that says why deals actually close; everything else is
 inference.
 
+## Standalone: yes
+
 ## Usage Note:
 The ground-truth half of the intelligence system: the HUMINT sweep
 (market-intelligence/humint-collection-prompt.md) frames win/loss

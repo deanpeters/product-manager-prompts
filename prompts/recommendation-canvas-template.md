@@ -4,8 +4,14 @@
 Uses a full Recommendation Canvas to evaluate AI product opportunities with
 consistent structure across strategy, risk, validation, and execution planning.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when you have to recommend a direction to people who
+will ask why, and you want the reasoning laid out rather than
+defended live: the problem, the options considered, the call, and
+what would change your mind. Fast path: paste the options under
+debate or the meeting notes where it stalled. It also runs cold.
 
 ## Required Context Keys:
 1. Persona + painful problem context

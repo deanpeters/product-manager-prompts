@@ -34,7 +34,11 @@ DIRECTORIES = [
     "vibes",
     "resumes-resignations-reactions",
 ]
-SKIP_NAMES = {"README.md"}
+# README.md indexes a directory; howto.md teaches prompt-writing. Both
+# are documentation that happens to live beside the assets, so the
+# asset contract (metadata block, Standalone declaration) does not
+# apply to them.
+SKIP_NAMES = {"README.md", "howto.md"}
 REQUIRED_FIELDS = [
     "Description",
     "Usage Note",

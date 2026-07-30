@@ -4,8 +4,15 @@
 Creates a reusable PRD-generation prompt based on ISO 29148 principles,
 focusing on stakeholder and business requirements in a structured format.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when an ISO/IEC/IEEE 29148 requirements document is the
+source of truth and you need a PRD that connects those requirements
+back to users and outcomes -- typically when engineering has the spec,
+product has the accountability, and the two documents have never met.
+Fast path: paste or attach the requirements document. It also runs
+cold.
 
 ## Required Context Keys:
 1. Product/business context and target stakeholder groups

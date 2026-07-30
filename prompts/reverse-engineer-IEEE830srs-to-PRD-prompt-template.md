@@ -4,8 +4,14 @@
 Creates a reusable PRD-generation prompt by reverse-engineering IEEE 830 SRS
 structure into PM-friendly, AI-fillable sections.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when you have inherited an IEEE 830 software
+requirements spec and need a PRD humans will actually read -- common
+in regulated, government, and defense-adjacent work where the spec is
+contractually fixed but nobody can tell you what problem it solves.
+Fast path: paste or attach the SRS. It also runs cold.
 
 ## Required Context Keys:
 1. Product domain and intended PRD use case

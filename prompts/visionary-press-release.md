@@ -4,8 +4,13 @@
 Uses an Amazon Working Backwards style press release to clarify customer value
 before building, with a stable structure PMs can reuse for alignment.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this at the front of a bet, not the end: writing the launch
+announcement first forces you to name who cares and why, and a press
+release nobody would run is a product nobody would notice. Fast path:
+paste the concept, the roadmap item, or the pitch. It also runs cold.
 
 ## Required Context Keys:
 1. Product/service concept and target persona

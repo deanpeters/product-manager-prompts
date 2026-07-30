@@ -4,8 +4,14 @@
 Uses a stable Jobs-to-be-Done (JTBD) canvas to explore what customers are
 trying to achieve, where they struggle, and what outcomes they value most.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when feature requests keep arriving as solutions and
+nobody can say what progress the customer was trying to make, or when
+you need to know what you are really competing with -- often a
+spreadsheet, a habit, or doing nothing. Fast path: paste interview
+notes, a feature request, or a churn reason. It also runs cold.
 
 ## Required Context Keys:
 1. Target persona or segment

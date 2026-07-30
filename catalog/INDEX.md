@@ -7,8 +7,8 @@ Generated: 2026-07-30 | Assets: 109
 
 | Prompt | Description |
 |---|---|
-| [Dangerous Animals of Product Management Beast Generator](../prompts/Dangerous%20Animals%20of%20Product%20Management%20Beast%20Generator.md) | (no metadata block) |
-| [Nightmares of Product Management Movie Title Generator Prompt](../prompts/Nightmares%20of%20Product%20Management%20Movie%20Title%20Generator%20Prompt.md) | (no metadata block) |
+| [Dangerous Animals of Product Management Beast Generator](../prompts/Dangerous%20Animals%20of%20Product%20Management%20Beast%20Generator.md) | Turns the recurring hazards of product work into an imaginary bestiary: asks about your pains, gains, and jobs-to-be-done, then emits a session starter prompt that names the cre... |
+| [Nightmares of Product Management Movie Title Generator Prompt](../prompts/Nightmares%20of%20Product%20Management%20Movie%20Title%20Generator%20Prompt.md) | Renders product management failure modes as 1950s B-horror pictures -- title, lurid synopsis, and a survival guide -- built from answers the user gives one question at a time. |
 | [a-generative-AI-prompt-builder-for-product-professionals](../prompts/a-generative-AI-prompt-builder-for-product-professionals.md) | Generates a reusable baseline session-context artifact that teams can share across individual AI chats so work starts from a common understanding. |
 | [agent-strategy-canvas-prompt-template](../prompts/agent-strategy-canvas-prompt-template.md) | Fills a 9-box Agent Strategy Canvas for an agentic AI use case: problem space (customer, context, cause), solution space (scope, safeguards, steps), and value validation (metric... |
 | [backlog-epic-hypothesis](../prompts/backlog-epic-hypothesis.md) | Creates backlog epics in hypothesis format so teams can connect solution intent, expected outcomes, and validation criteria with consistent structure. |

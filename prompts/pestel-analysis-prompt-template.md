@@ -4,8 +4,14 @@
 Conducts a structured PESTEL analysis using a stable template so PMs can
 consistently evaluate external forces and make better strategy decisions.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when a decision depends on forces nobody on the team
+controls -- regulation, economics, technology shifts, social change --
+and the plan currently assumes the next three years look like the last
+one. Fast path: name the company, the market, and the decision on the
+table. It also runs cold.
 
 ## Required Context Keys:
 1. Product/company and market context

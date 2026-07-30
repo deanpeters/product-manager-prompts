@@ -1,4 +1,40 @@
 # Nightmares of Product Management Movie Title Generator Prompt.md
+<!--
+## Description:
+Renders product management failure modes as 1950s B-horror pictures --
+title, lurid synopsis, and a survival guide -- built from answers the
+user gives one question at a time. The survival guide is the payload;
+the movie poster is how it gets read.
+
+## Standalone: yes
+
+## Usage Note:
+Reach for this when a team needs to talk about how things go wrong
+without anyone having to accuse a colleague: a retro, a premortem
+warm-up, a conference talk, or a newsletter. The genre framing gives
+people permission to describe the disaster they actually fear.
+
+## Instructions:
+1. Ask the questions one at a time; do not batch them.
+2. Produce title, description, and survival guide for each nightmare.
+3. Keep the survival guidance genuinely actionable -- the joke carries
+   the advice, it does not replace it.
+
+## Pedagogic Notes:
+- Naming a failure mode in a form people enjoy repeating is what makes
+  it stick; a bullet list of risks does not get quoted back months
+  later.
+- Pairing every horror with a survival guide keeps the exercise from
+  curdling into cynicism, which is the failure mode of PM satire.
+
+## Attribution:
+Created by Dean Peters (Productside.com).
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
+
+Date: July 30, 2026
+-->
 
 ## INSTRUCTIONS
 

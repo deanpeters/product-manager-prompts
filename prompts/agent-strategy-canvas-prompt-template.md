@@ -7,28 +7,36 @@ safeguards, steps), and value validation (metrics, monitor,
 milestones). Designed to make agent authorization boundaries — what
 the agent may do and must never do — a first-class product decision.
 
+## Standalone: yes
+
 ## Usage Note:
-Part 2 of a two-prompt sequence; it stands alone if you arrive with a
-use case. Use when exploring whether and how an agentic AI system
-should address a problem, before any build or vendor decision.
-Related: the Lean UX Canvas covers the non-agentic version of this
-problem-to-validation framing.
+Reach for this when someone has proposed an agentic AI system and the
+conversation is already about vendors and models before anyone has
+said what the agent is for, what it is allowed to do unsupervised, or
+how you would know it worked. Fast path: paste the use case, the
+vendor pitch, or the executive's one-liner about what AI should do
+here.
 
 ## When NOT to Use:
-- The solution is not agentic (no autonomous actions): use a Lean UX
-  Canvas or problem framing canvas instead.
-- The use case is validated and scoped: move to PRD development and
-  experiment design.
+- The solution takes no autonomous action: this canvas asks about
+  authority, oversight, and failure modes that a non-agentic feature
+  does not have.
+- The use case is validated and scoped: the next work is requirements
+  and experiment design, not framing.
 
 ## Required Context Keys:
 1. A use case scenario: the problem, who has it, and what you hope
    AI could do about it
 
 ## Missing Context Rule:
-If no use case scenario is provided, stop and ask:
+If no use case scenario is provided, ask once:
 "What is the use case you want to explore? Describe the problem, who
 has it, and what you're hoping AI could do about it."
-Do not proceed until a use case is provided.
+Offer the standing bypass: if the user replies "take your best guess"
+or does not answer, propose a representative agentic use case drawn
+from their apparent domain, label it clearly as a worked example, and
+fill the canvas with it -- an illustrated canvas teaches the nine
+boxes; a stalled prompt teaches nothing.
 
 ## Instructions:
 1. Keep the 9-box structure and order exactly.
@@ -63,15 +71,19 @@ design an agentic AI system.
 
 ## Ask
 
-If I have not provided a use case scenario, stop and ask me:
+If I have not provided a use case scenario, ask me once:
 "What is the use case you want to explore? Describe the problem, who
 has it, and what you're hoping AI could do about it."
 
-Do not proceed until I have provided a use case.
+Tell me I can reply "take your best guess" at any point. If I say
+that, or if I do not answer, pick a representative agentic use case
+that fits whatever domain context you can see, state it in one line as
+a worked example, and fill the canvas with it. Say plainly that it is
+an example so I can swap in mine and re-run.
 
 ## Task
 
-Once I provide a use case, recommend content for each of the 9 boxes
+Recommend content for each of the 9 boxes
 in our Agent Strategy Canvas using this exact format:
 
 ### PROBLEM SPACE

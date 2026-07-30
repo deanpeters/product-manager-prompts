@@ -4,8 +4,13 @@
 Guides PMs to produce a clear, empathetic problem framing artifact from persona,
 JTBD, and barrier context using a stable Problem Framing Canvas.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes core context exists in session.
+Reach for this when the team keeps describing the solution instead of
+the problem, or when two people say "the problem is obvious" and then
+describe different problems. Fast path: paste the mandate, the ticket,
+or the sentence the executive actually said. It also runs cold.
 
 ## Required Context Keys:
 1. Persona and painful moment

@@ -4,8 +4,14 @@
 Builds a Working Backwards-style future-state FAQ to pressure-test product
 narrative, stakeholder concerns, and execution readiness before launch.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when a concept needs pressure-testing before it gets
+funded: writing the questions a skeptical customer, reporter, or
+exec would ask on launch day surfaces the holes while they are still
+cheap to fix. Fast path: paste the pitch, the concept doc, or the
+vision slide. It also runs cold.
 
 ## Required Context Keys:
 1. Product concept, target persona, and core value proposition

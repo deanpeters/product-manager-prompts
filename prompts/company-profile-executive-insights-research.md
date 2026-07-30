@@ -5,8 +5,14 @@
 Builds a structured company profile from executive and product perspectives
 using a stable output template that PMs can reuse in strategy and discovery.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this before you walk into a room with a company you do not
+know well enough: a partnership conversation, an enterprise deal, a
+board that just asked about an acquirer, a competitor everyone has
+opinions about and no current facts on. Fast path: give it the company
+name and what the meeting is for. It also runs cold.
 
 ## Required Context Keys:
 1. Company identity and relevant business scope

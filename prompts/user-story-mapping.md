@@ -4,8 +4,14 @@
 Uses Jeff Patton-inspired user story mapping to visualize the user journey and
 translate strategy into prioritized, deliverable work.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session.
+Reach for this when a flat backlog has lost the plot -- the list is
+long, the order is arbitrary, and nobody can see which slice would
+actually ship something a user could use end to end. Fast path: paste
+the backlog, the epic, or the workflow you are trying to support. It
+also runs cold.
 
 ## Required Context Keys:
 1. Target segment and persona

@@ -4,6 +4,8 @@
 Fast-track generator for a reusable 6-frame product storyboard narrative from
 existing session context, with minimal fallback intake when context is missing.
 
+## Standalone: yes
+
 ## Usage Note:
 This is the context-aware fast-track version in `/prompts` so PMs can stay in
 flow. Assume context is already present; if not, collect only minimal missing

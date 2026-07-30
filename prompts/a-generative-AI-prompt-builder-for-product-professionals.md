@@ -4,6 +4,8 @@
 Generates a reusable baseline session-context artifact that teams can share
 across individual AI chats so work starts from a common understanding.
 
+## Standalone: yes
+
 ## Usage Note:
 This is a context-aware session starter for PM teams working in parallel across
 ChatGPT, Claude, Gemini, Copilot, or other agents. Keep this in `/prompts` so
