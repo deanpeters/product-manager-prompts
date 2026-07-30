@@ -1,13 +1,20 @@
 # user-story-splitting-prompt-template.md
 <!--
 ## Description:
-Splits large stories/epics into smaller, testable stories using the Humanizing
-Work story-splitting logic while preserving a stable user-story output template.
+Splits an oversized story or epic into smaller stories that each still
+deliver value on their own, using the Humanizing Work splitting
+patterns -- workflow steps, business rule variations, effort, data
+types, interfaces -- and emits every result on the same stable user
+story template so the pieces drop into a backlog unmodified.
+
+## Standalone: yes
 
 ## Usage Note:
-Assumes the original story/epic is already present in the session.
-Companion: vibes/user-story-splitting-jinja2-loop.md is the
-loop-controlled sibling for /loop, /goal, and agent use.
+Reach for this when a story will not fit in a sprint, when estimation
+turns into an argument, or when "we'll figure out the rest later" has
+started showing up in refinement. Fast path: paste the epic, the
+oversized story, or the ticket. It also runs cold -- it asks for the
+story to split, then works.
 
 ## Required Context Keys:
 1. Original story/epic/feature statement

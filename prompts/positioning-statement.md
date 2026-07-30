@@ -1,14 +1,21 @@
 # positioning-statement.md
 <!-- 
 ## Description:
-Creates a Geoffrey Moore-style positioning statement from context already present
-in the session, with concise differentiation and assumption checks.
+Produces a Geoffrey Moore-style positioning statement -- for [target
+user] who [painful moment], [product] is a [category] that [outcome],
+unlike [real alternative] -- with the differentiation stated in
+outcome terms and the shaky parts surfaced as assumptions to validate.
+Asks up to three questions if it needs them, and none if the session
+already carries the context.
+
+## Standalone: yes
 
 ## Usage Note:
-This prompt assumes context is already loaded in session.
-Companion: prompt-generators/positioning-statement-prompt-generator.md
-offers the facilitated version when you want to be guided through
-positioning decisions first.
+Reach for this when you can already describe the user, the pain, and
+what people do instead today, and you want the statement drafted and
+pressure-tested rather than facilitated. Fast path: paste a product
+brief, a landing page, or a competitor comparison and let it work from
+that. It also runs cold -- it will ask for what it needs.
 
 ## Required Context Keys:
 1. Target user/persona

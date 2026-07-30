@@ -1,14 +1,18 @@
 # user-story-prompt-template.md
 <!--
 ## Description:
-Creates consistent user stories using Mike Cohn format plus Gherkin acceptance
-criteria, optimized for backlog portability and teaching quality.
+Writes user stories in Mike Cohn's As-a / I-want / So-that format with
+Gherkin Given-When-Then acceptance criteria underneath, shaped to
+paste straight into a backlog tool and to hold up when a developer
+asks what "done" means.
+
+## Standalone: yes
 
 ## Usage Note:
-Assumes core context is already present in session.
-Companion: prompt-generators/user-story-prompt-generator-prompt.md
-offers the facilitated version when you want to be guided through
-story decisions first.
+Reach for this when you know the user and the outcome and want the
+story and its acceptance criteria written cleanly rather than
+facilitated. Fast path: paste a feature request, a ticket, a
+transcript line, or a rough one-sentence ask. It also runs cold.
 
 ## Required Context Keys:
 1. Product/feature context

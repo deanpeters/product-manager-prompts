@@ -1,16 +1,21 @@
 # positioning-statement-prompt-generator.md
 <!--
 ## Description:
-Generates a custom positioning-statement prompt using the Persona-First Decision
-Facilitation Loop. Helps PMs create Geoffrey Moore-style positioning with clear
-decision tradeoffs and context-aware recommendations.
+Facilitates the decisions that positioning actually turns on -- who
+the statement is for, which category you are claiming, what the real
+alternative is -- one question at a time with three context-aware
+options each, then emits a reusable positioning prompt you can keep,
+edit, and re-run as the product changes.
+
+## Standalone: yes
 
 ## Usage Note:
-Use when context is incomplete and you want the assistant to guide discovery and
-generate a reusable positioning prompt. Good for early-stage positioning and
-messaging alignment.
-Companion: prompts/positioning-statement.md is the direct template
-version for sessions where context is already loaded.
+Reach for this when the positioning argument is not settled yet: the
+team disagrees about the category, nobody has named the true
+alternative, or "who is this for" gets a different answer from every
+person you ask. The facilitation is the point -- the emitted prompt is
+the receipt. Also the right choice when you want a positioning prompt
+tuned to your product that a teammate can run later without you.
 
 ## Instructions:
 Run a multi-turn facilitation flow:

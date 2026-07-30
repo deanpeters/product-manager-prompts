@@ -6,13 +6,15 @@ inventory, a Power x Interest grid, and a per-stakeholder engagement
 plan. Turns "who do I need to align?" from a hallway guess into a
 deliberate artifact.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session. Use before kicking off
-an initiative, when alignment is stalling, or when preparing a
-communication plan. Pairs with daci-chart-prompt-generator.md when the
-question shifts from "who cares?" to "who decides?".
-Companion: prompt-generators/stakeholder-map-prompt-generator.md
-offers the facilitated version when you want guided scoping first.
+Reach for this before kicking off an initiative, when alignment keeps
+stalling for reasons nobody will say in the meeting, or when preparing
+a communication plan and you need to know who hears what first. Fast
+path: paste the org chart, the project brief, or the invite list from
+the last steering meeting. It also runs cold -- it asks who is
+involved and what decision is in play, then builds.
 
 ## When NOT to Use:
 - You need decision rights, not influence mapping: use the DACI chart

@@ -1,22 +1,22 @@
 # lean-ux-canvas-prompt-template.md
 <!--
 ## Description:
-Fills Jeff Gothelf's Lean UX Canvas (v2) from context already present
-in session: business problem, outcomes, users, user benefits,
-solutions, hypotheses, the riskiest assumption, and the smallest
-experiment to run next. Frames work around a business problem to
-solve, not a solution to implement.
+Fills all eight boxes of Jeff Gothelf's Lean UX Canvas (v2) --
+business problem, outcomes, users, user benefits, solutions,
+hypotheses, riskiest assumption, and the smallest experiment that
+tests it -- framing the work around a problem to solve rather than a
+solution to implement.
+
+## Standalone: yes
 
 ## Usage Note:
-Assumes context is already present in session. Use when a vague
-initiative needs framing into testable hypotheses, or when a team is
-solutioning before agreeing on the problem. The canvas is an
-insurance policy: it exposes gaps in understanding before sprints
-get spent.
-Companion: workshops/lean-ux-canvas-workshop.md
-offers the facilitated version when you want guided scoping first.
-Related: agent-strategy-canvas-prompt-template.md is the agentic-AI
-cousin of this framing.
+Reach for this when a vague initiative needs turning into testable
+hypotheses, or when the team is picking a solution before agreeing on
+the problem, and you want the canvas drafted in one pass rather than
+facilitated box by box. The canvas is an insurance policy: it exposes
+gaps in understanding before sprints get spent on them. Fast path:
+paste the initiative brief, the exec's one-liner, or the ticket that
+started all this. It also runs cold.
 
 ## When NOT to Use:
 - The problem and riskiest assumption are validated: design the

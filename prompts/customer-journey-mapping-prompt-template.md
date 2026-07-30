@@ -2,15 +2,19 @@
 
 <!--
 ## Description:
-Creates a decision-ready customer journey map from context already present in
-session. Produces a practical map, friction analysis, and intervention plan.
+Produces a decision-ready customer journey map: the stages a person
+moves through, what they are doing, thinking, and feeling at each one,
+where the friction concentrates, and a ranked intervention plan naming
+what to fix first and why. Ends with the assumptions the map rests on.
+
+## Standalone: yes
 
 ## Usage Note:
-This prompt assumes core context is already loaded in the session.
-If context is missing, ask for it in a lightweight way and continue.
-Companion: prompt-generators/customer-journey-mapping-prompt-generator.md
-offers the facilitated version when you want to be guided through
-scoping decisions first.
+Reach for this when you can already name the persona and the journey's
+start and end, and you want the map drafted rather than facilitated.
+Fast path: paste support tickets, session notes, a funnel report, or
+interview transcripts and let it build from the evidence. It also runs
+cold -- it asks lightly for what it needs and continues.
 
 ## Required Context Keys:
 1. Persona and painful moment

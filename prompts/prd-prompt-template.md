@@ -1,29 +1,31 @@
 # prd-prompt-template.md
 <!--
 ## Description:
-Generates a complete PRD in one pass from context already present in
-the session — discovery notes, prior conversation, attached case
-study, team notes. Uses a canonical 9-section structure and labels
-every gap as an Assumption or Open Question rather than inventing
-facts.
+Generates a complete PRD in one pass using a canonical 9-section
+structure, working from whatever raw material is available --
+discovery notes, a prior conversation, an attached case study,
+scribbled team notes. Every gap is labeled an Assumption or an Open
+Question rather than filled with invented fact, so the draft shows
+where it is thin instead of hiding it.
+
+## Standalone: yes
 
 ## Usage Note:
-Assumes context is already present in session: run it after a
-discovery conversation, a JTBD or problem-framing exercise, or with
-notes pasted in. If your team has its own PRD template, attach it
-and it overrides the canonical structure below.
-Companion: workshops/prd-workshop.md offers the
-section-by-section facilitated version with a human gate after each
-section — use it when the PRD is high-stakes enough to steer.
+Reach for this when you have the raw material and need the document
+now: paste discovery notes, a problem-framing output, a JTBD pass, a
+transcript, or a pile of Slack decisions. If your team has its own PRD
+template, attach it and it overrides the canonical structure below.
+Best when you want a full draft to react to in one pass rather than
+building it section by section with a gate at each one.
 
 ## When NOT to Use:
-- You want to review and shape each section as it is written: use
-  the companion generator with its checkpoint gates.
-- You need requirements reverse-engineered from a formal spec: use
-  reverse-engineer-IEEE830srs-to-PRD-prompt-template.md or
-  reverse-engineer-ISO29148-to-PRD-prompt-template.md.
-- No real context exists in session: a PRD generated from nothing is
-  fiction with headers; run discovery or problem framing first.
+- You want to approve each section before the next one is written:
+  this drafts the whole document in one pass, by design.
+- Your source material is a formal spec (IEEE 830, ISO 29148) that
+  needs translating rather than notes that need drafting.
+- Nobody has talked to a user or framed the problem yet: a PRD
+  generated from nothing is fiction with headers. Get the problem
+  understood, in any form, before dressing it as requirements.
 
 ## Required Context Keys:
 1. The product, feature, or initiative the PRD describes

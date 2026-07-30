@@ -1,14 +1,20 @@
 # proto-persona-profile.md
 <!--
 ## Description:
-Creates a proto-persona profile using a stable persona canvas format so PMs can
-reuse outputs consistently across planning, design, and delivery workflows.
+Creates a proto-persona profile on a stable canvas -- who they are,
+what they are trying to get done, what gets in the way, and what we
+are assuming about them -- in a format consistent enough to reuse
+across planning, design, and delivery without re-explaining it each
+time. Separates what is known from what is believed.
+
+## Standalone: yes
 
 ## Usage Note:
-Assumes core context is already present in the session.
-Companion: prompt-generators/proto-persona-prompt-generator.md offers
-the facilitated version when you want to be guided through persona
-decisions first.
+Reach for this when the team needs a working persona now and is honest
+that it is provisional: the assumptions get labeled so they can be
+validated later instead of hardening into folklore. Fast path: paste
+sales call notes, support themes, or a segment description. It also
+runs cold.
 
 ## Required Context Keys:
 1. Target persona seed (role/person type)

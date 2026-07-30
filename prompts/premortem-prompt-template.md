@@ -5,12 +5,15 @@ Runs a premortem on a product initiative: imagine it is launch day plus
 six months and the effort has failed, then work backward to name the
 causes, rank the risks, and assign mitigations before the work begins.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session. Use after a plan exists
-but before commitment hardens: pre-kickoff, pre-launch, or before a
-big bet is funded. Most valuable when the team is confident.
-Companion: prompt-generators/premortem-prompt-generator.md offers the
-facilitated version when you want guided scoping first.
+Reach for this after a plan exists but before commitment hardens:
+pre-kickoff, pre-launch, or before a big bet is funded. Most valuable
+exactly when the team is confident -- that is when unspoken doubts are
+cheapest to surface and hardest to say out loud. Fast path: paste the
+plan, the roadmap slide, or the funding memo and let it work backward
+from the failure. It also runs cold.
 
 ## When NOT to Use:
 - The failure already happened: run a retrospective, not a premortem.

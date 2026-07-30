@@ -6,13 +6,15 @@ screener, Mom Test-compliant questions organized by topic, and probes
 for going deeper. Designed to produce interviews that surface real
 behavior and past events instead of compliments and speculation.
 
+## Standalone: yes
+
 ## Usage Note:
-Assumes context is already present in session. Use when planning
-discovery interviews for a problem space, a persona, or a risky
-assumption. Pairs naturally with jobs-to-be-done.md (upstream framing)
-and proto-persona-profile.md (who to recruit).
-Companion: prompt-generators/discovery-interview-prompt-generator.md
-offers the facilitated version when you want guided scoping first.
+Reach for this when you know roughly who you want to talk to and what
+you are afraid might be true, and you want the guide written rather
+than facilitated. Fast path: paste your riskiest assumption, a
+persona sketch, or last quarter's churn reasons and let it build the
+questions from there. It also runs cold -- it asks for the research
+goal and the assumption under test, then proceeds.
 
 ## When NOT to Use:
 - You need usability feedback on a design: run a usability test plan,
