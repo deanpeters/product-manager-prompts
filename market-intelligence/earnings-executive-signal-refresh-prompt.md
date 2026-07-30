@@ -3,20 +3,20 @@
 ## Description:
 Quarterly refresh of a company's executive and strategy signals:
 parses the latest earnings call, filings, executive interviews, and
-announcements, then diffs against a prior Executive Insights Company
-Profile — reporting what shifted in strategy, product direction, and
-leadership narrative. The schedulable sibling of the executive
-insights profile.
+announcements, then diffs against a prior executive profile —
+reporting what shifted in strategy, product direction, and leadership
+narrative.
+
+## Standalone: better with a prior profile, works without
 
 ## Usage Note:
-Run prompts/company-profile-executive-insights-research.md once to
-create the baseline profile, then run this each quarter (or after a
-major event) with the prior profile in session. Works for public
+Reach for this each quarter, or after a major event, when one company
+matters enough to track closely -- an acquirer, a partner, your
+largest competitor, the account your roadmap depends on. Paste the
+prior profile and it reports the deltas; with no prior profile it runs
+baseline mode and establishes one, labeled as such. Works for public
 companies (earnings calls, filings) and, with reduced signal, for
-private companies (interviews, blogs, announcements).
-Companion: market-intelligence/competitive-intel-watch-prompt.md covers
-the whole competitor set at lower depth; this goes deep on one
-company.
+private ones (interviews, blogs, announcements).
 
 ## When NOT to Use:
 - No baseline profile exists: create one first (or this run becomes

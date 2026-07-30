@@ -8,14 +8,16 @@ dependency order with cheap checks before expensive critique, a
 modify-or-continue gate per section, and compaction of each approved
 section into the minimum context later sections need.
 
+## Standalone: yes
+
 ## Usage Note:
-Bring your team's PRD template if you have one — its sections
-replace the canonical set below. Bring whatever discovery material
-exists. Level 0 works today; Level 1 is the full multi-turn
-contract; Level 2 is the routine form with the section structure as
-data.
-Companion: workshops/prd-workshop.md is the facilitated session;
-prompts/prd-prompt-template.md is the one-pass version.
+Reach for this when you want the PRD built section by section under
+loop control rather than in conversation -- long documents, repeated
+runs, or work you want to hand to an agent and audit later. Bring
+your team's PRD template if you have one; its sections replace the
+canonical set below. Bring whatever discovery material exists. Level
+0 works today as typed; Level 1 is the full multi-turn contract;
+Level 2 is the routine form with the section structure as data.
 
 ## When NOT to Use:
 - The problem statement is still under negotiation: critical path —

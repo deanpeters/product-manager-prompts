@@ -1,15 +1,20 @@
 # proto-persona-prompt-generator.md
 <!--
 ## Description:
-Generates a custom proto-persona prompt through a Persona-First Decision
-Facilitation Loop. Designed to build useful, testable proto-personas from
-incomplete context.
+Facilitates the decisions behind a proto-persona -- which slice of the
+market this person represents, what they are hired to accomplish,
+which beliefs about them are evidence and which are guesses -- one
+question at a time with three context-aware options each, then emits a
+reusable proto-persona prompt built on those answers.
+
+## Standalone: yes
 
 ## Usage Note:
-Use this when teams need a working persona now and want explicit assumptions
-for validation later. Helpful in discovery, planning, and early design work.
-Companion: prompts/proto-persona-profile.md is the direct template
-version for sessions where context is already loaded.
+Reach for this when the team is arguing about who the user is, or when
+several personas are quietly collapsing into one composite that
+describes nobody. Separating what you know from what you are assuming
+is the work; the emitted prompt is what you re-run after research
+turns some of those assumptions into facts.
 
 ## Instructions:
 Run one-question facilitation with decision forks. Keep user burden low and

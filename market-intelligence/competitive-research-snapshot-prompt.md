@@ -7,14 +7,16 @@ research, Fact/Inference/Assumption labels, real URL citations, and
 next-step options. Produces a stable snapshot schema that downstream
 prompts (battle cards, delta monitors) can consume and diff.
 
+## Standalone: yes
+
 ## Usage Note:
-Use when a product decision needs competitive grounding: positioning,
-roadmap bets, deal support, board prep. The output is a decision
-support snapshot, not a market report. Because it proceeds on labeled
-assumptions when questions go unanswered, it can run as an agent
-task or on a schedule; re-run it and diff against the prior snapshot.
-Companion: workshops/battle-card-workshop.md consumes
-this snapshot when the next step is sales enablement.
+Reach for this when a product decision needs competitive grounding --
+positioning, roadmap bets, deal support, board prep -- and you want
+evidence rather than the team's collective impression of the market.
+The output is a decision support snapshot, not a market report.
+Because it proceeds on labeled assumptions when questions go
+unanswered, it can run as an agent task or on a schedule; re-run it
+and diff against the prior snapshot.
 
 ## When NOT to Use:
 - You need market sizing, not landscape: use

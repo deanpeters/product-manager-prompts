@@ -6,12 +6,15 @@ for a product initiative: guided decisions about scope, lens, and
 depth, then a generated stakeholder-mapping prompt with a Power x
 Interest grid and per-stakeholder engagement plan.
 
+## Standalone: yes
+
 ## Usage Note:
-Use at initiative kickoff, when alignment is stalling, or before a
-big communication push. Works from thin context: the facilitation
-builds the map's scope with you.
-Companion: prompts/stakeholder-map-prompt-template.md is the direct
-template version for sessions where context is already loaded.
+Reach for this at initiative kickoff, when alignment keeps stalling
+without an obvious blocker, or before a big communication push --
+particularly when you suspect the map you would draw from memory is
+missing someone. Works from thin context on purpose: choosing the
+scope, the lens, and how deep to go is the work, and the emitted
+prompt is what you re-run when the org chart moves.
 
 ## When NOT to Use:
 - You need decision rights (who approves, who is consulted): use

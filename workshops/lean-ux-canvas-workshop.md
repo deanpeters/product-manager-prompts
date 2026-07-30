@@ -6,12 +6,16 @@ Lean UX Canvas (v2): guided decisions about the business problem,
 focus persona, outcome altitude, and experiment appetite, then the
 filled canvas with hypotheses and a least-work-to-learn experiment.
 
+## Standalone: yes
+
 ## Usage Note:
-Use when an initiative arrives as a solution ("build X") and needs
-reframing around the business problem, or when a team has too many
-assumptions and no agreed place to start learning.
-Companion: prompts/lean-ux-canvas-prompt-template.md is the direct
-template version for sessions where context is already loaded.
+Reach for this when an initiative arrives as a solution ("build X")
+and needs reframing around the business problem, or when a team has
+too many assumptions and no agreed place to start learning. The
+guided version earns its time when the canvas will be filled with
+other people watching -- deciding the outcome altitude and the
+experiment appetite out loud is what stops the canvas becoming a
+wish list with boxes.
 
 ## When NOT to Use:
 - Problem and riskiest assumption already validated: design the

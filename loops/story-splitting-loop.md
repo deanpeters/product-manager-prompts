@@ -8,14 +8,17 @@ with Just Enough Jinja2. The canonical user story output format is
 embedded at every level — the markdown is the meal; the Jinja2 only
 marks where the work repeats, stops, and signs its output.
 
+## Standalone: yes
+
 ## Usage Note:
 Bring an epic and the stable context: persona, outcome, constraints,
-decisions already made. Level 0 works today as typed; Level 1 adds
-the operating contract; Level 2 is the routine form. All three
-render the same canonical story format.
-Companion: prompts/user-story-splitting-prompt-template.md is the
-one-shot version; vibes/user-story-splitting-jinja2-loop.md is the
-fully structured plan-then-iterate form.
+decisions already made. Reach for this when splitting is iterative
+work rather than a single pass -- the first split produces stories
+that are still too big, and you want the loop to keep going until
+each one is right-sized without re-typing the rules each turn. Level
+0 works today as typed; Level 1 adds the operating contract; Level 2
+is the routine form. All three render the same canonical story
+format.
 
 ## When NOT to Use:
 - One small story to split once: use the one-shot template.

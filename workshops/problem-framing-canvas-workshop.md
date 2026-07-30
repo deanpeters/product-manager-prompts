@@ -7,16 +7,17 @@ populations, current state, and desired outcome, then converge on an
 evidence-grounded problem statement and an actionable "How might
 we..." question.
 
+## Standalone: yes
+
 ## Usage Note:
-Use at initiative kickoff when the problem space is ambiguous, when
-a vague executive mandate needs reframing before it hits the
-roadmap, or as a periodic checkpoint that in-flight work still maps
-to the original problem. MITRE's guidance applies: if the team is
-already aligned this takes 30 seconds; if it takes longer, that time
-was worth spending.
-Companion: prompts/framing-the-problem-statement.md is the direct
-problem-statement template for sessions where context is already
-loaded.
+Reach for this at initiative kickoff when the problem space is
+ambiguous, when a vague executive mandate needs reframing before it
+hits the roadmap, or as a periodic checkpoint that in-flight work
+still maps to the original problem. MITRE's guidance applies: if the
+team is already aligned this takes 30 seconds; if it takes longer,
+that time was worth spending. The exploration of affected populations
+and current state is the part that changes minds -- it is why this
+runs as a facilitated canvas rather than a single drafted statement.
 
 ## When NOT to Use:
 - The problem is validated and framed: go to solution work; a

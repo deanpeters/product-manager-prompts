@@ -6,13 +6,15 @@ discovery interview guide: guided decisions about the research goal,
 riskiest assumption, participant, and interview constraints, then a
 generated Mom Test-compliant interview guide.
 
+## Standalone: yes
+
 ## Usage Note:
-Use when planning discovery interviews for a problem space, persona,
-or risky assumption. Pairs upstream with jobs-to-be-done.md and
-proto-persona-profile.md.
-Companion: prompts/discovery-interview-guide-prompt-template.md is
-the direct template version for sessions where context is already
-loaded.
+Reach for this when you are not yet sure what the interviews are
+supposed to learn: the goal is fuzzy, the riskiest assumption has not
+been named out loud, or the team wants to "talk to some users" without
+agreeing on what would change their minds. Naming the assumption under
+test is the work here; the emitted guide is what you carry into the
+room and reuse for the next round of participants.
 
 ## When NOT to Use:
 - You need usability feedback on a design: build a usability test

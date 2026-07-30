@@ -7,13 +7,17 @@ become the working structure; the human gates each section before the
 next begins. Demonstrates the checkpointed co-construction interaction
 mode (see interaction-modes.md).
 
+## Standalone: yes
+
 ## Usage Note:
-Works best when a PRD template (PDF, Markdown, Word, screenshot, or
-rough outline) plus supporting context (case study, discovery notes,
-prior output) are already in the session. Bring your team's template —
-the point is to fill YOUR structure, not impose a generic one.
-Companion: prompts/prd-prompt-template.md generates the full PRD in
-one pass from session context, without the per-section gates.
+Reach for this when the PRD is high-stakes enough to steer as it is
+written -- a funding decision, a contentious scope, a document several
+people will redline -- and you would rather approve each section than
+react to a finished draft. Bring your team's template (PDF, Markdown,
+Word, screenshot, or rough outline): the point is to fill YOUR
+structure, not impose a generic one. Supporting context helps but is
+not required; the gates will surface what is missing section by
+section.
 
 ## When NOT to Use:
 - You need requirements reverse-engineered from a formal spec: use

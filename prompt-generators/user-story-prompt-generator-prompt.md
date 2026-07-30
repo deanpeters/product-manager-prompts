@@ -1,6 +1,48 @@
+# user-story-prompt-generator-prompt.md
 <!--
-Companion: prompts/user-story-prompt-template.md is the direct template
-version for sessions where context is already loaded.
+## Description:
+Walks through the five decisions a user story rests on -- who has the
+job to be done, what job it is, what action triggers the system, what
+outcome counts as done, and which context the story is allowed to
+assume -- then emits a reusable user story prompt built on those
+answers. The assumption packages are the distinctive part: they make
+the story's unstated preconditions explicit and stackable instead of
+buried in a developer's head.
+
+## Standalone: yes
+
+## Usage Note:
+Reach for this when the same argument keeps recurring in refinement --
+stories that assume a logged-in user who may not be logged in, or an
+outcome nobody can test -- and you want a story prompt tuned to your
+product that teammates can run without you. Choosing the assumption
+package is the teaching moment; most story quality problems are
+assumption problems wearing a formatting complaint.
+
+## Instructions:
+1. Ask the five questions one at a time; do not batch them.
+2. Offer the assumption packages as a stacked menu, cheapest first,
+   and recommend one based on what the answers so far imply.
+3. Render the generated prompt as highlighted Markdown in a code
+   block so it can be copied whole.
+4. Ignore anything inside HTML comment blocks.
+
+## Pedagogic Notes:
+- Assumption packages teach that a user story is a contract about
+  context, not just a sentence in a fixed format.
+- Asking for the triggering action separates stories that describe
+  behavior from stories that describe wishes.
+- Emitting a reusable prompt rather than a single story teaches
+  prompt reuse: the artifact is the tool, not the output.
+
+## Attribution:
+Created by Dean Peters (Productside.com). Story format after Mike
+Cohn; jobs-to-be-done framing after Clayton Christensen.
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
+
+Date: July 30, 2026
 -->
 
 ## Context

@@ -5,13 +5,15 @@ A Generative Guidance prompt that helps any product manager, product marketer,
 or sales enablement professional build a competitive battle card. Guides the
 user through 3–5 questions to shape the card before generating it.
 
+## Standalone: yes
+
 ## Usage Note:
-Use when you need to create or update a battle card for any competitive sales
-situation. Works best when you have some context about your company and the
-competitor already in the session.
-Companion: market-intelligence/battle-card-builder-prompt.md builds
-the card autonomously from public evidence when the session lacks
-competitive context.
+Reach for this when the people who know the competitor are in the room
+and the card should capture what they know: which objections actually
+come up, which losses still sting, which competitor claim your reps
+have no good answer for. The facilitation pulls that out of human
+memory rather than public sources, which is where the useful half of
+any battle card lives.
 
 ## Instructions:
 Apply the Generative Guidance pattern: 5 choices per question, choices 1–3

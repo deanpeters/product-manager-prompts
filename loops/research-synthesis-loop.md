@@ -9,14 +9,16 @@ verbatims, frequency, and Fact / Inference / Assumption labels — so
 eight transcripts don't get boiled into one vat of vaguely strategic
 soup.
 
+## Standalone: yes
+
 ## Usage Note:
-Bring the raw material (transcripts, VoC snapshot, tickets) into
-session. The theme output format below is the contract at every
-level; the loop just controls how many themes and when you gate.
-Companion: market-intelligence/voice-of-customer-miner-prompt.md
-gathers public voice upstream;
-prompts/discovery-interview-guide-prompt-template.md plans the
-interviews that feed this.
+Bring the raw material -- transcripts, review exports, support
+tickets, sales notes -- into session. Reach for this when you have
+more research than you can hold in your head at once and the honest
+risk is that everything gets flattened into three comfortable themes
+that confirm what you already believed. The theme output format below
+is the contract at every level; the loop just controls how many
+themes and when you gate.
 
 ## When NOT to Use:
 - One interview: just summarize it; the ceremony outweighs the

@@ -8,14 +8,15 @@ a cited changelog plus flags for which battle card or positioning
 sections now need updating. Designed to run unattended on a loop or
 schedule.
 
+## Standalone: better with a prior snapshot, works without
+
 ## Usage Note:
-Run competitive-research-snapshot-prompt.md once to create the
-baseline, then run this on a cadence (weekly to quarterly) with the
-prior snapshot pasted or attached. Governing criterion: material
-shift — a change a sales rep or roadmap owner would act on. If no
-prior snapshot exists, this prompt falls back to producing one.
-Companion: workshops/battle-card-workshop.md consumes
-the update flags.
+Reach for this on a cadence -- weekly to quarterly -- once you are
+tired of finding out about a competitor's pricing change from a lost
+deal. Paste or attach the prior snapshot and it reports only what
+moved since. With no prior snapshot it produces the baseline itself,
+so the first run is never wasted. Governing criterion: material shift
+-- a change a sales rep or roadmap owner would act on.
 
 ## When NOT to Use:
 - First run with no baseline: use the snapshot prompt (or let this

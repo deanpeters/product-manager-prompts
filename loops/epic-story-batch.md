@@ -8,13 +8,15 @@ fail-stop — so one weak instruction damages one epic instead of
 marching through the folder with the confidence of a Seagull Manager
 who just discovered automation.
 
+## Standalone: yes
+
 ## Usage Note:
-Bring the epic list (ideally shaped by
-prompts/backlog-epic-hypothesis.md) and the base-camp context. The
-batch failure mode is scale without visibility; every control here
-keeps the blast radius at one item, and every epic leaves a receipt.
-Companion: vibes/epic-to-stories-formatter-jinja2.md is the
-schema-driven rendering contract when the stories arrive as JSON.
+Bring the epic list in whatever shape you have it and the base-camp
+context. Reach for this when the backlog is too big to work by hand
+and you are nervous about turning an AI loose on all of it at once --
+which is the correct instinct. The batch failure mode is scale
+without visibility; every control here keeps the blast radius at one
+item, and every epic leaves a receipt you can audit afterward.
 
 ## When NOT to Use:
 - One epic: that is a loop, not a batch — use

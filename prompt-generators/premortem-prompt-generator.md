@@ -6,12 +6,15 @@ guided decisions about the initiative, failure horizon, candor level,
 and audience, then a generated premortem prompt that imagines the
 failure and works backward to ranked risks and owned mitigations.
 
+## Standalone: yes
+
 ## Usage Note:
-Use after a plan exists but before commitment hardens: pre-kickoff,
-pre-launch, before a big bet is funded. Most valuable when the team
-is confident — that is when unspoken doubts are cheapest to surface.
-Companion: prompts/premortem-prompt-template.md is the direct
-template version for sessions where context is already loaded.
+Reach for this when the premortem's setup is itself delicate: how far
+out to imagine the failure, how blunt the room is allowed to be, and
+who will read the output — which is usually what determines whether
+anyone says the real risk. Deciding those before the exercise is the
+work; the emitted prompt is what you run with the team and reuse at
+the next gate.
 
 ## When NOT to Use:
 - The failure already happened: run a retrospective.

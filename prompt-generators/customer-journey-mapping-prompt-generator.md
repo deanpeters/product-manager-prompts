@@ -1,15 +1,20 @@
 # customer-journey-mapping-prompt-generator.md
 <!--
 ## Description:
-Generates a custom customer-journey-mapping prompt using the Persona-First
-Decision Facilitation Loop. Designed to reduce setup burden and produce a
-decision-ready journey map prompt.
+Facilitates the scoping decisions a journey map lives or dies on --
+whose journey, where it starts and stops, what the map is for -- one
+question at a time with three context-aware options each, then emits a
+reusable journey-mapping prompt tuned to those answers.
+
+## Standalone: yes
 
 ## Usage Note:
-Use when users have partial context and need guided scope selection, objective
-framing, and output structure for journey mapping.
-Companion: prompts/customer-journey-mapping-prompt-template.md is the
-direct template version for sessions where context is already loaded.
+Reach for this when the map's boundaries are the actual argument:
+the team wants to map "the whole customer experience," or two people
+mean different journeys by the same word, or nobody can say what
+decision the map is supposed to inform. Choosing the scope is the
+work; the emitted prompt is what you keep afterward and re-run as the
+journey changes.
 
 ## Instructions:
 Run one-question facilitation with 3-option decision forks and progress markers.

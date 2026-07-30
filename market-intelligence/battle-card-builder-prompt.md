@@ -5,19 +5,18 @@ Researches and drafts a competitive battle card autonomously: given
 your product and one competitor, the AI does the fieldwork — pricing
 pages, reviews, release notes, customer stories — and produces a
 field-action card with a source URL and Fact / Inference /
-Assumption label on every claim. The evidence-first sibling of the
-facilitated battle card workshop.
+Assumption label on every claim.
+
+## Standalone: yes
 
 ## Usage Note:
-Use when you know the competitor and want the card built from
-public evidence rather than from a facilitated session. Feeds from
-competitive-research-snapshot-prompt.md or
-competitive-intel-watch-prompt.md output when present in session
-(uses it instead of re-researching). Governing criterion: material
-shift — the card is a field-action artifact a rep opens mid-deal,
-not a research report.
-Companion: workshops/battle-card-workshop.md facilitates the card
-from your knowledge; this builds it from the world's.
+Reach for this when you know which competitor matters and want the
+card built from public evidence rather than from what the room
+remembers -- especially for a competitor your team has strong
+opinions about but little current data on. If a competitive snapshot
+or watch report is already in session it will use that instead of
+re-researching. Governing criterion: material shift -- the card is a
+field-action artifact a rep opens mid-deal, not a research report.
 
 ## When NOT to Use:
 - You hold rich internal win/loss knowledge the public web lacks:

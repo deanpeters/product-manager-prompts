@@ -1,9 +1,48 @@
+# tam-sam-som-prompt-generator.md
 <!--
-Companion: market-intelligence/tam-sam-som-analysis-prompt.md is the autonomous
-sibling: same artifact, but the AI does the research itself with
-citations and evidence-based defaults, suitable for agent or scheduled
-runs. Use this generator when you want to be facilitated through
-scoping; use the autonomous version when scope is already decided.
+## Description:
+Facilitates the scoping decisions that determine what a market sizing
+number even means -- which problem space, which geography, which
+industry segments, which customers count as addressable -- then emits
+a reusable TAM/SAM/SOM prompt built on those answers, with the data
+sources appropriate to the chosen region named up front.
+
+## Standalone: yes
+
+## Usage Note:
+Reach for this when the scope is the unsettled part. Two people sizing
+"the market" for the same product will produce numbers an order of
+magnitude apart if one counts every business in the country and the
+other counts businesses that have the problem badly enough to pay. The
+questions here are where that divergence gets settled, out loud,
+before any arithmetic happens. The emitted prompt is what you keep and
+re-run when you enter a new region or move upmarket.
+
+## Instructions:
+1. Ask the scoping questions one at a time; do not batch them.
+2. Name the data sources that fit the chosen geography rather than
+   offering a generic list.
+3. Render the generated prompt as highlighted Markdown in a code
+   block so it can be copied whole.
+4. Ignore anything inside HTML comment blocks.
+
+## Pedagogic Notes:
+- Teaches that market sizing is a definitional exercise before it is
+  an arithmetic one: the qualifying filter decides the answer.
+- Region-specific source lists teach where credible numbers actually
+  live, which is the skill that outlasts any single model.
+- Emitting a reusable prompt makes the scope decisions durable and
+  auditable, so a later reader can see what was counted and what was
+  deliberately excluded.
+
+## Attribution:
+Created by Dean Peters (Productside.com). TAM/SAM/SOM framework as
+popularized in venture and product strategy practice.
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires expressed written permission from Dean Peters.
+
+Date: July 30, 2026
 -->
 
 # Context
