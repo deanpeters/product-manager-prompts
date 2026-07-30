@@ -57,13 +57,99 @@ EMOJI = re.compile(
     "[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U0001F900-\U0001F9FF]"
 )
 
+# --- Coupling discipline (see COUPLING-REMEDIATION-PLAN.md) -------------
+#
+# Forward pointers are free; backward prerequisites are debt. An asset
+# must be describable and runnable without naming another file above its
+# Final Step block. Duplication across tiers is intentional -- the same
+# framework taught three ways serves three learners -- so none of this
+# penalizes having a generator, a workshop, and a standalone for one
+# topic. It penalizes making the user read two files to use one.
+#
+# Levels: 0 standalone / 1 forward pointer / 2 soft prereq / 3 hard gate.
+# prompts/ is the novice floor and must be level 0: one file in, one
+# finished artifact out.
+
+STANDALONE_TIER = "prompts"                 # must declare Standalone: yes
+AUTOMATION_TIERS = {"loops", "vibes"}       # may hard-gate (level 3)
+
+ASSET_REF = re.compile(
+    r"(?:prompts|prompt-generators|market-intelligence|workshops"
+    r"|storytelling|loops|skeletons|vibes|flows"
+    r"|resumes-resignations-reactions)/[A-Za-z0-9._-]+\.md"
+)
+FINAL_STEP = re.compile(r"^#{1,4}\s*Final Step:?\s*$", re.MULTILINE | re.IGNORECASE)
+HARD_GATE = re.compile(r"^\s*STOP:|do not proceed until|cannot proceed until",
+                       re.MULTILINE | re.IGNORECASE)
+BACKWARD_PREREQ = [
+    (r"\brun [^.\n]{0,40}\bfirst\b", "backward prereq: 'run ... first'"),
+    (r"\buse [^.\n]{0,40}\binstead\b", "backward prereq: 'use ... instead'"),
+    (r"\bassumes [^.\n]{0,40}\b(exists|already|in session)\b",
+     "backward prereq: 'assumes ... already'"),
+    (r"^Companion:", "Companion block (fold into Final Step)"),
+]
+STANDALONE_FIELD = re.compile(r"^##\s*Standalone\s*:\s*(.+)$",
+                              re.MULTILINE | re.IGNORECASE)
+
 
 def comment_block(text):
     m = re.search(r"<!--(.*?)-->", text, re.DOTALL)
     return m.group(1) if m else ""
 
 
-def check_file(path):
+def above_final_step(body):
+    """The part of the body a user reads before they have an artifact."""
+    m = FINAL_STEP.search(body)
+    return body[: m.start()] if m else body
+
+
+def coupling_checks(path, text, block, body, strict):
+    """Level enforcement. Staged findings are warnings until Phases A/B
+    land, then --strict (and eventually the default) promotes them."""
+    errors, warnings = [], []
+    tier = path.parts[0] if len(path.parts) > 1 else ""
+    staged = errors if strict else warnings
+
+    # Level 0/1: no file paths above Final Step in the novice tier.
+    if tier == STANDALONE_TIER:
+        for ref in sorted(set(ASSET_REF.findall(above_final_step(body)))):
+            errors.append(
+                f"names {ref} above Final Step (prompts/ must stand alone)"
+            )
+
+    # Level 3 is automation-only.
+    if tier and tier not in AUTOMATION_TIERS:
+        for m in HARD_GATE.finditer(body):
+            line = body[: m.start()].count("\n") + 1
+            staged.append(
+                f"hard gate outside {'/'.join(sorted(AUTOMATION_TIERS))} "
+                f"near body line {line}: {m.group(0).strip()!r}"
+            )
+
+    # Backward-prereq phrasing in the metadata a novice reads to choose.
+    if tier == STANDALONE_TIER and block:
+        for pattern, label in BACKWARD_PREREQ:
+            if re.search(pattern, block, re.MULTILINE | re.IGNORECASE):
+                staged.append(f"metadata {label}")
+
+    # The declared contract.
+    m = STANDALONE_FIELD.search(block) if block else None
+    value = m.group(1).strip().lower() if m else None
+    if tier == STANDALONE_TIER:
+        if value is None:
+            staged.append("metadata missing field: Standalone (must be 'yes')")
+        elif not value.startswith("yes"):
+            staged.append(f"Standalone: {value!r} -- prompts/ must be 'yes'")
+    elif value and value.startswith("requires") and tier not in AUTOMATION_TIERS:
+        staged.append(
+            f"Standalone: 'requires ...' (level 3) only allowed in "
+            f"{'/'.join(sorted(AUTOMATION_TIERS))}"
+        )
+
+    return errors, warnings
+
+
+def check_file(path, strict=False):
     errors, warnings = [], []
     text = path.read_text(encoding="utf-8", errors="replace")
     block = comment_block(text)
@@ -92,6 +178,11 @@ def check_file(path):
     body = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
     if EMOJI.search(body):
         warnings.append("emoji found in prompt body (output rules say ASCII)")
+
+    rel = path.relative_to(REPO)
+    c_errors, c_warnings = coupling_checks(rel, text, block, body, strict)
+    errors += c_errors
+    warnings += c_warnings
 
     return errors, warnings
 
@@ -135,6 +226,7 @@ def licensing_sweep():
 
 
 def main():
+    strict = "--strict" in sys.argv
     total_errors = total_warnings = checked = 0
     for d in DIRECTORIES:
         base = REPO / d
@@ -144,7 +236,7 @@ def main():
             if f.name in SKIP_NAMES or f.name.startswith("Dataset"):
                 continue
             checked += 1
-            errors, warnings = check_file(f)
+            errors, warnings = check_file(f, strict)
             rel = f.relative_to(REPO)
             for e in errors:
                 print(f"ERROR   {rel}: {e}")
@@ -164,6 +256,12 @@ def main():
         f"Licensing sweep: {lic_scanned} files scanned repo-wide, "
         f"{len(lic_errors)} violations"
     )
+    if not strict:
+        print(
+            "Coupling: staged findings report as warnings. Run with "
+            "--strict to preview promotion (see "
+            "COUPLING-REMEDIATION-PLAN.md)."
+        )
     return 1 if total_errors else 0
 
 
