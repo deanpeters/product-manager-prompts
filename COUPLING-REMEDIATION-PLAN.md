@@ -1,7 +1,40 @@
 # Coupling Remediation Plan
 
-Working plan, drafted July 30, 2026. Pick this up cold; it is written
-to be executable without re-deriving the analysis.
+Drafted and executed July 30, 2026. **All four phases are complete.**
+Kept as the record of what was done and why, and as the reference for
+the rule now enforced in `scripts/validate-prompts.py` and documented
+in `AGENTS.md`.
+
+## Outcome
+
+| | Before | After |
+|---|---|---|
+| `Companion:` blocks | 30 | 0 |
+| Files claiming a prerequisite they did not have | 14 | 0 |
+| Prompts that stall with no bypass | 2 | 0 |
+| `prompts/` files declaring `Standalone: yes` | 0 | all |
+| Validator errors | 0 (unenforced) | 0 (enforced) |
+| Assets deleted | -- | **0** |
+
+The two findings that mattered most:
+
+1. **The coupling was largely fictional.** 14 files in `prompts/`
+   carried the boilerplate "Assumes context is already present in
+   session" while their bodies contained working fallback intakes.
+   The headers were defaming the prompts. No file in `prompts/`
+   actually stalled cold.
+2. **The coupling was policy, not accident.** `AGENTS.md` instructed
+   contributors to "choose one canonical file and convert the other to
+   a pointer." That line created the pattern. It now says the
+   opposite, in the section below on why duplication across tiers is
+   intentional.
+
+Phase D flipped enforcement on by default; `--lenient` downgrades
+coupling findings to warnings for future bulk migration work.
+
+---
+
+Original plan follows, retained as the reasoning record.
 
 ---
 

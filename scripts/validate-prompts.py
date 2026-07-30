@@ -10,7 +10,9 @@ Checks, per prompt file:
   3. Companion: references resolve to real files
   4. No emojis in prompt body (repo output rule)
 
-Grandfathered files (predating the metadata standard) produce
+Coupling discipline is enforced by default (see AGENTS.md); pass
+--lenient to downgrade those findings to warnings during bulk
+migration. Grandfathered files (predating the metadata standard) produce
 warnings; files declaring v2 produce errors on missing fixtures.
 Exit code 1 on errors, 0 on warnings only.
 
@@ -230,7 +232,11 @@ def licensing_sweep():
 
 
 def main():
-    strict = "--strict" in sys.argv
+    # Coupling enforcement is on by default as of Phase D: the repo is
+    # clean, the rule is documented in AGENTS.md, and regressions
+    # should fail rather than accumulate. --lenient downgrades the
+    # staged findings to warnings for bulk migration work.
+    strict = "--lenient" not in sys.argv
     total_errors = total_warnings = checked = 0
     for d in DIRECTORIES:
         base = REPO / d
@@ -262,9 +268,8 @@ def main():
     )
     if not strict:
         print(
-            "Coupling: staged findings report as warnings. Run with "
-            "--strict to preview promotion (see "
-            "COUPLING-REMEDIATION-PLAN.md)."
+            "Coupling: running --lenient, so coupling findings report "
+            "as warnings instead of errors."
         )
     return 1 if total_errors else 0
 

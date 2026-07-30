@@ -97,19 +97,25 @@ Authoring rules for prompts that use this pattern:
 ## Required Metadata for Prompt Assets
 For prompt files, include a clear comment metadata block (or preserve/improve the existing one) with:
 - `Description`
+- `Standalone`
 - `Usage Note`
 - `Instructions`
 - `Attribution`
 - `Licensing`
 - `Date`
 
+`Standalone` declares the coupling contract, and takes one of:
+- `yes` -- finishes the job alone (required for everything in `prompts/`)
+- `better with [artifact], works without` -- soft prereq
+- `requires [artifact]` -- hard gate, `loops/` and `vibes/` only
+
 If a prompt intentionally deviates, explain the rationale in comments.
 
 New and substantially revised prompts should also include a short
 **When NOT to Use** note (in the metadata comment or Usage Note):
-one or two lines naming the situations where this prompt is the wrong
-tool and what to reach for instead. Misuse boundaries are part of the
-hidden curriculum.
+one or two lines naming the *situations* where this prompt is the
+wrong tool. Name situations, not alternative files -- see Coupling
+Discipline. Misuse boundaries are part of the hidden curriculum.
 
 ## Teaching Quality Bar
 Before considering a prompt "done", verify:
@@ -121,8 +127,74 @@ Before considering a prompt "done", verify:
 
 ## Naming, Placement, and Duplication
 - Prefer lowercase-hyphen file names for new assets unless there is a strong curation reason not to.
-- Avoid duplicate canonical content across directories.
-- If content appears in two places, choose one canonical file and convert the other to a pointer or clearly justify intentional duplication.
+- **Duplication across tiers is intentional and encouraged.** The same
+  framework taught three ways serves three learners: a generator
+  teaches the scoping decisions, a workshop teaches the facilitated
+  conversation, a `prompts/` template delivers the finished artifact,
+  a loop teaches the automation. TAM/SAM/SOM exists four times on
+  purpose. Do not consolidate them.
+- **Never convert one asset into a pointer to another.** A pointer is
+  not a prompt; it is an errand. If two files genuinely do the same
+  work in the same way for the same reader, delete one outright --
+  do not leave a stub.
+- What must not duplicate is the *decision*: two files should not
+  require the reader to compare them before using either. See
+  Coupling Discipline below.
+
+## Coupling Discipline
+
+**Forward pointers are free. Backward prerequisites are debt.**
+
+A prompt is tightly coupled when the user cannot get a finished
+artifact from it without first reading or running another file. That
+costs an expert nothing and costs a novice everything: they hit the
+fork at the exact moment they have the least ability to evaluate it,
+with no artifact in hand. Every prerequisite is a place to quit.
+
+- **Forward** -- "when you're done, this could feed a battle card."
+  Belongs in **Final Step only**, always optional. Costs nothing,
+  teaches the shape of the library. Write more of these.
+- **Backward** -- "run X first," "this is the sibling of Y," "assumes
+  context is already present in session." This is homework assigned
+  before the user has anything. Do not write these.
+
+**The test:** every asset must be describable, and runnable, without
+naming another file above its Final Step block.
+
+### Levels and tiers
+
+| Level | Shape | Allowed in |
+|---|---|---|
+| 0 Standalone | Finishes the job alone; asks for what it needs | **Required** in `prompts/` |
+| 1 Forward pointer | Names a next step, Final Step only | Anywhere |
+| 2 Soft prereq | Better with a prior artifact, works without, says so | `prompt-generators/`, `workshops/`, `market-intelligence/`, `storytelling/` |
+| 3 Hard gate | `STOP` unless a prior artifact exists | `loops/`, `vibes/` only |
+
+`prompts/` is the novice floor: one file in, one finished artifact
+out, every time. `loops/` and `vibes/` may gate hard because a loop is
+machinery adopted *after* the manual version is understood, and a
+batch job that runs on an empty index produces garbage at scale.
+
+### Writing the metadata
+
+- **Description** states what this file produces, in absolute terms.
+  Never "the direct template version of X" or "the autonomous sibling
+  of Y" -- a description that only parses in contrast to another file
+  forces the reader to open both.
+- **Usage Note** names a situation the reader can recognize from
+  inside their own week ("the team disagrees about the category,"
+  "estimation keeps turning into an argument"), not a taxonomy slot
+  ("use when context is incomplete").
+- **When NOT to Use** names *situations*, not alternative files. "You
+  already know your scope and just want the number" is a situation.
+  "Use the other prompt instead" is a referral.
+- If a prompt has a fallback intake, say so ("it also runs cold").
+  Do not claim a prerequisite the prompt does not actually have --
+  fourteen files once claimed to require pre-loaded context while
+  carrying a working three-question fallback.
+- A required input is not a license to stall. Ask once, offer the
+  best-guess bypass, then proceed with a labeled worked example. A
+  stalled prompt teaches nothing.
 
 ## Jinja2 Prompt Structures
 Prompts that run under /loop, /goal, or inside agents may use Jinja2
@@ -151,12 +223,15 @@ collections frozen at a human gate. Exemplars live in `/vibes/`.
 ## Review Checklist (Pre-PR)
 Run this quick check before finalizing:
 1. Mission fit: practical + pedagogic value both improved.
-2. Metadata block complete and useful.
+2. Metadata block complete and useful, including `Standalone`.
 3. Naming and placement follow directory intent.
 4. Links and file references still resolve.
-5. No accidental duplication introduced.
+5. Coupling: no file named above the Final Step block; Description and
+   Usage Note stand on their own without a sibling; anything in
+   `prompts/` finishes the job cold.
 6. Any code/doc mismatch resolved.
 7. No burden-shifting questions; decision options are persona-first and context-aware.
+8. `python3 scripts/validate-prompts.py` passes.
 
 ## PR Notes
 In change summaries, include:
