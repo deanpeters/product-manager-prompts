@@ -33,10 +33,24 @@ month's.
   is what makes scheduled re-runs and delta reports possible
 - **Final Step block** — exactly 4 numbered next options
 
+## Start here if you have a company and a calendar invite
+
+**[full-spectrum-company-sweep-prompt.md](full-spectrum-company-sweep-prompt.md)**
+runs all seven collection disciplines back to back on one company,
+fuses them with the confidence-stacking rule, and ends with a
+call-ready brief: a sixty-second summary, the three things worth
+saying, the questions you will be asked with answers, and the claims
+you must not make. One prompt, one run, no orchestration.
+
+Use it when a company suddenly matters and you have one sitting to get
+smart. Everything below gives you more depth on a narrower question --
+reach for those when this sweep tells you which channel is thin.
+
 ## What's Available
 
 | Prompt | Best For |
 |--------|----------|
+| **[full-spectrum-company-sweep-prompt.md](full-spectrum-company-sweep-prompt.md)** | Everything about one company in one run: all seven disciplines, fused, ending in a call-ready brief |
 | **[competitive-research-snapshot-prompt.md](competitive-research-snapshot-prompt.md)** | Just-enough competitive landscape research with cited snapshots, a comparison matrix, and "so what" implications |
 | **[competitive-intel-watch-prompt.md](competitive-intel-watch-prompt.md)** | Scheduled delta monitoring against a prior snapshot: material shifts only, with battle-card update flags |
 | **[market-landscape-scan-prompt.md](market-landscape-scan-prompt.md)** | Mapping a market's segments, players, substitutes, and whitespace before sizing or positioning |
@@ -110,7 +124,10 @@ column names the deep-dive prompts each sweep hands off to:
 
 ## How the system fits together
 
-Three layers, one motion:
+Three layers, one motion — or
+[full-spectrum-company-sweep-prompt.md](full-spectrum-company-sweep-prompt.md),
+which walks all three internally for a single company when you do not
+have time to orchestrate.
 
 1. **Collect** — instantiate the engagement (the compendium's six
    variables: TARGET, MARKET, GEOGRAPHY, BUYER, CAPABILITY,
