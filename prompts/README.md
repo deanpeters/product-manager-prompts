@@ -55,6 +55,7 @@ Tools for understanding markets and customers:
 | **[company-profile-executive-insights-research.md](company-profile-executive-insights-research.md)** | Competitive intelligence and market analysis | Market analysis framework |
 | **[discovery-interview-guide-prompt-template.md](discovery-interview-guide-prompt-template.md)** | Planning interviews that surface real behavior | Mom Test + continuous discovery |
 | **[win-loss-analysis-prompt.md](win-loss-analysis-prompt.md)** | Turning win/loss and churn debriefs into ground truth (or the interview guide to collect it) | Win/loss doctrine, HUMINT discipline |
+| **[tam-sam-som-market-sizing.md](tam-sam-som-market-sizing.md)** | Sizing a market end to end: research, bottom-up arithmetic, top-down cross-check, sensitivity | TAM/SAM/SOM, bottom-up modeling |
 
 ### Requirements & Execution
 Structured approaches to defining what to build:

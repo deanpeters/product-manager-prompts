@@ -1,5 +1,69 @@
 # Changelog
 
+## v2.4 — July 30, 2026
+
+The decoupling release: every asset now stands on its own, and the
+rule that keeps it that way is documented and enforced.
+
+**The problem.** Assets described themselves in terms of each other
+("the direct template version of X", "the autonomous sibling of Y"),
+so choosing between two files required reading both. Fourteen files in
+`prompts/` declared "Assumes context is already present in session"
+while their bodies carried working fallback intakes — a prerequisite
+that did not exist. Tight coupling costs an expert nothing and costs a
+novice everything: they hit the fork with no artifact in hand, at the
+moment they are least able to evaluate it.
+
+**The root cause was policy.** `AGENTS.md` instructed contributors to
+"choose one canonical file and convert the other to a pointer." That
+line created the pattern. It now says the opposite.
+
+- **New rule, documented in `AGENTS.md` and `CLAUDE.md`:** forward
+  pointers are free, backward prerequisites are debt. Every asset must
+  be describable, and runnable, without naming another file above its
+  Final Step block. Four coupling levels, each allowed in specific
+  tiers; `prompts/` is the novice floor and must be level 0 — one file
+  in, one finished artifact out.
+- **Duplication across tiers is now explicitly encouraged.** A
+  generator, a workshop, a template, and a loop for one framework
+  teach four different things to four different readers. TAM/SAM/SOM
+  exists four times on purpose. **Zero assets were deleted or merged.**
+- All **30 `Companion:` blocks removed**; Descriptions and Usage Notes
+  rewritten to name situations a reader recognizes from inside their
+  own week rather than taxonomy slots.
+- **`Standalone:`** added as a required metadata field: `yes`,
+  `better with [artifact], works without`, or `requires [artifact]`
+  (automation tiers only).
+- Two genuine stalls converted to ask-once-then-proceed with the
+  best-guess bypass (`agent-strategy-canvas`, the IKEA steps
+  generator). A stalled prompt teaches nothing; a labeled worked
+  example teaches the framework.
+- Metadata backfilled for four assets that had a Companion block or
+  nothing at all where their metadata belonged.
+- **Tooling:** `validate-prompts.py` gained `coupling_checks()` —
+  file references above Final Step, hard gates outside `loops/` and
+  `vibes/`, backward-prereq phrasing, and `Standalone` tier
+  conformance. Enforced by default; `--lenient` downgrades to
+  warnings for bulk migration. `howto.md` exempted as documentation.
+
+**New assets:**
+
+- **`prompts/tam-sam-som-market-sizing.md`** — self-contained market
+  sizing: capability check, context detection with collapse rule,
+  Generative Guidance v2 intake, its own research protocol and source
+  hierarchy, bottom-up SAM build with the arithmetic shown, mandatory
+  top-down reconciliation, ten-section output with an impact-sorted
+  assumption ledger. The reference implementation for level 0.
+- **`market-intelligence/full-spectrum-company-sweep-prompt.md`** —
+  all seven collection disciplines on one company in one run, fused
+  under the confidence-stacking rule, ending in a call-ready brief:
+  sixty-second spoken summary, three things worth saying, questions
+  you will be asked with confidence ratings, and a Do Not Say list.
+  Closes the workflow-level gap where learning about one company
+  required eight prompts in the right order.
+- **`COUPLING-REMEDIATION-PLAN.md`** — the plan, the measured
+  baseline, and the outcome, kept as the reasoning record.
+
 ## v2.3 — July 17, 2026
 
 The licensing release: the library moves from MIT to **Creative
