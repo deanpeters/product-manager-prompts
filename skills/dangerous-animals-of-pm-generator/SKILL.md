@@ -77,22 +77,39 @@ This is not a framework document — it's a creative reframing tool. Naming a dy
 
 ### The Creature Acronym Pattern
 
-Creature names map PM realities onto animal imagery through acronyms:
+Creature names map PM realities onto animal imagery through acronyms.
+
+**The five core Dangerous Animals.** These are canon from *The Dangerous
+Animals of Product Management* and are not up for redefinition — cite them,
+don't rewrite them:
 
 | Creature | Acronym | What It Represents |
 |---|---|---|
 | HiPPO | Highest Paid Person's Opinion | Decisions driven by seniority, not evidence |
-| RHiNO | Really High-value New Opportunity | Shiny object that derails the roadmap |
+| RHiNO | Really High-value, New Opportunity | Shiny object that derails the roadmap |
 | ZEbRA | Zero Evidence But Really Arrogant | Stakeholder with strong opinions and no data |
 | WoLF | Works on Latest Fire | Reactive PM who abandons strategy for urgency |
 | Seagull Manager | — | Flies in, makes noise, dumps on everything, leaves |
 
-### Four Acronym Rules
+**Illustrations only**, used below to show the cause-and-effect shape. Generate
+your own; these are not canon:
+
+| Creature | Acronym | What It Represents |
+|---|---|---|
+| ORCA | Optimistic Reasoning, Catastrophic Action | Confident plan that breaks on contact |
+| DODO | Demo Overpromised, Deployment Obliterated | The demo that wrote a cheque delivery couldn't cash |
+
+### Five Acronym Rules
 
 1. **Animal nouns only** — The acronym must spell an actual animal species noun from the chosen category. FROG, TOAD, NEWT, SALAMANDER, AXOLOTL are valid. CROAK, SLIME, LEAP, AGILE, STINKS are not. If it isn't a creature name, it isn't a creature.
 2. **Short and punchy** — aim for 3–6 letters. Stretch to 8 only when the longer animal noun is unmistakably the better metaphor (AXOLOTL earns its length; PLATYPUS rarely does).
-3. **Sentence-like structure** — Acronym words should work together grammatically. "Highest Paid Person's Opinion" reads like a phrase, not random initials.
-4. **Emotional impact** — The name should create a vivid, memorable image. ZEbRA and WoLF work because they trigger an instant visual *and* a gut reaction.
+3. **One mechanism, not two traits** — the expansion has to hold together as a single idea. Two shapes work:
+   - **One noun phrase**, where the behavior is *implied by the noun* rather than narrated. RHiNO — *Really High-value, New Opportunity* — never says what the salesperson does, because the noun already did it. Same with HiPPO — *Highest Paid Person's Opinion*.
+   - **Cause and effect**, where the first half produces the second. ORCA — *Optimistic Reasoning, Catastrophic Action*. DODO — *Demo Overpromised, Deployment Obliterated*. Here the comma is a hinge, not a list separator.
+
+   The failure is **coordination**: two traits that merely co-occur. MACAW — *Mentions AI Constantly, Accomplished Wrapper* — names two complaints about the same person and no mechanism joining them; being a thin wrapper doesn't cause the AI talk. **Test:** put "which is why" between the halves. If only "and also" fits, it's a list, not a beast.
+4. **Every word carries freight** — intensity words are not evidence. *Escalates*, *Hemorrhages*, *Obliterated* announce that something is bad without naming what or how, and a beast built from them would fit any dysfunction at any company. A word earns its slot by being specific and checkable: "Highest Paid" is observable, "Demo Overpromised" names the exact act. The same word passes or fails depending on what it's bound to — *Deployment Obliterated* works because the deployment is the thing obliterated, while a bare *Obliterated* is melodrama. Attach it to a subject or cut it. Never add a word just to reach a letter.
+5. **Emotional impact** — The name should create a vivid, memorable image. ZEbRA and WoLF work because they trigger an instant visual *and* a gut reaction.
 
 ### Pains, Gains, and Jobs Framing
 
@@ -239,7 +256,8 @@ For each creature, use `template.md` format:
 - **The acronym must spell an actual animal species noun** from the chosen category. Start here — pick the animal, then build the acronym. Never work backwards from a characteristic or action.
   - **Valid** (real animals): FROG, TOAD, NEWT, SIREN, AXOLOTL, AMPHIUMA
   - **Invalid** (actions, sounds, traits): CROAK, SLIME, LEAP, AGILE, STINKS, SPAWN
-- Words work together like a phrase, not random initials.
+- **The expansion names one mechanism, not two traits.** Either a single noun phrase where the behavior is implied by the noun (RHiNO — *Really High-value, New Opportunity*), or cause and effect where the first half produces the second (DODO — *Demo Overpromised, Deployment Obliterated*). Never two co-occurring traits joined by a comma (MACAW — *Mentions AI Constantly, Accomplished Wrapper*). Test each expansion by putting "which is why" between the halves; if only "and also" fits, rewrite it.
+- **Every word is specific and checkable.** No bare intensity verbs (*Escalates*, *Hemorrhages*, *Obliterated*) floating without a subject, and no word added only to reach a letter.
 - Name should trigger a vivid, gut-level reaction.
 
 **After the creatures:** Offer 3 next options:
@@ -286,7 +304,25 @@ back to you as a decision.
 
 ---
 
-### Pitfall 3: Generic Inputs, Generic Beasts
+### Pitfall 3: Two Traits Wearing One Acronym
+**Symptom:** "MACAW — Mentions AI Constantly, Accomplished Wrapper." The comma joins two separate complaints about the same person.
+
+**Consequence:** The beast describes a *type* instead of naming a *mechanism*, so it can't be used to argue. Nobody can point at a decision and say "that's a MACAW," because there's no cause to point at — only two adjectives that happened to land on the same person.
+
+**Fix:** Pick the shape before you pick the words. Either the behavior is implied by a noun (RHiNO), or the first half causes the second (ORCA, DODO). Say the expansion aloud with "which is why" in the comma's place: *Demo Overpromised, **which is why** Deployment Obliterated* holds. *Mentions AI Constantly, **which is why** Accomplished Wrapper* does not.
+
+---
+
+### Pitfall 4: Melodrama Standing In for Evidence
+**Symptom:** Expansions leaning on *Escalates*, *Hemorrhages*, *Obliterated*, *Destroys*, *Devastates* — words that shout without specifying.
+
+**Consequence:** The beast is unfalsifiable and therefore unusable in a real room. "Hemorrhages" fits every failing team on earth, so it names nobody's problem in particular.
+
+**Fix:** Bind the verb to a subject or cut it. *Obliterated* alone is melodrama; *Deployment Obliterated* names what died. If a word is there only because the acronym needed that letter, pick a different animal.
+
+---
+
+### Pitfall 5: Generic Inputs, Generic Beasts
 **Symptom:** Q2 answer is "things are hard" or "we have communication issues"
 
 **Consequence:** The creature prompt generates vague, universally applicable beasts that don't name *your* situation.
@@ -295,7 +331,7 @@ back to you as a decision.
 
 ---
 
-### Pitfall 4: Choosing the Wrong Mode
+### Pitfall 6: Choosing the Wrong Mode
 **Symptom:** Selecting Dangerous Animals when the team needs encouragement; selecting Beneficial Beasts when the team needs to name dysfunction honestly.
 
 **Consequence:** The output doesn't match the moment.
@@ -304,7 +340,7 @@ back to you as a decision.
 
 ---
 
-### Pitfall 5: Using Creature Names to Avoid Real Conversations
+### Pitfall 7: Using Creature Names to Avoid Real Conversations
 **Symptom:** Calling someone "the WoLF" in a 1:1 instead of addressing the behavior directly.
 
 **Consequence:** Humor creates distance. Sometimes distance helps open a conversation; sometimes it replaces one.

@@ -51,7 +51,28 @@ documented and enforced like everything else.
   different skill, a duplicated pitfall heading, a rule that demanded
   3–8 letters in one place and 3–6 in another, and an attribution
   crediting *Crossing the Chasm* with the origin of HiPPO. The worked
-  example's acronyms now pass the skill's own four rules.
+  example's acronyms now pass the skill's own rules.
+- **The acronym rules named the wrong target, and both the prompt and
+  the skill taught it.** "Sentence-like structure" invited exactly the
+  failure it should have prevented: a sentence is subject plus
+  predicate, so the rule produced expansions like *MACAW — Mentions AI
+  Constantly, Accomplished Wrapper*, two complaints about one person
+  with no mechanism joining them. It is now **"one mechanism, not two
+  traits,"** with the two shapes that actually work spelled out: a
+  single noun phrase where the behavior is implied by the noun (RHiNO,
+  HiPPO), or cause and effect where the first half produces the second
+  (ORCA, DODO). The comma was never the problem; coordination was. The
+  test is whether "which is why" fits between the halves.
+- **A fifth rule: every word carries freight.** Bare intensity verbs
+  (*Escalates*, *Hemorrhages*, *Obliterated*) announce that something is
+  bad without naming what or how, and fit any dysfunction at any
+  company. The same word passes or fails on what it is bound to:
+  *Deployment Obliterated* names what died, a bare *Obliterated* is
+  melodrama. No word may be added only to reach a letter, which is what
+  the worked example's *REMORA — …, Always* was doing; it is now
+  *…, Rarely Argued*.
+- **Two new pitfalls** covering both failures, with the ", Always"-style
+  padding called out explicitly.
 
 ## v2.4 — July 30, 2026
 

@@ -73,8 +73,11 @@ Generate a session starter prompt based on the user's input to set the context f
 - **Short and Punchy**: Keep the creature's name brief, ideally between 3 to 6 letters, and avoid clichés or overly complex terms.
   - *Example*: HiPPO (Highest Paid Person's Opinion)
 
-- **Sentence-Like Structure**: The words forming the acronym should work together like a sentence, making the meaning clear and memorable.
-  - *Example*: RHiNO (Really High-value New Opportunity)
+- **One Mechanism, Not Two Traits**: The expansion has to hold together as a single idea. Two shapes work. Either **one noun phrase**, where the behavior is implied by the noun instead of narrated — RHiNO (Really High-value, New Opportunity) never says what the salesperson does, because the noun already did it. Or **cause and effect**, where the first half produces the second — ORCA (Optimistic Reasoning, Catastrophic Action), DODO (Demo Overpromised, Deployment Obliterated). In those, the comma is a hinge, not a list separator.
+  - *The failure is coordination*: MACAW (Mentions AI Constantly, Accomplished Wrapper) names two complaints about the same person with no mechanism joining them. Being a thin wrapper does not cause the AI talk; the two merely co-occur.
+  - *Test*: put "which is why" between the halves. If only "and also" fits, you have a list, not a beast.
+
+- **Every Word Carries Freight**: Intensity words are not evidence. *Escalates*, *Hemorrhages*, *Obliterated* announce that something is bad without naming what or how, and a beast built from them would describe any dysfunction at any company. A word earns its slot by being specific and checkable: "Highest Paid" is observable, "Demo Overpromised" names the exact act. The same word can pass or fail depending on what it is bound to — "Deployment Obliterated" works because the deployment is the thing obliterated, while a bare "Obliterated" is melodrama. Attach it to a subject or cut it, and never add a word only to reach a letter.
 
 - **Emotional Impact**: The name should evoke a strong emotional response, creating a memorable and impactful image.
   - *Example*: ZEbRA (Zero Evidence But Really Arrogant), WoLF (Works on Latest Fire), Seagull Manager (Flies in, makes a lot of noise, dumps on everything, then leaves)

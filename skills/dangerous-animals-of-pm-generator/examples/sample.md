@@ -81,7 +81,7 @@ Appears two weeks later as a sprint item with a customer name attached and no sc
 
 ---
 
-## REMORA — Roadmap Edits Made Off-Record, Always
+## REMORA — Roadmap Edits Made Off-Record, Rarely Argued
 *Ocean creatures | Dangerous Animals*
 
 Carries no authority of its own, so it attaches to whoever has some and steers engineering through informal channels.
@@ -100,6 +100,7 @@ Surfaces whenever a stakeholder opens with "I was just chatting with [exec] and 
 
 - The facilitation surfaced specific, named behaviors (CPO QBR commitments, sales "yes" before scoping) — not generic "alignment issues"
 - Every acronym spells a real ocean animal, and each one maps to a distinct archetype: ambush predator, sideways-scuttling opportunist, free-riding parasite
-- Each expansion reads as a phrase rather than a string of initials, which is what makes it repeatable out loud
+- Each expansion names one mechanism rather than two adjacent traits: SHaRK and REMORA are cause and effect (the handshake is *why* the roadmap gets knifed; off-record is *why* nobody argues), and CRaB is a single noun phrase whose behavior is implied by the noun. None is a list of complaints wearing an animal name
+- No word is present only to reach a letter, which is what keeps them repeatable out loud
 - The names are short enough to use in conversation: "we've got a CRaB on this sprint"
 - The user didn't pre-design the creatures — the skill did the naming work from their context
