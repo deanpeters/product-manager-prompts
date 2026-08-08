@@ -1,19 +1,21 @@
 ---
-name: dangerous_animals_of_pm_generator
+name: dangerous-animals-of-pm-generator
 description: Generate creature acronyms that name PM dysfunctions, blockers, or winning strategies. Use when you want to give your team shared vocabulary for the animals hiding in your product work.
-intent: >-
-  Guide product managers through a 5-question facilitation that maps their real jobs, pains, and frustrations onto creature acronyms — then outputs a session-starter prompt for a dedicated beast-naming exploration. Surfaces the "Dangerous Animals" (dysfunctions, anti-patterns, blockers) or "Beneficial Beasts" (strategies, behaviors, mindsets) lurking in daily PM work.
-type: interactive
-theme: creativity-reframing
-best_for:
-  - "Making PM anti-patterns visible and memorable for teams and stakeholders"
-  - "Building shared vocabulary for dysfunctions in retrospectives or team charters"
-  - "Reframing obstacles with humor to reduce friction in sensitive conversations"
-scenarios:
-  - "My team keeps building what the HiPPO wants instead of what customers need — I want to name this and the other creatures like it"
-  - "I need a warm-up exercise for a retrospective about product dysfunctions"
-  - "I want memorable metaphors to explain PM anti-patterns to non-PM stakeholders"
-estimated_time: "10-15 min"
+license: CC-BY-NC-SA-4.0
+metadata:
+  intent: >-
+    Guide product managers through a 5-question facilitation that maps their real jobs, pains, and frustrations onto creature acronyms — then outputs a session-starter prompt for a dedicated beast-naming exploration. Surfaces the "Dangerous Animals" (dysfunctions, anti-patterns, blockers) or "Beneficial Beasts" (strategies, behaviors, mindsets) lurking in daily PM work.
+  type: interactive
+  theme: creativity-reframing
+  best_for:
+    - "Making PM anti-patterns visible and memorable for teams and stakeholders"
+    - "Building shared vocabulary for dysfunctions in retrospectives or team charters"
+    - "Reframing obstacles with humor to reduce friction in sensitive conversations"
+  scenarios:
+    - "My team keeps building what the HiPPO wants instead of what customers need — I want to name this and the other creatures like it"
+    - "I need a warm-up exercise for a retrospective about product dysfunctions"
+    - "I want memorable metaphors to explain PM anti-patterns to non-PM stakeholders"
+  estimated_time: "10-15 min"
 ---
 
 <!--
@@ -325,5 +327,5 @@ back to you as a decision.
 ---
 
 **Skill type:** Interactive
-**Folder:** `skills/dangerous_animals_of_pm_generator/`
+**Folder:** `skills/dangerous-animals-of-pm-generator/`
 **Dependencies:** Standalone — no required skill dependencies

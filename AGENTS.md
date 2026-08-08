@@ -25,7 +25,7 @@ If there is a tradeoff, prefer pedagogy and clarity over cleverness.
 - `skeletons/`: Prompt architecture analysis and reverse-engineering tools.
 - `vibes/`: Experimental and agentic workflow prompts.
 - `resumes-resignations-reactions/`: Satirical/therapeutic creative prompts.
-- `skills/`: Agent Skills — prompts packaged so an agent loads them on its own. One folder per skill, named `snake_case`, containing `SKILL.md` plus optional `template.md` and `examples/`.
+- `skills/`: Agent Skills — prompts packaged so an agent loads them on its own. One folder per skill, named `kebab-case`, containing `SKILL.md` plus optional `template.md` and `examples/`.
 - `flows/`: Flow exports and automation-style artifacts (for example LangFlow JSON).
 
 Place new files in the directory that best matches learning intent for users.
@@ -124,15 +124,51 @@ A skill is a prompt packaged so an agent can decide, unprompted, that it
 applies. That decision is made from the YAML frontmatter alone, so the
 frontmatter is a functional interface, not decoration.
 
-Layout: `skills/<snake_case_name>/SKILL.md`, plus optional `template.md`
-(the output contract) and `examples/` (worked runs).
+### The upstream spec wins
+
+**Skills in this repository follow the Agent Skills spec as Anthropic
+defines it, not a convention of our own.** The authorities, in order:
+
+1. [agentskills.io](https://agentskills.io) — the open standard
+2. [Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
+3. [Skills in Claude Code](https://code.claude.com/docs/en/skills)
+
+Where this file and the upstream spec disagree, **the spec is right and
+this file is stale** — fix it here rather than working around it. Check
+the spec before inventing a rule; a house convention that contradicts it
+will silently break distribution.
+
+**Hard constraints, quoted from the spec:**
+
+- `name`: maximum 64 characters, **lowercase letters, numbers, and
+  hyphens only**, no XML tags, and it may not contain the reserved words
+  `anthropic` or `claude`.
+- `description`: non-empty, maximum 1,024 characters, no XML tags,
+  **written in third person** ("Generates…", never "I can help you…"),
+  stating both what the skill does *and* when to invoke it.
+- SKILL.md body: keep under 500 lines; split overflow into sibling files
+  referenced **one level deep** from SKILL.md.
+
+**Only six frontmatter keys are portable.** `name`, `description`,
+`license`, `compatibility`, `metadata`, `allowed-tools`. Claude Code
+accepts more, but claude.ai uploads, the Skills API, and
+`package_skill.py` reject an unknown key with a **hard error**, not a
+warning. Since this repository publishes skills for other people to
+install, treat the six-field list as the ceiling.
+
+Our curation fields (`intent`, `type`, `theme`, `best_for`, `scenarios`,
+`estimated_time`) are **not** spec fields. They live nested under
+`metadata:`, which the spec defines as a free-form map for exactly this
+purpose. Do not promote them back to the top level.
+
+Layout: `skills/<kebab-case-name>/SKILL.md`, plus optional `template.md`
+(the output contract) and `examples/` (worked runs). **Kebab-case, never
+snake_case** — the folder name is what a user types to invoke a personal
+or project skill, and underscores are not a legal `name`.
 
 `SKILL.md` carries **both** headers, in this order:
-1. **YAML frontmatter** — `name` (must equal the folder name) and
-   `description` (what it does *and* when to invoke it, written for a
-   machine deciding relevance). Additional keys (`intent`, `type`,
-   `theme`, `best_for`, `scenarios`, `estimated_time`) are optional
-   curation metadata.
+1. **YAML frontmatter** — spec-conformant, per the constraints above,
+   with `name` equal to the folder name.
 2. **The standard HTML comment block**, immediately after the closing
    `---`, with the same seven fields every other asset carries. The
    frontmatter serves the agent; the comment block serves the human

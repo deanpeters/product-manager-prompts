@@ -162,5 +162,5 @@ Generated: 2026-08-08 | Assets: 111
 
 | Prompt | Description |
 |---|---|
-| [dangerous_animals_of_pm_generator](../skills/dangerous_animals_of_pm_generator/SKILL.md) | Generate creature acronyms that name PM dysfunctions, blockers, or winning strategies. |
+| [dangerous-animals-of-pm-generator](../skills/dangerous-animals-of-pm-generator/SKILL.md) | Generate creature acronyms that name PM dysfunctions, blockers, or winning strategies. |
 

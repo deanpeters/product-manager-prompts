@@ -107,7 +107,9 @@ You still have to prompt the loop — nobody skipped that step, they just put a 
 
 **[/skills/](skills/)** — Agent Skills: the same PM work packaged so a coding or chat agent loads it by itself when the moment matches. Each skill is one folder: a `SKILL.md` with YAML frontmatter the agent reads to decide relevance, the usual teaching comment block underneath, plus supporting `template.md` and `examples/`.
 
-- Name the creatures stalking your product practice → [dangerous_animals_of_pm_generator](skills/dangerous_animals_of_pm_generator/SKILL.md)
+- Name the creatures stalking your product practice → [dangerous-animals-of-pm-generator](skills/dangerous-animals-of-pm-generator/SKILL.md)
+
+These follow the [Agent Skills](https://agentskills.io) open standard rather than a convention of my own, so they install anywhere skills are supported — Claude Code, claude.ai, or the Skills API. Drop a folder into `~/.claude/skills/` (or symlink it there from your checkout) and the skill is available as `/skill-name`. `scripts/validate-prompts.py` enforces the spec's constraints, so a skill that passes CI is a skill that will actually upload.
 
 ### "I need to laugh so I don't cry"
 

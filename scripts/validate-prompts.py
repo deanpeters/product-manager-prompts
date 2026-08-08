@@ -215,10 +215,25 @@ def check_file(path, strict=False):
 
 SKILLS_DIR = "skills"
 FRONTMATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.DOTALL)
-SNAKE_CASE = re.compile(r"\A[a-z0-9]+(_[a-z0-9]+)*\Z")
+KEBAB_CASE = re.compile(r"\A[a-z0-9]+(-[a-z0-9]+)*\Z")
 # Supporting files a SKILL.md points at, resolved relative to its folder.
 SUPPORT_REF = re.compile(r"`((?:examples/)?[A-Za-z0-9._-]+\.md)`")
 MIN_DESCRIPTION = 40  # too terse to route on
+
+# Constraints from the Agent Skills spec (agentskills.io). These are not
+# house style: exceeding them fails a claude.ai upload or a Skills API
+# package outright, so they are errors here rather than warnings.
+MAX_NAME = 64
+MAX_DESCRIPTION = 1024
+RESERVED_NAME_WORDS = ("anthropic", "claude")
+SPEC_FRONTMATTER_KEYS = {
+    "name",
+    "description",
+    "license",
+    "compatibility",
+    "metadata",
+    "allowed-tools",
+}
 
 
 def frontmatter_field(fm, field):
@@ -231,8 +246,16 @@ def check_skill(folder, strict=False):
     errors, warnings = [], []
     name = folder.name
 
-    if not SNAKE_CASE.match(name):
-        warnings.append(f"folder name {name!r} is not snake_case")
+    if not KEBAB_CASE.match(name):
+        errors.append(
+            f"folder name {name!r} is not kebab-case; the Agent Skills spec "
+            "allows lowercase letters, numbers, and hyphens only"
+        )
+    if len(name) > MAX_NAME:
+        errors.append(f"folder name is {len(name)} chars; spec maximum is {MAX_NAME}")
+    for reserved in RESERVED_NAME_WORDS:
+        if reserved in name:
+            errors.append(f"folder name contains reserved word {reserved!r}")
 
     skill_md = folder / "SKILL.md"
     if not skill_md.is_file():
@@ -257,12 +280,29 @@ def check_skill(folder, strict=False):
         description = frontmatter_field(fm, "description")
         if not description:
             errors.append("frontmatter missing field: description")
+        elif len(description) > MAX_DESCRIPTION:
+            errors.append(
+                f"frontmatter description is {len(description)} chars; "
+                f"spec maximum is {MAX_DESCRIPTION}"
+            )
         elif len(description) < MIN_DESCRIPTION:
             warnings.append(
                 "frontmatter description is too terse for an agent to "
                 f"route on ({len(description)} chars; say what it does "
                 "and when to invoke it)"
             )
+
+        # Only six keys are portable. claude.ai uploads, the Skills API,
+        # and package_skill.py reject anything else with a hard error, so
+        # a stray top-level key breaks distribution silently until then.
+        # Our curation fields belong nested under `metadata:`.
+        for key in re.findall(r"^([A-Za-z][\w-]*)\s*:", fm, re.MULTILINE):
+            if key not in SPEC_FRONTMATTER_KEYS:
+                errors.append(
+                    f"frontmatter key {key!r} is not in the Agent Skills "
+                    f"spec; allowed: {', '.join(sorted(SPEC_FRONTMATTER_KEYS))}"
+                    " (nest curation fields under 'metadata')"
+                )
 
     # Supporting files named in SKILL.md must actually exist.
     for ref in sorted(set(SUPPORT_REF.findall(text))):

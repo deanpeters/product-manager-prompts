@@ -22,7 +22,31 @@ documented and enforced like everything else.
   supporting files that resolve, plus the full asset contract.
 - **`generate-catalog.py` now walks `skills/`**, so the catalog's claim
   to list every asset is true again.
-- **Fixed in `dangerous_animals_of_pm_generator`:** three references to
+- **Skills now follow the upstream [Agent Skills](https://agentskills.io)
+  spec, not a house convention.** `AGENTS.md` names the spec, the
+  authoring best practices, and the Claude Code docs as the authorities,
+  and says plainly that where our documentation disagrees with them,
+  ours is the stale one. The rule exists because every constraint below
+  was already being violated quietly.
+- **Skill folders use hyphens, not underscores.**
+  `dangerous_animals_of_pm_generator` is now
+  `dangerous-animals-of-pm-generator`. The spec allows lowercase
+  letters, numbers, and hyphens only, and for a personal or project
+  skill the folder name *is* the command you type, so an underscored
+  folder was not invocable.
+- **Curation metadata moved under `metadata:`.** Only six frontmatter
+  keys are portable (`name`, `description`, `license`, `compatibility`,
+  `metadata`, `allowed-tools`); a claude.ai upload or Skills API package
+  rejects anything else with a hard error. Our `intent`, `type`,
+  `theme`, `best_for`, `scenarios`, and `estimated_time` were top-level
+  and would have failed on upload. They are now nested under
+  `metadata:`, which the spec defines for exactly this purpose.
+- **`validate-prompts.py` enforces the spec instead of trusting memory:**
+  kebab-case folders, the 64-character `name` limit, the reserved words
+  `anthropic` and `claude`, the 1,024-character `description` limit, and
+  the six-key frontmatter allowlist. All are errors, not warnings,
+  because each one fails distribution outright.
+- **Fixed in `dangerous-animals-of-pm-generator`:** three references to
   skills that do not exist, a redirect telling users to go run a
   different skill, a duplicated pitfall heading, a rule that demanded
   3–8 letters in one place and 3–6 in another, and an attribution
