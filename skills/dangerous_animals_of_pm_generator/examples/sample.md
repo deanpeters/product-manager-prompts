@@ -65,27 +65,27 @@ A full conversation flow and creature output for a PM struggling with stakeholde
 
 ---
 
-## SHaRK — Stakeholder Holding a Roadmap Knife
+## SHaRK — Silent Handshake, Roadmap Knifed
 *Ocean creatures | Dangerous Animals*
 
-Attends every planning meeting, asks probing questions, says nothing is wrong.
-Surfaces after the meeting — when you find out the roadmap changed in a conversation you weren't in.
+The agreement made in the room you weren't in, which arrives already settled.
+Surfaces the Monday after a QBR, when a commitment you never scoped is read back to you as a decision.
 
 ---
 
-## OCtoPuS — Over-Committed Tentacles of Promised Un-Scoped Stuff
+## CRaB — Customer Request Assumed Booked
 *Ocean creatures | Dangerous Animals*
 
-The sales rep with eight simultaneous customer conversations, each ending in a vague "yes, we can probably do that."
-Appears two weeks later as a surprise sprint item with a customer name attached and no scoping done.
+A sales "yes, we can probably do that" which hardens into an expectation nobody priced.
+Appears two weeks later as a sprint item with a customer name attached and no scoping done.
 
 ---
 
-## ReMoRA — Rides Executive, Makes Others Redo All
+## REMORA — Roadmap Edits Made Off-Record, Always
 *Ocean creatures | Dangerous Animals*
 
-Has no formal authority but attaches to the CPO and redirects engineering work through informal channels.
-Surfaces whenever a stakeholder says "I was just chatting with [exec] and they thought we should..."
+Carries no authority of its own, so it attaches to whoever has some and steers engineering through informal channels.
+Surfaces whenever a stakeholder opens with "I was just chatting with [exec] and they thought we should..."
 
 ---
 
@@ -99,6 +99,7 @@ Surfaces whenever a stakeholder says "I was just chatting with [exec] and they t
 ## Why This Works
 
 - The facilitation surfaced specific, named behaviors (CPO QBR commitments, sales "yes" before scoping) — not generic "alignment issues"
-- Each creature maps to a real ocean archetype: predator, swarm/parasite, symbiotic drain
-- The names are short enough to use in conversation: "we've got an OCtoPuS situation on this sprint"
+- Every acronym spells a real ocean animal, and each one maps to a distinct archetype: ambush predator, sideways-scuttling opportunist, free-riding parasite
+- Each expansion reads as a phrase rather than a string of initials, which is what makes it repeatable out loud
+- The names are short enough to use in conversation: "we've got a CRaB on this sprint"
 - The user didn't pre-design the creatures — the skill did the naming work from their context

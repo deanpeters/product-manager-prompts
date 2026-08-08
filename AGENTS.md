@@ -25,6 +25,7 @@ If there is a tradeoff, prefer pedagogy and clarity over cleverness.
 - `skeletons/`: Prompt architecture analysis and reverse-engineering tools.
 - `vibes/`: Experimental and agentic workflow prompts.
 - `resumes-resignations-reactions/`: Satirical/therapeutic creative prompts.
+- `skills/`: Agent Skills — prompts packaged so an agent loads them on its own. One folder per skill, named `snake_case`, containing `SKILL.md` plus optional `template.md` and `examples/`.
 - `flows/`: Flow exports and automation-style artifacts (for example LangFlow JSON).
 
 Place new files in the directory that best matches learning intent for users.
@@ -117,6 +118,37 @@ one or two lines naming the *situations* where this prompt is the
 wrong tool. Name situations, not alternative files -- see Coupling
 Discipline. Misuse boundaries are part of the hidden curriculum.
 
+## Agent Skills (`skills/`)
+
+A skill is a prompt packaged so an agent can decide, unprompted, that it
+applies. That decision is made from the YAML frontmatter alone, so the
+frontmatter is a functional interface, not decoration.
+
+Layout: `skills/<snake_case_name>/SKILL.md`, plus optional `template.md`
+(the output contract) and `examples/` (worked runs).
+
+`SKILL.md` carries **both** headers, in this order:
+1. **YAML frontmatter** — `name` (must equal the folder name) and
+   `description` (what it does *and* when to invoke it, written for a
+   machine deciding relevance). Additional keys (`intent`, `type`,
+   `theme`, `best_for`, `scenarios`, `estimated_time`) are optional
+   curation metadata.
+2. **The standard HTML comment block**, immediately after the closing
+   `---`, with the same seven fields every other asset carries. The
+   frontmatter serves the agent; the comment block serves the human
+   reading the raw file. Neither substitutes for the other.
+
+Coupling: **`skills/` is level 0, same as `prompts/`.** An agent invokes
+a skill cold, with no guarantee any sibling skill was loaded first, so
+`Standalone: yes` is required and cross-references to other skills are
+prohibited above the Final Step. Reference external frameworks and books
+freely; name sibling skill files never.
+
+A skill adapted from a prompt may legitimately change the output shape —
+generating the artifact inline where the prompt emitted a session
+starter, for instance. Say so explicitly in the comment block's
+`Instructions`, so the divergence reads as a decision rather than drift.
+
 ## Teaching Quality Bar
 Before considering a prompt "done", verify:
 1. A PM can use it to solve a real problem now.
@@ -165,7 +197,7 @@ naming another file above its Final Step block.
 
 | Level | Shape | Allowed in |
 |---|---|---|
-| 0 Standalone | Finishes the job alone; asks for what it needs | **Required** in `prompts/` |
+| 0 Standalone | Finishes the job alone; asks for what it needs | **Required** in `prompts/` and `skills/` |
 | 1 Forward pointer | Names a next step, Final Step only | Anywhere |
 | 2 Soft prereq | Better with a prior artifact, works without, says so | `prompt-generators/`, `workshops/`, `market-intelligence/`, `storytelling/` |
 | 3 Hard gate | `STOP` unless a prior artifact exists | `loops/`, `vibes/` only |

@@ -16,6 +16,54 @@ scenarios:
 estimated_time: "10-15 min"
 ---
 
+<!--
+## Description:
+Runs a five-question facilitation over a product manager's real jobs,
+pains, and obstacles, then names 4-9 creature acronyms that make those
+hazards discussable -- the meeting that eats a day, the stakeholder who
+circles, the requirement that molts overnight.
+
+## Standalone: yes
+
+## Usage Note:
+Reach for this in a retro that has gone flat, a team offsite, or any
+moment when people will describe a dysfunction as a monster long before
+they will name it in a status report. Humor is the anesthetic; the
+diagnosis is the point.
+
+## When NOT to Use:
+When the team is not safe enough to name dysfunctions honestly, when a
+metaphor would substitute for direct feedback someone is owed, or when
+the moment calls for a formal framework artifact rather than a naming
+exercise.
+
+## Instructions:
+1. Ask the five questions one at a time; do not batch them.
+2. Generate options 1-4 per question from what the user has already
+   said -- the enumerated lists below are worked examples, not a script.
+3. Let the user pick beast mode and animal category before naming
+   anything.
+4. Name the creatures directly. Unlike the source prompt, this skill
+   does not emit a session starter for the user to run elsewhere.
+
+## Pedagogic Notes:
+- Metaphor lowers the cost of naming an uncomfortable truth, which is
+  why satire belongs in a serious prompt library.
+- The animal-noun-first rule teaches a general prompting lesson: bind
+  the generator to a hard constraint it cannot satisfy by paraphrase,
+  or it will drift to the nearest easy word.
+- Building shared vocabulary for recurring hazards makes them
+  discussable later without the metaphor.
+
+## Attribution:
+Created by Dean Peters (Productside.com), September 2024.
+
+## Licensing:
+CC BY-NC-SA 4.0 (see LICENSE and LICENSING.md). Commercial use requires
+expressed written permission from Dean Peters.
+
+Date: August 8, 2026
+-->
 
 ## Purpose
 
@@ -40,7 +88,7 @@ Creature names map PM realities onto animal imagery through acronyms:
 ### Four Acronym Rules
 
 1. **Animal nouns only** — The acronym must spell an actual animal species noun from the chosen category. FROG, TOAD, NEWT, SALAMANDER, AXOLOTL are valid. CROAK, SLIME, LEAP, AGILE, STINKS are not. If it isn't a creature name, it isn't a creature.
-2. **Short and punchy** — 3–8 letters. Avoid overly complex names, but never sacrifice a great animal noun for brevity.
+2. **Short and punchy** — aim for 3–6 letters. Stretch to 8 only when the longer animal noun is unmistakably the better metaphor (AXOLOTL earns its length; PLATYPUS rarely does).
 3. **Sentence-like structure** — Acronym words should work together grammatically. "Highest Paid Person's Opinion" reads like a phrase, not random initials.
 4. **Emotional impact** — The name should create a vivid, memorable image. ZEbRA and WoLF work because they trigger an instant visual *and* a gut reaction.
 
@@ -68,7 +116,7 @@ These map directly onto which creatures get created and what they represent. Spe
 ### When NOT to Use This
 - As a substitute for direct feedback in serious performance conversations
 - When the team isn't psychologically safe enough to name dysfunctions honestly
-- When you need a formal framework output (use `positioning-statement` or `jobs-to-be-done` instead)
+- When the moment calls for a formal framework artifact — a positioning statement, a job story, a prioritization model — and a metaphor would read as deflection
 
 ---
 
@@ -187,8 +235,8 @@ For each creature, use `template.md` format:
 
 **Acronym rules (apply to every creature):**
 - **The acronym must spell an actual animal species noun** from the chosen category. Start here — pick the animal, then build the acronym. Never work backwards from a characteristic or action.
-  - ✓ Valid: FROG, TOAD, NEWT, SALAMANDER, AXOLOTL, SIREN, AMPHIUMA
-  - ✗ Invalid: CROAK, SLIME, LEAP, AGILE, STINKS, Alpine, SPAWN
+  - **Valid** (real animals): FROG, TOAD, NEWT, SIREN, AXOLOTL, AMPHIUMA
+  - **Invalid** (actions, sounds, traits): CROAK, SLIME, LEAP, AGILE, STINKS, SPAWN
 - Words work together like a phrase, not random initials.
 - Name should trigger a vivid, gut-level reaction.
 
@@ -206,12 +254,12 @@ See `examples/sample.md` for a full worked conversation and creature output.
 Mini excerpt — a creature generated from a stakeholder alignment / ocean creatures session:
 
 ```
-## SHaRK — Stakeholder Holding a Roadmap Knife
+## SHaRK — Silent Handshake, Roadmap Knifed
 *Ocean creatures | Dangerous Animals*
 
-Attends every planning meeting, asks probing questions, says nothing is wrong.
-Surfaces after the meeting — when you find out the roadmap changed in a
-conversation you weren't in.
+The agreement made in the room you weren't in, which arrives already settled.
+Surfaces the Monday after a QBR, when a commitment you never scoped is read
+back to you as a decision.
 ```
 
 ---
@@ -232,11 +280,11 @@ conversation you weren't in.
 
 **Consequence:** The creature doesn't stick. Humor requires economy. Longer = forgettable.
 
-**Fix:** Keep it to 3–6 letters. Cut until the acronym reads like a real phrase, not a scrabble rack.
+**Fix:** Aim for 3–6 letters. Cut until the acronym reads like a real phrase, not a scrabble rack.
 
 ---
 
-### Pitfall 2: Generic Inputs, Generic Beasts
+### Pitfall 3: Generic Inputs, Generic Beasts
 **Symptom:** Q2 answer is "things are hard" or "we have communication issues"
 
 **Consequence:** The creature prompt generates vague, universally applicable beasts that don't name *your* situation.
@@ -245,7 +293,7 @@ conversation you weren't in.
 
 ---
 
-### Pitfall 3: Choosing the Wrong Mode
+### Pitfall 4: Choosing the Wrong Mode
 **Symptom:** Selecting Dangerous Animals when the team needs encouragement; selecting Beneficial Beasts when the team needs to name dysfunction honestly.
 
 **Consequence:** The output doesn't match the moment.
@@ -254,7 +302,7 @@ conversation you weren't in.
 
 ---
 
-### Pitfall 4: Using Creature Names to Avoid Real Conversations
+### Pitfall 5: Using Creature Names to Avoid Real Conversations
 **Symptom:** Calling someone "the WoLF" in a 1:1 instead of addressing the behavior directly.
 
 **Consequence:** Humor creates distance. Sometimes distance helps open a conversation; sometimes it replaces one.
@@ -265,14 +313,10 @@ conversation you weren't in.
 
 ## References
 
-### Related Skills
-- `skills/jobs-to-be-done/SKILL.md` — Informs the pains, gains, and jobs framing used in Questions 1–3
-- `skills/proto-persona/SKILL.md` — Defines the PM persona that owns these challenges
-- `skills/discovery-process/SKILL.md` — Surface-level obstacles here often point to deeper discovery gaps
-
 ### External Frameworks
-- Clayton Christensen, *Jobs to Be Done* — Pains/gains/jobs framing used in the facilitation intake
-- Geoffrey Moore, *Crossing the Chasm* — Origin of HiPPO as a PM term of art
+- Clayton Christensen, *Competing Against Luck* — Jobs-to-be-Done; the jobs/pains framing behind Questions 1–2
+- Alexander Osterwalder, *Value Proposition Design* — The pains / gains / jobs triad the intake borrows directly
+- Avinash Kaushik — Popularized HiPPO (Highest Paid Person's Opinion), the term of art this skill generalizes from
 
 ### Provenance
 - Adapted from `prompts/Dangerous Animals of Product Management Beast Generator.md` in `https://github.com/deanpeters/product-manager-prompts`

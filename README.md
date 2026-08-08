@@ -101,6 +101,13 @@ You still have to prompt the loop — nobody skipped that step, they just put a 
 - Design a custom research agent → [research-agent-prompt-generator](prompt-generators/research-agent-prompt-generator.md)
 - Study the pattern documents (below), then the exemplars in **[/vibes/](vibes/)** for loop-safe, agent-ready prompt structures
 - Reverse-engineer how any prompt works → **[/skeletons/](skeletons/)**
+- Package a prompt as an agent skill your assistant invokes on its own → **[/skills/](skills/)**, where each folder holds a `SKILL.md`, an output `template.md`, and a worked example
+
+### "I want my assistant to reach for this without being asked"
+
+**[/skills/](skills/)** — Agent Skills: the same PM work packaged so a coding or chat agent loads it by itself when the moment matches. Each skill is one folder: a `SKILL.md` with YAML frontmatter the agent reads to decide relevance, the usual teaching comment block underneath, plus supporting `template.md` and `examples/`.
+
+- Name the creatures stalking your product practice → [dangerous_animals_of_pm_generator](skills/dangerous_animals_of_pm_generator/SKILL.md)
 
 ### "I need to laugh so I don't cry"
 

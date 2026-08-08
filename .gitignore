@@ -45,3 +45,7 @@ node_modules/
 
 # Log files
 *.log
+
+# Packaged skill bundles (build artifacts; rebuild from skills/<name>/)
+*.zip
+__MACOSX/

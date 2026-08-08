@@ -1,5 +1,34 @@
 # Changelog
 
+## Unreleased
+
+**`skills/` becomes a first-class tier.** The directory arrived with a
+single Agent Skill and no contract behind it — absent from every
+directory map, the README, the catalog, and the validator. It is now
+documented and enforced like everything else.
+
+- **Authoring contract, in `AGENTS.md`:** a `SKILL.md` carries *both*
+  headers. YAML frontmatter (`name` matching the folder, plus a
+  `description` written for a machine deciding relevance) is a
+  functional interface, not decoration. The standard seven-field
+  comment block sits underneath it, serving the human reading the raw
+  file. Neither substitutes for the other.
+- **`skills/` is coupling level 0, same as `prompts/`.** An agent
+  invokes a skill cold, with no guarantee a sibling was loaded first,
+  so `Standalone: yes` is required and cross-references to other skills
+  are prohibited.
+- **`validate-prompts.py` now checks skills:** frontmatter presence,
+  name/folder agreement, a description substantial enough to route on,
+  supporting files that resolve, plus the full asset contract.
+- **`generate-catalog.py` now walks `skills/`**, so the catalog's claim
+  to list every asset is true again.
+- **Fixed in `dangerous_animals_of_pm_generator`:** three references to
+  skills that do not exist, a redirect telling users to go run a
+  different skill, a duplicated pitfall heading, a rule that demanded
+  3–8 letters in one place and 3–6 in another, and an attribution
+  crediting *Crossing the Chasm* with the origin of HiPPO. The worked
+  example's acronyms now pass the skill's own four rules.
+
 ## v2.4 — July 30, 2026
 
 The decoupling release: every asset now stands on its own, and the

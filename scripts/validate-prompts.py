@@ -10,6 +10,13 @@ Checks, per prompt file:
   3. Companion: references resolve to real files
   4. No emojis in prompt body (repo output rule)
 
+Plus, per skills/<name>/ folder:
+  5. SKILL.md exists; YAML frontmatter present with a `name` matching
+     the folder and a `description` substantial enough to route on
+  6. Supporting files named in SKILL.md resolve
+  7. The same asset contract as any other prompt (metadata block,
+     Standalone: yes, coupling, emoji)
+
 Coupling discipline is enforced by default (see AGENTS.md); pass
 --lenient to downgrade those findings to warnings during bulk
 migration. Grandfathered files (predating the metadata standard) produce
@@ -76,13 +83,17 @@ EMOJI = re.compile(
 # prompts/ is the novice floor and must be level 0: one file in, one
 # finished artifact out.
 
-STANDALONE_TIER = "prompts"                 # must declare Standalone: yes
+# prompts/ is the novice floor; skills/ is the agent floor. An agent
+# invokes a skill cold, with no guarantee a sibling skill was loaded
+# first, so both tiers must finish the job alone.
+STANDALONE_TIERS = {"prompts", "skills"}    # must declare Standalone: yes
 AUTOMATION_TIERS = {"loops", "vibes"}       # may hard-gate (level 3)
 
 ASSET_REF = re.compile(
     r"(?:prompts|prompt-generators|market-intelligence|workshops"
     r"|storytelling|loops|skeletons|vibes|flows"
     r"|resumes-resignations-reactions)/[A-Za-z0-9._-]+\.md"
+    r"|skills/[A-Za-z0-9._-]+/[A-Za-z0-9._-]+\.md"
 )
 FINAL_STEP = re.compile(r"^#{1,4}\s*Final Step:?\s*$", re.MULTILINE | re.IGNORECASE)
 HARD_GATE = re.compile(r"^\s*STOP:|do not proceed until|cannot proceed until",
@@ -116,11 +127,11 @@ def coupling_checks(path, text, block, body, strict):
     tier = path.parts[0] if len(path.parts) > 1 else ""
     staged = errors if strict else warnings
 
-    # Level 0/1: no file paths above Final Step in the novice tier.
-    if tier == STANDALONE_TIER:
+    # Level 0/1: no file paths above Final Step in the standalone tiers.
+    if tier in STANDALONE_TIERS:
         for ref in sorted(set(ASSET_REF.findall(above_final_step(body)))):
             errors.append(
-                f"names {ref} above Final Step (prompts/ must stand alone)"
+                f"names {ref} above Final Step ({tier}/ must stand alone)"
             )
 
     # Level 3 is automation-only.
@@ -133,7 +144,7 @@ def coupling_checks(path, text, block, body, strict):
             )
 
     # Backward-prereq phrasing in the metadata a novice reads to choose.
-    if tier == STANDALONE_TIER and block:
+    if tier in STANDALONE_TIERS and block:
         for pattern, label in BACKWARD_PREREQ:
             if re.search(pattern, block, re.MULTILINE | re.IGNORECASE):
                 staged.append(f"metadata {label}")
@@ -141,11 +152,11 @@ def coupling_checks(path, text, block, body, strict):
     # The declared contract.
     m = STANDALONE_FIELD.search(block) if block else None
     value = m.group(1).strip().lower() if m else None
-    if tier == STANDALONE_TIER:
+    if tier in STANDALONE_TIERS:
         if value is None:
             staged.append("metadata missing field: Standalone (must be 'yes')")
         elif not value.startswith("yes"):
-            staged.append(f"Standalone: {value!r} -- prompts/ must be 'yes'")
+            staged.append(f"Standalone: {value!r} -- {tier}/ must be 'yes'")
     elif value and value.startswith("requires") and tier not in AUTOMATION_TIERS:
         staged.append(
             f"Standalone: 'requires ...' (level 3) only allowed in "
@@ -191,6 +202,78 @@ def check_file(path, strict=False):
     warnings += c_warnings
 
     return errors, warnings
+
+
+# --- Agent Skills (skills/) --------------------------------------------
+#
+# A skill is a prompt packaged so an agent decides for itself that it
+# applies. That decision is made from the YAML frontmatter alone, which
+# makes the frontmatter a functional interface rather than decoration --
+# so it gets checked like one. The comment block underneath still has to
+# be there for the human reading the raw file; the two serve different
+# readers and neither substitutes for the other.
+
+SKILLS_DIR = "skills"
+FRONTMATTER = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n", re.DOTALL)
+SNAKE_CASE = re.compile(r"\A[a-z0-9]+(_[a-z0-9]+)*\Z")
+# Supporting files a SKILL.md points at, resolved relative to its folder.
+SUPPORT_REF = re.compile(r"`((?:examples/)?[A-Za-z0-9._-]+\.md)`")
+MIN_DESCRIPTION = 40  # too terse to route on
+
+
+def frontmatter_field(fm, field):
+    m = re.search(rf"^{field}\s*:\s*(.+)$", fm, re.MULTILINE)
+    return m.group(1).strip().strip("\"'") if m else None
+
+
+def check_skill(folder, strict=False):
+    """Validate one skills/<name>/ folder."""
+    errors, warnings = [], []
+    name = folder.name
+
+    if not SNAKE_CASE.match(name):
+        warnings.append(f"folder name {name!r} is not snake_case")
+
+    skill_md = folder / "SKILL.md"
+    if not skill_md.is_file():
+        errors.append("no SKILL.md in skill folder")
+        return errors, warnings
+
+    text = skill_md.read_text(encoding="utf-8", errors="replace")
+
+    m = FRONTMATTER.match(text)
+    if not m:
+        errors.append("SKILL.md has no YAML frontmatter (agents route on it)")
+    else:
+        fm = m.group(1)
+        declared = frontmatter_field(fm, "name")
+        if not declared:
+            errors.append("frontmatter missing field: name")
+        elif declared != name:
+            errors.append(
+                f"frontmatter name {declared!r} does not match "
+                f"folder {name!r}"
+            )
+        description = frontmatter_field(fm, "description")
+        if not description:
+            errors.append("frontmatter missing field: description")
+        elif len(description) < MIN_DESCRIPTION:
+            warnings.append(
+                "frontmatter description is too terse for an agent to "
+                f"route on ({len(description)} chars; say what it does "
+                "and when to invoke it)"
+            )
+
+    # Supporting files named in SKILL.md must actually exist.
+    for ref in sorted(set(SUPPORT_REF.findall(text))):
+        if ref == "SKILL.md":
+            continue
+        if not (folder / ref).exists():
+            errors.append(f"names supporting file that does not exist: {ref}")
+
+    # The rest of the asset contract: metadata block, coupling, emoji.
+    file_errors, file_warnings = check_file(skill_md, strict)
+    return errors + file_errors, warnings + file_warnings
 
 
 # Licensing is repo-wide or it is nothing: sweep EVERY .md in the repo,
@@ -254,12 +337,26 @@ def main():
                 print(f"warning {rel}: {w}")
             total_errors += len(errors)
             total_warnings += len(warnings)
+    skills_base = REPO / SKILLS_DIR
+    skills_checked = 0
+    if skills_base.is_dir():
+        for folder in sorted(p for p in skills_base.iterdir() if p.is_dir()):
+            skills_checked += 1
+            errors, warnings = check_skill(folder, strict)
+            rel = folder.relative_to(REPO)
+            for e in errors:
+                print(f"ERROR   {rel}: {e}")
+            for w in warnings:
+                print(f"warning {rel}: {w}")
+            total_errors += len(errors)
+            total_warnings += len(warnings)
+
     lic_scanned, lic_errors = licensing_sweep()
     for e in lic_errors:
         print(f"ERROR   {e}")
     total_errors += len(lic_errors)
     print(
-        f"\nChecked {checked} files: "
+        f"\nChecked {checked} files and {skills_checked} skills: "
         f"{total_errors} errors, {total_warnings} warnings"
     )
     print(

@@ -29,6 +29,10 @@ DIRECTORIES = [
     "vibes",
     "resumes-resignations-reactions",
 ]
+# skills/ is nested one level deeper (skills/<name>/SKILL.md), so it is
+# collected separately rather than glob'd flat like the others.
+SKILLS_DIR = "skills"
+CATALOG_ORDER = DIRECTORIES + [SKILLS_DIR]
 SKIP_NAMES = {"README.md"}
 FIELDS = [
     "Description",
@@ -113,6 +117,30 @@ def collect():
                     "has_metadata": bool(comment or meta),
                 }
             )
+
+    skills_base = REPO / SKILLS_DIR
+    if skills_base.is_dir():
+        for folder in sorted(p for p in skills_base.iterdir() if p.is_dir()):
+            f = folder / "SKILL.md"
+            if not f.is_file():
+                continue
+            text = f.read_text(encoding="utf-8", errors="replace")
+            meta = parse_frontmatter(text)
+            comment = parse_comment_block(text)
+            entries.append(
+                {
+                    "name": folder.name,
+                    "path": f"{SKILLS_DIR}/{folder.name}/{f.name}",
+                    "directory": SKILLS_DIR,
+                    # Frontmatter wins here: it is what an agent routes on.
+                    "description": meta.get("description")
+                    or comment.get("Description", ""),
+                    "usage": comment.get("Usage Note", ""),
+                    "when_not": comment.get("When NOT to Use", ""),
+                    "date": comment.get("Date") or meta.get("date", ""),
+                    "has_metadata": bool(comment or meta),
+                }
+            )
     return entries
 
 
@@ -142,7 +170,7 @@ def write_markdown(entries, out):
         f"Generated: {date.today().isoformat()} | Assets: {len(entries)}",
         "",
     ]
-    for d in DIRECTORIES:
+    for d in CATALOG_ORDER:
         group = [e for e in entries if e["directory"] == d]
         if not group:
             continue
