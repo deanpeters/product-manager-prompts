@@ -111,6 +111,8 @@ your own; these are not canon:
 4. **Every word carries freight** — intensity words are not evidence. *Escalates*, *Hemorrhages*, *Obliterated* announce that something is bad without naming what or how, and a beast built from them would fit any dysfunction at any company. A word earns its slot by being specific and checkable: "Highest Paid" is observable, "Demo Overpromised" names the exact act. The same word passes or fails depending on what it's bound to — *Deployment Obliterated* works because the deployment is the thing obliterated, while a bare *Obliterated* is melodrama. Attach it to a subject or cut it. Never add a word just to reach a letter.
 5. **Emotional impact** — The name should create a vivid, memorable image. ZEbRA and WoLF work because they trigger an instant visual *and* a gut reaction.
 
+For the reasoning behind rules 3 and 4, a worked pass/fail table, and why WoLF and ZEbRA are compliant despite being neither shape, see `acronym-craft.md`.
+
 ### Pains, Gains, and Jobs Framing
 
 The facilitation collects three lenses before generating beasts:
